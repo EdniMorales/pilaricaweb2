@@ -1,18 +1,38 @@
 <header class="masthead">
     <div class="container h-100">
-        <div class="row h-100 align-items-center">
+    <!--     <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
                 <h1 class="title-1 fw-light">Solo el Amor Supera la Leche</h1>
                 <p class="title-2 lead">En Lácteos la Pilarica sabemos que todos tenemos preferencias
                     diferentes, por eso contamos con una extensa gama de
                     productos, elaborados con el mismo amor de siempre.</p>
             </div>
-        </div>
+        </div> -->
     </div>
 </header>
 
+<section class="stilo-frase p-5 ">
+    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start container">
+            <div class="mb-4 mb-xl-0 container">
+                <div class="title-6">
+                    ¡Solo el Amor supera las bondades de la leche!
+                </div>
+            </div>
+            <div class="ms-xl-4 container">
+                <div class="">
+                 
 
-<section class="content-section" id="portfolio">
+
+
+
+
+                </div>
+               
+            </div>
+        </div>
+</section>
+
+<!-- <section class="content-section" id="portfolio">
     <div class="container px-4 px-lg-5">
         <div class="content-section-heading text-center">
             <h3 class="text-secondary mb-0 title-4">Nuestros Productos</h3>
@@ -24,7 +44,7 @@
                     <div class="caption">
                         <div class="caption-content">
                             <div class="title-5">Quesos Maduros</div>
-                          <!--   <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p> -->
+                            <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
                         </div>
                     </div>
                     <img class="img-fluid" src="<?= base_url ?>assets/quesos-maduros.jpg" width="750" height="500"
@@ -36,8 +56,8 @@
                     <div class="caption">
                         <div class="caption-content">
                             <div class="title-5">Quesos</div>
-                         <!--    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream
-                                cone!</p> -->
+                          <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream
+                                cone!</p> 
                         </div>
                     </div>
                     <img class="img-fluid" src="<?= base_url ?>assets/quesos-maduros.jpg" width="750" height="500"
@@ -49,8 +69,8 @@
                     <div class="caption">
                         <div class="caption-content">
                             <div class="title-5">Yogurth</div>
-                           <!--  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!
-                            </p> -->
+                           <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!
+                            </p> 
                         </div>
                     </div>
                     <img class="img-fluid" src="<?= base_url ?>assets/yogurt-foto-fresas.jpg" width="750" height="500"
@@ -62,7 +82,7 @@
                     <div class="caption">
                         <div class="caption-content">
                             <div class="title-5">Postres</div>
-                         <!--    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p> -->
+                            <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p> 
                         </div>
                     </div>
                     <img class="img-fluid" src="<?= base_url ?>assets/pays.jpg" width="750" height="500" alt="..." />
@@ -70,7 +90,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Historia Don Fidel-->
 <section class="py-5">
@@ -147,7 +167,7 @@
 
 </section>
 
-<section>
+<!-- <section>
     <div>
         <div class="parallax parallax-1">
             <div class="parallax-caption">
@@ -178,7 +198,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+
+
+
 <!-- Team members section-->
 <!-- <section class="py-5 bg-light">
     <div class="container px-5 my-5">
@@ -367,10 +390,10 @@
     </div>
 </section> -->
 
-<section class="cont-color">
+<!-- <section class="cont-color">
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
-            <div class=" col-md-4 col-lg-8 bg-image"></div><!-- d-none d-md-flex -->
+            <div class=" col-md-4 col-lg-8 bg-image"></div>
             <div class="col-md-8 col-lg-4">
                 <div class="login d-flex align-items-center py-5">
                     <div class="container">
@@ -453,7 +476,29 @@
         </div>
 
     </div>
-</section>
+</section> -->
+    <aside class="stilo-frase2 p-4">
+        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+            <div class="mb-4 mb-xl-0 container">
+                <div class="title-6">
+                    ¡ Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más...!
+                </div>
+            </div>
+            <div class="ms-xl-4 container">
+                <div class="input-group">
+                    <input class="form-control" id="CasillaFooterSuscripcionCorreo" type="text"
+                        placeholder="¡Ingresa tu correo!" aria-label="Correo Electronico..."
+                        aria-describedby="button-newsletter" />
+                    <button class="btn btn-outline-light" id="BotonFooterSuscribirse" type="button">
+                        Registrarse
+                    </button>
+                </div>
+                <div class="frase-priv text-white-50">
+                    Nos preocupamos por la privacidad y nunca compartiremos sus datos.
+                </div>
+            </div>
+        </div>
+    </aside>
 
 
 

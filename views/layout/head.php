@@ -36,7 +36,6 @@
     new WOW().init();
     </script>
 </head> 
-
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
         <nav class="navbar navbar-expand-lg fixed-top" id="navbar">

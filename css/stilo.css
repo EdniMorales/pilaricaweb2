@@ -20,11 +20,12 @@
 #navbar a {
   float: left;
   display: block;
-  color: #8D8D8D;
+  color: #113D7C;
   text-align: center;
   padding: 15px;
   text-decoration: none;
   font-size: 18px;
+  font-weight: bold;
 }
 .searchbar {
   margin-bottom: auto;
@@ -83,11 +84,41 @@
   -webkit-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
   box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
+  margin-bottom: 0%;
 }
 .masthead:hover {
   width: 100%;
   filter: brightness(100%);
   transform: scale(1);
+}
+
+.stilo-frase {
+  font-family: "Just Another Hand", cursive;
+  font-size: 40px;
+  color: #113D7C;
+  text-align: center;
+  margin-top: 0%;
+  text-shadow: 1px 1px #000000;
+  background-color: #113D7C;
+}
+.stilo-frase2{
+  font-family: "Just Another Hand", cursive;
+  font-size: 40px;
+  color: #113D7C;
+  text-align: center;
+  margin-top: 1%;
+  text-shadow: 1px 1px #000000;
+  background-color: #113D7C;
+}
+.frase-priv{
+  font-family: "Just Another Hand", cursive;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+
+  text-shadow: 1px 1px #000000;
+  background-color: #113D7C;
+  
 }
 .title-1 {
   font-family: "Just Another Hand", cursive;
@@ -514,6 +545,18 @@ input[type="file"] {
 .cont-color {
   width: 100%;
   background-color: #5f0f11;
+  color: white;
+  padding: 10px;
+  /* border-radius: 5px; */
+
+  box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
+}
+
+.cont-color2 {
+  width: 100%;
+  background-color: #113D7C;
   color: white;
   padding: 10px;
   /* border-radius: 5px; */

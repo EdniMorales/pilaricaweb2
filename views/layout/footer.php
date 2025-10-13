@@ -16,7 +16,8 @@
             </a>
         </div>
     </section>
-    <section class="">
+    <!-- Section: Links  -->
+    <section class="cont-color2">
         <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -78,35 +79,15 @@
                         soporte@pilarica.mx
                     </p>
                     <p><i class="fas fa-phone me-3"></i>(55) 5972 0102</p>
+                    <p><i class="fas fa-phone me-3"></i>(55) 5972 0522</p>
+                    <p><i class="fas fa-phone me-3"></i>(55) 5972 0026</p>
                     <p><i class="fab fa-whatsapp me-3"></i>(56) 4543 8166</p>
                 </div>
             </div>
         </div>
     </section>
-    <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
-        <div
-            class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-            <div class="mb-4 mb-xl-0 container">
-                <div class="title-6">
-                    ¡ Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más...!
-                </div>
-            </div>
-            <div class="ms-xl-4">
-                <div class="input-group">
-                    <input class="form-control" id="CasillaFooterSuscripcionCorreo" type="text"
-                        placeholder="¡Ingresa tu correo!" aria-label="Correo Electronico..."
-                        aria-describedby="button-newsletter" />
-                    <button class="btn btn-outline-light" id="BotonFooterSuscribirse" type="button">
-                        Registrarse
-                    </button>
-                </div>
-                <div class="small text-white-50">
-                    Nos preocupamos por la privacidad y nunca compartiremos sus datos.
-                </div>
-            </div>
-        </div>
-    </aside>
-    <div class="text-center text-white p-4" style="background-color: #380000">
+
+    <div class="text-center text-white p-4" style="background-color: #113D7C">
         © 2025 Copyright:
         <a class="" href="https://teampcmx.com/">Lacteos La Pilarica</a>
     </div>
