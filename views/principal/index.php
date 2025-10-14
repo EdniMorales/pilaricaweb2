@@ -203,7 +203,7 @@
 
 
 <!-- Team members section-->
-<!-- <section class="py-5 bg-light">
+<section class="py-5 bg-light">
     <div class="container px-5 my-5">
         <div class="text-center">
             <h2 class="fw-bolder">Todas nuestras especialidades</h2>
@@ -388,7 +388,7 @@
          
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- <section class="cont-color">
     <div class="container-fluid ps-md-0">
