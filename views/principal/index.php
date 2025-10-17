@@ -1,16 +1,47 @@
 <header class="masthead">
     <div class="container h-100">
-    <!--     <div class="row h-100 align-items-center">
+        <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
                 <h1 class="title-1 fw-light">Solo el Amor Supera la Leche</h1>
                 <p class="title-2 lead">En Lácteos la Pilarica sabemos que todos tenemos preferencias
                     diferentes, por eso contamos con una extensa gama de
                     productos, elaborados con el mismo amor de siempre.</p>
             </div>
-        </div> -->
+        </div>
     </div>
 </header>
-
+<!-- Historia Don Fidel-->
+<section class="py-5">
+    <div class="py-5">
+        <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-10 col-xl-7">
+                    <div class="text-center">
+                        <h1>Somos una empresa Mexicana </h1>
+                        <small>Ubicada en Ixtapaluca, Estado de México</small>
+                        <div class="fs-4 mb-4 fst-italic wow animated zoomIn">
+                            " Con mas de 40 años de tradición en la fabricación de
+                            productos derivados de la leche, en Lácteos La Pilarica
+                            ofrecemos un gran surtido de productos artesanales de alta
+                            calidad. Lácteos La Pilarica elabora sus productos con leche
+                            de alto valor nutrimental y cada uno de ellos es procesado
+                            con técnicas tradicionales que nos permiten acercar el amor
+                            del campo hasta su mesa."
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="rounded-circle me-3" src="<?= base_url ?>assets/40ani-1.png" alt="..." />
+                            <div class="fw-bold">
+                                Sr. Fidel Alfaro
+                                <span class="fw-bold text-primary mx-1">/</span>
+                                Fundador Lacteos La Pilarica
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="stilo-frase p-5 ">
     <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start container">
             <div class="mb-4 mb-xl-0 container">
@@ -20,11 +51,6 @@
             </div>
             <div class="ms-xl-4 container">
                 <div class="">
-                 
-
-
-
-
 
                 </div>
                
@@ -92,36 +118,7 @@
     </div>
 </section> -->
 
-<!-- Historia Don Fidel-->
-<section class="py-5">
-    <div class="py-5 bg-light">
-        <div class="container px-5 my-5">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-10 col-xl-7">
-                    <div class="text-center">
-                        <div class="fs-4 mb-4 fst-italic wow animated zoomIn">
-                            " Con mas de 40 años de tradición en la fabricación de
-                            productos derivados de la leche, en Lácteos La Pilarica
-                            ofrecemos un gran surtido de productos artesanales de alta
-                            calidad. Lácteos La Pilarica elabora sus productos con leche
-                            de alto valor nutrimental y cada uno de ellos es procesado
-                            con técnicas tradicionales que nos permiten acercar el amor
-                            del campo hasta su mesa."
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center">
-                            <img class="rounded-circle me-3" src="<?= base_url ?>assets/40ani-1.png" alt="..." />
-                            <div class="fw-bold">
-                                Sr. Fidel Alfaro
-                                <span class="fw-bold text-primary mx-1">/</span>
-                                Fundador Lacteos La Pilarica
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <section>
 
