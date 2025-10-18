@@ -76,23 +76,25 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition:
+/*   transition:
     transform 2s,
     filter 1.5s ease-in-out;
   transform-origin: center center;
-  filter: brightness(50%);
+  filter: brightness(50%); */
+
+
   -webkit-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
   box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
   margin-bottom: 0%;
   border-radius: 0px 0px 350px 0px; /* four values */
 }
-.masthead:hover {
+/* .masthead:hover {
   width: 100%;
   filter: brightness(100%);
   transform: scale(1);
 }
-
+ */
 .stilo-frase {
   font-family: "Just Another Hand", cursive;
   font-size: 40px;
@@ -122,21 +124,32 @@
   
 }
 .title-1 {
-  font-family: "Just Another Hand", cursive;
-  font-size: 120px;
-  color: white;
+font-family: "Imperial Script", cursive;
+  font-size: 150px;
+ font-weight: 800;
+  color: #113D7C;
   text-align: center;
-  margin-top: -20%;
-  text-shadow: 2px 2px #000000;
+  margin-top: 15%;
+ /*  text-shadow: 5px 5px #ffffff; */
+    text-shadow: 
+                -5px -5px 0 #ffffff,
+                3px -3px 0 #ffffff,
+                -5px 5px 0 #ffffff,
+                3px 3px 0 #ffffff;
+  line-height: 0.8; /* Reduce espacio entre líneas */
 }
-.title-2 {
-  font-family: "Just Another Hand", cursive;
-  font-size: 35px;
-  color: white;
+.title-2 { 
+/*   font-family: "Just Another Hand", cursive; */
+
+  font-size: 120px;
+  font-weight: 600;
+  color: #113D7C;
   text-align: center;
   margin-top: -1%;
-  text-shadow: 2px 2px #000000;
+ /*  text-shadow: 2px 2px #000000; */
 }
+
+
 .title-love-1 {
   font-family: "Just Another Hand", cursive;
   font-size: 50px;

@@ -56,21 +56,24 @@
                         </li>
                         <li class="nav-item dropdown" id="dmenu">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Especialidades |</a>
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos |</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog"
                                 id="Categorias"></ul>
                         </li>
                         <!--<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Contactanos |</a>
+                                data-bs-toggle="dropdown" aria-expanded="false">Contacto |</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                 <li><a class="dropdown-item" href="../Bolsa/index">Bolsa de Trabajo</a></li>
                                 <li><a class="dropdown-item" href="../Bolsa/index">Quiero ser cliente</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url ?>Solo/index">Solo el Amor Supera la Leche</a>
+                            <a class="nav-link" href="<?= base_url ?>Solo/index">Nosotros</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="<?= base_url ?>Solo/index">Sucursales</a>
                         </li>
                     </ul>
                     <div class="searchbar">

@@ -2,31 +2,32 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-                <h1 class="title-1 fw-light">Solo el Amor Supera la Leche</h1>
-                <p class="title-2 lead">En Lácteos la Pilarica sabemos que todos tenemos preferencias
+                <p class="title-1 imperial-script-regular">" Solo el amor supera las bondades de la leche "</p>
+               
+          <!--       <p class="title-2 lead">En Lácteos la Pilarica sabemos que todos tenemos preferencias
                     diferentes, por eso contamos con una extensa gama de
-                    productos, elaborados con el mismo amor de siempre.</p>
+                    productos, elaborados con el mismo amor de siempre.</p> -->
+
+                    <!-- Usando utilidades de Bootstrap -->
+
             </div>
         </div>
     </div>
 </header>
 <!-- Historia Don Fidel-->
 <section class="py-5">
-    <div class="py-5">
+    <div class="py-3">
         <div class="container px-5 my-5">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-10 col-xl-7">
+            <div class="row gx-5 text-justify">
+                <div class="col-lg-12 col-xl-12">
                     <div class="text-center">
-                        <h1>Somos una empresa Mexicana </h1>
+                        <p class="title-2 imperial-script-regular"> Somos una empresa mexicana </p>
                         <small>Ubicada en Ixtapaluca, Estado de México</small>
-                        <div class="fs-4 mb-4 fst-italic wow animated zoomIn">
-                            " Con mas de 40 años de tradición en la fabricación de
-                            productos derivados de la leche, en Lácteos La Pilarica
-                            ofrecemos un gran surtido de productos artesanales de alta
-                            calidad. Lácteos La Pilarica elabora sus productos con leche
-                            de alto valor nutrimental y cada uno de ellos es procesado
-                            con técnicas tradicionales que nos permiten acercar el amor
-                            del campo hasta su mesa."
+                        <div class="fs-1 mb-4 fst-italic wow animated zoomIn">
+                            " En La Pilarica elaboramos quesos artesanales desde 1980,
+                            nuestro compromiso con la calidad y el sabor auténtico nos
+                            ha convertido en una tradición que se comparte de generación en generación, llevando a cada mesa un producto
+                            lleno de historia, pasión y confianza."
                         </div>
                         <div class="d-flex align-items-center justify-content-center">
                             <img class="rounded-circle me-3" src="<?= base_url ?>assets/40ani-1.png" alt="..." />
