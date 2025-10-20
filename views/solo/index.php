@@ -1,4 +1,4 @@
-  <!-- Encabezado-->
+
   <header class="masthead1 py-5">
                 <div class="container px-5">
                     <div class="row justify-content-center">
@@ -12,7 +12,6 @@
                     </div>
                 </div>
             </header>
-            <!-- About section one-->
             <section class="py-5 bg-light" id="scroll-target">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 align-items-center">

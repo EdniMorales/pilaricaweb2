@@ -491,8 +491,9 @@
     <aside class="stilo-frase2 p-4">
         <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
             <div class="mb-4 mb-xl-0 container">
-                <div class="title-9">
-                    ¡ Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más...!
+                <div class="">
+                    <p class="title-9">
+                    ¡ Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más...!</p>
                 </div>
             </div>
             <div class="ms-xl-4 container">
