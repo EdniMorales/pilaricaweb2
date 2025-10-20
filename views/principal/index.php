@@ -2,14 +2,11 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-                <p class="title-1 imperial-script-regular">" Solo el amor supera las bondades de la leche "</p>
-               
+                <p class="title-1 imperial-script-regular">" Solo el amor supera las bondades de la leche "</p>     
           <!--       <p class="title-2 lead">En Lácteos la Pilarica sabemos que todos tenemos preferencias
                     diferentes, por eso contamos con una extensa gama de
                     productos, elaborados con el mismo amor de siempre.</p> -->
-
                     <!-- Usando utilidades de Bootstrap -->
-
             </div>
         </div>
     </div>
@@ -22,9 +19,9 @@
                 <div class="col-lg-12 col-xl-12">
                     <div class="text-center">
                         <p class="title-2 imperial-script-regular"> Somos una empresa mexicana </p>
-                        <small>Ubicada en Ixtapaluca, Estado de México</small>
-                        <div class="fs-1 mb-4 fst-italic wow animated zoomIn">
-                            " En La Pilarica elaboramos quesos artesanales desde 1980,
+                        <p class="title-info">Ubicada en Ixtapaluca, Estado de México</p>
+                        <div class="title-info-2 mb-4 wow animated zoomIn" data-wow-delay="0.5s">
+                            "En La Pilarica elaboramos quesos artesanales desde 1980,
                             nuestro compromiso con la calidad y el sabor auténtico nos
                             ha convertido en una tradición que se comparte de generación en generación, llevando a cada mesa un producto
                             lleno de historia, pasión y confianza."
@@ -37,16 +34,47 @@
                                 Fundador Lacteos La Pilarica
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="stilo-frase p-5 ">
+  <!-- Productos Favoritos-->
+        <section class="stilo-section-prod-fav text-center">
+            <div class="px-5 my-5 stilo-prod-fav">
+                <div class="row">
+                    <div class="col-lg-12">
+                  <h2 class="tit-prod-fav">Nuestros productos favoritos</h2>
+                </div>
+                    <div class="col-lg-4">
+                        <div class="mx-auto mb-5 mb-lg-0">
+                           <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
+                          <p class="subtit-prod-fav">Queso Panela</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                             <p class="subtit-prod-fav">Queso Oaxaca</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                             <p class="subtit-prod-fav">Crema</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-6 text-center mt-4 ">
+                    Elegir nuestros productos es elgir lo natural
+                </div>
+            </div>
+        </section>
+<!-- <section class="stilo-frase p-5 ">
     <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start container">
             <div class="mb-4 mb-xl-0 container">
-                <div class="title-6">
+                <div class="title-7">
                     ¡Solo el Amor supera las bondades de la leche!
                 </div>
             </div>
@@ -58,7 +86,7 @@
             </div>
         </div>
 </section>
-
+ -->
 <!-- <section class="content-section" id="portfolio">
     <div class="container px-4 px-lg-5">
         <div class="content-section-heading text-center">
@@ -118,11 +146,7 @@
         </div>
     </div>
 </section> -->
-
-
-
 <section>
-
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -132,20 +156,20 @@
     <div class="carousel-inner">
       <div class="carousel-item active" style="background-image: url('../assets/quesos-maduros.jpg')">
         <div class="carousel-caption">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+          <p class="title-carrusel-1">Pay Natural</p>
+          <p class="subtitle-carrusel-2">prueba nuestros deliciosos sabores Zarzamora y Fresa</p>
         </div>
       </div>
       <div class="carousel-item" style="background-image: url('../assets/yogurt-foto-fresas.jpg')">
         <div class="carousel-caption">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+         <p class="title-carrusel-1">Pay Natural</p>
+          <p class="subtitle-carrusel-2">prueba nuestros deliciosos sabores Zarzamora y Fresa</p>
         </div>
       </div>
       <div class="carousel-item" style="background-image: url('../assets/pays.jpg')">
         <div class="carousel-caption">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+         <p class="title-carrusel-1">Pay Natural</p>
+          <p class="subtitle-carrusel-2">prueba nuestros deliciosos sabores Zarzamora y Fresa</p>
         </div>
       </div>
     </div>
@@ -158,13 +182,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-
-
-
-
 </section>
-
 <!-- <section>
     <div>
         <div class="parallax parallax-1">
@@ -197,15 +215,12 @@
         </div>
     </div>
 </section> -->
-
-
-
 <!-- Team members section-->
-<section class="py-5 bg-light">
+<section class="py-5">
     <div class="container px-5 my-5">
         <div class="text-center">
-            <h2 class="fw-bolder">Todas nuestras especialidades</h2>
-            <p class="lead fw-normal text-muted mb-5">
+            <p class="title-8">Todas nuestras especialidades</p>
+            <p class="title-10 mb-5">
                 La mejor calidad y sabor artesanal hasta tu mesa | Elaborados 100% Artesanal
             </p>
         </div>
@@ -470,15 +485,13 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 </section> -->
     <aside class="stilo-frase2 p-4">
         <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
             <div class="mb-4 mb-xl-0 container">
-                <div class="title-6">
+                <div class="title-9">
                     ¡ Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más...!
                 </div>
             </div>
@@ -497,9 +510,6 @@
             </div>
         </div>
     </aside>
-
-
-
 <!-- 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CIoJNcqQMw4FTF3TvxjQXvAchNVFOQ4&ehbc=2E312F&noprof=1"
     width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy"

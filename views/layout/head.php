@@ -18,8 +18,12 @@
     <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <link href="<?= base_url ?>css/styles.css" rel="stylesheet" />
     <link href="<?= base_url ?>css/stilo.css" rel="stylesheet" />
-    <!--  <link href="css/hover-zoom.css" rel="stylesheet" /> -->
-    <link href="<?= base_url ?>css/animate.css" rel="stylesheet" />
+<!--      <link href="css/hover-zoom.css" rel="stylesheet" /> -->
+<!--     <link href="<?= base_url ?>css/animate.css" rel="stylesheet" />
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
     <!--  <link href="css/base.css" rel="stylesheet" /> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->

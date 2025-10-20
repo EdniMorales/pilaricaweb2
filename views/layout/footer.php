@@ -1,5 +1,6 @@
 </main>
 <footer class="text-center bg-body-tertiary text-muted">
+
     <section class="d-flex justify-content-center justify-content-lg-between p-5 border-bottom container">
         <div class="me-3 d-none d-lg-block text-center tam-l">
             <span class="title-3">¡Siguenos en nuestras redes sociales!</span>

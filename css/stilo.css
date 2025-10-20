@@ -81,8 +81,6 @@
     filter 1.5s ease-in-out;
   transform-origin: center center;
   filter: brightness(50%); */
-
-
   -webkit-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
   box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
@@ -118,10 +116,8 @@
   font-size: 30px;
   color: white;
   text-align: center;
-
   text-shadow: 1px 1px #000000;
   background-color: #113D7C;
-  
 }
 .title-1 {
 font-family: "Imperial Script", cursive;
@@ -148,8 +144,71 @@ font-family: "Imperial Script", cursive;
   margin-top: -1%;
  /*  text-shadow: 2px 2px #000000; */
 }
+.title-info {
+font-family: "faustina", serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #113D7C;
+  text-align: center;
+  margin-top: -2%;
+/*   text-shadow: 1px 1px #000000; */
+}
+.title-info-2 {
+font-family: "faustina", serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  margin-top: 1%;    
+  justify-content: center; 
+}
+.tit-prod-fav{
+font-family: "faustina", serif;
+font-size: 100px;
+color: #ffffff;
+margin-top: 5%;
+
+}
+/* .sub-tit-prod-fav{
+  font-family: "faustina",serif ;
+  font-size: 35px;
+  color: #ffffff;
+  margin-top: 2%;
+  padding-top: 2%;
+} */
+.foot-fig{
+border-radius-top: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background: linear-gradient(45deg, #4ecdc4, #44a08d);
 
 
+  box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
+-webkit-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
+ }
+ .stilo-section-prod-fav {
+  box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
+-webkit-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
+
+ }
+.subtit-prod-fav{
+  font-family: "Just Another Hand", cursive;
+  font-size: 100px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: -20%;
+  background-color: #113D7C;
+}
+.stilo-prod-fav{
+  font-family: "Just Another Hand", cursive;
+  font-size: 200px;
+  color: #113D7C;
+  text-align: center;
+  margin-top: 2%;
+  background-color: #113D7C;
+  padding-bottom: 5%;
+
+}
 .title-love-1 {
   font-family: "Just Another Hand", cursive;
   font-size: 50px;
@@ -183,14 +242,42 @@ font-family: "Imperial Script", cursive;
   text-align: left;
   margin-top: 0%;
   text-shadow: 2px 2px black;
+
 }
 .title-6 {
-  font-family: "Just Another Hand", cursive;
-  font-size: 50px;
+  font-family: "Imperial Script", cursive ;
+  font-size: 150px;
   color: white;
   text-align: left;
   margin-top: 0%;
-  text-shadow: 3px 5px black;
+/*   text-shadow: 3px 5px black; */
+   /*  font-weight: 600; */
+}
+.title-7 {
+  font-family: "Imperial Script", cursive ;
+  font-size: 150px;
+  color: white;
+  text-align: left;
+  margin-top: 0%;
+/*   text-shadow: 3px 5px black; */
+   /*  font-weight: 600; */
+}
+.title-8 {
+  font-family: "Imperial Script", cursive ;
+  font-size: 120px;
+  color: #113D7C;
+  text-align: center;
+  margin-top: 0%;
+  font-weight: 400;
+   /*   text-shadow: 3px 5px black; */
+   /*  font-weight: 600; */
+}
+.title-10 {
+  font-family: "faustina", serif ;
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+  margin-top: -3%;
 }
 .tiitle-quejas{
   font-family: "Just Another Hand", cursive;
@@ -213,7 +300,24 @@ font-family: "Imperial Script", cursive;
 /*   padding: 60px 0; */
 /*   background-color: #f8f9fa; */
 }
-
+.title-carrusel-1{
+  font-family:"Just Another Hand", cursive;
+  font-size: 120px;
+  font-weight: 400;
+  color: white;
+  text-align: left;
+  margin-bottom: 0%;
+  text-shadow: 1px 1px #000000;
+}
+.subtitle-carrusel-2{
+  font-family: "Just Another Hand", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+  text-align: left;
+  margin-top: 0%;
+  text-shadow: 1px 1px #000000;
+}
 .masthead1 {
   height: 50vh;
   min-height: 300px;
@@ -571,10 +675,11 @@ input[type="file"] {
   color: white;
   padding: 10px;
   /* border-radius: 5px; */
-
   box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
   -webkit-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
+
+
 }
 
 .caj-prod {
@@ -597,8 +702,8 @@ height: 100%; */
   -moz-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
 }
 .carousel-item {
-  height: 35vh;
-  min-height: 350px;
+  height: 50vh;
+  min-height: 450px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
