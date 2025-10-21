@@ -136,8 +136,7 @@ font-family: "Imperial Script", cursive;
 }
 .title-2 { 
 /*   font-family: "Just Another Hand", cursive; */
-
-  font-size: 120px;
+  font-size: 100px;
   font-weight: 600;
   color: #113D7C;
   text-align: center;
@@ -145,7 +144,7 @@ font-family: "Imperial Script", cursive;
  /*  text-shadow: 2px 2px #000000; */
 }
 .title-info {
-font-family: "faustina", serif;
+font-family: "lexend", sans-serif;
   font-size: 40px;
   font-weight: 800;
   color: #113D7C;
@@ -164,9 +163,16 @@ font-family: "faustina", serif;
 }
 .tit-prod-fav{
 font-family: "faustina", serif;
-font-size: 100px;
+font-size: 110px;
 color: #ffffff;
 margin-top: 5%;
+
+}
+.tit-prod-fav-1{
+font-family: "faustina", serif;
+font-size: 50px;
+color: #ffffff;
+margin-top: 1%;
 
 }
 /* .sub-tit-prod-fav{
@@ -186,6 +192,7 @@ border-radius-top: 30% 70% 70% 30% / 30% 30% 70% 70%;
 -moz-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
  }
  .stilo-section-prod-fav {
+
   box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 -webkit-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 -moz-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
@@ -197,7 +204,7 @@ border-radius-top: 30% 70% 70% 30% / 30% 30% 70% 70%;
   color: #FFFFFF;
   text-align: center;
   margin-top: -20%;
-  background-color: #113D7C;
+  background-color: #F4C366;
 }
 .stilo-prod-fav{
   font-family: "Just Another Hand", cursive;
@@ -205,7 +212,7 @@ border-radius-top: 30% 70% 70% 30% / 30% 30% 70% 70%;
   color: #113D7C;
   text-align: center;
   margin-top: 2%;
-  background-color: #113D7C;
+  background-color: #F4C366;
   padding-bottom: 5%;
 
 }

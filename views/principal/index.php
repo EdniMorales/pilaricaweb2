@@ -18,7 +18,7 @@
             <div class="row gx-5 text-justify">
                 <div class="col-lg-12 col-xl-12">
                     <div class="text-center">
-                        <p class="title-2 imperial-script-regular"> Somos una empresa mexicana </p>
+                        <p class="title-2 dancing-script-bold"> Somos una empresa mexicana </p>
                         <p class="title-info">Ubicada en Ixtapaluca, Estado de México</p>
                         <div class="title-info-2 mb-4 wow animated zoomIn" data-wow-delay="0.5s">
                             "En La Pilarica elaboramos quesos artesanales desde 1980,
@@ -46,6 +46,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                   <h2 class="tit-prod-fav">Nuestros productos favoritos</h2>
+                  <p class="tit-prod-fav-1">Elaborados de forma 100% artesanal</p>
                 </div>
                     <div class="col-lg-4">
                         <div class="mx-auto mb-5 mb-lg-0">
