@@ -52,6 +52,7 @@
                         <div class="mx-auto mb-5 mb-lg-0">
                            <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
                           <p class="subtit-prod-fav">Queso Panela</p>
+                          <P class="subtit-prod-fav-1">Encuéntralo en presentaciones de 1kg y 500 grs. </P>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -67,9 +68,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="title-6 text-center mt-4 ">
+             <!--    <div class="title-6 text-center mt-4 ">
                     Elegir nuestros productos es elgir lo natural
-                </div>
+                </div> -->
             </div>
         </section>
 <!-- <section class="stilo-frase p-5 ">
@@ -147,7 +148,7 @@
         </div>
     </div>
 </section> -->
-<section>
+<!-- <section>
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -183,7 +184,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-</section>
+</section> -->
 <!-- <section>
     <div>
         <div class="parallax parallax-1">
