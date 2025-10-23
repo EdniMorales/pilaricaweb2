@@ -199,16 +199,18 @@ border-radius-top: 30% 70% 70% 30% / 30% 30% 70% 70%;
 
  }
 .subtit-prod-fav{
-  font-family: "Just Another Hand", cursive;
-  font-size: 100px;
+  font-family: "Lexend", sans-serif;
+  font-size: 25%;
   color: #FFFFFF;
   text-align: center;
   margin-top: -20%;
   background-color: #F4C366;
 }
 .subtit-prod-fav-1{
-      font-family:  "lexend", sans-serif;
-      font-size: 2rem;
+      font-family:  "Lexend", sans-serif;
+      font-size: 10%;
+      color: #FFFFFF;
+      
 }
 .stilo-prod-fav{
   font-family: "Just Another Hand", cursive;
