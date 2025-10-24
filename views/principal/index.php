@@ -107,10 +107,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
 <!-- <section class="stilo-frase p-5 ">
     <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start container">
             <div class="mb-4 mb-xl-0 container">
@@ -120,9 +116,7 @@
             </div>
             <div class="ms-xl-4 container">
                 <div class="">
-
                 </div>
-               
             </div>
         </div>
 </section>
