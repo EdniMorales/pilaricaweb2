@@ -1,35 +1,32 @@
 </main>
-<footer class="text-center bg-body-tertiary text-muted">
-
-    <section class="d-flex justify-content-center justify-content-lg-between p-5 border-bottom container">
-        <div class="me-3 d-none d-lg-block text-center tam-l">
-            <span class="title-3">¡Siguenos en nuestras redes sociales!</span>
-        </div>
-        <div>
-            <a href="" class="me-4">
-                <i class="fab fa-facebook-square fa-3x"></i>
-            </a>
-            <a href="" class="me-4">
-                <i class="fab fa-instagram fa-3x"></i>
-            </a>
-            <a href="" class="me-4">
-                <i class="fab fa-linkedin-square fa-3x"></i>
-            </a>
-        </div>
-    </section>
+<footer class="text-center bg-body-tertiary ">
     <!-- Section: Links  -->
     <section class="cont-color2">
         <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>Lacteos La Pilarica
-                    </h6>
+                        <i class="fas fa-gem me-3"></i>Lacteos La Pilarica</h6>
                     <p class="text-text-left">
                         En Lácteos la Pilarica sabemos que todos tenemos preferencias
                         diferentes, por eso contamos con una extensa gama de productos,
                         elaborados con el mismo amor de siempre.
                     </p>
+                      <p class="title-9">
+                    ¡Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más!</p>
+                <div class="container text-left">
+                    <div class="input-group">
+                    <input class="form-control" id="CasillaFooterSuscripcionCorreo" type="text"
+                        placeholder="¡Ingresa tu correo!" aria-label="Correo Electronico..."
+                        aria-describedby="button-newsletter" />
+                    <button class="btn btn-outline-light" id="BotonFooterSuscribirse" type="button">
+                        Registrarse
+                    </button>
+                </div>
+                <div class="frase-priv text-white-50">
+                    Nos preocupamos por la privacidad y nunca compartiremos sus datos.
+                </div>
+            </div>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->

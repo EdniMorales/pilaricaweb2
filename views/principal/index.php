@@ -40,7 +40,6 @@
         </div>
     </div>
 </section>
-  <!-- Productos Favoritos-->
         <section class="stilo-section-prod-fav text-center">
             <div class="px-5 my-5 stilo-prod-fav">
                 <div class="row">
@@ -70,46 +69,48 @@
                         </div>
                     </div>
                 </div>
-             <!--    <div class="title-6 text-center mt-4 ">
-                    Elegir nuestros productos es elgir lo natural
-                </div> -->
             </div>
         </section>
-        <!-- Productos Favoritos-->
         <section class="stilo-section-prod-fav-1 text-center">
             <div class="px-5 my-5 stilo-prod-fav-1">
                 <div class="row">
                     <div class="col-lg-12">
-                  <h2 class="tit-prod-fav-2">Nuestros productos favoritos</h2>
-                  <p class="tit-prod-fav-2-1">Elaborados de forma 100% artesanal</p>
-                </div>
+                        <h2 class="tit-prod-fav-2">Nuestros productos</h2>
+                        <p class="tit-prod-fav-2-1">Conoce la variedad de productos que tenemos para ti</p>
+                    </div>
                     <div class="col-lg-4">
                         <div class="mx-auto mb-5 mb-lg-0">
                            <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
                           <p class="subtit-prod-fav-2">Queso Panela</p>
-                          <p class="subtit-prod-fav-2-1">Encuéntralo en presentaciones de 1kg y 500 grs. </p>
                         </div>
+                        <div class="subtit-prod-fav-2-1">  
+                            <button type="button" class="btn btn-warning btn-lg">VER MAS</button></div> 
                     </div>
                     <div class="col-lg-4">
                         <div class="mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                             <p class="subtit-prod-fav-2">Queso Oaxaca</p>
-                             <p class="subtit-prod-fav-2-1">Encuéntralo en presentaciones de 10kg, 6kg, 3.2kg, 500 grs y 200grs.</p>
+                             <p class="subtit-prod-fav-2">Queso Oaxaca</p> 
                         </div>
+                        <div class="subtit-prod-fav-2-1">  
+                            <button type="button" class="btn btn-warning btn-lg">VER MAS</button>
+                        </div> 
                     </div>
                     <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                             <p class="subtit-prod-fav-2">Crema</p>
-                                <p class="subtit-prod-fav-2-1">Encuéntrala en presentaciones de 4.5 kg, 500 ml y 200ml. </p>
+                            <p class="subtit-prod-fav-2">Crema</p>
                         </div>
+                         <div class="subtit-prod-fav-2-1">  
+                            <button type="button" class="btn btn-warning btn-lg">VER MAS</button>
+                        </div> 
                     </div>
                 </div>
-             <!--    <div class="title-6 text-center mt-4 ">
-                    Elegir nuestros productos es elgir lo natural
-                </div> -->
             </div>
         </section>
+
+
+
+
 <!-- <section class="stilo-frase p-5 ">
     <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start container">
             <div class="mb-4 mb-xl-0 container">
@@ -409,7 +410,6 @@
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/duraznos_con_crema_bn.png" alt="..." />
                 </div>
             </div>
-
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Gelatina-logo-bn.png" alt="..." />
@@ -428,20 +428,17 @@
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Logo-Pay-bn.png" alt="..." />
-      
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Yoghurt-logo-bn.png" alt="..." />
-     
                 </div>
             </div>
          
         </div>
     </div>
 </section>
-
 <!-- <section class="cont-color">
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
@@ -527,29 +524,7 @@
         </div>
     </div>
 </section> -->
-    <aside class="stilo-frase2 p-4">
-        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-            <div class="mb-4 mb-xl-0 container">
-                <div class="">
-                    <p class="title-9">
-                    ¡ Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más...!</p>
-                </div>
-            </div>
-            <div class="ms-xl-4 container">
-                <div class="input-group">
-                    <input class="form-control" id="CasillaFooterSuscripcionCorreo" type="text"
-                        placeholder="¡Ingresa tu correo!" aria-label="Correo Electronico..."
-                        aria-describedby="button-newsletter" />
-                    <button class="btn btn-outline-light" id="BotonFooterSuscribirse" type="button">
-                        Registrarse
-                    </button>
-                </div>
-                <div class="frase-priv text-white-50">
-                    Nos preocupamos por la privacidad y nunca compartiremos sus datos.
-                </div>
-            </div>
-        </div>
-    </aside>
+
 <!-- 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CIoJNcqQMw4FTF3TvxjQXvAchNVFOQ4&ehbc=2E312F&noprof=1"
     width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy"
