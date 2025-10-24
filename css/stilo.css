@@ -171,10 +171,28 @@ margin-top: 5%;
 .tit-prod-fav-1{
 font-family: "faustina", serif;
 font-size: 50px;
-color: #ffffff;
+color: #113D7C;
 margin-top: 1%;
 
 }
+
+.tit-prod-fav-2{
+font-family: "faustina", serif;
+font-size: 110px;
+color: #113D7C;
+margin-top: 5%;
+
+}
+.tit-prod-fav-2-1{
+font-family: "faustina", serif;
+font-size: 50px;
+color: #113D7C;
+margin-top: 1%;
+
+}
+
+
+
 /* .sub-tit-prod-fav{
   font-family: "faustina",serif ;
   font-size: 35px;
@@ -193,11 +211,39 @@ border-radius-top: 30% 70% 70% 30% / 30% 30% 70% 70%;
  }
  .stilo-section-prod-fav {
 
-  box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
+ /*  box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 -webkit-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
--moz-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65); */
 
  }
+ .stilo-section-prod-fav-1  {
+/*    box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
+-webkit-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65); */
+margin-top: -5%;
+
+ }
+
+ .stilo-prod-fav{
+  font-family: "Just Another Hand", cursive;
+  font-size: 200px;
+  color: #113D7C;
+  text-align: center;
+  margin-top: 2%;
+  background-color: #F4C366;
+  padding-bottom: 10%;
+
+}
+ .stilo-prod-fav-1{
+  font-family: "Just Another Hand", cursive;
+  font-size: 200px;
+  color: #113D7C;
+  text-align: center;
+  margin-top: 2%;
+  background-color: #ffffff;
+  padding-bottom: 5%;
+
+}
 .subtit-prod-fav{
   font-family: "Lexend", sans-serif;
   font-size: 25%;
@@ -212,16 +258,24 @@ border-radius-top: 30% 70% 70% 30% / 30% 30% 70% 70%;
       color: #FFFFFF;
       
 }
-.stilo-prod-fav{
-  font-family: "Just Another Hand", cursive;
-  font-size: 200px;
+.subtit-prod-fav-2{
+  font-family: "Lexend", sans-serif;
+  font-size: 25%;
   color: #113D7C;
   text-align: center;
-  margin-top: 2%;
-  background-color: #F4C366;
-  padding-bottom: 5%;
-
+  margin-top: -20%;
+  background-color: #ffffff;
 }
+
+
+
+.subtit-prod-fav-2-1{
+      font-family:  "Lexend", sans-serif;
+      font-size: 10%;
+      color: #FFFFFF;
+      
+}
+
 .title-love-1 {
   font-family: "Just Another Hand", cursive;
   font-size: 50px;
