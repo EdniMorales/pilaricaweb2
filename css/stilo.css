@@ -112,10 +112,10 @@
   background-color: #113D7C;
 }
 .frase-priv{
-  font-family: "Just Another Hand", cursive;
-  font-size: 30px;
+  font-family: "Lexend", sans-serif;
+  font-size: 10px;
   color: white;
-  text-align: center;
+  text-align: left;
   text-shadow: 1px 1px #000000;
   background-color: #113D7C;
 }
@@ -223,6 +223,12 @@ border-radius-top: 30% 70% 70% 30% / 30% 30% 70% 70%;
 margin-top: -5%;
 
  }
+ .stilo-section-prod-fav-3{
+margin-top: 8%;
+/* margin-bottom: 10%; */
+
+ }
+
 
  .stilo-prod-fav{
   font-family: "Just Another Hand", cursive;
@@ -244,6 +250,16 @@ margin-top: -5%;
   padding-bottom: 5%;
 
 }
+.stilo-prod-fav-3{
+  font-family: "Just Another Hand", cursive;
+  font-size: 200px;
+  color: #113D7C;
+  text-align: center;
+  margin-top: 5%;
+  background-color: #F4C366;
+  padding-bottom: 10%;
+
+}
 .subtit-prod-fav{
   font-family: "Lexend", sans-serif;
   font-size: 25%;
@@ -263,8 +279,23 @@ margin-top: -5%;
   font-size: 25%;
   color: #113D7C;
   text-align: center;
-  margin-top: -20%;
+  margin-top: -8%;
   background-color: #ffffff;
+}
+
+.subtit-prod-fav-3{
+      font-family:  "Lexend", sans-serif;
+      font-size: 25%;
+      color: #113D7C;
+      margin-top: 15%;  
+}
+.subtit-prod-fav-4{
+      font-family:  "Lexend", sans-serif;
+      font-size: 15%;
+      color: #113D7C;
+      margin-top: 10%;  
+     text-align: justify;
+    text-align-last: center;
 }
 
 
@@ -275,7 +306,33 @@ margin-top: -5%;
       color: #FFFFFF;
       
 }
+.img-logo-tiempo {
+  width: 50%;
+  height: 50%; 
+ /*  margin-right: -55%; */
 
+ margin-top: -5%;
+ 
+
+}
+.edit-img-yog{
+ position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 150%;
+ /*  border-radius: 20px; */
+/*   border: 6px solid white; */
+/*   box-shadow: 0 15px 35px rgba(0,0,0,0.3); */
+  object-fit: cover;
+  z-index: 3;
+
+  
+
+}
+.texto-fidel{
+  margin-left: -15%}
 .title-love-1 {
   font-family: "Just Another Hand", cursive;
   font-size: 50px;

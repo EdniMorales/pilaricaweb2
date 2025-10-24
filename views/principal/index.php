@@ -27,8 +27,8 @@
                             lleno de historia, pasión y confianza."
                         </div>
                         <div class="d-flex align-items-center justify-content-center">
-                            <img class="rounded-circle me-3" src="<?= base_url ?>assets/40ani-1.png" alt="..." />
-                            <div class="fw-bold">
+                            <img class="rounded-circle me-3 img-logo-tiempo" src="<?= base_url ?>assets/new-cheese/logos/Logo-aniversario.png" alt="..." />
+                            <div class="fw-bold texto-fidel">
                                 Sr. Fidel Alfaro
                                 <span class="fw-bold text-primary mx-1">/</span>
                                 Fundador Lacteos La Pilarica
@@ -80,8 +80,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="mx-auto mb-5 mb-lg-0">
-                           <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
-                          <p class="subtit-prod-fav-2">Queso Panela</p>
+                           <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/yogurt/yogurica-nuestros-productos.png" alt="queso-oaxaca-1kg" />
+                          <p class="subtit-prod-fav-2">YOGURT</p>
                         </div>
                         <div class="subtit-prod-fav-2-1">  
                             <button type="button" class="btn btn-warning btn-lg">VER MAS</button></div> 
@@ -89,7 +89,7 @@
                     <div class="col-lg-4">
                         <div class="mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                             <p class="subtit-prod-fav-2">Queso Oaxaca</p> 
+                             <p class="subtit-prod-fav-2">QUESOS FRESCOS</p> 
                         </div>
                         <div class="subtit-prod-fav-2-1">  
                             <button type="button" class="btn btn-warning btn-lg">VER MAS</button>
@@ -98,12 +98,43 @@
                     <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                            <p class="subtit-prod-fav-2">Crema</p>
+                            <p class="subtit-prod-fav-2">CREMA</p>
                         </div>
                          <div class="subtit-prod-fav-2-1">  
                             <button type="button" class="btn btn-warning btn-lg">VER MAS</button>
                         </div> 
                     </div>
+                </div>
+            </div>
+        </section>
+         <section class="stilo-section-prod-fav-3 text-center">
+            <div class="px-5 my-5 stilo-prod-fav-3">
+                <div class="row">
+                
+                    <div class="col-lg-6 px-5 my-5">
+                        <div class="mx-auto mb-5 mb-lg-0">
+                      <!--      <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" /> -->
+                          <p class="subtit-prod-fav-3">Utilizamos leche 100% de vaca en nuestros productos</p>
+                           <p class="subtit-prod-fav-4 px-5 my-5">Nuestros productos están elaborados con
+                                        leche 100% de vaca, cuidadosamente
+                                        seleccionada. Mantenemos procesos
+                                        artesanales en cada etapa de la producción,
+                                        respetando las tradiciones que garantizan el
+                                        sabor auténtico, frescura y calidad.</p>
+                        </div>
+                       <!--  <div class="subtit-prod-fav-2-1">  
+                            <button type="button" class="btn btn-warning btn-lg">VER MAS</button></div>  -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mx-auto mb-5 mb-lg-0">
+                            <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/yogurt/yogurica-banner.png" alt="..." />
+                          <!--    <p class="subtit-prod-fav-2">Queso Oaxaca</p>  -->
+                        </div>
+                       <!--  <div class="subtit-prod-fav-2-1">  
+                            <button type="button" class="btn btn-warning btn-lg">VER MAS</button>
+                        </div>  -->
+                    </div>
+               
                 </div>
             </div>
         </section>
