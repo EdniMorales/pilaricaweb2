@@ -73,70 +73,38 @@
         </div>
     </div>
 </section>
-<section class="stilo-section-prod-fav text-center">
-    <div class="px-5 my-5 stilo-prod-fav">
-        <div class="row">
-            <div class="col-lg-12">
-          <h2 class="tit-prod-fav">Nuestros productos favoritos</h2>
-          <p class="tit-prod-fav-1">Elaborados de forma 100% artesanal</p>
-        </div>
-            <div class="col-lg-4">
-                <div class="mx-auto mb-5 mb-lg-0">
-                   <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
-                  <p class="subtit-prod-fav">Queso Panela</p>
-                  <P class="subtit-prod-fav-1">Encuéntralo en presentaciones de 1kg y 500 grs. </P>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                     <p class="subtit-prod-fav">Queso Oaxaca</p>
-                     <p class="subtit-prod-fav-1">Encuéntralo en presentaciones de 10kg, 6kg, 3.2kg, 500 grs y 200grs.</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                     <p class="subtit-prod-fav">Crema</p>
-                        <p class="subtit-prod-fav-1">Encuéntrala en presentaciones de 4.5 kg, 500 ml y 200ml. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <section class="stilo-section-prod-fav-1 text-center">
     <div class="px-5 my-5 stilo-prod-fav-1">
-        <div class="row">
+        <div id="ProductosRandomPrincipal"  class="row">
             <div class="col-lg-12">
                 <h2 class="tit-prod-fav-2">Nuestros productos</h2>
                 <p class="tit-prod-fav-2-1">Conoce la variedad de productos que tenemos para ti</p>
             </div>
-            <div id="ProductosRandomPrincipal">
-                <div class="col-lg-4">
-                    <div class="mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
-                    <p class="subtit-prod-fav-2">Queso Panela</p>
-                    </div>
-                    <div class="subtit-prod-fav-2-1">  
-                        <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom1">VER MAS</button></div> 
+            <div class="col-lg-4">
+                <div class="mx-auto mb-5 mb-lg-0">
+                <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
+                <p class="subtit-prod-fav-2">Queso Panela</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                        <p class="subtit-prod-fav-2">Queso Oaxaca</p> 
-                    </div>
-                    <div class="subtit-prod-fav-2-1">  
-                        <button type="button" class="btn btn-warning btn-lg">VER MAS</button>
-                    </div> 
+                <div class="subtit-prod-fav-2-1">  
+                    <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom2" onclick="window.location.href='<?= base_url ?>'">VER MAS</button></div> 
+            </div>
+            <div class="col-lg-4">
+                <div class="mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                    <p class="subtit-prod-fav-2">Queso Oaxaca</p> 
                 </div>
-                <div class="col-lg-4">
-                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                        <p class="subtit-prod-fav-2">Crema</p>
-                    </div>
-                    <div class="subtit-prod-fav-2-1">  
-                        <button type="button" class="btn btn-warning btn-lg">VER MAS</button>
-                    </div> 
+                <div class="subtit-prod-fav-2-1">  
+                    <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom3" onclick="window.location.href='<?= base_url ?>'">VER MAS</button>
+                </div> 
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                    <p class="subtit-prod-fav-2">Crema</p>
+                </div>
+                <div class="subtit-prod-fav-2-1">  
+                    <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom1" onclick="window.location.href='<?= base_url ?>'">VER MAS</button>
                 </div>
             </div>
         </div>
@@ -146,6 +114,7 @@
 <script type="module">
     import * as random from '<?= base_url ?>js/random.js';
 </script>
+
 <section class="stilo-section-prod-fav-3 text-center">
     <div class="px-5 my-5 stilo-prod-fav-3">
         <div class="row">
