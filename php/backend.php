@@ -164,6 +164,33 @@ function searchOnlyProductos($conn, $search_term) {
     return $data;
 }
 
+// Función para obtener una categoria específica por ID
+function searchIdCategories($conn, $id_categorie) {
+    $sql = <<<EOD
+        SELECT
+            CATEGORIAS.NOMBRE,
+            CATEGORIAS.DESCRIPCION
+        FROM
+            CATEGORIAS
+
+        WHERE CATEGORIAS.ID_CATEGORIA = ?;
+    EOD;
+
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $id_categorie);  // "i" significa un parámetro entero
+    $stmt->execute();
+    $result = $stmt->get_result();
+    
+    $data = array();
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $data[] = $row;
+        }
+    }
+    
+    return $data;
+}
+
 // Verificar qué función ejecutar en base a un parámetro
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
@@ -182,7 +209,9 @@ if (isset($_GET['action'])) {
     } elseif ($action == 'searchOnlyProductos' && isset($_GET['search_prod'])) {
         $search_term = mysqli_real_escape_string($conn, $_GET['search_prod']);
         $data = searchOnlyProductos($conn, $search_term);
-    } else {
+    } elseif ($action == 'searchIdCategories' && isset($_GET['search_categories'])){
+        $data = searchIdCategories($conn, $_GET['search_categories']);
+    }else {
         $data = ["error" => "Acción no válida"];
     }
 
