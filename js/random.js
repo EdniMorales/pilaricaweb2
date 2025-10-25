@@ -51,10 +51,12 @@ async function ColocarContenidoRandom(){
 
     // escoger un numero las veces que se nececiten
     for (let i = 0; i < cantidadDeCategorias; i++){
-        const valor = NumeroRandom(2,11);
-        if (valor in listaNumeros) {
-            valor = NumeroRandom(2,11);
-        }
+        let valor; // almacena el numero random
+        
+        do {
+            valor = NumeroRandom(2, 11);
+        } while (listaNumeros.includes(valor)); // Repite mientras el número ya esté en la lista
+
         listaNumeros.push(valor); // Guardar el numero
     }
 
