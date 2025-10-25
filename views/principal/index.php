@@ -2,11 +2,7 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-                <p class="title-1 imperial-script-regular">" Solo el amor supera las bondades de la leche "</p>     
-          <!--       <p class="title-2 lead">En Lácteos la Pilarica sabemos que todos tenemos preferencias
-                    diferentes, por eso contamos con una extensa gama de
-                    productos, elaborados con el mismo amor de siempre.</p> -->
-                    <!-- Usando utilidades de Bootstrap -->
+                <p class="title-1 imperial-script-regular">" Solo el amor supera las bondades de la leche "</p>
             </div>
         </div>
     </div>
@@ -23,94 +19,158 @@
                         <div class="title-info-2 mb-4 wow animated zoomIn" data-wow-delay="0.5s">
                             "En La Pilarica elaboramos quesos artesanales desde 1980,
                             nuestro compromiso con la calidad y el sabor auténtico nos
-                            ha convertido en una tradición que se comparte de generación en generación, llevando a cada mesa un producto
+                            ha convertido en una tradición que se comparte de generación en generación, llevando a cada
+                            mesa un producto
                             lleno de historia, pasión y confianza."
                         </div>
                         <div class="d-flex align-items-center justify-content-center">
-                            <img class="rounded-circle me-3" src="<?= base_url ?>assets/40ani-1.png" alt="..." />
-                            <div class="fw-bold">
+                            <img class="rounded-circle me-3 img-logo-tiempo"
+                                src="<?= base_url ?>assets/new-cheese/logos/Logo-aniversario.png" alt="..." />
+                            <div class="fw-bold texto-fidel">
                                 Sr. Fidel Alfaro
                                 <span class="fw-bold text-primary mx-1">/</span>
                                 Fundador Lacteos La Pilarica
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stilo-section-prod-fav text-center">
+    <div class="px-5 my-5 stilo-prod-fav">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="tit-prod-fav">Nuestros productos favoritos</h2>
+                <p class="tit-prod-fav-1">Elaborados de forma 100% artesanal</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-2"
+                        src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
+                    <p class="subtit-prod-fav">Queso Panela</p>
+                    <P class="subtit-prod-fav-1">Encuéntralo en presentaciones de 1kg y 500 grs. </P>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3"
+                        src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                    <p class="subtit-prod-fav">Queso Oaxaca</p>
+                    <p class="subtit-prod-fav-1">Encuéntralo en presentaciones de 10kg, 6kg, 3.2kg, 500 grs y 200grs.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3"
+                        src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                    <p class="subtit-prod-fav">Crema</p>
+                    <p class="subtit-prod-fav-1">Encuéntrala en presentaciones de 4.5 kg, 500 ml y 200ml. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stilo-section-prod-fav text-center">
+    <div class="px-5 my-5 stilo-prod-fav">
+        <div class="row">
+            <div class="col-lg-12">
+          <h2 class="tit-prod-fav">Nuestros productos favoritos</h2>
+          <p class="tit-prod-fav-1">Elaborados de forma 100% artesanal</p>
+        </div>
+            <div class="col-lg-4">
+                <div class="mx-auto mb-5 mb-lg-0">
+                   <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
+                  <p class="subtit-prod-fav">Queso Panela</p>
+                  <P class="subtit-prod-fav-1">Encuéntralo en presentaciones de 1kg y 500 grs. </P>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                     <p class="subtit-prod-fav">Queso Oaxaca</p>
+                     <p class="subtit-prod-fav-1">Encuéntralo en presentaciones de 10kg, 6kg, 3.2kg, 500 grs y 200grs.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                     <p class="subtit-prod-fav">Crema</p>
+                        <p class="subtit-prod-fav-1">Encuéntrala en presentaciones de 4.5 kg, 500 ml y 200ml. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stilo-section-prod-fav-1 text-center">
+    <div class="px-5 my-5 stilo-prod-fav-1">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="tit-prod-fav-2">Nuestros productos</h2>
+                <p class="tit-prod-fav-2-1">Conoce la variedad de productos que tenemos para ti</p>
+            </div>
+            <div id="ProductosRandomPrincipal">
+                <div class="col-lg-4">
+                    <div class="mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
+                    <p class="subtit-prod-fav-2">Queso Panela</p>
+                    </div>
+                    <div class="subtit-prod-fav-2-1">  
+                        <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom1">VER MAS</button></div> 
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                        <p class="subtit-prod-fav-2">Queso Oaxaca</p> 
+                    </div>
+                    <div class="subtit-prod-fav-2-1">  
+                        <button type="button" class="btn btn-warning btn-lg">VER MAS</button>
+                    </div> 
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                        <p class="subtit-prod-fav-2">Crema</p>
+                    </div>
+                    <div class="subtit-prod-fav-2-1">  
+                        <button type="button" class="btn btn-warning btn-lg">VER MAS</button>
                     </div> 
                 </div>
             </div>
         </div>
     </div>
 </section>
-        <section class="stilo-section-prod-fav text-center">
-            <div class="px-5 my-5 stilo-prod-fav">
-                <div class="row">
-                    <div class="col-lg-12">
-                  <h2 class="tit-prod-fav">Nuestros productos favoritos</h2>
-                  <p class="tit-prod-fav-1">Elaborados de forma 100% artesanal</p>
-                </div>
-                    <div class="col-lg-4">
-                        <div class="mx-auto mb-5 mb-lg-0">
-                           <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
-                          <p class="subtit-prod-fav">Queso Panela</p>
-                          <P class="subtit-prod-fav-1">Encuéntralo en presentaciones de 1kg y 500 grs. </P>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                             <p class="subtit-prod-fav">Queso Oaxaca</p>
-                             <p class="subtit-prod-fav-1">Encuéntralo en presentaciones de 10kg, 6kg, 3.2kg, 500 grs y 200grs.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                             <p class="subtit-prod-fav">Crema</p>
-                                <p class="subtit-prod-fav-1">Encuéntrala en presentaciones de 4.5 kg, 500 ml y 200ml. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="stilo-section-prod-fav-1 text-center">
-            <div class="px-5 my-5 stilo-prod-fav-1">
-                <div id="ProductosRandomPrincipal"  class="row">
-                    <div class="col-lg-12">
-                        <h2 class="tit-prod-fav-2">Nuestros productos</h2>
-                        <p class="tit-prod-fav-2-1">Conoce la variedad de productos que tenemos para ti</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
-                        <p class="subtit-prod-fav-2">Queso Panela</p>
-                        </div>
-                        <div class="subtit-prod-fav-2-1">  
-                            <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom2" onclick="window.location.href='<?= base_url ?>'">VER MAS</button></div> 
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                            <p class="subtit-prod-fav-2">Queso Oaxaca</p> 
-                        </div>
-                        <div class="subtit-prod-fav-2-1">  
-                            <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom3" onclick="window.location.href='<?= base_url ?>'">VER MAS</button>
-                        </div> 
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                            <p class="subtit-prod-fav-2">Crema</p>
-                        </div>
-                        <div class="subtit-prod-fav-2-1">  
-                            <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom1" onclick="window.location.href='<?= base_url ?>'">VER MAS</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <script type="module">
-            import * as random from '<?= base_url ?>js/random.js';
-        </script>
+<script type="module">
+    import * as random from '<?= base_url ?>js/random.js';
+</script>
+<section class="stilo-section-prod-fav-3 text-center">
+    <div class="px-5 my-5 stilo-prod-fav-3">
+        <div class="row">
+
+            <div class="col-lg-6 px-5 my-5">
+                <div class="mx-auto mb-5 mb-lg-0">
+                    <!--      <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" /> -->
+                    <p class="subtit-prod-fav-3">Utilizamos leche 100% de vaca en nuestros productos</p>
+                    <p class="subtit-prod-fav-4 px-5 my-5">Nuestros productos están elaborados con
+                        leche 100% de vaca, cuidadosamente
+                        seleccionada. Mantenemos procesos
+                        artesanales en cada etapa de la producción,
+                        respetando las tradiciones que garantizan el
+                        sabor auténtico, frescura y calidad.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="mx-auto mb-5 mb-lg-0">
+                    <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/yogurt/yogurica-banner.png"
+                        alt="..." />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- <section class="stilo-frase p-5 ">
     <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start container">
             <div class="mb-4 mb-xl-0 container">
@@ -433,8 +493,13 @@
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Yoghurt-logo-bn.png" alt="..." />
                 </div>
             </div>
-         
+
         </div>
+    </div>
+</section>
+<section>
+    <div>
+        <img src="<?= base_url ?>assets/new-cheese/onda.png" class="banner-onda" alt="">
     </div>
 </section>
 <!-- <section class="cont-color">

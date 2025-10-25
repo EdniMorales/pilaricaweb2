@@ -12,21 +12,21 @@
                         diferentes, por eso contamos con una extensa gama de productos,
                         elaborados con el mismo amor de siempre.
                     </p>
-                      <p class="title-9">
-                    ¡Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más!</p>
-                <div class="container text-left">
-                    <div class="input-group">
-                    <input class="form-control" id="CasillaFooterSuscripcionCorreo" type="text"
-                        placeholder="¡Ingresa tu correo!" aria-label="Correo Electronico..."
-                        aria-describedby="button-newsletter" />
-                    <button class="btn btn-outline-light" id="BotonFooterSuscribirse" type="button">
-                        Registrarse
-                    </button>
-                </div>
-                <div class="frase-priv text-white-50">
-                    Nos preocupamos por la privacidad y nunca compartiremos sus datos.
-                </div>
-            </div>
+                    <p class="title-9">
+                        ¡Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más!</p>
+                    <div class="container text-left">
+                        <div class="input-group">
+                            <input class="form-control" id="CasillaFooterSuscripcionCorreo" type="text"
+                                placeholder="¡Ingresa tu correo!" aria-label="Correo Electronico..."
+                                aria-describedby="button-newsletter" />
+                            <button class="btn btn-outline-light" id="BotonFooterSuscribirse" type="button">
+                                Registrarse
+                            </button>
+                        </div>
+                        <div class="frase-priv text-white-50">
+                            Nos preocupamos por la privacidad y nunca compartiremos sus datos.
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
@@ -87,39 +87,54 @@
 
     <div class="text-center text-white p-4" style="background-color: #113D7C">
         © 2025 Copyright:
-        <a class="" href="https://teampcmx.com/">Lacteos La Pilarica</a>
+        <p>Lacteos La Pilarica</p>
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #3b5998;" href="#!"
+            role="button"><i class="fab fa-facebook-f"></i></a>
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ac2bac;" href="#!"
+            role="button"><i class="fab fa-instagram"></i></a>
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #0082ca;" href="#!"
+            role="button"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Youtube -->
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ed302f;" href="#!"
+            role="button"><i class="fab fa-youtube"></i></a>
+        <!-- Whatsapp -->
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #25d366;" href="#!"
+            role="button"><i class="fab fa-whatsapp"></i></a>
     </div>
 </footer>
 <script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-150px";
-    }
-    prevScrollpos = currentScrollPos;
-};
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-150px";
+        }
+        prevScrollpos = currentScrollPos;
+    };
 </script>
 <script>
-$(".dropdown").on("show.bs.dropdown", function() {
-    $(this)
-        .find(".dropdown-menu")
-        .first()
-        .stop(true, true)
-        .slideToggle(1000);
-});
-$(".dropdown").on("hide.bs.dropdown", function() {
-    $(this)
-        .find(".dropdown-menu")
-        .first()
-        .stop(true, true)
-        .slideToggle(1000);
-});
+    $(".dropdown").on("show.bs.dropdown", function() {
+        $(this)
+            .find(".dropdown-menu")
+            .first()
+            .stop(true, true)
+            .slideToggle(1000);
+    });
+    $(".dropdown").on("hide.bs.dropdown", function() {
+        $(this)
+            .find(".dropdown-menu")
+            .first()
+            .stop(true, true)
+            .slideToggle(1000);
+    });
 </script>
 <script type="module">
-import * as trriggers from '<?= base_url ?>backend/trigger.js'; // Importar las funciones desde el módulo
+    import * as trriggers from '<?= base_url ?>backend/trigger.js'; // Importar las funciones desde el módulo
 // Asocia los eventos con los elementos del HTML
 document.getElementById("buscador-prod-index").addEventListener("input", function() {
     const buttonString = "buscador-prod-index";
