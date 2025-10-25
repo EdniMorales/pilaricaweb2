@@ -52,12 +52,15 @@ async function ColocarContenidoRandom(){
     // escoger un numero las veces que se nececiten
     for (let i = 0; i < cantidadDeCategorias; i++){
         const valor = NumeroRandom(2,11);
+        if (valor in listaNumeros) {
+            valor = NumeroRandom(2,11);
+        }
         listaNumeros.push(valor); // Guardar el numero
     }
 
     // searchIdCategories
     for (const numero of listaNumeros){
-        console.log(numero);
+        //console.log(numero);
         promesa = BuscarCategoriaID(numero);
 
         promesas.push(promesa);
@@ -69,6 +72,14 @@ async function ColocarContenidoRandom(){
     // Limpiar el contenedor
     contenedor.innerHTML = '';
 
+    // Colocar lo del principio
+    contenedor.insertAdjacentHTML('beforeend',`
+        <div class="col-lg-12">
+            <h2 class="tit-prod-fav-2">Nuestros productos</h2>
+            <p class="tit-prod-fav-2-1">Conoce la variedad de productos que tenemos para ti</p>
+        </div>
+    `);
+
     // Llenar el contenedor con las categorias
     for (const categorias of datosCategoerias) {
         // separar el arreglo
@@ -77,7 +88,7 @@ async function ColocarContenidoRandom(){
         // formatear el nombre
         let nombreLimpio = categoria.NOMBRE.replace(/\s+/g, '').toLowerCase() || "principal";
         let nombreCapitalizado = categoria.NOMBRE.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
-        console.log(nombreLimpio, nombreCapitalizado);
+        //console.log(nombreLimpio, nombreCapitalizado);
 
         // Imagen temporal
         let tempIMG = '../assets/new-cheese/oaxaca/queso-oaxaca-1kg.png';
