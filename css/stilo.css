@@ -331,6 +331,21 @@ margin-top: 8%;
   
 
 }
+.banner-onda{
+  width: 100%;
+  height: auto;
+  margin-top: -5%;
+  margin-bottom: -25%;
+  z-index: 2;
+}
+.texto-normal {
+  color: #333;              /* Color igual al texto normal */
+  text-decoration: none;    /* Sin subrayado */
+  cursor: text;             /* Cursor de texto normal */
+  border: none;             /* Sin bordes */
+  background: none;         /* Sin fondo */
+  outline: none;            /* Sin outline al hacer focus */
+}
 .texto-fidel{
   margin-left: -15%}
 .title-love-1 {
