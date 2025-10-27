@@ -2,7 +2,8 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-                <p class="title-1 imperial-script-regular">" Solo el amor supera las bondades de la leche "</p>
+                <p class="title-1">" Solo el amor supera las bondades de la leche "</p>
+                <p class=""></p>
             </div>
         </div>
     </div>
@@ -47,16 +48,16 @@
             </div>
             <div class="col-lg-4">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-2"
-                        src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
+                    <img class="img-fluid rounded-circle mb-3"
+                        src="<?= base_url ?>assets/new-cheese/panela/Panela-1k-favoritos.png" alt="queso-oaxaca-1kg" />
                     <p class="subtit-prod-fav">Queso Panela</p>
-                    <P class="subtit-prod-fav-1">Encuéntralo en presentaciones de 1kg y 500 grs. </P>
+                    <P class="subtit-prod-fav-1">Encuéntralo en presentaciones de 1kg y 500 grs.</P>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="mx-auto mb-5 mb-lg-0">
                     <img class="img-fluid rounded-circle mb-3"
-                        src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                        src="<?= base_url ?>assets/new-cheese/oaxaca/Oaxaca-1kg-favoritos.png" alt="..." />
                     <p class="subtit-prod-fav">Queso Oaxaca</p>
                     <p class="subtit-prod-fav-1">Encuéntralo en presentaciones de 10kg, 6kg, 3.2kg, 500 grs y 200grs.
                     </p>
@@ -65,9 +66,9 @@
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                     <img class="img-fluid rounded-circle mb-3"
-                        src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                        src="<?= base_url ?>assets/new-cheese/crema/crema-favoritos.png" alt="..." />
                     <p class="subtit-prod-fav">Crema</p>
-                    <p class="subtit-prod-fav-1">Encuéntrala en presentaciones de 4.5 kg, 500 ml y 200ml. </p>
+                    <p class="subtit-prod-fav-1">Encuéntrala en presentaciones de 4.5 kg, 500 ml y 200ml.</p>
                 </div>
             </div>
         </div>
@@ -100,7 +101,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
+                    <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/crema/crema-favoritos.png" alt="..." />
                     <p class="subtit-prod-fav-2">Crema</p>
                 </div>
                 <div class="subtit-prod-fav-2-1">  

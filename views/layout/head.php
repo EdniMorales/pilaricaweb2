@@ -65,7 +65,7 @@
                                 id="Categorias"></ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url ?>Solo/index">Sucursales</a>
+                            <a class="nav-link" href="<?= base_url ?>Solo/">Sucursales</a>
                         </li>
                           <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Solo/index">Nosotros</a>

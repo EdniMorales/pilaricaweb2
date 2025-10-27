@@ -1,0 +1,12 @@
+<?php
+    class SucursalesController{
+        
+        public function index(){
+        /*   require_once 'views/loggin/index.php';  */
+            require_once 'views/sucursales/index.php';
+        
+        }
+
+        
+        
+    }

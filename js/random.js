@@ -40,7 +40,6 @@ function BuscarCategoriaID(numCategories){
             });
     });
 }
-
 async function ColocarContenidoRandom(){
     // Parametros de randomizacion
     const cantidadDeCategorias = 3;
@@ -48,18 +47,14 @@ async function ColocarContenidoRandom(){
     let auxiliarBotones = 1; // auxiliar para identificar los botones
     let promesas = [] // alamcenamiento de las promesas
     let promesa = null // promesa activa
-
     // escoger un numero las veces que se nececiten
     for (let i = 0; i < cantidadDeCategorias; i++){
         let valor; // almacena el numero random
-        
         do {
             valor = NumeroRandom(2, 11);
         } while (listaNumeros.includes(valor)); // Repite mientras el número ya esté en la lista
-
         listaNumeros.push(valor); // Guardar el numero
     }
-
     // searchIdCategories
     for (const numero of listaNumeros){
         //console.log(numero);
