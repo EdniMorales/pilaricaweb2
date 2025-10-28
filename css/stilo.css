@@ -868,24 +868,39 @@ background-size: cover;
   
 }
 
-/* h1 {
+.titleNewCarousel{
   color: white;
   text-align: center;
   margin-top: 1em;
 }
- */
-/* .container {
+
+.subTitleNewCarousel {
+  padding: 1em;
+  margin-top: 1em;
+  background: rgba(0,0,0,.3);
+  text-align: center;
+  color: white;
+  border-radius: .2em;
+  display: inline-block;
+  transform: translateX(calc((100vw - 100%) / 2))
+}
+
+.subTitleNewCarousel a {
+  color: #ffc107
+}
+
+.containerNewCarousel {
   overflow: hidden;
   padding: 20px;
   margin-top: 2em;
   background: rgba(0,0,0,.1)
 }
- */
+
 .card-carousel {
-  --card-width: 80%;
-  --card-max-width: 280px;
-  --card-height: 350px;
-  --carousel-min-width: 600px;
+  --card-width: 90%;
+  --card-max-width: 1000px;
+  --card-height: 500px;
+  /* --carousel-min-width: 600px; */
   z-index: 1;
   position: relative;
   margin: 0 auto;
@@ -895,18 +910,12 @@ background-size: cover;
   transition: filter .3s ease;
 }
 
-@media screen and (max-width: 640px) {
-  .card-carousel {
-    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
-  }
-}
-
 .card-carousel.smooth-return {
   transition: all .2s ease;
 }
 
 .card-carousel .card {
-  background: whitesmoke;
+  background:  rgba(255, 255, 255, 0);
   width: var(--card-width);
   max-width: var(--card-max-width);
   text-align: center;
@@ -915,12 +924,13 @@ background-size: cover;
   height: var(--card-height);
   position: absolute;
   margin: 0 auto;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.144);
   transition: inherit;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  /* -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-  border-radius: 1em;
+  border-radius: 1em;*/
+  border: 0;
   filter: brightness(.9);
   display: flex;
   flex-direction: column;
@@ -929,42 +939,47 @@ background-size: cover;
 }
 
 .card.highlight {
-  filter: brightness(1)
+  filter: brightness(1);
+  color: rgba(0, 0, 0, 0.658);
+  background:  rgba(255, 255, 255, 0);
 }
 
+.card.highlight .image-container{
+  opacity: 1;
+}
 
 .card:nth-of-type(1) .image-container {
     background-image: url("https://static.addtoany.com/images/dracaena-cinnabari.jpg");
+
 }
- 
+
 .card:nth-of-type(2) .image-container {
-  background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")
+  background-image: url("https://www.w3schools.com/w3css/img_lights.jpg");
 }
 
 .card:nth-of-type(3) .image-container {
-  background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+  background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 }
 .card:nth-of-type(4) .image-container {
-  background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+  background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 }
 .card:nth-of-type(5) .image-container {
-  background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg")
+  background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg");
 }
 
-
-
 .image-container {
-  width: 8em;
-  height: 8em;
+  width: 24em;
+  height: 24em;
   position: relative;
   background-size: cover;
   margin-bottom: 2em;
   border-radius: 100%;
+  border-color: #e2e1e1c9;
   padding: 1em;
-  -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
--moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-  
+  -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.575);
+  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.534);
+  box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.562);
+  opacity: 0.5;
 }
 
 .image-container::after {
@@ -977,19 +992,61 @@ box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
   position: absolute;
   top: calc(-10% - 3px);
   left: calc(-10% - 3px);
+  background-color: #8888889a;;
+  z-index: -1;
 }
 
-h2 {
-  padding: 1em;
-  margin-top: 1em;
-  background: rgba(0,0,0,.3);
-  text-align: center;
-  color: white;
-  border-radius: .2em;
-  display: inline-block;
-  transform: translateX(calc((100vw - 100%) / 2))
+@media screen and (max-width: 1040px) {
+  .image-container {
+    width: 18em;
+    height: 18em;
+  }
+
+  .card-carousel {
+    --card-width: 90%;
+    --card-max-width: 800px;
+    --card-height: 400px;
+    /* --carousel-min-width: 800px; */
+    width: 100%;
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
 }
 
-h2 a {
-  color: #f5b916
+@media screen and (max-width: 840px) {
+  .image-container {
+    width: 12em;
+    height: 12em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 450px;
+    --card-height: 350px;
+    /* --carousel-min-width: 600px; */
+    width: 100%;
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+
+  .image-container {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 400px;
+    --card-height: 300px;
+    /* --carousel-min-width: 400px; */
+    width: 100%;
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+
+  .image-container {
+    width: 8em;
+    height: 8em;
+  }
 }
