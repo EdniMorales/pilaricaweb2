@@ -108,7 +108,7 @@ async function ColocarContenidoRandom(){
 
 
 
-
+/* desde aqui se empieza la animacion del ultimo carrusel */
 
 const cardsContainer = document.querySelector(".card-carousel");
 const cardsController = document.querySelector(".card-carousel + .card-controller")

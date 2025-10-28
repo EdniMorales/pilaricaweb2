@@ -473,6 +473,9 @@
     </div>
 </section>
 
+
+
+<!-- desde aqui se empieza nuevo carrusel -->
 <section>
         
 <h1>Drag the cards to move them</h1>
