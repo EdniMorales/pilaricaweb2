@@ -472,6 +472,40 @@
         <img src="<?= base_url ?>assets/new-cheese/onda.png" class="banner-onda" alt="">
     </div>
 </section>
+
+<section>
+        
+<h1>Drag the cards to move them</h1>
+
+<div class="container">
+  <div class="card-carousel">
+    <div class="card" id="1">
+      <div class="image-container"></div>
+      <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+    </div>
+    <div class="card" id="2">
+      <div class="image-container"></div>
+      <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+    </div>
+    <div class="card" id="3">
+      <div class="image-container"></div>
+      <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+    </div>  
+    <div class="card" id="4">
+      <div class="image-container"></div>
+      <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+    </div>
+    <div class="card" id="5">
+      <div class="image-container"></div>
+      <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+    </div>
+  </div>
+  <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+</div>
+<!-- 
+<h2>Check out <a target="_blank" href="https://codepen.io/WillyW/pen/RwRrvjv">Circle Carousel</a></h2> -->
+
+</section>
 <!-- <section class="cont-color">
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
