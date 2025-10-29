@@ -472,14 +472,9 @@
         <img src="<?= base_url ?>assets/new-cheese/onda.png" class="banner-onda" alt="">
     </div>
 </section>
-
-
-
 <!-- desde aqui se empieza nuevo carrusel -->
-<section>
-        
+<!-- <section>
 <h1 class="titleNewCarousel">Drag the cards to move them</h1>
-
 <div class="containerNewCarousel">
   <div class="card-carousel">
     <div class="card" id="1">
@@ -505,10 +500,8 @@
   </div>
   <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
 </div>
-
 <h2 class="subTitleNewCarousel">Check out <a target="_blank" href="https://codepen.io/WillyW/pen/RwRrvjv">Circle Carousel</a></h2>
-
-</section>
+</section> -->
 <!-- <section class="cont-color">
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
@@ -594,7 +587,6 @@
         </div>
     </div>
 </section> -->
-
 <!-- 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CIoJNcqQMw4FTF3TvxjQXvAchNVFOQ4&ehbc=2E312F&noprof=1"
     width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy"
