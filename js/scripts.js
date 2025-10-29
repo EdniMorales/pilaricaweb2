@@ -155,10 +155,10 @@ function TaerDatosDependiendoLaRutaDelDOM(){
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case "quesosmaduros":
-            carpeta = ["quesosmaduros","Contenedor-Productos-Quesos-Amarillos","3"];
+            carpeta = ["quesosamarillos","Contenedor-Productos-Quesos-Amarillos","3"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
-        case "quesoslineagourmet":
+        case "lineagourmet":
             carpeta = ["quesoslineagourmet","Contenedor-Productos-Quesos-Linea-Gourmet","4"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break

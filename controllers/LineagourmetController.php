@@ -1,5 +1,5 @@
 <?php
-    class QuesoslineagourmetController{
+    class LineagourmetController{
        
         public function index(){
         /*   require_once 'views/loggin/index.php';  */
