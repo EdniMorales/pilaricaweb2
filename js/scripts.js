@@ -190,6 +190,18 @@ function TaerDatosDependiendoLaRutaDelDOM(){
             carpeta = ["yogurth", "Contenedor-Productos-Yogurth", "11"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
+        case "carnicos":
+            carpeta = ["carnicos", "Contenedor-Productos-Carnicos", "12"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "venancio":
+            carpeta = ["venancio", "Contenedor-Productos-Venancio", "13"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "mantequilla":
+            carpeta = ["mantequilla", "Contenedor-Productos-Mantequilla", "14"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
         default:
             const params = new URLSearchParams(window.location.search);
             trriggers.MostrarDatosPorProductoIndividual(params.get('Id'))
