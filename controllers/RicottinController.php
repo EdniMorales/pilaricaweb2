@@ -1,5 +1,5 @@
 <?php
-    class RicottinesController{
+    class RicottinController{
        
         public function index(){
         /*   require_once 'views/loggin/index.php';  */

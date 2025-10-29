@@ -1,9 +1,9 @@
 <?php
-    class QuesosamarillosController{
+    class QuesosfrescosController{
        
         public function index(){
         /*   require_once 'views/loggin/index.php';  */
-         require_once 'views/quesosamarillos/index.php';
+         require_once 'views/quesosblancos/index.php';
          
         }
 

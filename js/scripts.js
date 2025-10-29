@@ -150,12 +150,12 @@ function TaerDatosDependiendoLaRutaDelDOM(){
 
     // Dependiendo de la ruta es lo que se va a mostar
     switch(ultimaCarpeta){
-        case "quesosblancos":
+        case "quesosfrescos":
             carpeta = ["quesosblancos","Contenedor-Productos-Quesos-Blancos", "2"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
-        case "quesosamarillos":
-            carpeta = ["quesosamarillos","Contenedor-Productos-Quesos-Amarillos","3"];
+        case "quesosmaduros":
+            carpeta = ["quesosmaduros","Contenedor-Productos-Quesos-Amarillos","3"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case "quesoslineagourmet":
@@ -170,8 +170,8 @@ function TaerDatosDependiendoLaRutaDelDOM(){
             carpeta = ["postres","Contenedor-Productos-Postres","6"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
-        case "ricottines":
-            carpeta = ["ricottines","Contenedor-Productos-Ricottines","7"];
+        case "ricottin":
+            carpeta = ["ricottin","Contenedor-Productos-Ricottines","7"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case "congelados":
