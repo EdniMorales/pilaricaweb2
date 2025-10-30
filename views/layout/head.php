@@ -18,15 +18,13 @@
     <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <link href="<?= base_url ?>css/styles.css" rel="stylesheet" />
     <link href="<?= base_url ?>css/stilo.css" rel="stylesheet" />
-<!--      <link href="css/hover-zoom.css" rel="stylesheet" /> -->
-<!--     <link href="<?= base_url ?>css/animate.css" rel="stylesheet" />
-     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  /> -->
+<!--  <link href="css/hover-zoom.css" rel="stylesheet" /> -->
+ <link rel="stylesheet" href="<?= base_url ?>css/animate.css">
+<script src="<?= base_url ?>js/wow.min.js"></script>
+  <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <!--  <link href="css/base.css" rel="stylesheet" /> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+ <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script type="module" src='<?= base_url ?>js/scripts.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -35,10 +33,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="<?= base_url ?>js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+<script>
+new WOW().init();
+</script>
 </head> 
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
@@ -65,12 +62,11 @@
                                 id="Categorias"></ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url ?>Solo/">Sucursales</a>
+                            <a class="nav-link" href="<?= base_url ?>Sucursales/index">Sucursales</a>
                         </li>
                           <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Solo/index">Nosotros</a>
                         </li>
-                        <!--<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
@@ -79,10 +75,6 @@
                                 <li><a class="dropdown-item" href="../Bolsa/index">Quiero ser cliente</a></li>
                             </ul>
                         </li>
-                     
-                     <!--     <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url ?>Solo/index">Sucursales</a>
-                        </li> -->
                     </ul>
                     <div class="searchbar">
                         <input class="search_input" id="buscador-prod-index" type="text" name="" placeholder="Buscar" />

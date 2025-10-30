@@ -1,6 +1,8 @@
 </main>
-<footer class="text-center bg-body-tertiary ">
-    <!-- Section: Links  -->
+<footer class="text-center">
+      <div>
+        <img src="<?= base_url ?>assets/new-cheese/onda.png" class="banner-onda" alt="">
+    </div>
     <section class="cont-color2">
         <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
@@ -29,53 +31,25 @@
                     </div>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
-                    <p>
-                        <a href="../quesosblancos/index" class="text-reset">Quesos Blancos</a>
-                    </p>
-                    <p>
-                        <a href="../quesosamarillos/index" class="text-reset">Quesos Amarillos</a>
-                    </p>
-                    <p>
-                        <a href="../quesoslineagourmet/index" class="text-reset">Quesos Linea Gourmet</a>
-                    </p>
-                    <p>
-                        <a href="../crema/index" class="text-reset">Cremas</a>
-                    </p>
-                    <p>
-                        <a href="../canastas/index" class="text-reset">Regala una canasta</a>
-                    </p>
+                    <p><a href="../quesosblancos/index" class="text-reset">Quesos Blancos</a></p>
+                    <p><a href="../quesosamarillos/index" class="text-reset">Quesos Amarillos</a></p>
+                    <p><a href="../quesoslineagourmet/index" class="text-reset">Quesos Linea Gourmet</a></p>
+                    <p><a href="../crema/index" class="text-reset">Cremas</a></p>
+                    <p><a href="../canastas/index" class="text-reset">Regala una canasta</a></p>
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">Disfruta con</h6>
-                    <p>
-                        <a href="../postres/index" class="text-reset">Postres</a>
-                    </p>
-                    <p>
-                        <a href="../ricottines/index" class="text-reset">Ricottines</a>
-                    </p>
-                    <p>
-                        <a href="../yogurth/index" class="text-reset">Yogures</a>
-                    </p>
-                    <p>
-                        <a href="../congelados/index" class="text-reset">Congelados</a>
-                    </p>
-                    <p>
-                        <a href="../complementos/index" class="text-reset">Complementos</a>
-                    </p>
+                    <p><a href="../postres/index" class="text-reset">Postres</a></p>
+                    <p><a href="../ricottines/index" class="text-reset">Ricottines</a></p>
+                    <p><a href="../yogurth/index" class="text-reset">Yogures</a></p>
+                    <p><a href="../congelados/index" class="text-reset">Congelados</a></p>
+                    <p><a href="../complementos/index" class="text-reset">Complementos</a></p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">Ubicanos</h6>
-                    <p>
-                        <i class="fas fa-home me-3"></i> Benito Juárez Sur N 46, Centro,
-                        56530 Ixtapaluca, Méx.
-                    </p>
-                    <p>
-                        <i class="fas fa-envelope me-3"></i>
-                        soporte@pilarica.mx
-                    </p>
+                    <p><i class="fas fa-home me-3"></i>Benito Juárez Sur N 46, Centro, 56530 Ixtapaluca, Méx.</p>
+                    <p><i class="fas fa-envelope me-3"></i>soporte@pilarica.mx</p>
                     <p><i class="fas fa-phone me-3"></i>(55) 5972 0102</p>
                     <p><i class="fas fa-phone me-3"></i>(55) 5972 0522</p>
                     <p><i class="fas fa-phone me-3"></i>(55) 5972 0026</p>
@@ -84,23 +58,16 @@
             </div>
         </div>
     </section>
-
     <div class="text-center text-white p-4" style="background-color: #113D7C">
-        © 2025 Copyright:
-        <p>Lacteos La Pilarica</p>
-        <!-- Facebook -->
+        © 2025 Copyright:<p>Lacteos La Pilarica</p>
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #3b5998;" href="#!"
             role="button"><i class="fab fa-facebook-f"></i></a>
-        <!-- Instagram -->
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ac2bac;" href="#!"
             role="button"><i class="fab fa-instagram"></i></a>
-        <!-- Linkedin -->
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #0082ca;" href="#!"
             role="button"><i class="fab fa-linkedin-in"></i></a>
-        <!-- Youtube -->
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ed302f;" href="#!"
             role="button"><i class="fab fa-youtube"></i></a>
-        <!-- Whatsapp -->
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #25d366;" href="#!"
             role="button"><i class="fab fa-whatsapp"></i></a>
     </div>
