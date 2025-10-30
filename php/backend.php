@@ -74,7 +74,6 @@ function searchIdAllProductosByCategories($conn, $id_categorie) {
     return $data;
 }
 
-
 // Función para obtener un producto específico por ID
 function searchIdAllProductos($conn, $id_producto) {
     $sql = <<<EOD

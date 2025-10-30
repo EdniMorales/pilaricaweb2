@@ -13,12 +13,13 @@
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7 text-center"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." id="ImagenEtiqueta_Producto"/></div>
+                <div class="col-lg-7 text-center"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." id="ImagenProducto_Producto"/></div>
                 <div class="col-lg-5">
-                   <!--  <div class="col-lg-7 text-center"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." id="ImagenProducto_Producto"/></div> -->
+                    <div class="col-lg-7 text-center" style="margin: auto;"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." id="ImagenEtiqueta_Producto"/></div>
                     <h1 class="font-weight-light" id="NombreDeProducto_Producto"></h1>
                     <p id="Descripcion_Producto"></p>
-                    <a id="BotonConoceMas_Producto" class="btn btn-primary" href="#!">Conoce mas!</a>
+                    <div class="col-lg-10 text-center" style="margin: auto;"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." id="ImagenBanner_Producto"/></div>
+                    <a id="BotonConoceMas_Producto" style="margin-top: 10%;" class="btn btn-primary mb-4 mb-lg-0" href="#!">Conoce mas!</a>
                 </div>
             </div>
             <!-- Call to Action-->
