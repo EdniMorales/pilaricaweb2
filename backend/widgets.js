@@ -15,7 +15,7 @@ export function dropdownprod (widget,array) {
     array.forEach(product => {
         const drop = document.createElement('div');
         drop.classList.add('dropdownList');
-        drop.innerHTML= `<h3><a href="../articulos/index?Id=${product.ID_PRODUCTOS}">${product.NOMBRE}</a></h3>`;
+        drop.innerHTML= `<h3><a href="../articulos/index?Id=${product.ID_PRODUCTO}">${product.NOMBRE}</a></h3>`;
 
     ddrop.appendChild(drop);
 });
@@ -91,9 +91,9 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
                     <!-- Product name-->
                     <h5 class="fw-bolder">No se encontraron productos.</h5>
                     <!-- Product price-->
-                    <h6>Marca: Pilarica</h6>
-                    <h6>Presentacion: 0.5 Kg</h6>
-                    Categoria: Quesos Blancos
+                    <h6>Marca: undefined</h6>
+                    <h6>Presentacion: 0 Kg</h6>
+                    Categoria: undefined
                 </div>
             </div>
             <!-- Product actions-->
@@ -134,13 +134,13 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
                         <h5 class="fw-bolder">${product.PRODUCTO}</h5>
                         <!-- Product price-->
                         <h6>Marca: ${product.MARCA}</h6>
-                        <h6>Presentacion: ${product.PRESENTACION}</h6>
+                        <h6>Presentacion: ${product.PRESENTACION} ${product.PRESENTACION_UNIDAD == 'undefined' ? '': product.PRESENTACION_UNIDAD}</h6>
                         Categoria: ${product.CATEGORIA}
                     </div>
                 </div>
                 <!-- Product actions-->
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="../articulos/index?Id=${product.ID_PRODUCTOS}">Mas Info.</a></div>
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="../articulos/index?Id=${product.ID_PRODUCTO}">Mas Info.</a></div>
                 </div>
             </div>
         </div> </div>`;
@@ -202,29 +202,29 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
         BotonConoseMas.href = `../${nombreLimpio}/index`;
 
         //Tabla
-        porcion.innerText = `Información nutrimental por cada ${product.PORCION} g.`;
-        contenidoEnergetico.innerText = product.CONTENIDO_ENERGETICO;
-        proteina.innerText = product.PROTEINA;
-        grasasTotales.innerText = product.GRASAS_TOTALES;
-        grasasSaturadas.innerText = product.GRASAS_SATURADAS;
-        grasasTrans.innerText = product.GRASAS_TRANS;
-        carbohidratos.innerText = product.CARBOHIDRATOS;
-        azucaresAnadidos.innerText = product.AZUCARES_AÑADIDOS;
-        azucaresTotales.innerText = product.AZUCARES_TOTALES;
-        fibraDietetica.innerText = product.FIBRA_DIETETICA;
-        sodio.innerText = product.SODIO;
-        ingredientes.innerText = product.INGREDIENTES
+        porcion.innerText = `Información nutrimental por cada ${product.PORCION} ${product.PORCION_UNIDAD}.`;
+        contenidoEnergetico.innerText = `${product.CONTENIDO_ENERGETICO} ${product.CONTENIDO_ENERGETICO_UNIDAD}`;
+        proteina.innerText = `${product.PROTEINA} ${product.PROTEINA_UNIDAD}`;
+        grasasTotales.innerText = `${product.GRASAS_TOTALES} ${product.GRASAS_TOTALES_UNIDAD}`;
+        grasasSaturadas.innerText = `${product.GRASAS_SATURADAS} ${product.GRASAS_SATURADAS_UNIDAD}`;
+        grasasTrans.innerText = `${product.GRASAS_TRANS} ${product.GRASAS_TRANS_UNIDAD}`;
+        carbohidratos.innerText = `${product.CARBOHIDRATOS} ${product.CARBOHIDRATOS_UNIDAD}`;
+        azucaresAnadidos.innerText = `${product.AZUCARES_AÑADIDOS} ${product.AZUCARES_AÑADIDOS_UNIDAD}`;
+        azucaresTotales.innerText = `${product.AZUCARES_TOTALES} ${product.AZUCARES_TOTALES_UNIDAD}`;
+        fibraDietetica.innerText = `${product.FIBRA_DIETETICA} ${product.FIBRA_DIETETICA_UNIDAD}`;
+        sodio.innerText = `${product.SODIO} ${product.SODIO_UNIDAD}`;
+        ingredientes.innerText = `${product.INGREDIENTES}`;
 
         //Progres bars
-        humedad.innerHTML = `<strong>Humedad: ${product.HUMEDAD}</strong>`;
+        humedad.innerHTML = `<strong>Humedad: ${product.HUMEDAD} ${product.HUMEDAD_UNIDAD}</strong>`;
         let humedadPorcentaje = parseFloat(product.HUMEDAD);
         humedadProgress.style = `width: ${humedadPorcentaje}%`;
 
-        grasaButiricaMin.innerHTML = `<strong>Grasa Butírica min: ${product.GRASA_BUTIRICA_MIN}</strong>`;
+        grasaButiricaMin.innerHTML = `<strong>Grasa Butírica min: ${product.GRASA_BUTIRICA_MIN} ${product.HUMEDAD_UNIDAD}</strong>`;
         let grasaButiricaMinPorsentaje = parseFloat(product.GRASA_BUTIRICA_MIN);
         grasaButiricaMinProgress.style = `width: ${grasaButiricaMinPorsentaje}%`;
 
-        proteinaMin.innerHTML = `<strong>Proteína min: ${product.PROTEINA_MIN}</strong>`;
+        proteinaMin.innerHTML = `<strong>Proteína min: ${product.PROTEINA_MIN} ${product.PROTEINA_MIN_UNIDAD}</strong>`;
         let proteinaMinPorsentaje = parseFloat(product.PROTEINA_MIN);
         proteinaMinProgress.style = `width: ${proteinaMinPorsentaje}%`;
 
