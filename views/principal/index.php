@@ -2,7 +2,7 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-                <p class="title-1">" Solo el amor supera las bondades de la leche "</p>
+                <p class="title-1 wow animated slideInDown" data-wow-delay="1s">" Solo el amor supera las bondades de la leche "</p>
                 <p class=""></p>
             </div>
         </div>
@@ -15,14 +15,12 @@
             <div class="row gx-5 text-justify">
                 <div class="col-lg-12 col-xl-12">
                     <div class="text-center">
-                        <p class="title-2 dancing-script-bold"> Somos una empresa mexicana </p>
+                        <p class="title-2 dancing-script-bold wow animated bounceInLeft " data-wow-delay="1s"> Somos una empresa mexicana </p>
                         <p class="title-info">Ubicada en Ixtapaluca, Estado de México</p>
                         <div class="title-info-2 mb-4 wow animated zoomIn" data-wow-delay="0.5s">
-                            "En La Pilarica elaboramos quesos artesanales desde 1980,
-                            nuestro compromiso con la calidad y el sabor auténtico nos
+                            "En La Pilarica elaboramos quesos artesanales desde 1980, nuestro compromiso con la calidad y el sabor auténtico nos
                             ha convertido en una tradición que se comparte de generación en generación, llevando a cada
-                            mesa un producto
-                            lleno de historia, pasión y confianza."
+                            mesa un producto lleno de historia, pasión y confianza."
                         </div>
                         <div class="d-flex align-items-center justify-content-center">
                             <img class="rounded-circle me-3 img-logo-tiempo"
@@ -74,7 +72,6 @@
         </div>
     </div>
 </section>
-
 <section class="stilo-section-prod-fav-1 text-center">
     <div class="px-5 my-5 stilo-prod-fav-1">
         <div id="ProductosRandomPrincipal"  class="row">
@@ -465,11 +462,6 @@
             </div>
 
         </div>
-    </div>
-</section>
-<section>
-    <div>
-        <img src="<?= base_url ?>assets/new-cheese/onda.png" class="banner-onda" alt="">
     </div>
 </section>
 <!-- desde aqui se empieza nuevo carrusel -->

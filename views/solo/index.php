@@ -114,8 +114,4 @@
                     </p>
                 </div>
             </section>
-            <section>
-    <div>
-        <img src="<?= base_url ?>assets/new-cheese/onda.png" class="banner-onda" alt="">
-    </div>
-</section>
+        
