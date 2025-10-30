@@ -249,7 +249,7 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
         let imagenEtiquetaDB = product.IMAGEN_ETIQUETA;
         if (!imagenEtiquetaDB) { // imagenEtiquetaDB != 'Pilarica'
             // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
-            imagenEtiquetaDB = '../assets/new-cheese/default.png';
+            imagenEtiquetaDB = '../assets/new-cheese/lossless.png';
         } else {
             // Asegurarse de que la imagen esté en formato Base64 adecuado
             imagenEtiquetaDB = `https://pilarica.com.mx/${imagenEtiquetaDB}`; // 'data:image/png;base64,' +
@@ -259,7 +259,7 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
         let imagenBannerDB = product.IMG_BANNER;
         if (!imagenBannerDB) {
             // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
-            imagenBannerDB = '../assets/new-cheese/default.png';
+            imagenBannerDB = '../assets/new-cheese/lossless.png';
         } else {
             // Asegurarse de que la imagen esté en formato Base64 adecuado
             imagenBannerDB = `https://pilarica.com.mx/${imagenBannerDB}`;
