@@ -8,8 +8,9 @@ url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,30
 @import
 url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
+
 #navbar{
-background-color: #FFFFFF;
+background-color: #FFF9F4;
 top: 0;
 width: 100%;
 transition: top 0.8s;
@@ -18,7 +19,7 @@ color: black;
 #navbar a{
 float: left;
 display: block;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 padding: 15px;
 text-decoration: none;
@@ -83,6 +84,7 @@ filter: brightness(50%); */
 box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
 margin-bottom: 0%;
 border-radius: 0px 0px 350px 0px; /* four values */
+background-color: #FFF9F4;
 }
 /* .masthead:hover {
 width: 100%;
@@ -91,22 +93,22 @@ transform: scale(1);
 }
 */
 .stilo-frase {
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 40px;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: 0%;
 text-shadow: 1px 1px #000000;
-background-color: #113D7C;
+background-color: #103C7B;
 }
 .stilo-frase2{
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 40px;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: 1%;
 text-shadow: 1px 1px #000000;
-background-color: #113D7C;
+background-color: #103C7B;
 }
 .frase-priv{
 font-family: "Lexend", sans-serif;
@@ -114,39 +116,54 @@ font-size: 10px;
 color: white;
 text-align: left;
 text-shadow: 1px 1px #000000;
-background-color: #113D7C;
+background-color: #103C7B;
 }
 .title-1 {
 font-family: "Imperial Script", cursive;
 font-size: 150px;
 font-weight: 800;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: 15%;
 text-shadow:
--5px -5px 0 #ffffff,
-3px -3px 0 #ffffff,
--5px 5px 0 #ffffff,
-3px 3px 0 #ffffff;
+-5px -5px 0 #FFF9F4,
+3px -3px 0 #FFF9F4,
+-5px 5px 0 #FFF9F4,
+3px 3px 0 #FFF9F4;
 line-height: 0.8; /* Reduce espacio entre líneas */
 }
 .title-2 {
+font-family: "Dancing Script", bold; 
 font-size: 100px;
 font-weight: 600;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: -1%;
+background-color:#FFF9F4 ;
+}
+.title-sucursales {
+font-family: "Dancing Script", bold; 
+font-size: 100px;
+font-weight: 600;
+color: #103C7B;
+text-align: center;
+margin-top: 0%;
+background-color:#FFF9F4 ;
+}
+.fondo-sucursales{
+  background-color: #FFF9F4;
+  margin-top: 7%;
 }
 .title-info {
-font-family: "Lexend", sans-serif;
+font-family: "Lexend", bold;
 font-size: 40px;
 font-weight: 800;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: -2%;
 }
 .title-info-2 {
-font-family: "faustina", serif;
+font-family: "Lexend", bold;
 font-size: 30px;
 font-weight: 600;
 color: #000000;
@@ -155,33 +172,33 @@ margin-top: 1%;
 justify-content: center;
 }
 .tit-prod-fav{
-font-family: "faustina", serif;
+font-family: "Lexend", bold;
 font-size: 110px;
-color: #ffffff;
+color: #FFF9F4;
 margin-top: 5%;
 }
 .tit-prod-fav-1{
-font-family: "faustina", serif;
+font-family: "Lexend", bold;
 font-size: 50px;
-color: #113D7C;
+color: #103C7B;
 margin-top: 1%;
 }
 .tit-prod-fav-2{
-font-family: "faustina", serif;
+font-family: "Lexend", bold;
 font-size: 110px;
-color: #113D7C;
+color: #103C7B;
 margin-top: 5%;
 }
 .tit-prod-fav-2-1{
-font-family: "faustina", serif;
+font-family: "Lexend", bold;
 font-size: 50px;
-color: #113D7C;
+color: #103C7B;
 margin-top: 1%;
 }
 /* .sub-tit-prod-fav{
 font-family: "faustina",serif ;
 font-size: 35px;
-color: #ffffff;
+color: #FFF9F4;
 margin-top: 2%;
 padding-top: 2%;
 } */
@@ -192,10 +209,15 @@ box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 -webkit-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 -moz-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 }
+.fondo{
+  color: #000000;
+  background-color: #FFF9F4;
+}
 .stilo-section-prod-fav {
 /* box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 -webkit-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 -moz-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65); */
+margin-top: -3%;
 }
 .stilo-section-prod-fav-1 {
 /* box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
@@ -204,30 +226,30 @@ box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 margin-top: -5%;
 }
 .stilo-section-prod-fav-3{
-margin-top: 8%;
+margin-top: -2%;
 }
 .stilo-prod-fav{
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 200px;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: 2%;
 background-color: #F4C366;
 padding-bottom: 10%;
 }
 .stilo-prod-fav-1{
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 200px;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: 2%;
-background-color: #ffffff;
+background-color: #FFF9F4;
 padding-bottom: 5%;
 }
 .stilo-prod-fav-3{
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 200px;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: 5%;
 background-color: #F4C366;
@@ -236,7 +258,7 @@ padding-bottom: 10%;
 .subtit-prod-fav{
 font-family: "Lexend", sans-serif;
 font-size: 25%;
-color: #FFFFFF;
+color: #FFF9F4;
 text-align: center;
 margin-top: -20%;
 background-color: #F4C366;
@@ -244,27 +266,27 @@ background-color: #F4C366;
 .subtit-prod-fav-1{
 font-family: "Lexend", sans-serif;
 font-size: 10%;
-color: #FFFFFF;
+color: #FFF9F4;
 
 }
 .subtit-prod-fav-2{
 font-family: "Lexend", sans-serif;
 font-size: 25%;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: -8%;
-background-color: #ffffff;
+background-color: #FFF9F4;
 }
 .subtit-prod-fav-3{
 font-family: "Lexend", sans-serif;
 font-size: 25%;
-color: #113D7C;
+color: #103C7B;
 margin-top: 15%;
 }
 .subtit-prod-fav-4{
 font-family: "Lexend", sans-serif;
 font-size: 15%;
-color: #113D7C;
+color: #103C7B;
 margin-top: 10%;
 text-align: justify;
 text-align-last: center;
@@ -272,25 +294,22 @@ text-align-last: center;
 .subtit-prod-fav-2-1{
 font-family: "Lexend", sans-serif;
 font-size: 10%;
-color: #FFFFFF;
+color: #FFF9F4;
 }
-.img-logo-tiempo {
-width: 50%;
-height: 50%;
-margin-top: -5%;
-}
+
 .edit-img-yog{
 position: absolute;
 top: -20%;
 left: 50%;
 transform: translateX(-50%);
 width: 80%;
-height: 150%;
+height: 180%;
 /* border-radius: 20px; */
 /* border: 6px solid white; */
 /* box-shadow: 0 15px 35px rgba(0,0,0,0.3); */
 object-fit: cover;
 z-index: 3;
+margin-top: -5%; ;
 }
 .banner-onda{
 width: 100%;
@@ -307,40 +326,50 @@ border: none; /* Sin bordes */
 background: none; /* Sin fondo */
 outline: none; /* Sin outline al hacer focus */
 }
-.texto-fidel{
-margin-left: -15%;
+.img-logo-tiempo {
+width: 25%;
+height: 25%;
+margin-top: 5%;
+/* margin-left: -10%; */
 }
+.texto-fidel{
+  font-family: ;
+margin-left: 1%;
+font-size: 35px;
+}
+
 
 .title-love-1 {
 font-family: "Imperial Script", cursive;
-font-size: 250px;
+font-size: 280px;
 font-weight: 800;
-color: #113D7C;
-margin-top: 190%;
-margin-left: -125%;
+color: #103C7B;
+margin-top: 160%;
+margin-left: -150%;
 text-shadow:
--5px -5px 0 #ffffff,
-3px -3px 0 #ffffff,
--5px 5px 0 #ffffff,
-3px 3px 0 #ffffff;
-line-height: 0.8; /* Reduce espacio entre líneas */
+-5px -5px 0 #FFF9F4,
+3px -3px 0 #FFF9F4,
+-5px 5px 0 #FFF9F4,
+3px 3px 0 #FFF9F4;
+line-height: 0.9; /* Reduce espacio entre líneas */
+/* background-color: #FFF9F4; */
 }
 .title-love-2 {
-font-family: "Imperial Script", cursive;
-font-size: 215px;
+font-family: "Lexend", bold;
+font-size: 150px;
 font-weight: 800;
-color: #113D7C;
-margin-top: -16%;
-margin-left: -75%;
+color: #103C7B;
+margin-top: -13%;
+margin-left: -90%;
 text-shadow:
--5px -5px 0 #ffffff,
-3px -3px 0 #ffffff,
--5px 5px 0 #ffffff,
-3px 3px 0 #ffffff;
-line-height: 0.8; /* Reduce espacio entre líneas */
+-5px -5px 0 #FFF9F4,
+3px -3px 0 #FFF9F4,
+-5px 5px 0 #FFF9F4,
+3px 3px 0 #FFF9F4;
+line-height: 0.9; /* Reduce espacio entre líneas */
 }
 .title-3 {
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 60px;
 color: black;
 text-align: center;
@@ -348,7 +377,7 @@ margin-top: -30%;
 text-shadow: 2px 2px white;
 }
 .title-4 {
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 60px;
 color: black;
 text-align: center;
@@ -356,7 +385,7 @@ margin-top: 0%;
 text-shadow: 2px 2px white;
 }
 .title-5 {
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 80px;
 color: white;
 text-align: left;
@@ -380,28 +409,28 @@ margin-top: 0%;
 .title-8 {
 font-family: "Imperial Script", cursive ;
 font-size: 120px;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: -8%;
 font-weight: 600;
 }
 .title-9 {
-font-family: "faustina", serif ;
+font-family: "Lexend", bold ;
 font-size: 15px;
-color: #ffffff;
+color: #FFF9F4;
 text-align: center;
 margin-top: -3%;
 text-align: left;
 }
 .title-10 {
-font-family: "faustina", serif ;
+font-family: "Lexend", bold ;
 font-size: 30px;
 color: #000000;
 text-align: center;
 margin-top: -3%;
 }
 .tiitle-quejas{
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 75px;
 color: white;
 text-align: left;
@@ -409,7 +438,7 @@ margin-top: 0%;
 text-shadow: 3px 4px black;
 }
 .tiitle-description{
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 30px;
 color: white;
 text-align: left;
@@ -420,7 +449,7 @@ text-shadow: 3px 4px black;
 margin-top: 2%;
 }
 .title-carrusel-1{
-font-family:"Just Another Hand", cursive;
+font-family:"Lexend", bold;
 font-size: 120px;
 font-weight: 400;
 color: white;
@@ -429,7 +458,7 @@ margin-bottom: 0%;
 text-shadow: 1px 1px #000000;
 }
 .subtitle-carrusel-2{
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 font-size: 40px;
 font-weight: 400;
 color: white;
@@ -475,7 +504,7 @@ margin-bottom: -5%;
 .info-tit {
 font-size: 100px;
 font-weight: 600;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: -1%;
 margin-bottom: -5%;
@@ -483,7 +512,7 @@ margin-bottom: -5%;
 .info-tit-1 {
 font-size: 100px;
 font-weight: 600;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: -1%;
 }
@@ -500,7 +529,7 @@ margin-top: -1%;
 .info-tit-ce{
 font-size: 100px;
 font-weight: 600;
-color: #113D7C;
+color: #103C7B;
 text-align: center;
 margin-top: -1%;
 margin-bottom: -5%;
@@ -518,12 +547,12 @@ background-repeat: no-repeat;
 }
 .txt-catego {
 margin-top: 25%;
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 color: white;
 font-size: 500%;
 }
 .txt-tittle-sect{
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 color: black;
 font-size: 300%;
 text-align: center;
@@ -552,7 +581,7 @@ filter: brightness(80%);
 transform: scale(1);
 }
 .title-art {
-font-family: "Just Another Hand", cursive;
+font-family: "Lexend", bold;
 margin-top: 28%;
 /* margin-right: -110%; */
 font-size: 75px;
@@ -822,7 +851,7 @@ box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
 }
 .cont-color2 {
 width: 100%;
-background-color: #113D7C;
+background-color: #103C7B;
 color: white;
 padding: 10px;
 box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
@@ -1053,4 +1082,7 @@ background-size: cover;
 /* mapa */
 .mapas{
   margin-top:10%;
+}
+.telefono-contacto{
+ text-decoration: none;
 }

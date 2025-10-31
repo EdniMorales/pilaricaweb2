@@ -1,4 +1,4 @@
-<header class="masthead">
+<header class="masthead fondo wow animated bounceInLeft" data-wow-delay="1s">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
@@ -9,13 +9,13 @@
     </div>
 </header>
 <!-- Historia Don Fidel-->
-<section class="py-5">
+<section class="fondo py-5">
     <div class="py-3">
-        <div class="container px-5 my-5">
+        <div class="fondo container px-5 my-5">
             <div class="row gx-5 text-justify">
                 <div class="col-lg-12 col-xl-12">
                     <div class="text-center">
-                        <p class="title-2 dancing-script-bold wow animated bounceInLeft " data-wow-delay="1s"> Somos una empresa mexicana </p>
+                        <p class="title-2 dancing-script-bold wow animated bounceInLeft " data-wow-delay="2s"> Somos una empresa mexicana </p>
                         <p class="title-info">Ubicada en Ixtapaluca, Estado de México</p>
                         <div class="title-info-2 mb-4 wow animated zoomIn" data-wow-delay="0.5s">
                             "En La Pilarica elaboramos quesos artesanales desde 1980, nuestro compromiso con la calidad y el sabor auténtico nos
@@ -23,7 +23,7 @@
                             mesa un producto lleno de historia, pasión y confianza."
                         </div>
                         <div class="d-flex align-items-center justify-content-center">
-                            <img class="rounded-circle me-3 img-logo-tiempo"
+                            <img class=" img-logo-tiempo"
                                 src="<?= base_url ?>assets/new-cheese/logos/Logo-aniversario.png" alt="..." />
                             <div class="fw-bold texto-fidel">
                                 Sr. Fidel Alfaro
@@ -41,7 +41,7 @@
     <div class="px-5 my-5 stilo-prod-fav">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="tit-prod-fav">Nuestros productos favoritos</h2>
+                <h2 class="tit-prod-fav">Los mas favoritos</h2>
                 <p class="tit-prod-fav-1">Elaborados de forma 100% artesanal</p>
             </div>
             <div class="col-lg-4">
@@ -108,25 +108,20 @@
         </div>
     </div>
 </section>
-
 <script type="module">
     import * as random from '<?= base_url ?>js/random.js';
 </script>
-
-<section class="stilo-section-prod-fav-3 text-center">
+<section class="stilo-section-prod-fav-3 fondo text-center">
     <div class="px-5 my-5 stilo-prod-fav-3">
         <div class="row">
-
             <div class="col-lg-6 px-5 my-5">
                 <div class="mx-auto mb-5 mb-lg-0">
                     <!--      <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" /> -->
                     <p class="subtit-prod-fav-3">Utilizamos leche 100% de vaca en nuestros productos</p>
                     <p class="subtit-prod-fav-4 px-5 my-5">Nuestros productos están elaborados con
-                        leche 100% de vaca, cuidadosamente
-                        seleccionada. Mantenemos procesos
-                        artesanales en cada etapa de la producción,
-                        respetando las tradiciones que garantizan el
-                        sabor auténtico, frescura y calidad.</p>
+                        leche 100% de vaca, cuidadosamente seleccionada. Mantenemos procesos
+                        artesanales en cada etapa de la producción, respetando las tradiciones que garantizan el sabor auténtico, frescura y calidad.
+                    </p>
                 </div>
             </div>
             <div class="col-lg-6">

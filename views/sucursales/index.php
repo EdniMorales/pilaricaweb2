@@ -1,46 +1,36 @@
-<!-- Page Content-->
-            <section class="py-5 mapas">
+            <section class="fondo-sucursales">
                 <div class="container px-5">
-                    <h1 class="fw-bolder fs-5 mb-4">Sucursales</h1>
+                    <h1 class="title-sucursales dancing-script-bold wow animated fadeInDown" data-wow-delay="2s">  - Sucursales -</h1>
                     <div class="card border-0 shadow rounded-3 overflow-hidden">
                         <div class="card-body p-0">
                             <div class="row gx-0">
-                                <div class="col-lg-6 col-xl-5 py-lg-5">
-                                    <div class="p-4 p-md-5">
-                                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                                        <div class="h2 fw-bolder">Article heading goes here</div>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus ab doloremque, qui doloribus ea officiis...</p>
-                                        <a class="stretched-link text-decoration-none" href="#!">
-                                            Read more
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-xl-7">
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CIoJNcqQMw4FTF3TvxjQXvAchNVFOQ4&ehbc=2E312F&noprof=1"
-    width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                            <div class="col-lg-12 col-xl-12">
+                                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CIoJNcqQMw4FTF3TvxjQXvAchNVFOQ4&ehbc=2E312F&noprof=1"
+                                width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="py-5 bg-light">
+            <!-- <section class="py-5 bg-light">
                 <div class="container px-5">
                     <div class="row gx-5">
                         <div class="col-xl-8">
                             <h2 class="fw-bolder fs-5 mb-4">News</h2>
-                            <!-- News item-->
+                        
                             <div class="mb-4">
                                 <div class="small text-muted">May 12, 2023</div>
                                 <a class="link-dark" href="#!"><h3>Start Bootstrap releases Bootstrap 5 updates for templates and themes</h3></a>
                             </div>
-                            <!-- News item-->
+                          
                             <div class="mb-5">
                                 <div class="small text-muted">May 5, 2023</div>
                                 <a class="link-dark" href="#!"><h3>Bootstrap 5 has officially landed</h3></a>
                             </div>
-                            <!-- News item-->
+                       
                             <div class="mb-5">
                                 <div class="small text-muted">Apr 21, 2023</div>
                                 <a class="link-dark" href="#!"><h3>This is another news article headline, but this one is a little bit longer</h3></a>
@@ -75,9 +65,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Blog preview section-->
-            <section class="py-5">
+            </section> -->
+            <!-- <section class="py-5">
                 <div class="container px-5">
                     <h2 class="fw-bolder fs-5 mb-4">Featured Stories</h2>
                     <div class="row gx-5">
@@ -152,4 +141,4 @@
                         </a>
                     </div>
                 </div>
-            </section>
+            </section> -->
