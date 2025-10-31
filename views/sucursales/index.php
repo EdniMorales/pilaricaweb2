@@ -1,7 +1,7 @@
 <!-- Page Content-->
             <section class="py-5 mapas">
                 <div class="container px-5">
-                    <h1 class="fw-bolder fs-5 mb-4">Company Blog</h1>
+                    <h1 class="fw-bolder fs-5 mb-4">Sucursales</h1>
                     <div class="card border-0 shadow rounded-3 overflow-hidden">
                         <div class="card-body p-0">
                             <div class="row gx-0">
