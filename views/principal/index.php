@@ -465,35 +465,93 @@
     </div>
 </section>
 <!-- desde aqui se empieza nuevo carrusel -->
-<!-- <section>
-<h1 class="titleNewCarousel">Drag the cards to move them</h1>
+<section>
+<h1 class="titleNewCarousel">Nuestros Productos</h1>
 <div class="containerNewCarousel">
   <div class="card-carousel">
     <div class="card" id="1">
-      <div class="image-container"></div>
-      <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      <div class="image-container" onclick="window.location.href='../quesosfrescos/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Quesos de la linea Quesos Frescos</p>
     </div>
     <div class="card" id="2">
-      <div class="image-container"></div>
-      <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      <div class="image-container" onclick="window.location.href='../quesosmaduros/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Quesos de la linea Quesos Maduros</p>
     </div>
     <div class="card" id="3">
-      <div class="image-container"></div>
-      <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      <div class="image-container" onclick="window.location.href='../lineagourmet/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Gourmet</p>
     </div>  
     <div class="card" id="4">
-      <div class="image-container"></div>
-      <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      <div class="image-container" onclick="window.location.href='../crema/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Crema</p>
     </div>
     <div class="card" id="5">
-      <div class="image-container"></div>
-      <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      <div class="image-container" onclick="window.location.href='../postres/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Postres</p>
+    </div>
+    <div class="card" id="6">
+      <div class="image-container" onclick="window.location.href='../ricottin/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Ricottin</p>
+    </div>
+    <div class="card" id="7">
+      <div class="image-container" onclick="window.location.href='../congelados/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Congelados</p>
+    </div>
+    <div class="card" id="8">
+      <div class="image-container" onclick="window.location.href='../complementos/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Complementos</p>
+    </div>
+    <div class="card" id="9">
+      <div class="image-container" onclick="window.location.href='../canastas/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Canastas</p>
+    </div>
+    <div class="card" id="10">
+      <div class="image-container" onclick="window.location.href='../yogurth/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Yogurth</p>
+    </div>
+    <div class="card" id="11">
+      <div class="image-container" onclick="window.location.href='../carnicos/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">productos de la linea Carnicos</p>
+    </div>
+    <div class="card" id="12">
+      <div class="image-container" onclick="window.location.href='../venancio/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Venancio</p>
+    </div>
+    <div class="card" id="13">
+      <div class="image-container" onclick="window.location.href='../mantequilla/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Mantequilla</p>
     </div>
   </div>
   <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
 </div>
-<h2 class="subTitleNewCarousel">Check out <a target="_blank" href="https://codepen.io/WillyW/pen/RwRrvjv">Circle Carousel</a></h2>
-</section> -->
+<!-- <h2 class="subTitleNewCarousel">Check out <a target="_blank" href="https://codepen.io/WillyW/pen/RwRrvjv">Circle Carousel</a></h2> -->
+</section>
 <!-- <section class="cont-color">
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
