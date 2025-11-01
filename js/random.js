@@ -4,14 +4,15 @@ const contenedor = document.getElementById("ProductosRandomPrincipal");
 const boton = document.getElementById("ButtomRandom1");
 
 // E V E N T S
-document.addEventListener("DOMContentLoaded", function(){
+/* document.addEventListener("DOMContentLoaded", function(){
     ColocarContenidoRandom();
+    CarrucerCreacion();
 })
 
 boton.addEventListener("click", function(){
     // Llamar a la funcion que coloca el contenido en el DOM
     ColocarContenidoRandom();
-});
+}); */
 
 
 // F U N C T I O N S
@@ -40,7 +41,7 @@ function BuscarCategoriaID(numCategories){
             });
     });
 }
-async function ColocarContenidoRandom(){
+export async function ColocarContenidoRandom(){
     // Parametros de randomizacion
     const cantidadDeCategorias = 3;
     let listaNumeros = []; // Almacenamiento de los numeros
@@ -110,8 +111,8 @@ async function ColocarContenidoRandom(){
 
 /* desde aqui se empieza la animacion del ultimo carrusel */
 
-const cardsContainer = document.querySelector(".card-carousel");
-const cardsController = document.querySelector(".card-carousel + .card-controller");
+/* const cardsContainer = document.querySelector(".card-carousel");
+const cardsController = document.querySelector(".card-carousel + .card-controller"); */
 
 class DraggingEvent {
   constructor(target = undefined) {
@@ -351,5 +352,10 @@ class CardCarousel extends DraggingEvent {
   }
 }
 
-const carousel = new CardCarousel(cardsContainer, cardsController);
+export function CarrucerCreacion(){
+  // Colocar el selector y los controladores para el carrucel
+  const cardsContainer = document.querySelector(".card-carousel");
+  const cardsController = document.querySelector(".card-carousel + .card-controller");
+  const carousel = new CardCarousel(cardsContainer, cardsController);
+}
 

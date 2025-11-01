@@ -5,7 +5,7 @@ import * as widgets from './widgets.js';
 export function ProductSearch(Id_Producto, page, dropdown){
     const Search_Text = document.getElementById(Id_Producto).value;
     const widget = document.getElementById(dropdown)
-    console.log(`Texto buscado: ${Search_Text}`);
+    //console.log(`Texto buscado: ${Search_Text}`);
 
     // Validar que no este vacio
     if (Search_Text.length > 0){
@@ -26,7 +26,7 @@ export function ProductSearch(Id_Producto, page, dropdown){
 
 export function CategoriasSearch(page, dropdown){
     const widget = document.getElementById(dropdown);
-    console.log("Se a clickeado");
+    //console.log("Se a clickeado");
     //Ajax hacia el servidor
     fetch(`../php/backend.php?action=getAllCategorias`)
         .then(response => response.json()) // Espera la respuesta como JSON
@@ -39,8 +39,22 @@ export function CategoriasSearch(page, dropdown){
         });
 }
 
+export function CategoriasSearchImg(Carrucel){
+    //console.log("Se a clickeado");
+    //Ajax hacia el servidor
+    fetch(`../php/backend.php?action=getAllCategorias`)
+        .then(response => response.json()) // Espera la respuesta como JSON
+        .then(data => {
+            //console.log("Datos obtenidos: ", data);
+            widgets.CarrucelCategorias(Carrucel , data);
+        })
+        .catch(error => {
+            console.error("Error al buscar productos:", error);
+        });
+}
+
 export function ProductosPorCategoriaSearch(parametros){
-    console.log(parametros);
+    //console.log(parametros);
     // Declarar cada uno de los parametros para su utilizacion
     let Carpeta = parametros[0];
     let contenedor = parametros[1];

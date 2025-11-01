@@ -466,10 +466,29 @@
 </section>
 <!-- desde aqui se empieza nuevo carrusel -->
 <section>
-<h1 class="titleNewCarousel">Nuestros Productos</h1>
+<h2 class="titleNewCarousel">Nuestros productos</h2>
+<p class="subTitleNewCarousel">Conoce la variedad de productos que tenemos para ti</p>
 <div class="containerNewCarousel">
-  <div class="card-carousel">
-    <div class="card" id="1">
+    <div class="card-carousel" id="contenedorCarrucelProductos">
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">No se encontraron productos.</p>
+        </div>
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">${array.error}</p>
+        </div>
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">No se encontraron productos.</p>
+        </div>
+  <!-- <div class="card" id="1">
       <div class="image-container" onclick="window.location.href='../quesosfrescos/index'">
         <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
       </div>
@@ -546,7 +565,7 @@
         <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
       </div>
       <p class="text_card_description">Productos de la linea Mantequilla</p>
-    </div>
+    </div> -->
   </div>
   <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
 </div>

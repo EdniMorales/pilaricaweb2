@@ -15,9 +15,10 @@
 */
 
 import * as trriggers from '../backend/trigger.js';
+import * as random from "../js/random.js";
 
-window.addEventListener('DOMContentLoaded', event => {
-
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('trigger');
     // Funcion que carga las categorias
     TraerCategorias();
     TaerDatosDependiendoLaRutaDelDOM();
@@ -138,6 +139,12 @@ function TraerCategorias(){
     trriggers.CategoriasSearch("index","Categorias");
 }
 
+function TraerContenidoCarrucel(){
+    // llamar a la funcion que crea los elementos del carrucel
+    trriggers.CategoriasSearchImg('contenedorCarrucelProductos');
+    random.CarrucerCreacion();
+}
+
 // FUNCION PARA COLOCAR LOS DATOS SEGUN LA RUTA EN LA QUE SE ENCUENTRE EL USUARIO
 function TaerDatosDependiendoLaRutaDelDOM(){
     const ruta = window.location.pathname; // Ruta Completa
@@ -201,6 +208,10 @@ function TaerDatosDependiendoLaRutaDelDOM(){
         case "mantequilla":
             carpeta = ["mantequilla", "Contenedor-Productos-Mantequilla", "14"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case 'Principal':
+            random.ColocarContenidoRandom();
+            TraerContenidoCarrucel(); // llamar al carrucel si esta en principal
             break
         default:
             const params = new URLSearchParams(window.location.search);
