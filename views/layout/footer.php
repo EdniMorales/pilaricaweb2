@@ -1,7 +1,7 @@
 </main>
 <footer class="text-center">
       <div>
-        <img src="<?= base_url ?>assets/new-cheese/onda.png" class="banner-onda" alt="">
+        <img src="<?= base_url ?>assets/new-cheese/onda.png" class="banner-onda fondo" alt="">
     </div>
     <section class="cont-color2">
         <div class="container text-center text-md-start mt-5">
@@ -50,7 +50,7 @@
                     <h6 class="text-uppercase fw-bold mb-4">Ubicanos</h6>
                     <p><i class="fas fa-home me-3"></i>Benito Juárez Sur N 46, Centro, 56530 Ixtapaluca, Méx.</p>
                     <p><i class="fas fa-envelope me-3"></i>soporte@pilarica.mx</p>
-                    <p><i class="fas fa-phone me-3"></i>(55) 5972 0102</p>
+                    <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720102" class="telefono-contacto">(55) 5972 0102</a></p>
                     <p><i class="fas fa-phone me-3"></i>(55) 5972 0522</p>
                     <p><i class="fas fa-phone me-3"></i>(55) 5972 0026</p>
                     <p><i class="fab fa-whatsapp me-3"></i>(56) 4543 8166</p>
@@ -68,8 +68,7 @@
             role="button"><i class="fab fa-linkedin-in"></i></a>
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ed302f;" href="#!"
             role="button"><i class="fab fa-youtube"></i></a>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #25d366;" href="#!"
-            role="button"><i class="fab fa-whatsapp"></i></a>
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #25d366;" href="#!" role="button"><i class="fab fa-whatsapp"></i></a>
     </div>
 </footer>
 <script>

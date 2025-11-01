@@ -4,12 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-
-
-* {
-  font-family: "Poppins", serif;
-}
-
 .imperial-script-regular {
   font-family: "Imperial Script", cursive;
   font-weight: 600;
@@ -20,7 +14,6 @@
   font-weight: 800;
   font-style: italic;
 }
-
 .open-sans{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -35,26 +28,18 @@
   font-weight: 600;
   font-style: normal;
 }
-
-
-
-.lexend{
-  font-family: "Lexend", sans-serif;
+.lexend-letra{
+  font-family: "Lexend", bold;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
+.lexend{
+  font-family: "Lexend", bold;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: bold;
+}
 .dancing-script-regular {
   font-family: "Dancing Script", cursive;
   font-weight: 400;
@@ -65,8 +50,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
-
 .princess-sofia-regular {
   font-family: "Princess Sofia", cursive;
   font-weight: 400;

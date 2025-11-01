@@ -42,7 +42,7 @@ new WOW().init();
         <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
             <div class="container px-5">
                 <a class="navbar-brand" href="<?= base_url ?>Principal/index">
-                    <img src="<?= base_url ?>assets/logo-resplandor-bco.png" alt="Logo" width="150" height="100"
+                    <img src="<?= base_url ?>assets/new-cheese/logos/Logo-pilarica.png" alt="Logo" width="150" height="100"
                         class="d-inline-block align-text-top" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
