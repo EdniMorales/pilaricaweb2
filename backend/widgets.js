@@ -1,3 +1,4 @@
+import { CarrucerCreacion } from "../js/random.js";
 
 export function dropdownprod (widget,array) {
     const ddrop = document.getElementById(widget);
@@ -57,7 +58,135 @@ export function DropCategorias(widget,array){
 });
 }
 
+export function CarrucelCategorias(widget, array){
+    console.log("Creacion de carrucel")
+    const carrucel = document.getElementById(widget);
+    carrucel.innerHTML = '';
+
+    if(array.error){
+        carrucel.insertAdjacentHTML('beforeend', `
+        <div class="card">
+          <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+          </div>
+          <p class="text_card_description">No se encontraron productos.</p>
+        </div>
+        <div class="card">
+          <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+          </div>
+          <p class="text_card_description">${array.error}</p>
+        </div>
+        <div class="card">
+          <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+          </div>
+          <p class="text_card_description">No se encontraron productos.</p>
+        </div>`
+        );
+        CarrucerCreacion();
+        return;
+    }
+    if(array.length === 0){
+        carrucel.insertAdjacentHTML('beforeend',`
+        <div class="card">
+          <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+          </div>
+          <p class="text_card_description">No se encontraron productos.</p>
+        </div>
+        <div class="card">
+          <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+          </div>
+          <p class="text_card_description">No se encontraron productos.</p>
+        </div>
+        <div class="card">
+          <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+          </div>
+          <p class="text_card_description">No se encontraron productos.</p>
+        </div>`);
+        CarrucerCreacion();
+        return;
+    }
+
+    let contadorAux = 1;
+
+    array.forEach(product => { // la funcion para colocar los datos de la consulta
+        let nombreLimpio = product.NOMBRE.replace(/\s+/g, '').toLowerCase() || "principal";
+        let nombreCapitalizado = product.NOMBRE.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
+
+        if (array.length === 1){
+            carrucel.insertAdjacentHTML('beforeend',`
+                <div class="card">
+                  <div class="image-container" onclick="window.location.href='../Principal/index'">
+                    <img src="../assets/new-cheese/default.png" alt="Nuestros Productos">
+                  </div>
+                  <p class="text_card_description">Conoce nuestros Productos.</p>
+                </div>
+                <div class="card">
+                  <div class="image-container" onclick="window.location.href='../${nombreLimpio}/index'">
+                    <img src="https://pilarica.com.mx/${product.IMAGEN_ETIQUETA}" alt="Nuestros Productos">
+                  </div>
+                    <p class="text_card_description">${product.DESCRIPCION}</p>
+                </div>
+                <div class="card">
+                  <div class="image-container" onclick="window.location.href='../Principal/index'">
+                    <img src="../assets/new-cheese/default.png" alt="Nuestros Productos">
+                  </div>
+                    <p class="text_card_description">Conoce nuestros Productos.</p>
+                </div>`
+            );
+        } else if (array.length % 2 === 0){
+            if (contadorAux === array.length) {
+                carrucel.insertAdjacentHTML('beforeend',`
+                    <div class="card">
+                      <div class="image-container" onclick="window.location.href='../${nombreLimpio}/index'">
+                        <img src="https://pilarica.com.mx/${product.IMAGEN_ETIQUETA}" alt="Nuestros Productos">
+                      </div>
+                      <p class="text_card_description">${product.DESCRIPCION}</p>
+                    </div>
+                    <div class="card">
+                      <div class="image-container" onclick="window.location.href='../Principal/index'">
+                        <img src="../assets/new-cheese/default.png" alt="Nuestros Productos">
+                      </div>
+                      <p class="text_card_description">Conoce nuestros Productos.</p>
+                    </div>`
+                );
+            } else{
+                carrucel.insertAdjacentHTML('beforeend',`
+                    <div class="card">
+                      <div class="image-container" onclick="window.location.href='../${nombreLimpio}/index'">
+                        <img src="https://pilarica.com.mx/${product.IMAGEN_ETIQUETA}" alt="Nuestros Productos">
+                      </div>
+                      <p class="text_card_description">${product.DESCRIPCION}</p>
+                    </div>`
+                );
+            }
+        } else {
+            carrucel.insertAdjacentHTML('beforeend',`
+                <div class="card">
+                  <div class="image-container" onclick="window.location.href='../${nombreLimpio}/index'">
+                    <img src="https://pilarica.com.mx/${product.IMAGEN_ETIQUETA}" alt="Nuestros Productos">
+                  </div>
+                  <p class="text_card_description">${product.DESCRIPCION}</p>
+                </div>`
+            );
+        }
+        /*
+        carrucel.insertAdjacentHTML('beforeend',`
+            <a class="dropdown-item" href="../${nombreLimpio}/index">
+            ${nombreCapitalizado}
+            </a>`
+        );*/
+        contadorAux ++;
+    });
+    CarrucerCreacion();
+}
+
 export function ColocarLosProductosEnLasTarjetas(widget,array){
+    console.log("se mando")
     const ddrop = document.getElementById(widget);
     ddrop.innerHTML = '';
     
