@@ -1,4 +1,9 @@
 
 
+@media screen and (max-width: 1040px) {
+  .image-container {
+    width: 18em;
+    height: 18em;
+  }
 
 

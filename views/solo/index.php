@@ -5,7 +5,6 @@
                             <div class="text-center my-5">
                                 <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
                                 <p class="fw-bolder mb-3 title-love-2">somos?</p>
-
                             </div>
                         </div>
                     </div>
