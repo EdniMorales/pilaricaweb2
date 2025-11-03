@@ -5,5 +5,20 @@
     width: 18em;
     height: 18em;
   }
+}
 
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+  .tab-1-image {
+    display: none;
+  }
+  
+}
 
+/* For devices with a minimum width of 992px (Large) */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: tan;
+    color: black;
+  }
+}

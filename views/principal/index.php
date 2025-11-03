@@ -74,42 +74,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--         <div id="ProductosRandomPrincipal"  class="row">
             <div class="col-lg-12">
                 <h2 class="tit-prod-fav-2">Nuestros productos</h2>
@@ -245,28 +209,13 @@
       <p class="text_card_description">Productos de la linea Mantequilla</p>
     </div> -->
   </div>
-
-<!--     </div> -->
+<!-- </div> -->
   <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
 </div>
-
-
-
 </section>
 <script type="module">
     import * as random from '<?= base_url ?>js/random.js';
 </script>
-
-
-
-
-
-
-
-
-
-
-
 <section class="stilo-section-prod-fav-3 fondo text-center">
     <div class="px-5 my-5 stilo-prod-fav-3">
         <div class="row">
@@ -301,8 +250,7 @@
                 </div>
             </div>
         </div>
-</section>
- -->
+</section> -->
 <!-- <section class="content-section" id="portfolio">
     <div class="container px-4 px-lg-5">
         <div class="content-section-heading text-center">
@@ -516,27 +464,7 @@
         </div>
     </div>
 </section> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Team members section-->
-<section class="fondo py-5 tab-1">
+<section class="fondo py-5 tab-1 tab-1-image">
     <div class="container px-5 my-5 tab-1">
         <div class="text-center">
             <p class="title-8 dancing-script-bold">Todas nuestras especialidades</p>
