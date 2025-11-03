@@ -71,8 +71,8 @@ new WOW().init();
                             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                <li><a class="dropdown-item" href="../Bolsa/index">Bolsa de Trabajo</a></li>
-                                <li><a class="dropdown-item" href="../Bolsa/index">Quiero ser cliente</a></li>
+                                <li><a class="dropdown-item" href="../">Bolsa de trabajo</a></li>
+                                <li><a class="dropdown-item" href="../">Quiero ser cliente</a></li>
                             </ul>
                         </li>
                     </ul>

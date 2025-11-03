@@ -8,11 +8,11 @@
 }
 
 /* For devices with a minimum width of 768px (Medium) */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .tab-1-image {
     display: none;
   }
-  
+
 }
 
 /* For devices with a minimum width of 992px (Large) */
