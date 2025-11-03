@@ -1,3 +1,4 @@
+<section class="fondo">
 <header class="masthead fondo wow animated bounceInLeft" data-wow-delay="1s">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
@@ -8,8 +9,9 @@
         </div>
     </div>
 </header>
+</section>
 <!-- Historia Don Fidel-->
-<section class="fondo py-5">
+<section class="fondo tab-2 py-5">
     <div class="py-3">
         <div class="fondo container px-5 my-5">
             <div class="row gx-5 text-justify">
@@ -64,7 +66,7 @@
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                     <img class="img-fluid rounded-circle mb-3"
-                        src="<?= base_url ?>assets/new-cheese/crema/crema-favoritos.png" alt="..." />
+                        src="<?= base_url ?>assets/new-cheese/crema/Crema-favoritos.png" alt="..." />
                     <p class="subtit-prod-fav">Crema</p>
                     <p class="subtit-prod-fav-1">Encuéntrala en presentaciones de 4.5 kg, 500 ml y 200ml.</p>
                 </div>
@@ -72,9 +74,43 @@
         </div>
     </div>
 </section>
-<section class="stilo-section-prod-fav-1 text-center">
-    <div class="px-5 my-5 stilo-prod-fav-1">
-        <div id="ProductosRandomPrincipal"  class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--         <div id="ProductosRandomPrincipal"  class="row">
             <div class="col-lg-12">
                 <h2 class="tit-prod-fav-2">Nuestros productos</h2>
                 <p class="tit-prod-fav-2-1">Conoce la variedad de productos que tenemos para ti</p>
@@ -105,12 +141,132 @@
                     <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom1" onclick="window.location.href='<?= base_url ?>'">VER MAS</button>
                 </div>
             </div>
+        </div> -->
+<section class="stilo-section-prod-fav-1">
+<!-- <div class="px-5 my-5 stilo-prod-fav-1"> -->   
+<div class="containerNewCarousel">
+    <p class="titleNewCarousel">Nuestros productos</p>
+<p class="subTitleNewCarousel">Conoce la variedad de productos que tenemos para ti</p>
+    <div class="card-carousel" id="contenedorCarrucelProductos">
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">No se encontraron productos.</p>
         </div>
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">${array.error}</p>
+        </div>
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">No se encontraron productos.</p>
+        </div>
+  <!-- <div class="card" id="1">
+      <div class="image-container" onclick="window.location.href='../quesosfrescos/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Quesos de la linea Quesos Frescos</p>
     </div>
+    <div class="card" id="2">
+      <div class="image-container" onclick="window.location.href='../quesosmaduros/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Quesos de la linea Quesos Maduros</p>
+    </div>
+    <div class="card" id="3">
+      <div class="image-container" onclick="window.location.href='../lineagourmet/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Gourmet</p>
+    </div>  
+    <div class="card" id="4">
+      <div class="image-container" onclick="window.location.href='../crema/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Crema</p>
+    </div>
+    <div class="card" id="5">
+      <div class="image-container" onclick="window.location.href='../postres/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Postres</p>
+    </div>
+    <div class="card" id="6">
+      <div class="image-container" onclick="window.location.href='../ricottin/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Ricottin</p>
+    </div>
+    <div class="card" id="7">
+      <div class="image-container" onclick="window.location.href='../congelados/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Congelados</p>
+    </div>
+    <div class="card" id="8">
+      <div class="image-container" onclick="window.location.href='../complementos/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Complementos</p>
+    </div>
+    <div class="card" id="9">
+      <div class="image-container" onclick="window.location.href='../canastas/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Canastas</p>
+    </div>
+    <div class="card" id="10">
+      <div class="image-container" onclick="window.location.href='../yogurth/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Yogurth</p>
+    </div>
+    <div class="card" id="11">
+      <div class="image-container" onclick="window.location.href='../carnicos/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">productos de la linea Carnicos</p>
+    </div>
+    <div class="card" id="12">
+      <div class="image-container" onclick="window.location.href='../venancio/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Venancio</p>
+    </div>
+    <div class="card" id="13">
+      <div class="image-container" onclick="window.location.href='../mantequilla/index'">
+        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
+      </div>
+      <p class="text_card_description">Productos de la linea Mantequilla</p>
+    </div> -->
+  </div>
+
+<!--     </div> -->
+  <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+</div>
+
+
+
 </section>
 <script type="module">
     import * as random from '<?= base_url ?>js/random.js';
 </script>
+
+
+
+
+
+
+
+
+
+
+
 <section class="stilo-section-prod-fav-3 fondo text-center">
     <div class="px-5 my-5 stilo-prod-fav-3">
         <div class="row">
@@ -126,7 +282,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/yogurt/yogurica-banner.png"
+                    <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/yogurt/baner-yogurt-fresa_Mesa de trabajo 1.png"
                         alt="..." />
                 </div>
             </div>
@@ -275,16 +431,120 @@
         </div>
     </div>
 </section> -->
+<section class="cont-color">
+    <div class="container-fluid ps-md-0">
+        <div class="row g-0">
+            <div class=" col-md-4 col-lg-8 bg-image"></div>
+            <div class="col-md-8 col-lg-4">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-8 mx-auto">
+                                <h3 class="login-heading mb-4 text-center tiitle-quejas">Quejas y Sugerencias</h3>
+                                <form class="row g-3" id="FormularioQS" enctype="multipart/form-data">
+                                    <div class="col-md-6">
+                                        <label for="NombreFormQS" class="form-label tiitle-description">Nombre</label>
+                                        <input type="text" class="form-control" name="NombreFormQS" id="NombreFormQS"
+                                            placeholder="Coloca tu nombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ApellidoFormQS" class="form-label tiitle-description">Apellido</label>
+                                        <input type="text" class="form-control" name="ApellidoFormQS"
+                                            id="ApellidoFormQS" placeholder="Coloca tu apellido" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="EmailFormQS" class="form-label tiitle-description">Email</label>
+                                        <input type="email" class="form-control" name="EmailFormQS" id="EmailFormQS"
+                                            placeholder="Coloca tu correo" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="DireccionFormQS" class="form-label tiitle-description">Direccion</label>
+                                        <input type="text" class="form-control" name="DireccionFormQS"
+                                            id="DireccionFormQS" placeholder="Opcional">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="TelFormQS" class="form-label tiitle-description">Teléfono</label>
+                                        <input type="tel" class="form-control" name="TelFormQS" id="TelFormQS"
+                                            placeholder="Opcional">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="EmpresaFormQS" class="form-label tiitle-description">Empresa</label>
+                                        <input type="text" class="form-control" name="EmpresaFormQS" id="EmpresaFormQS"
+                                            placeholder="Opcional">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="TipoFormQS" class="form-label tiitle-description">Tipo de mensaje</label>
+                                        <select class="form-select" name="TipoFormQS" id="TipoFormQS" required>
+                                            <option value="" selected disabled>Selecciona el tipo de mensaje</option>
+                                            <option value="Queja">Queja</option>
+                                            <option value="Sugerencia">Sugerencia</option>
+                                            <option value="Agradecimiento">Agradecimiento</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="MensajeFormQS" class="form-label tiitle-description">Coloca tu mensaje aqui</label>
+                                        <textarea type="text" class="form-control" name="MensajeFormQS"
+                                            id="MensajeFormQS" rows="4" required></textarea>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="FileFormQS" class="form-label tiitle-description">Adjuntar</label>
+                                        <label for="FileFormQS" class="custom-file-upload">. . .</label>
+                                        <input type="file" class="form-control" name="FileFormQS" id="FileFormQS">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="gridCheck"
+                                                id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                ¿Te gustarria suscribirte gratis para recibir ofertas, noticias,
+                                                promociones, recetas y más?
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="row g-3">
+                                    <div class="col-md-12" style="margin-top: 40px;">
+                                        <button class="btn btn-warning" name="BotonEnviarQS"
+                                            id="BotonEnviarQS">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Team members section-->
-<section class="py-5">
-    <div class="container px-5 my-5">
+<section class="fondo py-5 tab-1">
+    <div class="container px-5 my-5 tab-1">
         <div class="text-center">
-            <p class="title-8">Todas nuestras especialidades</p>
+            <p class="title-8 dancing-script-bold">Todas nuestras especialidades</p>
             <p class="title-10 mb-5">
                 La mejor calidad y sabor artesanal hasta tu mesa | Elaborados 100% Artesanal
             </p>
         </div>
-        <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4">
+        <div class="fondo row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4">
             <div class="flip-box">
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center">
@@ -461,7 +721,7 @@
 </section>
 <!-- desde aqui se empieza nuevo carrusel -->
 <section>
-<h2 class="titleNewCarousel">Nuestros productos</h2>
+<!-- <h2 class="titleNewCarousel">Nuestros productos</h2>
 <p class="subTitleNewCarousel">Conoce la variedad de productos que tenemos para ti</p>
 <div class="containerNewCarousel">
     <div class="card-carousel" id="contenedorCarrucelProductos">
@@ -482,7 +742,7 @@
             <img src="../assets/new-cheese/default.png" alt="Error categoria">
             </div>
             <p class="text_card_description">No se encontraron productos.</p>
-        </div>
+        </div> -->
   <!-- <div class="card" id="1">
       <div class="image-container" onclick="window.location.href='../quesosfrescos/index'">
         <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
@@ -561,9 +821,9 @@
       </div>
       <p class="text_card_description">Productos de la linea Mantequilla</p>
     </div> -->
-  </div>
+  <<!-- /div>
   <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
-</div>
+</div> -->
 <!-- <h2 class="subTitleNewCarousel">Check out <a target="_blank" href="https://codepen.io/WillyW/pen/RwRrvjv">Circle Carousel</a></h2> -->
 </section>
 <!-- <section class="cont-color">
