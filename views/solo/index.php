@@ -66,7 +66,6 @@
                     </p>
                 </div>
             </section>
-
             <section class="fondo py-5 text-center sect-1">
                 <div class="fondo px-5 my-5">
                     <div class="row">

@@ -1,24 +1,23 @@
 
-
-@media screen and (max-width: 1040px) {
-  .image-container {
-    width: 18em;
-    height: 18em;
-  }
-}
-
 /* For devices with a minimum width of 768px (Medium) */
 @media screen and (max-width: 768px) {
   .tab-1-image {
     display: none;
   }
+ 
+ /*  .edit-img-yoga {
+   display: none;
+  } */
 
 }
-
-/* For devices with a minimum width of 992px (Large) */
-@media screen and (min-width: 992px) {
-  body {
-    background-color: tan;
-    color: black;
+@media screen and (max-width: 768px) {
+  .tab-1-image {
+    display: none;
   }
+ 
+ /*  .edit-img-yoga {
+   display: none;
+  } */
+
 }
+

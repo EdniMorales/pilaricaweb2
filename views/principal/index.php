@@ -1,6 +1,6 @@
 <section class="fondo">
 <header class="masthead fondo wow animated bounceInLeft" data-wow-delay="1s">
-    <div class="container h-100">
+    <div class="container h-100 tab-1-image">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
                 <p class="title-1 wow animated slideInDown" data-wow-delay="1s">" Solo el amor supera las bondades de la leche "</p>
@@ -74,40 +74,7 @@
         </div>
     </div>
 </section>
-<!--         <div id="ProductosRandomPrincipal"  class="row">
-            <div class="col-lg-12">
-                <h2 class="tit-prod-fav-2">Nuestros productos</h2>
-                <p class="tit-prod-fav-2-1">Conoce la variedad de productos que tenemos para ti</p>
-            </div>
-            <div class="col-lg-4">
-                <div class="mx-auto mb-5 mb-lg-0">
-                <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" />
-                <p class="subtit-prod-fav-2">Queso Panela</p>
-                </div>
-                <div class="subtit-prod-fav-2-1">  
-                    <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom2" onclick="window.location.href='<?= base_url ?>'">VER MAS</button></div> 
-            </div>
-            <div class="col-lg-4">
-                <div class="mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="..." />
-                    <p class="subtit-prod-fav-2">Queso Oaxaca</p> 
-                </div>
-                <div class="subtit-prod-fav-2-1">  
-                    <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom3" onclick="window.location.href='<?= base_url ?>'">VER MAS</button>
-                </div> 
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="<?= base_url ?>assets/new-cheese/crema/crema-favoritos.png" alt="..." />
-                    <p class="subtit-prod-fav-2">Crema</p>
-                </div>
-                <div class="subtit-prod-fav-2-1">  
-                    <button type="button" class="btn btn-warning btn-lg" id="ButtomRandom1" onclick="window.location.href='<?= base_url ?>'">VER MAS</button>
-                </div>
-            </div>
-        </div> -->
 <section class="stilo-section-prod-fav-1">
-<!-- <div class="px-5 my-5 stilo-prod-fav-1"> -->   
 <div class="containerNewCarousel">
     <p class="titleNewCarousel">Nuestros productos</p>
 <p class="subTitleNewCarousel">Conoce la variedad de productos que tenemos para ti</p>
@@ -130,86 +97,8 @@
             </div>
             <p class="text_card_description">No se encontraron productos.</p>
         </div>
-  <!-- <div class="card" id="1">
-      <div class="image-container" onclick="window.location.href='../quesosfrescos/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Quesos de la linea Quesos Frescos</p>
-    </div>
-    <div class="card" id="2">
-      <div class="image-container" onclick="window.location.href='../quesosmaduros/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Quesos de la linea Quesos Maduros</p>
-    </div>
-    <div class="card" id="3">
-      <div class="image-container" onclick="window.location.href='../lineagourmet/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Gourmet</p>
-    </div>  
-    <div class="card" id="4">
-      <div class="image-container" onclick="window.location.href='../crema/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Crema</p>
-    </div>
-    <div class="card" id="5">
-      <div class="image-container" onclick="window.location.href='../postres/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Postres</p>
-    </div>
-    <div class="card" id="6">
-      <div class="image-container" onclick="window.location.href='../ricottin/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Ricottin</p>
-    </div>
-    <div class="card" id="7">
-      <div class="image-container" onclick="window.location.href='../congelados/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Congelados</p>
-    </div>
-    <div class="card" id="8">
-      <div class="image-container" onclick="window.location.href='../complementos/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Complementos</p>
-    </div>
-    <div class="card" id="9">
-      <div class="image-container" onclick="window.location.href='../canastas/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Canastas</p>
-    </div>
-    <div class="card" id="10">
-      <div class="image-container" onclick="window.location.href='../yogurth/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Yogurth</p>
-    </div>
-    <div class="card" id="11">
-      <div class="image-container" onclick="window.location.href='../carnicos/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">productos de la linea Carnicos</p>
-    </div>
-    <div class="card" id="12">
-      <div class="image-container" onclick="window.location.href='../venancio/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Venancio</p>
-    </div>
-    <div class="card" id="13">
-      <div class="image-container" onclick="window.location.href='../mantequilla/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Mantequilla</p>
-    </div> -->
   </div>
-<!-- </div> -->
+
   <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
 </div>
 </section>
@@ -221,7 +110,6 @@
         <div class="row">
             <div class="col-lg-6 px-5 my-5">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <!--      <img class="img-fluid rounded-circle mb-2" src="<?= base_url ?>assets/new-cheese/oaxaca/queso-oaxaca-1kg.png" alt="queso-oaxaca-1kg" /> -->
                     <p class="subtit-prod-fav-3">Utilizamos leche 100% de vaca en nuestros productos</p>
                     <p class="subtit-prod-fav-4 px-5 my-5">Nuestros productos están elaborados con
                         leche 100% de vaca, cuidadosamente seleccionada. Mantenemos procesos
@@ -229,7 +117,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 tab-1-image">
                 <div class="mx-auto mb-5 mb-lg-0">
                     <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/yogurt/baner-yogurt-fresa_Mesa de trabajo 1.png"
                         alt="..." />
@@ -238,147 +126,6 @@
         </div>
     </div>
 </section>
-<!-- <section class="stilo-frase p-5 ">
-    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start container">
-            <div class="mb-4 mb-xl-0 container">
-                <div class="title-7">
-                    ¡Solo el Amor supera las bondades de la leche!
-                </div>
-            </div>
-            <div class="ms-xl-4 container">
-                <div class="">
-                </div>
-            </div>
-        </div>
-</section> -->
-<!-- <section class="content-section" id="portfolio">
-    <div class="container px-4 px-lg-5">
-        <div class="content-section-heading text-center">
-            <h3 class="text-secondary mb-0 title-4">Nuestros Productos</h3>
-            <h2 class="mb-5 title-4"> - La mejor calidad y sabor artesanal hasta tu mesa -</h2>
-        </div>
-        <div class="row gx-0">
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="title-5">Quesos Maduros</div>
-                            <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="<?= base_url ?>assets/quesos-maduros.jpg" width="750" height="500"
-                        alt="..." />
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="title-5">Quesos</div>
-                          <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream
-                                cone!</p> 
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="<?= base_url ?>assets/quesos-maduros.jpg" width="750" height="500"
-                        alt="..." />
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="title-5">Yogurth</div>
-                           <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!
-                            </p> 
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="<?= base_url ?>assets/yogurt-foto-fresas.jpg" width="750" height="500"
-                        alt="..." />
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="title-5">Postres</div>
-                            <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p> 
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="<?= base_url ?>assets/pays.jpg" width="750" height="500" alt="..." />
-                </a>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- <section>
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" style="background-image: url('../assets/quesos-maduros.jpg')">
-        <div class="carousel-caption">
-          <p class="title-carrusel-1">Pay Natural</p>
-          <p class="subtitle-carrusel-2">prueba nuestros deliciosos sabores Zarzamora y Fresa</p>
-        </div>
-      </div>
-      <div class="carousel-item" style="background-image: url('../assets/yogurt-foto-fresas.jpg')">
-        <div class="carousel-caption">
-         <p class="title-carrusel-1">Pay Natural</p>
-          <p class="subtitle-carrusel-2">prueba nuestros deliciosos sabores Zarzamora y Fresa</p>
-        </div>
-      </div>
-      <div class="carousel-item" style="background-image: url('../assets/pays.jpg')">
-        <div class="carousel-caption">
-         <p class="title-carrusel-1">Pay Natural</p>
-          <p class="subtitle-carrusel-2">prueba nuestros deliciosos sabores Zarzamora y Fresa</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section> -->
-<!-- <section>
-    <div>
-        <div class="parallax parallax-1">
-            <div class="parallax-caption">
-                <p class="princess-sofia-regular">Provolone</p>
-                <p>Explore the wonders of the great outdoors.</p>
-            </div>
-        </div>
-        <div class="container py-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna vel auctor luctus, leo nunc
-                tincidunt
-                risus, id bibendum magna magna quis velit.</p>
-        </div>
-        <div class="parallax parallax-2"> 
-            <div class="parallax-caption">
-                <p class="libertinus-serif-regular">EDAM</p>
-                <p>Discover the vibrant energy of modern cities.</p>
-            </div>
-        </div>
-        <div class="container py-5">
-            <p>Nullam vel mi vel risus rutrum consequat a vel dui. Aliquam erat volutpat. Sed consectetur turpis eget
-                metus
-                hendrerit, vel facilisis mauris venenatis.</p>
-        </div>
-        <div class="parallax parallax-3">
-            <div class="parallax-caption">
-                <h3>Architectural Wonders</h3>
-                <p>Marvel at the stunning creations of human ingenuity.</p>
-            </div>
-        </div>
-    </div>
-</section> -->
 <section class="cont-color">
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
@@ -424,9 +171,9 @@
                                         <label for="TipoFormQS" class="form-label tiitle-description">Tipo de mensaje</label>
                                         <select class="form-select" name="TipoFormQS" id="TipoFormQS" required>
                                             <option value="" selected disabled>Selecciona el tipo de mensaje</option>
-                                            <option value="Queja">Queja</option>
-                                            <option value="Sugerencia">Sugerencia</option>
-                                            <option value="Agradecimiento">Agradecimiento</option>
+                                            <option value="Queja" class="text-black">Queja</option>
+                                            <option value="Sugerencia" class="text-black">Sugerencia</option>
+                                            <option value="Agradecimiento" class="text-black">Agradecimiento</option>
                                         </select>
                                     </div>
                                     <div class="col-md-12">
@@ -434,16 +181,16 @@
                                         <textarea type="text" class="form-control" name="MensajeFormQS"
                                             id="MensajeFormQS" rows="4" required></textarea>
                                     </div>
-                                    <div class="col-md-2">
+                                   <!--  <div class="col-md-2">
                                         <label for="FileFormQS" class="form-label tiitle-description">Adjuntar</label>
                                         <label for="FileFormQS" class="custom-file-upload">. . .</label>
                                         <input type="file" class="form-control" name="FileFormQS" id="FileFormQS">
-                                    </div>
+                                    </div> -->
                                     <div class="col-12">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="gridCheck"
                                                 id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
+                                            <label class="form-check-label text-black" for="gridCheck">
                                                 ¿Te gustarria suscribirte gratis para recibir ofertas, noticias,
                                                 promociones, recetas y más?
                                             </label>
@@ -452,8 +199,7 @@
                                 </form>
                                 <div class="row g-3">
                                     <div class="col-md-12" style="margin-top: 40px;">
-                                        <button class="btn btn-warning" name="BotonEnviarQS"
-                                            id="BotonEnviarQS">Enviar</button>
+                                        <button class="btn btn-warning" name="BotonEnviarQS"                                          id="BotonEnviarQS">Enviar</button>
                                     </div>
                                 </div>
                             </div>
@@ -647,203 +393,6 @@
         </div>
     </div>
 </section>
-<!-- desde aqui se empieza nuevo carrusel -->
-<section>
-<!-- <h2 class="titleNewCarousel">Nuestros productos</h2>
-<p class="subTitleNewCarousel">Conoce la variedad de productos que tenemos para ti</p>
-<div class="containerNewCarousel">
-    <div class="card-carousel" id="contenedorCarrucelProductos">
-        <div class="card">
-            <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
-            </div>
-            <p class="text_card_description">No se encontraron productos.</p>
-        </div>
-        <div class="card">
-            <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
-            </div>
-            <p class="text_card_description">${array.error}</p>
-        </div>
-        <div class="card">
-            <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
-            </div>
-            <p class="text_card_description">No se encontraron productos.</p>
-        </div> -->
-  <!-- <div class="card" id="1">
-      <div class="image-container" onclick="window.location.href='../quesosfrescos/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Quesos de la linea Quesos Frescos</p>
-    </div>
-    <div class="card" id="2">
-      <div class="image-container" onclick="window.location.href='../quesosmaduros/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Quesos de la linea Quesos Maduros</p>
-    </div>
-    <div class="card" id="3">
-      <div class="image-container" onclick="window.location.href='../lineagourmet/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Gourmet</p>
-    </div>  
-    <div class="card" id="4">
-      <div class="image-container" onclick="window.location.href='../crema/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Crema</p>
-    </div>
-    <div class="card" id="5">
-      <div class="image-container" onclick="window.location.href='../postres/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Postres</p>
-    </div>
-    <div class="card" id="6">
-      <div class="image-container" onclick="window.location.href='../ricottin/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Ricottin</p>
-    </div>
-    <div class="card" id="7">
-      <div class="image-container" onclick="window.location.href='../congelados/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Congelados</p>
-    </div>
-    <div class="card" id="8">
-      <div class="image-container" onclick="window.location.href='../complementos/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Complementos</p>
-    </div>
-    <div class="card" id="9">
-      <div class="image-container" onclick="window.location.href='../canastas/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Canastas</p>
-    </div>
-    <div class="card" id="10">
-      <div class="image-container" onclick="window.location.href='../yogurth/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Yogurth</p>
-    </div>
-    <div class="card" id="11">
-      <div class="image-container" onclick="window.location.href='../carnicos/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">productos de la linea Carnicos</p>
-    </div>
-    <div class="card" id="12">
-      <div class="image-container" onclick="window.location.href='../venancio/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Venancio</p>
-    </div>
-    <div class="card" id="13">
-      <div class="image-container" onclick="window.location.href='../mantequilla/index'">
-        <img src="https://pilarica.com.mx/assets/Img_Categorias/QuesosFrescos.png" alt="Quesos Frescos">
-      </div>
-      <p class="text_card_description">Productos de la linea Mantequilla</p>
-    </div> -->
-  <<!-- /div>
-  <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
-</div> -->
-<!-- <h2 class="subTitleNewCarousel">Check out <a target="_blank" href="https://codepen.io/WillyW/pen/RwRrvjv">Circle Carousel</a></h2> -->
-</section>
-<!-- <section class="cont-color">
-    <div class="container-fluid ps-md-0">
-        <div class="row g-0">
-            <div class=" col-md-4 col-lg-8 bg-image"></div>
-            <div class="col-md-8 col-lg-4">
-                <div class="login d-flex align-items-center py-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9 col-lg-8 mx-auto">
-                                <h3 class="login-heading mb-4 text-center tiitle-quejas">Quejas y Sugerencias</h3>
-                                <form class="row g-3" id="FormularioQS" enctype="multipart/form-data">
-                                    <div class="col-md-6">
-                                        <label for="NombreFormQS" class="form-label tiitle-description">Nombre</label>
-                                        <input type="text" class="form-control" name="NombreFormQS" id="NombreFormQS"
-                                            placeholder="Coloca tu nombre" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="ApellidoFormQS" class="form-label tiitle-description">Apellido</label>
-                                        <input type="text" class="form-control" name="ApellidoFormQS"
-                                            id="ApellidoFormQS" placeholder="Coloca tu apellido" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label for="EmailFormQS" class="form-label tiitle-description">Email</label>
-                                        <input type="email" class="form-control" name="EmailFormQS" id="EmailFormQS"
-                                            placeholder="Coloca tu correo" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label for="DireccionFormQS" class="form-label tiitle-description">Direccion</label>
-                                        <input type="text" class="form-control" name="DireccionFormQS"
-                                            id="DireccionFormQS" placeholder="Opcional">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="TelFormQS" class="form-label tiitle-description">Teléfono</label>
-                                        <input type="tel" class="form-control" name="TelFormQS" id="TelFormQS"
-                                            placeholder="Opcional">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="EmpresaFormQS" class="form-label tiitle-description">Empresa</label>
-                                        <input type="text" class="form-control" name="EmpresaFormQS" id="EmpresaFormQS"
-                                            placeholder="Opcional">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label for="TipoFormQS" class="form-label tiitle-description">Tipo de mensaje</label>
-                                        <select class="form-select" name="TipoFormQS" id="TipoFormQS" required>
-                                            <option value="" selected disabled>Selecciona el tipo de mensaje</option>
-                                            <option value="Queja">Queja</option>
-                                            <option value="Sugerencia">Sugerencia</option>
-                                            <option value="Agradecimiento">Agradecimiento</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label for="MensajeFormQS" class="form-label tiitle-description">Coloca tu mensaje aqui</label>
-                                        <textarea type="text" class="form-control" name="MensajeFormQS"
-                                            id="MensajeFormQS" rows="4" required></textarea>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <label for="FileFormQS" class="form-label tiitle-description">Adjuntar</label>
-                                        <label for="FileFormQS" class="custom-file-upload">. . .</label>
-                                        <input type="file" class="form-control" name="FileFormQS" id="FileFormQS">
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="gridCheck"
-                                                id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
-                                                ¿Te gustarria suscribirte gratis para recibir ofertas, noticias,
-                                                promociones, recetas y más?
-                                            </label>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="row g-3">
-                                    <div class="col-md-12" style="margin-top: 40px;">
-                                        <button class="btn btn-warning" name="BotonEnviarQS"
-                                            id="BotonEnviarQS">Enviar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CIoJNcqQMw4FTF3TvxjQXvAchNVFOQ4&ehbc=2E312F&noprof=1"
-    width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-
     <script type="module">
         import * as random from '../js/random.js';
     </script>
