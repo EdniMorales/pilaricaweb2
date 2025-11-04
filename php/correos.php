@@ -157,6 +157,9 @@ function enviarCorreoAlUsuarioSuscripcion($email, $nombre='', $apellido=''){
         // Configurar SMTP
         configurarSMTP($mail);
 
+        // Crear un token para el boton de desuscripcion
+        $token = hash('sha256', $email . $_ENV['SECRET_KEY']);
+
         // Configuración del correo
         $mail->setFrom($_ENV['CORREO_USER'], 'Lacteos La Pilarica');
         $mail->addAddress($email, $nombre);  // Correo del usuario
@@ -170,17 +173,31 @@ function enviarCorreoAlUsuarioSuscripcion($email, $nombre='', $apellido=''){
                     <style>
                         body { font-family: Arial, sans-serif; }
                         .mensaje { color: #333; }
+                        .btn {
+                            display: inline-block;
+                            padding: 10px 20px;
+                            margin-top: 20px;
+                            background-color: #d9534f;
+                            color: white;
+                            text-decoration: none;
+                            border-radius: 5px;
+                        }
                     </style>
                 </head>
                 <body>
                     <h3>¡Hola {$nombre} {$apellido}!</h3>
                     <p class='mensaje'>Gracias por suscribirte a nuestro boletín de noticias. Ahora recibirás nuestras promociones y novedades.</p>
                     <p class='mensaje'>¡Bienvenido!</p>
+                    <hr>
+                    <p>Si deseas cancelar tu suscripción, haz clic en el siguiente enlace:</p>
+                    <a href='https://localhost/php/suscripciones.php?action=cancelarSuscripcion&correo={$email}&token={$token}' class='btn'>
+                        Cancelar suscripción
+                    </a>
                 </body>
             </html>
         ";
 
-        $mail->AltBody = "¡Hola {$nombre} {$apellido}!\n\nGracias por suscribirte a nuestro boletín de noticias. Ahora recibirás nuestras promociones y novedades.\n\n¡Bienvenido!";
+        $mail->AltBody = "¡Hola {$nombre} {$apellido}!\n\nGracias por suscribirte a nuestro boletín de noticias. Ahora recibirás nuestras promociones y novedades.\n\n¡Bienvenido!\n\n Para cancelar tu suscripción visita: https://localhost/php/suscripciones.php?action=cancelarSuscripcion&correo={$email}&token={$token}";
 
          // Enviar el correo
         $mail->send();
