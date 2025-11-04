@@ -138,6 +138,35 @@ function deleteEmailUserSuscriptionOnDataBase($conn, $id_correo) {
 
     $stmt->close();
 }
+// Funcion para cancelar la suscripcion de la base de datos
+function cancelEmailUserSuscriptionOnDataBase ($conn, $correo) {
+    // Verificar que se pasen los parámetros correctos
+    if (empty($correo)) {
+        return "Error: Debes proporcionar el correo para cancelar.";
+    }
+
+    // Consulta SQL para actualizar el correo y el estado, y establecer la fecha de edición
+    $query = "UPDATE SUSCRIPCIONES
+            SET ESTADO = ?, FECHA_CREACION = CURRENT_TIMESTAMP
+            WHERE CORREO_ELECTRONICO = ?";
+    
+    $stmt = $conn->prepare($query);
+    if ($stmt === false) {
+        return "Error en la preparación de la consulta: " . $conn->error;
+    }
+
+    // Vinculamos los parámetros: 's' para string (correo y estado), 'i' para integer (id_correo)
+    $stmt->bind_param("ss", 'Desuscrito', $correo);
+
+    // Ejecutamos la consulta
+    if ($stmt->execute()) {
+        return "Suscripción cancelada correctamente.";
+    } else {
+        return "Error al cancelar la suscripción: " . $stmt->error;
+    }
+
+    $stmt->close();
+}
 
 
 // ================================= ENRUTAMIENTO =================================
@@ -214,6 +243,77 @@ if (isset($_GET['action'])) {
                 }
             } else {
                 $data = ["error" => "Faltan parámetros para eliminar"];
+            }
+            break;
+            
+        // Acción para cancelar una suscripción
+        case 'cancelarSuscripcion':
+            if (isset($_GET['correo']) && isset($_GET['token'])) {
+                // Obtener parámetros desde GET (enlace del correo)
+                $correo = $_GET['correo'];
+                $token  = $_GET['token'];
+
+                // Validar el token
+                $tokenEsperado = hash('sha256', $correo . $_ENV['SECRET_KEY']);
+                if ($token !== $tokenEsperado) {
+                    echo "
+                        <html>
+                            <head><meta charset='UTF-8'><title>Error</title></head>
+                            <body style='font-family:Arial;text-align:center;padding:50px;'>
+                                <h2 style='color:#d9534f;'>El enlace de cancelación no es válido o ha sido alterado.</h2>
+                                <p>Por favor, solicita un nuevo enlace o contacta con soporte.</p>
+                            </body>
+                        </html>
+                    ";
+                    exit;
+                }
+
+                // Cancelar la suscripción en la base de datos
+                $result = cancelEmailUserSuscriptionOnDataBase($conn, $correo);
+
+                if ($result) {
+                    echo "
+                        <html>
+                            <head>
+                                <meta charset='UTF-8'>
+                                <title>Suscripción cancelada</title>
+                                <style>
+                                    body { font-family: Arial, sans-serif; background-color: #f8f8f8; text-align: center; padding: 50px; }
+                                    .card { background: white; padding: 40px; border-radius: 8px; display: inline-block; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+                                    h2 { color: #d9534f; }
+                                </style>
+                            </head>
+                            <body>
+                                <div class='card'>
+                                    <h2>Suscripción cancelada</h2>
+                                    <p>Tu correo <strong>{$correo}</strong> ha sido eliminado de nuestra lista.</p>
+                                    <p>Lamentamos verte partir 😢</p>
+                                </div>
+                            </body>
+                        </html>
+                    ";
+                } else {
+                    echo "
+                        <html>
+                            <head><meta charset='UTF-8'><title>Error</title></head>
+                            <body style='font-family:Arial;text-align:center;padding:50px;'>
+                                <h2 style='color:#d9534f;'>Hubo un problema al cancelar tu suscripción.</h2>
+                                <p>Por favor, intenta más tarde o contacta con soporte.</p>
+                            </body>
+                        </html>
+                    ";
+                }
+                exit; // Detener la ejecución aquí (no retornar JSON)
+            } else {
+                echo "
+                    <html>
+                        <head><meta charset='UTF-8'><title>Error</title></head>
+                        <body style='font-family:Arial;text-align:center;padding:50px;'>
+                            <h2 style='color:#d9534f;'>Faltan parámetros para cancelar la suscripción.</h2>
+                        </body>
+                    </html>
+                ";
+                exit;
             }
             break;
 

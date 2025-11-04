@@ -1,5 +1,5 @@
 
-// C O NS U M I B L E S
+// C O N S U M I B L E S
 export async function guardarCorreoEnElServidor(correoUser, nombreUser, apellidoUser){
     if (!correoUser.includes('@')) {
         alert("Correo inválido.");
@@ -68,11 +68,12 @@ export async function empaquetarElFormulario(form){
     const nombre = document.getElementById("NombreFormQS").value;
     const apellido = document.getElementById("ApellidoFormQS").value;
     const email = document.getElementById('EmailFormQS').value;
-    const direccion = document.getElementById("DireccionFormQS").value;
     const telefono = document.getElementById("TelFormQS").value;
+    const direccion = document.getElementById("DireccionFormQS").value;
     const empresa = document.getElementById("EmpresaFormQS").value;
-    const tipo = document.getElementById("TipoFormQS").value;
     const mensaje = document.getElementById("MensajeFormQS").value;
+    const tipo = document.getElementById("TipoFormQS").value;
+    const Archivo_ = document.getElementById('FileFormQS').files[0];
     const permiso = document.getElementById("gridCheck")
 
     if(!nombre || !apellido || !email || !tipo || !mensaje){
@@ -174,17 +175,202 @@ function limpiarCasillaCorreo(){
 
 // CORREOS
 
-function enviarCorreoUsuarioFormulario(){
+async function enviarCorreoUsuarioFormulario(){
+    // Declarar cada uno de los datos del formulario
+    const nombre = document.getElementById("NombreFormQS").value;
+    const apellido = document.getElementById("ApellidoFormQS").value;
+    const email = document.getElementById('EmailFormQS').value;
+    const telefono = document.getElementById("TelFormQS").value;
+    const direccion = document.getElementById("DireccionFormQS").value;
+    const empresa = document.getElementById("EmpresaFormQS").value;
+    const mensaje = document.getElementById("MensajeFormQS").value;
+    const tipo = document.getElementById("TipoFormQS").value;
+    const archivo = document.getElementById('FileFormQS').files[0];
+    const permiso = document.getElementById("gridCheck");
 
+    // promesa para enviar los datos al servidor y esperar la confirmacion
+    const responseData = await fetch(`../php/correos.php?action=correoUsuario`, {
+        method: 'POST',
+        body: new URLSearchParams({
+            NombreFormQS: nombre,
+            ApellidoFormQS: apellido,
+            EmailFormQS: email,
+            TelFormQS: telefono,
+            DireccionFormQS: direccion,
+            EmpresaFormQS: empresa,
+            TipoFormQS: tipo,
+            MensajeFormQS: mensaje,
+            FileFormQS: archivo,
+            gridCheck: permiso
+        })
+    })
+
+    // Verificar si la respuesta fue exitosa
+    const resultData = await responseData.json(); // Aseguramos que el PHP devuelve un JSON
+
+    // mostrar el mensaje acorde a la respuesta del servidor
+    if (resultData.success){
+        // informar al usuario que su comentacios se enviaron exitosamente
+        console.log('Respuesta:', resultData.message);
+    } else {
+        // Informar al usuario que hubo un error al momento de verificar su correo
+        console.error('Error:', resultData.message);
+    }
+    // Retornar la respuesta del servidor
+    return responseData;
 }
 
-function enviarCorreoSoporteFormulario(){
+async function enviarCorreoSoporteFormulario(){
+    // Declarar cada uno de los datos del formulario
+    const nombre = document.getElementById("NombreFormQS").value;
+    const apellido = document.getElementById("ApellidoFormQS").value;
+    const email = document.getElementById('EmailFormQS').value;
+    const telefono = document.getElementById("TelFormQS").value;
+    const direccion = document.getElementById("DireccionFormQS").value;
+    const empresa = document.getElementById("EmpresaFormQS").value;
+    const mensaje = document.getElementById("MensajeFormQS").value;
+    const tipo = document.getElementById("TipoFormQS").value;
+    const archivo = document.getElementById('FileFormQS').files[0];
+    const permiso = document.getElementById("gridCheck");
 
+    // promesa para enviar los datos al servidor y esperar la confirmacion
+    const responseData = await fetch(`../php/correos.php?action=correoSoporte`, {
+        method: 'POST',
+        body: new URLSearchParams({
+            NombreFormQS: nombre,
+            ApellidoFormQS: apellido,
+            EmailFormQS: email,
+            TelFormQS: telefono,
+            DireccionFormQS: direccion,
+            EmpresaFormQS: empresa,
+            TipoFormQS: tipo,
+            MensajeFormQS: mensaje,
+            FileFormQS: archivo,
+            gridCheck: permiso
+        })
+    })
+
+    // Verificar si la respuesta fue exitosa
+    const resultData = await responseData.json(); // Aseguramos que el PHP devuelve un JSON
+
+    // mostrar el mensaje acorde a la respuesta del servidor
+    if (resultData.success){
+        console.log('Respuesta:', resultData.message);
+        // informar al usuario que su comentacios se enviaron exitosamente
+        alert(`Gracias por tus comentarios ${nombre.toLowerCase().replace(/\b\w/g, char => char.toUpperCase())} ${apellido.toLowerCase().replace(/\b\w/g, char => char.toUpperCase())}`);
+    } else {
+        console.error('Error:', resultData.message);
+        // Informar al usuario que hubo un error al momento de verificar su correo
+        alert(`Tuvimos un problema al momento de enviar tus comentarios`);
+    }
+    // Retornar la respuesta del servidor
+    return responseData;
 }
 
-function enviarCorreoUsuarioSuscripcion(){
+async function enviarCorreoUsuarioSuscripcion(){
+     // Declarar cada uno de los datos del formulario
+    const nombre = document.getElementById("NombreFormQS").value;
+    const apellido = document.getElementById("ApellidoFormQS").value;
+    const email = document.getElementById('EmailFormQS').value;
 
+    // promesa para enviar los datos al servidor y esperar la confirmacion
+    const responseData = await fetch(`../php/correos.php?action=correoSuscripcion`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+            email: email,
+            nombre: nombre.toLowerCase().replace(/\b\w/g, char => char.toUpperCase()),
+            apellido: apellido.toLowerCase().replace(/\b\w/g, char => char.toUpperCase())
+        })
+    })
+
+    // Verificar si la respuesta fue exitosa
+    const resultData = await responseData.json(); // Aseguramos que el PHP devuelve un JSON
+
+    // mostrar el mensaje acorde a la respuesta del servidor
+    if (resultCorreo.success){
+        console.log('Respuesta:', resultCorreo.message);
+
+        // informar al usuario que su suscripcion fue exitosa
+        alert(`Gracias por suscribirte: ${correoUser}`);
+    } else {
+        console.error('Error:', resultCorreo.message);
+        // Informar al usuario que hubo un error al momento de verificar su correo
+        alert(`Tuvimos un problema al momento de verificar el correo: ${correoUser}`);
+    }
 }
 
 // BASE DE DATOS
+async function guardarComentariosBase(){
+    // Declarar cada uno de los datos del formulario
+    const nombre = document.getElementById("NombreFormQS").value;
+    const apellido = document.getElementById("ApellidoFormQS").value;
+    const email = document.getElementById('EmailFormQS').value;
+    const telefono = document.getElementById("TelFormQS").value;
+    const direccion = document.getElementById("DireccionFormQS").value;
+    const empresa = document.getElementById("EmpresaFormQS").value;
+    const mensaje = document.getElementById("MensajeFormQS").value;
+    const tipo = document.getElementById("TipoFormQS").value;
+    const archivo = document.getElementById('FileFormQS').files[0];
+    const permiso = document.getElementById("gridCheck");
 
+    // promesa para enviar los datos al servidor y esperar la confirmacion
+    const responseData = await fetch(`../php/quejasSugerencias.php?action=saveComentario`, {
+        method: 'POST',
+        body: new URLSearchParams({
+            NombreFormQS: nombre,
+            ApellidoFormQS: apellido,
+            EmailFormQS: email,
+            TelFormQS: telefono,
+            DireccionFormQS: direccion,
+            EmpresaFormQS: empresa,
+            TipoFormQS: tipo,
+            MensajeFormQS: mensaje,
+            FileFormQS: archivo,
+            gridCheck: permiso
+        })
+    })
+
+    // Verificar si la respuesta fue exitosa
+    const resultData = await responseData.json(); // Aseguramos que el PHP devuelve un JSON
+
+    // mostrar el mensaje acorde a la respuesta del servidor
+    if (resultData.success) {
+        console.log('Respuesta:', resultData.message);
+        // ya se guardo en la base ahora hay que informal al usuario
+    } else {
+        // informar al usuario que no se pudo realizar el registro
+        console.error('Error:', resultData.message);
+        alert(`oops! No pudimos registrar tus comentarios intentalo nuevamente`);
+    }
+    // Retornar la respuesta del servidor
+    return resultData;
+}
+
+async function guardarSuscripcionBase(){
+    // promesa para enviar los datos al servidor y esperar la confirmacion
+    const responseData = await fetch(`../php/suscripciones.php?action=guardarSuscripcion`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+            correo: correoUser,
+        })
+    })
+
+    // Verificar si la respuesta fue exitosa
+    const resultData = await responseData.json(); // Aseguramos que el PHP devuelve un JSON
+
+    // mostrar el mensaje acorde a la respuesta del servidor
+    if (resultCorreo.success){
+        console.log('Respuesta:', resultData.message);
+        // ya se guardo en la base ahora hay que informal al usuario
+    } else {
+        // informar al usuario que no se pudo realizar el registro
+        console.error('Error:', resultData.message);
+        alert(`oops! No pudimos registrarte intentalo nuevamente`);
+    }
+}
