@@ -1,4 +1,5 @@
 
+// C O NS U M I B L E S
 export async function guardarCorreoEnElServidor(correoUser, nombreUser, apellidoUser){
     if (!correoUser.includes('@')) {
         alert("Correo inválido.");
@@ -67,10 +68,12 @@ export async function empaquetarElFormulario(form){
     const nombre = document.getElementById("NombreFormQS").value;
     const apellido = document.getElementById("ApellidoFormQS").value;
     const email = document.getElementById('EmailFormQS').value;
-    const direccion = document.getElementById("DireccionFormQS").value
+    const direccion = document.getElementById("DireccionFormQS").value;
+    const telefono = document.getElementById("TelFormQS").value;
+    const empresa = document.getElementById("EmpresaFormQS").value;
     const tipo = document.getElementById("TipoFormQS").value;
     const mensaje = document.getElementById("MensajeFormQS").value;
-    const permiso = document.getElementById("gridCheck");
+    const permiso = document.getElementById("gridCheck")
 
     if(!nombre || !apellido || !email || !tipo || !mensaje){
         alert("Hay campos por llenar en el formulario");
@@ -111,10 +114,22 @@ export async function empaquetarElFormulario(form){
         console.log('Respuesta:', resultData.message);
         // ya se guardo en la base ahora hay que informal al usuario
 
+        // Crear un nuevo formulario para el segundo fech
+        const datosCorreo = new URLSearchParams({
+            NombreFormQS: nombre,
+            ApellidoFormQS: apellido,
+            EmailFormQS: email,
+            TelFormQS: telefono,
+            DireccionFormQS: direccion,
+            EmpresaFormQS: empresa,
+            TipoFormQS: tipo,
+            MensajeFormQS: mensaje
+        });
+
         // promesa para enviar los datos al servidor y esperar la coonfirmacion
         const responseCorreo = await fetch(`../php/correos.php?action=correoSoporte`, {
             method: 'POST',
-            body: formData
+            body: datosCorreo
         })
 
         // Verificar si la respuesta fue exitosa
@@ -144,6 +159,7 @@ export async function empaquetarElFormulario(form){
     }
 }
 
+// L I M P I E Z A
 function limpiarFormulario(form){
     const formulario = document.getElementById(form);
     formulario.reset();
@@ -153,3 +169,22 @@ function limpiarCasillaCorreo(){
     const casillaCorreo = document.getElementById("CasillaFooterSuscripcionCorreo");
     casillaCorreo.value = '';
 }
+
+// F U N C I O N E S
+
+// CORREOS
+
+function enviarCorreoUsuarioFormulario(){
+
+}
+
+function enviarCorreoSoporteFormulario(){
+
+}
+
+function enviarCorreoUsuarioSuscripcion(){
+
+}
+
+// BASE DE DATOS
+

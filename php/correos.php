@@ -100,6 +100,7 @@ function enviarCorreoSoporte($form){
 
         // Configuración del correo
         $mail->setFrom($_ENV['CORREO_USER'], 'Lacteos La Pilarica');
+        $mail->addAddress($form['EmailFormQS'], 'Soporte');  // Correo del usuario
 
         // Añadir los correos adicionales
         foreach ($correosAdicionales as $correoAdicional) {
@@ -211,7 +212,7 @@ if (isset($_GET['action'])) {
             if (!empty($_POST)) {
                 $data = enviarCorreoSoporte($_POST);
             } else {
-                $data = ['error' => 'Faltan datos del formulario'];
+                $data = ['success' => false, 'message' => 'Faltan datos del formulario (POST vacío).'];
             }
             break;
 

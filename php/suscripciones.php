@@ -25,7 +25,7 @@ function saveEmailUserSuscriptionOnDataBase($conn, $email) {
     }
 
     // Preparamos la consulta para evitar inyección SQL
-    $query = "INSERT INTO SUSCRIPCIONES (CORREO, ESTADO) 
+    $query = "INSERT INTO SUSCRIPCIONES (CORREO_ELECTRONICO, ESTADO)
             VALUES (?, 'Suscrito')
             ON DUPLICATE KEY UPDATE ESTADO = 'Suscrito', FECHA_CREACION = CURRENT_TIMESTAMP";
     $stmt = $conn->prepare($query);
@@ -55,7 +55,7 @@ function editEmailUserSuscriptionOnDataBase($conn, $id_correo, $correo, $estado)
 
     // Consulta SQL para actualizar el correo y el estado, y establecer la fecha de edición
     $query = "UPDATE SUSCRIPCIONES 
-            SET CORREO = ?, ESTADO = ?, FECHA_CREACION = CURRENT_TIMESTAMP
+            SET CORREO_ELECTRONICO = ?, ESTADO = ?, FECHA_CREACION = CURRENT_TIMESTAMP
             WHERE ID_SUSCRIPCION = ?";
     
     $stmt = $conn->prepare($query);
@@ -88,7 +88,7 @@ function readEmailUserSuscriptionOnDataBase($conn, $id_correo = null, $correo = 
         $stmt->bind_param("i", $id_correo); // 'i' para entero (ID)
     } elseif ($correo) {
         // Filtrar por correo
-        $query = "SELECT * FROM SUSCRIPCIONES WHERE CORREO = ?";
+        $query = "SELECT * FROM SUSCRIPCIONES WHERE CORREO_ELECTRONICO = ?";
         $stmt = $conn->prepare($query);
         if ($stmt === false) {
             return "Error en la preparación de la consulta: " . $conn->error;

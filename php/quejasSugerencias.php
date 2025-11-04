@@ -73,7 +73,7 @@ function saveMessageOnDataBase($conn, $form, $archivoNombreFinal = null) {
     $estado = 'Pendiente'; // Asumiendo que por defecto es pendiente
 
     // Preparar la consulta SQL
-    $sql = "INSERT INTO COMENTARIOS (NOMBRE, APELLIDO, CORREO, TELEFONO, DIRECCION, EMPRESA, TIPO, DESCRIPCION, ARCHIVO_ADJUNTO, ESTADO) 
+    $sql = "INSERT INTO COMENTARIOS (NOMBRE, APELLIDO, CORREO_ELECTRONICO, TELEFONO, DIRECCION, EMPRESA, TIPO, MENSAJE, ARCHIVO_ADJUNTO, ESTADO) 
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = $conn->prepare($sql);
@@ -113,9 +113,9 @@ function editMessageOnDataBase($conn, $form, $id_comentario, $estadoForm='Pendie
     $archivo_adjunto = $archivoNombreFinal ?? 'undefined';
 
     // Preparar la consulta SQL para actualización
-    $sql = "UPDATE COMENTARIOS SET 
-                NOMBRE = ?, APELLIDO = ?, CORREO = ?, TELEFONO = ?, DIRECCION = ?, EMPRESA = ?,
-                TIPO = ?, DESCRIPCION = ?, ARCHIVO_ADJUNTO = ?, ESTADO = ?
+    $sql = "UPDATE COMENTARIOS SET
+                NOMBRE = ?, APELLIDO = ?, CORREO_ELECTRONICO = ?, TELEFONO = ?, DIRECCION = ?, EMPRESA = ?,
+                TIPO = ?, MENSAJE = ?, ARCHIVO_ADJUNTO = ?, ESTADO = ?
             WHERE ID_COMENTARIO = ?";
 
     $stmt = $conn->prepare($sql);
