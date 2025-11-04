@@ -43,7 +43,7 @@
     <div class="px-5 my-5 stilo-prod-fav">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="tit-prod-fav">Los mas favoritos</h2>
+                <p class="tit-prod-fav">Los mas favoritos</p>
                 <p class="tit-prod-fav-1">Elaborados de forma 100% artesanal</p>
             </div>
             <div class="col-lg-4">
@@ -98,7 +98,6 @@
             <p class="text_card_description">No se encontraron productos.</p>
         </div>
   </div>
-
   <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
 </div>
 </section>
@@ -181,11 +180,11 @@
                                         <textarea type="text" class="form-control" name="MensajeFormQS"
                                             id="MensajeFormQS" rows="4" required></textarea>
                                     </div>
-                                   <!--  <div class="col-md-2">
+                                    <div class="col-md-2">
                                         <label for="FileFormQS" class="form-label tiitle-description">Adjuntar</label>
                                         <label for="FileFormQS" class="custom-file-upload">. . .</label>
                                         <input type="file" class="form-control" name="FileFormQS" id="FileFormQS">
-                                    </div> -->
+                                    </div>
                                     <div class="col-12">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="gridCheck"

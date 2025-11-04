@@ -174,7 +174,7 @@ justify-content: center;
 }
 .tit-prod-fav{
 font-family: "Lexend", bold;
-font-size: 110px;
+font-size: 1em;
 color: #FFF9F4;
 margin-top: 5%;
 }
@@ -442,7 +442,7 @@ margin-bottom: 15%;
 }
 .tiitle-quejas{
 font-family: "Lexend", bold;
-font-size: 75px;
+font-size: 3em;
 color: white;
 text-align: left;
 margin-top: 0%;
