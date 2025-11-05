@@ -8,6 +8,7 @@ use PHPMailer\PHPMailer\Exception;
 
 // Cargar el autoload de Composer
 require __DIR__ . '/../vendor/autoload.php';
+require '../config/parameters.php';
 
 // Función para configurar PHPMailer con SMTP
 function configurarSMTP(PHPMailer $mail) {
@@ -39,7 +40,7 @@ function configurarSMTP(PHPMailer $mail) {
 }
 
 // funcion para enviar un correo de verificacion de su mensaje al usuario
-function enviarCorreoAlUsuario($email, $nombre){
+function enviarCorreoAlUsuario($email, $nombre, $apellido){
     try {
         // Crear una instancia de PHPMailer
         $mail = new PHPMailer(true);
@@ -63,7 +64,7 @@ function enviarCorreoAlUsuario($email, $nombre){
                     </style>
                 </head>
                 <body>
-                    <h3>Hola $nombre,</h3>
+                    <h3>Hola $nombre $apellido,</h3>
                     <p class='mensaje'>Gracias por contactarnos. Tu mensaje ha sido recibido, tabajaremos para mejorar
                     y ofrcerte la mejor calidad en nuestros productos.</p>
                     <p class='mensaje'>Atentamente,</p>
@@ -73,7 +74,7 @@ function enviarCorreoAlUsuario($email, $nombre){
         ";
 
         // Contenido alternativo en texto plano (para clientes que no soportan HTML)
-        $mail->AltBody = "Hola $nombre,\n\nGracias por contactarnos. Tu mensaje ha sido recibido, trabajaremos para mejorar y ofrecerte la mejor calidad en nuestros productos.\n\nAtentamente,\nLácteos La Pilarica.";
+        $mail->AltBody = "Hola $nombre $apellido,\n\nGracias por contactarnos. Tu mensaje ha sido recibido, trabajaremos para mejorar y ofrecerte la mejor calidad en nuestros productos.\n\nAtentamente,\nLácteos La Pilarica.";
 
         // Enviar el correo
         $mail->send();
@@ -190,7 +191,7 @@ function enviarCorreoAlUsuarioSuscripcion($email, $nombre='', $apellido=''){
                     <p class='mensaje'>¡Bienvenido!</p>
                     <hr>
                     <p>Si deseas cancelar tu suscripción, haz clic en el siguiente enlace:</p>
-                    <a href='https://localhost/php/suscripciones.php?action=cancelarSuscripcion&correo={$email}&token={$token}' class='btn'>
+                    <a href='" . base_url . "php/suscripciones.php?action=cancelarSuscripcion&correo={$email}&token={$token}' class='btn'>
                         Cancelar suscripción
                     </a>
                 </body>
@@ -218,8 +219,8 @@ if (isset($_GET['action'])) {
     // Dependiendo de la acción solicitada, ejecutar la función correspondiente
     switch ($action) {
         case 'correoUsuario':
-            if (isset($_POST['email'], $_POST['nombre'])) {
-                $data = enviarCorreoAlUsuario($_POST['email'], $_POST['nombre']);
+            if (isset($_POST['EmailFormQS'], $_POST['NombreFormQS'])) {
+                $data = enviarCorreoAlUsuario($_POST['EmailFormQS'], $_POST['NombreFormQS'], $_POST['ApellidoFormQS']);
             } else {
                 $data = ['error' => 'Faltan datos: email o nombre'];
             }
