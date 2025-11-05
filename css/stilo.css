@@ -8,7 +8,9 @@ url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,30
 @import
 url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-
+*{
+  color: #FFF9F4;
+}
 #navbar{
 background-color: #FFF9F4;
 top: 0;
@@ -178,6 +180,37 @@ font-size: 1em;
 color: #FFF9F4;
 margin-top: 5%;
 }
+
+@media screen and (max-width: 914px) {
+  .tit-prod-fav{
+   font-family: "Lexend", bold;
+    font-size: 35%;
+    color: #FFF9F4;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .tab-1-image {
+    display: none;
+  }
+ 
+ /*  .edit-img-yoga {
+   display: none;
+  } */
+
+}
+
+
+
+
+
+
+
+
+
+
+
 .tit-prod-fav-1{
 font-family: "Lexend", bold;
 font-size: 50px;
@@ -320,6 +353,59 @@ object-fit: cover;
 z-index: 3;
 margin-top: -5%; ;
 }
+@media screen and (max-width: 2336px) {
+  .edit-img-yog{
+          position: absolute;
+          top: -10%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80%;
+          height: 120%;
+          /* border-radius: 20px; */
+          /* border: 6px solid white; */
+          /* box-shadow: 0 15px 35px rgba(0,0,0,0.3); */
+          object-fit: cover;
+          z-index: 3;
+          margin-top: 15%; 
+  }
+}
+@media screen and (max-width: 1604px) {
+  .edit-img-yog{
+          position: absolute;
+          top: -10%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80%;
+          height: 85%;
+          /* border-radius: 20px; */
+          /* border: 6px solid white; */
+          /* box-shadow: 0 15px 35px rgba(0,0,0,0.3); */
+          object-fit: cover;
+          z-index: 3;
+          margin-top: 25%; 
+  }
+}
+@media screen and (max-width: 1396px) {
+  .edit-img-yog{
+          position: absolute;
+          top: -10%;
+          left: 40%;
+          transform: translateX(-50%);
+          width: 90%;
+          height: 85%;
+          /* border-radius: 20px; */
+          /* border: 6px solid white; */
+          /* box-shadow: 0 15px 35px rgba(0,0,0,0.3); */
+          object-fit: cover;
+          z-index: 3;
+          margin-top: 35%; 
+  }
+}
+
+
+
+
+
 .banner-onda{
 width: 100%;
 height: auto;
@@ -345,9 +431,8 @@ margin-top: 5%;
   /* font-family: ; */
 margin-left: 1%;
 font-size: 35px;
+color: #103C7B;
 }
-
-
 .title-love-1 {
 font-family: "Imperial Script", cursive;
 font-size: 280px;

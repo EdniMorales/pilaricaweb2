@@ -51,9 +51,9 @@
                     <p><i class="fas fa-home me-3"></i>Benito Juárez Sur N 46, Centro, 56530 Ixtapaluca, Méx.</p>
                     <p><i class="fas fa-envelope me-3"></i>soporte@pilarica.mx</p>
                     <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720102" class="telefono-contacto">(55) 5972 0102</a></p>
-                    <p><i class="fas fa-phone me-3"></i>(55) 5972 0522</p>
-                    <p><i class="fas fa-phone me-3"></i>(55) 5972 0026</p>
-                    <p><i class="fab fa-whatsapp me-3"></i>(56) 4543 8166</p>
+                    <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720522" class="telefono-contacto">(55) 5972 0522</a></p>
+                    <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720026" class="telefono-contacto">(55) 5972 0026</a></p>
+                    <p><i class="fab fa-whatsapp me-3"></i><a href="tel:+5559720102" class="telefono-contacto">(56) 4543 8166</a></p>
                 </div>
             </div>
         </div>
