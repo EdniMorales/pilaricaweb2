@@ -8,9 +8,6 @@ url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,30
 @import
 url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-*{
-  color: #FFF9F4;
-}
 #navbar{
 background-color: #FFF9F4;
 top: 0;
