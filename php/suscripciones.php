@@ -145,6 +145,9 @@ function cancelEmailUserSuscriptionOnDataBase ($conn, $correo) {
         return "Error: Debes proporcionar el correo para cancelar.";
     }
 
+    // estado del correo
+    $estado = 'Desuscrito';
+
     // Consulta SQL para actualizar el correo y el estado, y establecer la fecha de edición
     $query = "UPDATE SUSCRIPCIONES
             SET ESTADO = ?, FECHA_CREACION = CURRENT_TIMESTAMP
@@ -155,8 +158,8 @@ function cancelEmailUserSuscriptionOnDataBase ($conn, $correo) {
         return "Error en la preparación de la consulta: " . $conn->error;
     }
 
-    // Vinculamos los parámetros: 's' para string (correo y estado), 'i' para integer (id_correo)
-    $stmt->bind_param("ss", 'Desuscrito', $correo);
+    // Vinculamos los parámetros: 's' para string (correo y estado)
+    $stmt->bind_param("ss", $estado, $correo);
 
     // Ejecutamos la consulta
     if ($stmt->execute()) {
