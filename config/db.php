@@ -8,7 +8,7 @@ class Database{
         require __DIR__ . '/../vendor/autoload.php';
 
         // Cargar las variables de entorno desde el archivo .env
-        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '/../backend/settings.env');
+        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../usuario', 'settings.env');
         $dotenv->load();
 
         // Activar el reporte de errores para depuración
