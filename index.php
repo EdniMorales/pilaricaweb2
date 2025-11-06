@@ -15,20 +15,39 @@ if (!isset($_GET['controller']) && !isset($_GET['action'])) {
 //require 'views/layout/head.php';  // cabecera de la pagina
 
 function show_error(){
+    // Incluye las vistas SOLAMENTE para la página de error
+    require_once 'views/layout/head.php';
+    $error = new ErrorController();
+    $error->index();
+    require_once 'views/layout/footer.php';
+
+    // Detener la ejecucion
+    exit();
+}
+
+function show_error_p(){
     // Limpia y borra todo el contenido capturado (incluyendo la potencial salida de cualquier vista)
     //Limpieza de buffer (Borra todo el contenido HTML previo que se haya capturado)
     if (ob_get_level() > 0) {
         ob_clean();
     }
     
-    // Opcional: Establece el código de estado 404
-    header("HTTP/1.1 200 Not Found");
+    // Opcional: Establece el código de estado 500
+    header('HTTP/1.1 500 Internal Server Error');
+
+    $action_default = action_default; // Poner un controlador en la pagina
+    require 'views/layout/head.php';  // cabecera de la pagina
 
     // Incluye las vistas SOLAMENTE para la página de error
-    require_once __DIR__ . '/views/layout/head.php';
     $error = new ErrorController();
     $error->update();
-    require_once __DIR__ . '/views/layout/footer.php';
+
+    require_once 'views/layout/footer.php'; // Pie de pagina
+    
+    // si hay algo en la cabecera cerrar el buffer
+    if (ob_get_level() > 0) {
+        ob_end_flush(); // Cierra el búfer y envía todo el contenido capturado (Head, Error, Footer).
+    }
 
     // Detener la ejecucion
     exit();

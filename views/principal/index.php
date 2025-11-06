@@ -396,4 +396,3 @@
 <script type="module">
     import * as random from '../js/random.js';
 </script>
-
