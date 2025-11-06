@@ -6,7 +6,8 @@
                 </div>
             </div>
         </header>
-<div class="container">
+        <section>
+<div class="container fondo">
 <form>
   <!-- 2 column grid layout with text inputs for the first and last names -->
   <div class="row mb-4">
@@ -61,8 +62,9 @@
   
 </form>
 </div>
+</section>
 
-        <section class="py-5 ">
+        <section class="py-5 fondo">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div>
