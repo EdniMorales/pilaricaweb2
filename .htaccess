@@ -5,7 +5,7 @@
 
 #activar rewrite
 RewriteEngine on
-#ErrorDocument 404 http://localhost:3333/error/
+#ErrorDocument 404 https://pilarica.mx/inicio:3333/error/
 
 #comprobar las url que no sea un directorio o un fichero
 RewriteCond %{SCRIPT_FILENAME} !-d
