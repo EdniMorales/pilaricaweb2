@@ -14,9 +14,9 @@ RewriteCond %{SCRIPT_FILENAME} !-f
 #regla de escritura
 RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
 
-RewriteCond %{HTTP_HOST} ^teampcmx\.com [NC]
+RewriteCond %{HTTP_HOST} ^pilarica\.mx [NC]
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://teampcmx.com/$1 [R,L]
+RewriteRule ^(.*)$ https://pilarica.mx/$1 [R,L]
 
 </ifModule>
 
