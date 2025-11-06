@@ -121,7 +121,7 @@ text-shadow: 1px 1px #000000;
 background-color: #103C7B;
 }
 .title-1 {
-font-family: "Dancing Script", bold; 
+font-family: "Dancing Script", bold;
 font-size: 150px;
 font-weight: 800;
 color: #103C7B;
@@ -136,7 +136,7 @@ line-height: 0.8; /* Reduce espacio entre líneas */
 }
 
 .title-2 {
-font-family: "Dancing Script", bold; 
+font-family: "Dancing Script", bold;
 font-size: 100px;
 font-weight: 600;
 color: #103C7B;
@@ -145,7 +145,7 @@ margin-top: -1%;
 background-color:#FFF9F4 ;
 }
 .title-sucursales {
-font-family: "Dancing Script", bold; 
+font-family: "Dancing Script", bold;
 font-size: 100px;
 font-weight: 600;
 color: #103C7B;
@@ -183,7 +183,7 @@ margin-top: 5%;
 
 @media screen and (max-width: 914px) {
   .tit-prod-fav{
-   font-family: "Lexend", bold;
+    font-family: "Lexend", bold;
     font-size: 35%;
     color: #FFF9F4;
     margin-top: 5%;
@@ -194,9 +194,9 @@ margin-top: 5%;
   .tab-1-image {
     display: none;
   }
- 
- /*  .edit-img-yoga {
-   display: none;
+
+  /* .edit-img-yoga {
+    display: none;
   } */
 
 }

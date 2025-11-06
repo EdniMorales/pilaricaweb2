@@ -392,6 +392,7 @@
         </div>
     </div>
 </section>
-    <script type="module">
-        import * as random from '../js/random.js';
-    </script>
+
+<script type="module">
+    import * as random from '../js/random.js';
+</script>
