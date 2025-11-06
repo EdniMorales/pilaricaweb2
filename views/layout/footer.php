@@ -129,7 +129,7 @@ document.getElementById("BotonFooterSuscribirse").addEventListener("click", func
 //  const widgetString = "Categorias";// El dropdown con las categorias
 //  trriggers.CategoriasSearch(pageString, widgetString)
 //});// Boton de las categorias
-</script>
+
 </body>
 
 </html>
