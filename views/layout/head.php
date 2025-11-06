@@ -67,14 +67,14 @@ new WOW().init();
                           <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Solo/index">Nosotros</a>
                         </li>
-                        <li class="nav-item dropdown">
+                     <!--    <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                 <li><a class="dropdown-item" href="../">Bolsa de trabajo</a></li>
                                 <li><a class="dropdown-item" href="../">Quiero ser cliente</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                     <div class="searchbar">
                         <input class="search_input" id="buscador-prod-index" type="text" name="" placeholder="Buscar" />

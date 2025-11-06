@@ -1,6 +1,6 @@
 
  <!-- Header-->
-<header class="masthead3 py-5">
+<header class="masthead3 py-5 fondo">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder title-art">¡Solo el Amor Supera las bondades de la leche!</h1>
@@ -10,7 +10,8 @@
         </header> 
         <!-- Section-->
  <!-- Page Content-->
-        <div class="container px-4 px-lg-5">
+        <section class="py-5 fondo">
+        <div class="container px-4 px-lg-5 fondo">
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-7 text-center"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." id="ImagenProducto_Producto"/></div>
@@ -138,7 +139,7 @@
 
 
     
-
+        </section>
 
 
 
