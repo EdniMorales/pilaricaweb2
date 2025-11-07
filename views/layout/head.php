@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FMZ0D8WEE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5FMZ0D8WEE');
+</script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,14 +77,14 @@ new WOW().init();
                           <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Solo/index">Nosotros</a>
                         </li>
-                        <li class="nav-item dropdown">
+                     <!--    <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                 <li><a class="dropdown-item" href="../">Bolsa de trabajo</a></li>
                                 <li><a class="dropdown-item" href="../">Quiero ser cliente</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                     <div class="searchbar">
                         <input class="search_input" id="buscador-prod-index" type="text" name="" placeholder="Buscar" />

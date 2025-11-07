@@ -21,8 +21,8 @@
                         <div class="col-lg-6">
                             <img class="img-fluid rounded mb-5 mb-lg-0" src="<?= base_url ?>assets/new-cheese/historias/Foto-historia-1.jpg" alt="..." /></div>
                         <div class="col-lg-6">
-                            <h2 class="fw-bolder">El comienzo de nuestro sueño</h2>
-                            <p class="lead fw-normal mb-0 text-justify">La Pilarica nació en 1980, gracias al esfuerzo y la pasión del señor Fidel Humberto Alfaro Sotres. Con mucho cariño, comenzó a elaborar queso en pequeños recipientes, experimentando hasta encontrar la fórmula
+                            <h2 class="fw-bolder text-black">El comienzo de nuestro sueño</h2>
+                            <p class="lead fw-normal mb-0 text-justify text-black">La Pilarica nació en 1980, gracias al esfuerzo y la pasión del señor Fidel Humberto Alfaro Sotres. Con mucho cariño, comenzó a elaborar queso en pequeños recipientes, experimentando hasta encontrar la fórmula
                             perfecta. Así fue como, paso a paso, dio vida al sabor auténtico que hoy nos representa.
                             </p>
                         </div>
@@ -34,8 +34,8 @@
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="<?= base_url ?>assets/new-cheese/historias/foto-historia-2.jpg" alt="..." /></div>
                         <div class="col-lg-6">
-                            <h2 class="fw-bolder">Nada supera la tradición de hacer buen queso</h2>
-                            <p class="lead fw-normal text-justify">Con el aumento de la demanda, crecieron también nuestras instalaciones y el equipo de trabajo. Poco a poco, ampliamos nuestra variedad de productos: de elaborar solo queso Oaxaca y Panela, pasamos a crear también
+                            <h2 class="fw-bolder text-black">Nada supera la tradición de hacer buen queso</h2>
+                            <p class="lead fw-normal text-justify text-black">Con el aumento de la demanda, crecieron también nuestras instalaciones y el equipo de trabajo. Poco a poco, ampliamos nuestra variedad de productos: de elaborar solo queso Oaxaca y Panela, pasamos a crear también
                             Manchego, Ranchero, Cotija, Enchilado y más.
                             </p>
                             <p class="lead fw-normal text-justify">Actulamente también se producen postres y yogurt, productos que han dado a la empresa un mejor lugar en el mercado.</p>
@@ -72,31 +72,31 @@
                         <div class="col mb-4 mb-5 mb-xl-0">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-2 px-4" src="<?= base_url ?>assets/new-cheese/iconos/icono-templanza.svg" alt="..." />
-                                <h5 class="fw-bolder">Templanza</h5>
+                                <h5 class="fw-bolder text-black">Templanza</h5>
                             </div>
                         </div>
                         <div class="col mb-4 mb-5 mb-xl-0">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-2 px-4" src="<?= base_url ?>assets/new-cheese/iconos/icono-prudencia.svg" alt="..." />
-                                <h5 class="fw-bolder">Prudencia</h5>
+                                <h5 class="fw-bolder text-black">Prudencia</h5>
                             </div>
                         </div>
                         <div class="col mb-4 mb-5 mb-xl-0">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-2 px-4" src="<?= base_url ?>assets/new-cheese/iconos/icono-justicia.svg" alt="..." />
-                                <h5 class="fw-bolder">Justicia</h5>
+                                <h5 class="fw-bolder text-black">Justicia</h5>
                             </div>
                         </div>
                         <div class="col mb-4 mb-5 mb-xl-0">
-                            <div class="text-center">
+                            <div class="text-center text-black">
                                 <img class="img-fluid rounded-circle mb-2 px-4" src="<?= base_url ?>assets/new-cheese/iconos/icono-confianza.svg" alt="..." />
-                                <h5 class="fw-bolder">Confianza</h5>
+                                <h5 class="fw-bolder text-black">Confianza</h5>
                             </div>
                         </div>
                            <div class="col mb-4 mb-5 mb-xl-0">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-2 px-4" src="<?= base_url ?>assets/new-cheese/iconos/icono-responsabilidad.svg" alt="..." />
-                                <h5 class="fw-bolder">Responsabilidad</h5>
+                                <h5 class="fw-bolder text-black">Responsabilidad</h5>
                             </div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
             <section class="fondo  text-center">
                 <div class="fondo px-5 py-5">
                   <h2 class="info-tit-ce fw-bolder dancing-script-bold">Estamos celebrando 45 años</h2>
-                    <p class="info-somos-1 lead fw-normal container">de sabor y calidad
+                    <p class="info-somos-1 lead fw-normal container text-black">de sabor y calidad
                     </p>
                 </div>
             </section>

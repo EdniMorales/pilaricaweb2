@@ -1,4 +1,4 @@
-            <section class="fondo-sucursales">
+            <section class="fondo-sucursales fondo">
                 <div class="container px-5">
                     <h1 class="title-sucursales dancing-script-bold wow animated fadeInDown" data-wow-delay="2s">  - Sucursales -</h1>
                     <div class="card border-0 shadow rounded-3 overflow-hidden">
