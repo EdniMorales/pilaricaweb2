@@ -209,6 +209,12 @@ function searchIdCategories($conn, $id_categorie) {
     return $data;
 }
 
+function lanzarPaginaDeError(){
+    require_once "../index.php";
+    show_error_p();
+    return json_encode(['mensaje' => 'Se mandó a la página de error']);
+}
+
 // Verificar qué función ejecutar en base a un parámetro
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
@@ -229,7 +235,9 @@ if (isset($_GET['action'])) {
         $data = searchOnlyProductos($conn, $search_term);
     } elseif ($action == 'searchIdCategories' && isset($_GET['search_categories'])){
         $data = searchIdCategories($conn, $_GET['search_categories']);
-    }else {
+    } else if ($action == 'pageError'){
+        $data = lanzarPaginaDeError();
+    } else {
         $data = ["error" => "Acción no válida"];
     }
 

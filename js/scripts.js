@@ -212,10 +212,16 @@ function TaerDatosDependiendoLaRutaDelDOM(){
         case 'Principal':
             random.ColocarContenidoRandom();
             TraerContenidoCarrucel(); // llamar al carrucel si esta en principal
+            estadoDeError();
             break
         default:
             const params = new URLSearchParams(window.location.search);
             trriggers.MostrarDatosPorProductoIndividual(params.get('Id'))
             break
     }
+}
+
+// FUNCION PARA PONER LA PAGINA EN ESTADO DE ERROR
+export function estadoDeError() {
+    window.location.href = '../php/backend.php?action=pageError';
 }
