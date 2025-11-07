@@ -17,6 +17,31 @@
 import * as trriggers from '../backend/trigger.js';
 import * as random from "../js/random.js";
 
+// Asocia los eventos con los elementos del HTML
+document.getElementById("buscador-prod-index").addEventListener("input", function() {
+    const buttonString = "buscador-prod-index";
+    const pageString = "index";
+    const widgetString = "dropdown-index";
+    trriggers.ProductSearch(buttonString, pageString, widgetString);
+}); // Barra de navegación
+document.getElementById("button-buscador-prod-index").addEventListener("click", function() {
+    const buttonString = "buscador-prod-index"; // El item con informacion
+    const pageString = "index";
+    const widgetString = "dropdown-index";
+    trriggers.ProductSearch(buttonString, pageString, widgetString); // Pasa el string a la función
+}); // Suscripcion del correo
+document.getElementById("BotonFooterSuscribirse").addEventListener("click", function() {
+    const casillaCorreo = "CasillaFooterSuscripcionCorreo";
+    const casillaUsuario = "NombreFormQS";
+    const casillaApellido = "ApellidoFormQS";
+    trriggers.SuscribirCorreoPilaricaNews(casillaCorreo, casillaUsuario, casillaApellido);
+}); // Botón de búsqueda
+//document.getElementById("navbarSupportedContent").addEventListener("click", function(){
+//  const pageString = "index";
+//  const widgetString = "Categorias";// El dropdown con las categorias
+//  trriggers.CategoriasSearch(pageString, widgetString)
+//});// Boton de las categorias
+
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('trigger');
     // Funcion que carga las categorias
@@ -210,12 +235,22 @@ function TaerDatosDependiendoLaRutaDelDOM(){
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case 'Principal':
-            random.ColocarContenidoRandom();
+            //random.ColocarContenidoRandom();
             TraerContenidoCarrucel(); // llamar al carrucel si esta en principal
+            // Formulario de quejas y sugerencias
+            document.getElementById("BotonEnviarQS").addEventListener("click", function() {
+                const Formulario = "FormularioQS";
+                trriggers.EnviarDatosDelFormulario(Formulario); // Ejecutar la funcion que envia los datos al servidor
+            });
             break
         default:
             const params = new URLSearchParams(window.location.search);
             trriggers.MostrarDatosPorProductoIndividual(params.get('Id'))
             break
     }
+}
+
+// FUNCION PARA PONER LA PAGINA EN ESTADO DE ERROR
+export function estadoDeError() {
+    window.location.href = '../php/backend.php?action=pageError';
 }

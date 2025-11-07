@@ -12,10 +12,15 @@ class ErrorController{
     } 
     /*este es una clase de prueba para saber que todo esta bien relacionado */
     public function index(){
-        require_once 'views/error/error404.php';
+        require_once __DIR__ . '/../views/error/error404.php';
     }
 
     public function update(){
-        require_once 'views/error/errorUpdate.php';
+        $viewPath = __DIR__ . '/../views/error/errorUpdate.php';
+        if(file_exists($viewPath)){
+            require_once $viewPath;
+        } else {
+            die("Vista de error no encontrada.");
+        }
     }
 }

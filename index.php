@@ -16,10 +16,10 @@ if (!isset($_GET['controller']) && !isset($_GET['action'])) {
 
 function show_error(){
     // Incluye las vistas SOLAMENTE para la página de error
-    require_once 'views/layout/head.php';
+    require_once __DIR__ . '/views/layout/head.php';
     $error = new ErrorController();
     $error->index();
-    require_once 'views/layout/footer.php';
+    require_once __DIR__ . '/views/layout/footer.php';
 
     // Detener la ejecucion
     exit();
@@ -36,7 +36,7 @@ function show_error_p(){
     header('HTTP/1.1 500 Internal Server Error');
 
     $action_default = action_default; // Poner un controlador en la pagina
-    require 'views/layout/head.php';  // cabecera de la pagina
+    require_once __DIR__ . '/views/layout/head.php';  // cabecera de la pagina
 
     // Incluye las vistas SOLAMENTE para la página de error
     $error = new ErrorController();
