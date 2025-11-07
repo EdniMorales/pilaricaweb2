@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 require_once 'autoload.php';
 require_once 'config/parameters.php';
@@ -54,7 +56,7 @@ function show_error_p(){
 }
 
 if(isset($_GET['controller'])){
-    $nombreControlador = $_GET['controller'].'Controller';
+    $nombreControlador = ucfirst($_GET['controller']).'Controller';
     
 }elseif(!isset($_GET['controller'])  && !isset($_GET['action'])){
     $nombreControlador = controller_default;
