@@ -215,6 +215,36 @@ function lanzarPaginaDeError(){
     return json_encode(['mensaje' => 'Se mandó a la página de error']);
 }
 
+function traerImagenFront($path) {
+    $rutaBase = "/home/fvyvvdbc/resourse/";
+
+    // Validar que se haya pasado un path
+    if (empty($path)) {
+        return null;
+    }
+
+    // Evitar ataques de traversal
+    $imagen = basename($path);
+    $rutaCompleta = $rutaBase . $imagen;
+
+    // Verificar que el archivo exista
+    if (!file_exists($rutaCompleta)) {
+        return null;
+    }
+
+    // Determinar el tipo MIME
+    $mime = mime_content_type($rutaCompleta);
+
+    // Enviar headers para mostrar la imagen en el navegador
+    header('Content-Type: ' . $mime);
+    header('Content-Disposition: inline; filename="' . $imagen . '"');
+    header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+
+    // Enviar el contenido de la imagen
+    readfile($rutaCompleta);
+    exit;
+}
+
 // Verificar qué función ejecutar en base a un parámetro
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
@@ -237,6 +267,13 @@ if (isset($_GET['action'])) {
         $data = searchIdCategories($conn, $_GET['search_categories']);
     } else if ($action == 'pageError'){
         $data = lanzarPaginaDeError();
+    } else if ($action == 'traerImagen' && isset($_GET['img'])) {
+        // Usar la imagen proporcionada o la predeterminada
+        $imagen = !empty($_GET['img']) ? basename($_GET['img']) : null;
+        // Llamar a la función para enviar la imagen
+        traerImagenFront($imagen);
+        // Terminar el script para que no envíe JSON después
+        exit;
     } else {
         $data = ["error" => "Acción no válida"];
     }
