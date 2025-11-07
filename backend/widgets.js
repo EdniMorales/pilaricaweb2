@@ -67,19 +67,19 @@ export function CarrucelCategorias(widget, array){
         carrucel.insertAdjacentHTML('beforeend', `
         <div class="card">
           <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria" oncontextmenu="return false;" draggable="false">
           </div>
           <p class="text_card_description">No se encontraron productos.</p>
         </div>
         <div class="card">
           <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria" oncontextmenu="return false;" draggable="false">
           </div>
           <p class="text_card_description">${array.error}</p>
         </div>
         <div class="card">
           <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria" oncontextmenu="return false;" draggable="false">
           </div>
           <p class="text_card_description">No se encontraron productos.</p>
         </div>`
@@ -91,19 +91,19 @@ export function CarrucelCategorias(widget, array){
         carrucel.insertAdjacentHTML('beforeend',`
         <div class="card">
           <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria" oncontextmenu="return false;" draggable="false">
           </div>
           <p class="text_card_description">No se encontraron productos.</p>
         </div>
         <div class="card">
           <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria" oncontextmenu="return false;" draggable="false">
           </div>
           <p class="text_card_description">No se encontraron productos.</p>
         </div>
         <div class="card">
           <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria" oncontextmenu="return false;" draggable="false">
           </div>
           <p class="text_card_description">No se encontraron productos.</p>
         </div>`);
@@ -116,24 +116,31 @@ export function CarrucelCategorias(widget, array){
     array.forEach(product => { // la funcion para colocar los datos de la consulta
         let nombreLimpio = product.NOMBRE.replace(/\s+/g, '').toLowerCase() || "principal";
         let nombreCapitalizado = product.NOMBRE.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
+        let imagen;
+
+        if(!product.IMAGEN_ETIQUETA){
+            imagen  = `https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/lossless.png`;
+        } else {
+            imagen  = `https://pilarica.mx/php/backend.php?action=traerImagen&img=${product.IMAGEN_ETIQUETA}`;
+        }
 
         if (array.length === 1){
             carrucel.insertAdjacentHTML('beforeend',`
                 <div class="card">
                   <div class="image-container" onclick="window.location.href='../Principal/index'">
-                    <img src="../assets/new-cheese/default.png" alt="Nuestros Productos">
+                    <img src="../assets/new-cheese/default.png" alt="Nuestros Productos" oncontextmenu="return false;" draggable="false">
                   </div>
                   <p class="text_card_description">Conoce nuestros Productos.</p>
                 </div>
                 <div class="card">
                   <div class="image-container" onclick="window.location.href='../${nombreLimpio}/index'">
-                    <img src="https://pilarica.com.mx/${product.IMAGEN_ETIQUETA}" alt="Nuestros Productos">
+                    <img src="${imagen}" alt="Nuestros Productos" oncontextmenu="return false;" draggable="false">
                   </div>
                     <p class="text_card_description">${product.DESCRIPCION}</p>
                 </div>
                 <div class="card">
                   <div class="image-container" onclick="window.location.href='../Principal/index'">
-                    <img src="../assets/new-cheese/default.png" alt="Nuestros Productos">
+                    <img src="../assets/new-cheese/default.png" alt="Nuestros Productos" oncontextmenu="return false;" draggable="false">
                   </div>
                     <p class="text_card_description">Conoce nuestros Productos.</p>
                 </div>`
@@ -143,13 +150,13 @@ export function CarrucelCategorias(widget, array){
                 carrucel.insertAdjacentHTML('beforeend',`
                     <div class="card">
                       <div class="image-container" onclick="window.location.href='../${nombreLimpio}/index'">
-                        <img src="https://pilarica.com.mx/${product.IMAGEN_ETIQUETA}" alt="Nuestros Productos">
+                        <img src="${imagen}" alt="Nuestros Productos" oncontextmenu="return false;" draggable="false">
                       </div>
                       <p class="text_card_description">${product.DESCRIPCION}</p>
                     </div>
                     <div class="card">
                       <div class="image-container" onclick="window.location.href='../Principal/index'">
-                        <img src="../assets/new-cheese/default.png" alt="Nuestros Productos">
+                        <img src="../assets/new-cheese/default.png" alt="Nuestros Productos" oncontextmenu="return false;" draggable="false">
                       </div>
                       <p class="text_card_description">Conoce nuestros Productos.</p>
                     </div>`
@@ -158,7 +165,7 @@ export function CarrucelCategorias(widget, array){
                 carrucel.insertAdjacentHTML('beforeend',`
                     <div class="card">
                       <div class="image-container" onclick="window.location.href='../${nombreLimpio}/index'">
-                        <img src="https://pilarica.com.mx/${product.IMAGEN_ETIQUETA}" alt="Nuestros Productos">
+                        <img src="${imagen}" alt="Nuestros Productos" oncontextmenu="return false;" draggable="false">
                       </div>
                       <p class="text_card_description">${product.DESCRIPCION}</p>
                     </div>`
@@ -168,7 +175,7 @@ export function CarrucelCategorias(widget, array){
             carrucel.insertAdjacentHTML('beforeend',`
                 <div class="card">
                   <div class="image-container" onclick="window.location.href='../${nombreLimpio}/index'">
-                    <img src="https://pilarica.com.mx/${product.IMAGEN_ETIQUETA}" alt="Nuestros Productos">
+                    <img src="${imagen}" alt="Nuestros Productos" oncontextmenu="return false;" draggable="false">
                   </div>
                   <p class="text_card_description">${product.DESCRIPCION}</p>
                 </div>`
@@ -194,7 +201,7 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
         ddrop.innerHTML = `
         <div class="card h-100">
             <!-- Product image-->
-            <img class="card-img-top" src="../assets/new-cheese/default.png" alt="..." />
+            <img class="card-img-top" src="../assets/new-cheese/default.png" alt="..." / oncontextmenu="return false;" draggable="false">
             <!-- Product details-->
             <div class="card-body p-4">
                 <div class="text-center">
@@ -213,7 +220,7 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
         ddrop.innerHTML = `
         <div class="card h-100">
             <!-- Product image-->
-            <img class="card-img-top" src="../assets/new-cheese/default.png" alt="..." />
+            <img class="card-img-top" src="../assets/new-cheese/default.png" alt="..." / oncontextmenu="return false;" draggable="false">
             <!-- Product details-->
             <div class="card-body p-4">
                 <div class="text-center">
@@ -255,7 +262,7 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
                             <div class="col mb-5">
             <div class="card h-100 wow bounceInUp data-wow-duration="2s" data-wow-delay="2s">
                 <!-- Product image-->
-                <img class="card-img-top" src="${imagenProducto}" alt="..." />
+                <img class="card-img-top" src="${imagenProducto}" alt="..." / oncontextmenu="return false;" draggable="false">
                 <!-- Product details-->
                 <div class="card-body p-4">
                     <div class="text-center">
