@@ -101,6 +101,7 @@
 </script>
 <script type="module">
     import * as trriggers from '<?= base_url ?>backend/trigger.js'; // Importar las funciones desde el módulo
+console.log("Cargado el footer");
 // Asocia los eventos con los elementos del HTML
 document.getElementById("buscador-prod-index").addEventListener("input", function() {
     const buttonString = "buscador-prod-index";

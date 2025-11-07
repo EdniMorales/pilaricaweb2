@@ -5,7 +5,7 @@ import * as widgets from './widgets.js';
 export function ProductSearch(Id_Producto, page, dropdown){
     const Search_Text = document.getElementById(Id_Producto).value;
     const widget = document.getElementById(dropdown)
-    //console.log(`Texto buscado: ${Search_Text}`);
+    console.log(`Texto buscado: ${Search_Text}`);
 
     // Validar que no este vacio
     if (Search_Text.length > 0){
