@@ -30,7 +30,7 @@
                             <div class="fw-bold texto-fidel">
                                 Sr. Fidel Alfaro
                                 <span class="fw-bold text-primary mx-1">/</span>
-                                Fundador Lacteos La Pilarica
+                                Fundador Lácteos La Pilarica
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
     <div class="px-5 my-5 stilo-prod-fav">
         <div class="row">
             <div class="col-lg-12">
-                <p class="tit-prod-fav">Los mas favoritos</p>
+                <p class="tit-prod-fav">Los más favoritos</p>
                 <p class="tit-prod-fav-1">Elaborados de forma 100% artesanal</p>
             </div>
             <div class="col-lg-4">
@@ -51,7 +51,7 @@
                     <img class="img-fluid rounded-circle mb-3"
                         src="<?= base_url ?>assets/new-cheese/panela/Panela-1k-favoritos.png" alt="queso-oaxaca-1kg" />
                     <p class="subtit-prod-fav">Queso Panela</p>
-                    <P class="subtit-prod-fav-1">Encuéntralo en presentaciones de 1kg y 500 grs.</P>
+                    <P class="subtit-prod-fav-1">Encuéntralo en presentaciones .300gr, 1 Kg y 2.7 Kg.</P>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -59,8 +59,7 @@
                     <img class="img-fluid rounded-circle mb-3"
                         src="<?= base_url ?>assets/new-cheese/oaxaca/Oaxaca-1kg-favoritos.png" alt="..." />
                     <p class="subtit-prod-fav">Queso Oaxaca</p>
-                    <p class="subtit-prod-fav-1">Encuéntralo en presentaciones de 10kg, 6kg, 3.2kg, 500 grs y 200grs.
-                    </p>
+                    <p class="subtit-prod-fav-1">Encuéntralo en presentaciones .500gr, 1 Kg y Granel 3.3 Kg.</p>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -68,7 +67,7 @@
                     <img class="img-fluid rounded-circle mb-3"
                         src="<?= base_url ?>assets/new-cheese/crema/Crema-favoritos.png" alt="..." />
                     <p class="subtit-prod-fav">Crema</p>
-                    <p class="subtit-prod-fav-1">Encuéntrala en presentaciones de 4.5 kg, 500 ml y 200ml.</p>
+                    <p class="subtit-prod-fav-1">Encuéntrala en presentaciones .200gr, .500gr, 1 Kg y 4.5 Kg.</p>
                 </div>
             </div>
         </div>
@@ -190,8 +189,7 @@
                                             <input class="form-check-input" type="checkbox" name="gridCheck"
                                                 id="gridCheck">
                                             <label class="form-check-label text-black" for="gridCheck">
-                                                ¿Te gustarria suscribirte gratis para recibir ofertas, noticias,
-                                                promociones, recetas y más?
+                                                ¿Te gustaría suscribirte gratis para recibir ofertas, noticias, promociones, recetas y mucho más?
                                             </label>
                                         </div>
                                     </div>

@@ -22,8 +22,7 @@
                             <img class="img-fluid rounded mb-5 mb-lg-0" src="<?= base_url ?>assets/new-cheese/historias/Foto-historia-1.jpg" alt="..." /></div>
                         <div class="col-lg-6">
                             <h2 class="fw-bolder text-black">El comienzo de nuestro sueño</h2>
-                            <p class="lead fw-normal mb-0 text-justify text-black">La Pilarica nació en 1980, gracias al esfuerzo y la pasión del señor Fidel Humberto Alfaro Sotres. Con mucho cariño, comenzó a elaborar queso en pequeños recipientes, experimentando hasta encontrar la fórmula
-                            perfecta. Así fue como, paso a paso, dio vida al sabor auténtico que hoy nos representa.
+                            <p class="lead fw-normal mb-0 text-justify text-black">La Pilarica nació en 1980, gracias al esfuerzo y la pasión del señor Fidel Humberto Alfaro Sotres. Con mucho cariño, comenzó a elaborar queso en pequeños recipientes, experimentando hasta encontrar la fórmula perfecta. Así fue como, paso a paso, dio vida al sabor auténtico que hoy nos representa.
                             </p>
                         </div>
                     </div>
@@ -45,7 +44,7 @@
             </section>
             <section class="fondo py-5">
                 <div class="px-5 py-5">
-                  <h2 class="info-tit fw-bolder dancing-script-bold">Nuestra Mision</h2>
+                  <h2 class="info-tit fw-bolder dancing-script-bold">Nuestra Misión</h2>
                     <p class="info-somos lead fw-normal container">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles
                     e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
                     </p>
@@ -53,7 +52,7 @@
             </section>
             <section class="fondo py-5">
                 <div class="px-5 py-5">
-                  <h2 class="info-tit fw-bolder dancing-script-bold">Nuestra Vision</h2>
+                  <h2 class="info-tit fw-bolder dancing-script-bold">Nuestra Visión</h2>
                     <p class="info-somos lead fw-normal container">Aprovechar todos los recursos energéticos y tecnológicos para nuestros procesos
                     para nuestros procesos y lograr el máximo ahorro posible en la elaboración de nuestros productos, ser más competitivos en el mercado y ser una empresa sólida, que proporcione bienestar a sus empleados, clientes y proveedores. 
                     </p>
@@ -62,7 +61,7 @@
             <section class="fondo py-5">
                 <div class="px-5 py-5">
                   <h2 class="info-tit fw-bolder dancing-script-bold">Nuestros Valores</h2>
-                    <p class="info-somos lead fw-normal container">Cada producto refleja nuestro compromiso con el trabajo bien hecho y el cariño por quienes nos eligen cada día..
+                    <p class="info-somos lead fw-normal container">Cada producto es una muestra de nuestro compromiso con la calidad y del cariño que sentimos por quienes nos eligen día a día.
                     </p>
                 </div>
             </section>

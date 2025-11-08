@@ -62,8 +62,8 @@
         © 2025 Copyright:<p>Lacteos La Pilarica</p>
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #3b5998;" href="#!"
             role="button"><i class="fab fa-facebook-f"></i></a>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ac2bac;" href="#!"
-            role="button"><i class="fab fa-instagram"></i></a>
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ac2bac;" href="https://www.instagram.com/lacteoslapilariaca/" target="_blank"
+        role="button"><i class="fab fa-instagram"></i></a>
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #0082ca;" href="#!"
             role="button"><i class="fab fa-linkedin-in"></i></a>
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ed302f;" href="#!"
