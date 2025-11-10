@@ -218,29 +218,84 @@ function lanzarPaginaDeError(){
 function traerImagenFront($path) {
     $rutaBase = "/home/fvyvvdbc/resourse/";
 
-    // Validar que se haya pasado un path
     if (empty($path)) {
-        return null;
+        header("HTTP/1.1 400 Bad Request");
+        exit("No se especificó imagen.");
     }
-
-    // Evitar ataques de traversal
-    $imagen = basename($path);
-    $rutaCompleta = $rutaBase . $imagen;
-
-    // Verificar que el archivo exista
-    if (!file_exists($rutaCompleta)) {
-        return null;
+    
+    // Limpiar ruta
+    $path = str_replace(['..', '\\'], '', $path);
+    $rutaCompleta = realpath($rutaBase . $path);
+    
+    if ($rutaCompleta === false || strpos($rutaCompleta, realpath($rutaBase)) !== 0 || !file_exists($rutaCompleta)) {
+        header("HTTP/1.1 404 Not Found");
+        exit("Imagen no encontrada.");
     }
-
-    // Determinar el tipo MIME
-    $mime = mime_content_type($rutaCompleta);
-
-    // Enviar headers para mostrar la imagen en el navegador
+    
+    // Asegurar que no haya salida previa
+    if (ob_get_level()) ob_end_clean();
+    
+    $mime = mime_content_type($rutaCompleta) ?: 'application/octet-stream';
+    $imagen = basename($rutaCompleta);
+    
+    // Enviar headers
     header('Content-Type: ' . $mime);
     header('Content-Disposition: inline; filename="' . $imagen . '"');
     header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
-
-    // Enviar el contenido de la imagen
+    header('Pragma: no-cache');
+    
+    // Detectar si se debe aplicar watermark
+    $referer = $_SERVER['HTTP_REFERER'] ?? '';
+    $aplicarWatermark = true;
+    
+    if (!empty($referer)) {
+        $host = parse_url($referer, PHP_URL_HOST);
+        if ($host === "pilarica.mx") { // dominio
+            $aplicarWatermark = false;
+        }
+    }
+    
+    // Aplicar watermark solo si no viene de tu página
+    if ($aplicarWatermark && strpos($mime, 'image/') === 0) {
+        $imgResource = null;
+    
+        switch ($mime) {
+            case 'image/png': $imgResource = imagecreatefrompng($rutaCompleta); break;
+            case 'image/jpeg': case 'image/jpg': $imgResource = imagecreatefromjpeg($rutaCompleta); break;
+            case 'image/gif': $imgResource = imagecreatefromgif($rutaCompleta); break;
+        }
+    
+        if ($imgResource) {
+            $width = imagesx($imgResource);
+            $height = imagesy($imgResource);
+    
+            $color = imagecolorallocate($imgResource, 255, 0, 0);
+            $texto = "LACTEOS LA PILARICA";
+            $font = 5; // Fuente bitmap
+            $textWidth = imagefontwidth($font) * strlen($texto);
+            $textHeight = imagefontheight($font);
+    
+            // Dibujar texto en diagonal repetido
+            $spacingX = $textWidth + 50; // espacio horizontal entre repeticiones
+            $spacingY = $textHeight + 50; // espacio vertical
+            for ($y = -$height; $y < $height * 2; $y += $spacingY) {
+                for ($x = -$width; $x < $width * 2; $x += $spacingX) {
+                    imagestring($imgResource, $font, $x, $y, $texto, $color);
+                }
+            }
+    
+            switch ($mime) {
+                case 'image/png': imagepng($imgResource); break;
+                case 'image/jpeg': case 'image/jpg': imagejpeg($imgResource); break;
+                case 'image/gif': imagegif($imgResource); break;
+            }
+    
+            imagedestroy($imgResource);
+            exit;
+        }
+    }
+    
+    // Si viene de tu página o no es imagen, se envía original
     readfile($rutaCompleta);
     exit;
 }
@@ -269,7 +324,7 @@ if (isset($_GET['action'])) {
         $data = lanzarPaginaDeError();
     } else if ($action == 'traerImagen' && isset($_GET['img'])) {
         // Usar la imagen proporcionada o la predeterminada
-        $imagen = !empty($_GET['img']) ? basename($_GET['img']) : null;
+        $imagen = !empty($_GET['img']) ? $_GET['img'] : null;
         // Llamar a la función para enviar la imagen
         traerImagenFront($imagen);
         // Terminar el script para que no envíe JSON después
