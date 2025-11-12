@@ -222,80 +222,92 @@ function traerImagenFront($path) {
         header("HTTP/1.1 400 Bad Request");
         exit("No se especificó imagen.");
     }
-    
+
     // Limpiar ruta
     $path = str_replace(['..', '\\'], '', $path);
     $rutaCompleta = realpath($rutaBase . $path);
-    
+
     if ($rutaCompleta === false || strpos($rutaCompleta, realpath($rutaBase)) !== 0 || !file_exists($rutaCompleta)) {
         header("HTTP/1.1 404 Not Found");
         exit("Imagen no encontrada.");
     }
-    
-    // Asegurar que no haya salida previa
-    if (ob_get_level()) ob_end_clean();
-    
+
+    // Limpiar buffers
+    while (ob_get_level()) ob_end_clean();
+
     $mime = mime_content_type($rutaCompleta) ?: 'application/octet-stream';
     $imagen = basename($rutaCompleta);
-    
-    // Enviar headers
+
+    // Enviar headers básicos
     header('Content-Type: ' . $mime);
     header('Content-Disposition: inline; filename="' . $imagen . '"');
     header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
     header('Pragma: no-cache');
-    
+
     // Detectar si se debe aplicar watermark
     $referer = $_SERVER['HTTP_REFERER'] ?? '';
     $aplicarWatermark = true;
-    
+
     if (!empty($referer)) {
         $host = parse_url($referer, PHP_URL_HOST);
-        if ($host === "pilarica.mx") { // dominio
+        if ($host === "pilarica.mx") {
             $aplicarWatermark = false;
         }
     }
-    
-    // Aplicar watermark solo si no viene de tu página
+
+    // Aplicar watermark solo si aplica
     if ($aplicarWatermark && strpos($mime, 'image/') === 0) {
-        $imgResource = null;
-    
+        $imgResource = false;
+
         switch ($mime) {
-            case 'image/png': $imgResource = imagecreatefrompng($rutaCompleta); break;
-            case 'image/jpeg': case 'image/jpg': $imgResource = imagecreatefromjpeg($rutaCompleta); break;
-            case 'image/gif': $imgResource = imagecreatefromgif($rutaCompleta); break;
+            case 'image/png':  $imgResource = @imagecreatefrompng($rutaCompleta); break;
+            case 'image/jpeg': case 'image/jpg': $imgResource = @imagecreatefromjpeg($rutaCompleta); break;
+            case 'image/gif':  $imgResource = @imagecreatefromgif($rutaCompleta); break;
         }
-    
-        if ($imgResource) {
-            $width = imagesx($imgResource);
-            $height = imagesy($imgResource);
-    
-            $color = imagecolorallocate($imgResource, 255, 0, 0);
-            $texto = "LACTEOS LA PILARICA";
-            $font = 5; // Fuente bitmap
-            $textWidth = imagefontwidth($font) * strlen($texto);
-            $textHeight = imagefontheight($font);
-    
-            // Dibujar texto en diagonal repetido
-            $spacingX = $textWidth + 50; // espacio horizontal entre repeticiones
-            $spacingY = $textHeight + 50; // espacio vertical
-            for ($y = -$height; $y < $height * 2; $y += $spacingY) {
-                for ($x = -$width; $x < $width * 2; $x += $spacingX) {
-                    imagestring($imgResource, $font, $x, $y, $texto, $color);
-                }
-            }
-    
-            switch ($mime) {
-                case 'image/png': imagepng($imgResource); break;
-                case 'image/jpeg': case 'image/jpg': imagejpeg($imgResource); break;
-                case 'image/gif': imagegif($imgResource); break;
-            }
-    
-            imagedestroy($imgResource);
+
+        if (!$imgResource) {
+            error_log("⚠️ GD no pudo abrir la imagen: $rutaCompleta ($mime)");
+            readfile($rutaCompleta);
             exit;
         }
+
+        $width = imagesx($imgResource);
+        $height = imagesy($imgResource);
+        $color = imagecolorallocatealpha($imgResource, 255, 0, 0, 80); // semitransparente
+        $texto = "LACTEOS LA PILARICA";
+        $font = 5;
+
+        $textWidth = imagefontwidth($font) * strlen($texto);
+        $textHeight = imagefontheight($font);
+
+        $spacingX = $textWidth + 50;
+        $spacingY = $textHeight + 50;
+
+        // Dibujar watermark diagonal repetido
+        for ($y = -$height; $y < $height * 2; $y += $spacingY) {
+            for ($x = -$width; $x < $width * 2; $x += $spacingX) {
+                imagestring($imgResource, $font, $x, $y, $texto, $color);
+            }
+        }
+
+        // Captura el binario y envía correctamente
+        ob_start();
+        switch ($mime) {
+            case 'image/png':  imagepng($imgResource); break;
+            case 'image/jpeg': imagejpeg($imgResource, null, 90); break;
+            case 'image/gif':  imagegif($imgResource); break;
+        }
+        $binaryData = ob_get_clean();
+        imagedestroy($imgResource);
+
+        header_remove('Transfer-Encoding');
+        header('Content-Length: ' . strlen($binaryData));
+
+        echo $binaryData;
+        exit;
     }
-    
-    // Si viene de tu página o no es imagen, se envía original
+
+    // Si no aplica watermark, enviar original
     readfile($rutaCompleta);
     exit;
 }
