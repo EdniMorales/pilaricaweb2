@@ -3,7 +3,7 @@
        
         public function index(){
         /*   require_once 'views/loggin/index.php';  */
-         require_once 'views/Yogurth/index.php';
+         require_once 'views/yogurth/index.php';
          
         }
 
