@@ -82,7 +82,8 @@ function searchIdAllProductos($conn, $id_producto) {
             PRODUCTOS.PRESENTACION,
             PRODUCTOS.MARCA,
             PRODUCTOS.HISTORIA,
-            GRUPOS.IMAGEN_ETIQUETA AS IMG_BANNER,
+            GRUPOS.IMAGEN_ETIQUETA AS IMG_ETIQUETA,
+            GRUPOS.IMAGEN_BANER AS IMG_BANNER,
             PRODUCTOS.IMAGEN_PRODUCTO,
             CATEGORIAS.IMAGEN_ETIQUETA,
             TABLA_ALIMENTICIA.PORCION,
@@ -266,7 +267,7 @@ function traerImagenFront($path) {
         }
 
         if (!$imgResource) {
-            error_log("⚠️ GD no pudo abrir la imagen: $rutaCompleta ($mime)");
+            error_log("GD no pudo abrir la imagen: $rutaCompleta ($mime)");
             readfile($rutaCompleta);
             exit;
         }

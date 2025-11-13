@@ -288,6 +288,7 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
 export function ColocarLosDatosDelProductoEnLaPagina(array) {
     // Declarar los elementos del DOM para modificarlos
     // Datos del producto
+    const bannerProducto = document.getElementById("banner-producto");
     const imagenEtiqueta = document.getElementById("ImagenEtiqueta_Producto");
     const imagenProducto = document.getElementById("ImagenProducto_Producto");
     const imagenBanner = document.getElementById("ImagenBanner_Producto");
@@ -382,27 +383,38 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
         console.log(imagenProductoDB);
 
         // Verificar si IMAGEN_ETIQWUETA tiene un valor Base64 o es null
-        let imagenEtiquetaDB = product.IMAGEN_ETIQUETA;
-        if (!imagenEtiquetaDB) { // imagenEtiquetaDB != 'Pilarica'
+        let imagenCategoriaDB = product.IMAGEN_ETIQUETA;
+        if (!imagenCategoriaDB) { // imagenCategoriaDB != 'Pilarica'
             // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
-            imagenEtiquetaDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/lossless.png`;
+            imagenCategoriaDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/lossless.png`;
         } else {
             // Asegurarse de que la imagen esté en formato Base64 adecuado
-            imagenEtiquetaDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=${imagenEtiquetaDB}`; // 'data:image/png;base64,' +
+            imagenCategoriaDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=${imagenCategoriaDB}`; // 'data:image/png;base64,' +
+        }
+
+        // Verificar si IMG_ETIQUETA tiene una ruta o es null
+        let imagenGrupoDB = product.IMG_ETIQUETA;
+        if (!imagenGrupoDB) {
+            // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
+            imagenGrupoDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/lossless.png`;
+        } else {
+            // Asegurarse de que la imagen esté en formato Base64 adecuado
+            imagenGrupoDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=${imagenGrupoDB}`;
         }
 
         // Verificar si IMG_BANNER tiene una ruta o es null
         let imagenBannerDB = product.IMG_BANNER;
         if (!imagenBannerDB) {
             // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
-            imagenBannerDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/lossless.png`;
+            imagenBannerDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/banner.jpg`;
         } else {
             // Asegurarse de que la imagen esté en formato Base64 adecuado
             imagenBannerDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=${imagenBannerDB}`;
         }
 
         imagenProducto.src = imagenProductoDB;
-        imagenEtiqueta.src = imagenEtiquetaDB;
-        imagenBanner.src = imagenBannerDB;
+        imagenEtiqueta.src = imagenCategoriaDB;
+        imagenBanner.src = imagenGrupoDB;
+        bannerProducto.style.backgroundImage = `url("${imagenBannerDB}")`;
 });
 }
