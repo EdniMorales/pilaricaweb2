@@ -217,6 +217,24 @@ function lanzarPaginaDeError(){
 }
 
 function traerImagenFront($path) {
+    // =========================
+    //  CORS PARA IMÁGENES
+    // =========================
+    $allowed = [
+        "http://localhost",
+        "http://127.0.0.1",
+        "https://pilarica.mx",
+    ];
+
+    $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+
+    if (in_array($origin, $allowed)) {
+        header("Access-Control-Allow-Origin: $origin");
+    }
+
+    header("Vary: Origin");
+    // =========================
+
     $rutaBase = "/home/fvyvvdbc/resourse/";
 
     if (empty($path)) {

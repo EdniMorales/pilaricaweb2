@@ -158,6 +158,58 @@ function fadeIn(el, display) {
     })();
 };
 
+// FUNCION QUE CRAGA LAS IMAGENES DE FORMA SEGURA
+function loadSecureImage(canvasSelector, endpointURL, responsive = false) {
+
+    const canvas = document.querySelector(canvasSelector);
+    if (!canvas) {
+        console.error("Canvas no encontrado:", canvasSelector);
+        return;
+    }
+
+    const ctx = canvas.getContext("2d");
+
+    // Ajustar canvas al tamaño CSS
+    function ajustarCanvas() {
+        const rect = canvas.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
+    }
+
+    // Evitar guardar imagen
+    canvas.oncontextmenu = e => e.preventDefault();
+
+    // Render
+    function render() {
+        ajustarCanvas();
+
+        fetch(endpointURL, { cache: "no-store" })
+            .then(r => r.blob())
+            .then(blob => {
+                const url = URL.createObjectURL(blob);
+                const img = new Image();
+
+                img.onload = () => {
+                    ajustarCanvas();
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                    URL.revokeObjectURL(url);
+                };
+
+                img.src = url;
+            })
+            .catch(err => console.error("Error al cargar imagen:", err));
+    }
+
+    // Primera carga
+    render();
+
+    // Si quieres que sea responsive
+    if (responsive) {
+        const observer = new ResizeObserver(() => render());
+        observer.observe(canvas);
+    }
+}
+
 // FUNCION PARA TRAER LAS CATEGORIAS AL MENU DESPLEGABLE
 function TraerCategorias(){
     console.log("Categorias creadas");
@@ -169,6 +221,8 @@ function TraerContenidoCarrucel(){
     trriggers.CategoriasSearchImg('contenedorCarrucelProductos');
     random.CarrucerCreacion();
 }
+
+// Funcion cargar Imagenes de la vista Principal
 
 // FUNCION PARA COLOCAR LOS DATOS SEGUN LA RUTA EN LA QUE SE ENCUENTRE EL USUARIO
 function TaerDatosDependiendoLaRutaDelDOM(){
@@ -235,6 +289,7 @@ function TaerDatosDependiendoLaRutaDelDOM(){
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case 'Principal':
+            loadSecureImage("#logoPilaricaAniversario", "https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/default.png", true );
             //random.ColocarContenidoRandom();
             TraerContenidoCarrucel(); // llamar al carrucel si esta en principal
             // Formulario de quejas y sugerencias
