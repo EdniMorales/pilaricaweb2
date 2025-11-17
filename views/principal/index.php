@@ -25,8 +25,8 @@
                             mesa un producto lleno de historia, pasión y confianza."
                         </div>
                         <div class="d-flex align-items-center justify-content-center">
-                            <img class=" img-logo-tiempo"
-                                src="<?= base_url ?>assets/new-cheese/logos/Logo-aniversario.png" alt="..." />
+                            <canvas id="logoPilaricaAniversario" class="img-logo-tiempo"></canvas>
+                            <div class="overlay"></div>
                             <div class="fw-bold texto-fidel">
                                 Sr. Fidel Alfaro
                                 <span class="fw-bold text-primary mx-1">/</span>
