@@ -201,14 +201,6 @@ margin-top: 5%;
 
 
 
-
-
-
-
-
-
-
-
 .tit-prod-fav-1{
 font-family: "Lexend", bold;
 font-size: 50px;
@@ -639,10 +631,33 @@ background-position: center;
 background-repeat: no-repeat;
 }
 .txt-catego {
-margin-top: 25%;
-font-family: "Lexend", bold;
-color: white;
-font-size: 500%;
+
+font-family: "Dancing Script", bold;
+font-size: 150px;
+font-weight: 800;
+color: #ffffff;
+text-align: center;
+margin-top: 10%;
+/* text-shadow:
+-5px -5px 0 #FFF9F4,
+3px -3px 0 #FFF9F4,
+-5px 5px 0 #FFF9F4,
+3px 3px 0 #FFF9F4;
+line-height: 0.8; /* Reduce espacio entre líneas */ 
+}
+.txt-catego-foot {
+font-family: "Dancing Script", bold;
+font-size: 25px;
+font-weight: 200;
+color: #ffffff;
+text-align: left;
+margin-top: -5%;
+/* text-shadow:
+-5px -5px 0 #FFF9F4,
+3px -3px 0 #FFF9F4,
+-5px 5px 0 #FFF9F4,
+3px 3px 0 #FFF9F4;
+line-height: 0.8; /* Reduce espacio entre líneas */ 
 }
 .txt-tittle-sect{
 font-family: "Lexend", bold;
@@ -1228,4 +1243,15 @@ background-size: cover;
   background: transparent; /* Puedes poner negro con opacidad si quieres taparla visualmente */
   z-index: 10;
   pointer-events: auto; /* bloquea interacción con la imagen */
+}
+.txt-links{
+  font-family: "Lexend", bold;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+
+}
+.txt-links:hover{
+ color: #FFFFFF;
+  text-decoration: none;
 }
