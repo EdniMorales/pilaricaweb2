@@ -159,30 +159,22 @@ function fadeIn(el, display) {
 };
 
 // FUNCION QUE CRAGA LAS IMAGENES DE FORMA SEGURA
-function loadSecureImage(canvasSelector, endpointURL, responsive = false) {
-
-    const canvas = document.querySelector(canvasSelector);
-    if (!canvas) {
-        console.error("Canvas no encontrado:", canvasSelector);
-        return;
-    }
+function loadSecureImage(canvasElement, endpointURL, responsive = false) {
+    const canvas = typeof canvasElement === 'string' ? document.querySelector(canvasElement) : canvasElement;
+    if (!canvas) return console.error("Canvas no encontrado");
 
     const ctx = canvas.getContext("2d");
 
-    // Ajustar canvas al tamaño CSS
     function ajustarCanvas() {
         const rect = canvas.getBoundingClientRect();
         canvas.width = rect.width;
         canvas.height = rect.height;
     }
 
-    // Evitar guardar imagen
     canvas.oncontextmenu = e => e.preventDefault();
 
-    // Render
     function render() {
         ajustarCanvas();
-
         fetch(endpointURL, { cache: "no-store" })
             .then(r => r.blob())
             .then(blob => {
@@ -190,7 +182,7 @@ function loadSecureImage(canvasSelector, endpointURL, responsive = false) {
                 const img = new Image();
 
                 img.onload = () => {
-                    ajustarCanvas();
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
                     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
                     URL.revokeObjectURL(url);
                 };
@@ -200,14 +192,40 @@ function loadSecureImage(canvasSelector, endpointURL, responsive = false) {
             .catch(err => console.error("Error al cargar imagen:", err));
     }
 
-    // Primera carga
     render();
 
-    // Si quieres que sea responsive
     if (responsive) {
         const observer = new ResizeObserver(() => render());
         observer.observe(canvas);
     }
+}
+
+function loadAllSecureImages(selectorOrElements = "canvas[data-src]") {
+    // Determinar si recibimos un selector (string) o un NodeList/Array/Element
+    let canvases;
+
+    if (typeof selectorOrElements === "string") {
+        canvases = document.querySelectorAll(selectorOrElements);
+    } else if (selectorOrElements instanceof Element) {
+        canvases = [selectorOrElements];
+    } else if (selectorOrElements instanceof NodeList || Array.isArray(selectorOrElements)) {
+        canvases = selectorOrElements;
+    } else {
+        console.error("Parámetro inválido para loadAllSecureImages:", selectorOrElements);
+        return;
+    }
+
+    canvases.forEach(canvas => {
+        const url = canvas.getAttribute("data-src");
+        if (!url) return;
+
+        // Llamar a loadSecureImage pasando elemento directamente o selector
+        if (canvas.id) {
+            loadSecureImage(`#${canvas.id}`, url, true);
+        } else {
+            loadSecureImage(canvas, url, true);
+        }
+    });
 }
 
 // FUNCION PARA TRAER LAS CATEGORIAS AL MENU DESPLEGABLE
@@ -223,6 +241,14 @@ function TraerContenidoCarrucel(){
 }
 
 // Funcion cargar Imagenes de la vista Principal
+
+function CarrgarImagenes(){
+    loadAllSecureImages();
+    loadSecureImage("#logoPilaricaAniversario", "https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Pagina/logos/Logo-aniversario.png", true );
+    loadSecureImage("#PrincipalQuesoPanelaKg", "https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Productos/Q521.png", true );
+    loadSecureImage("#PrincipalQuesoOaxacaKg", "https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Productos/Q501.png", true );
+    loadSecureImage("#PrincipalCremaLt", "https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Productos/Q541.png", true );
+}
 
 // FUNCION PARA COLOCAR LOS DATOS SEGUN LA RUTA EN LA QUE SE ENCUENTRE EL USUARIO
 function TaerDatosDependiendoLaRutaDelDOM(){
@@ -289,7 +315,7 @@ function TaerDatosDependiendoLaRutaDelDOM(){
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case 'Principal':
-            loadSecureImage("#logoPilaricaAniversario", "https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/default.png", true );
+            CarrgarImagenes();
             //random.ColocarContenidoRandom();
             TraerContenidoCarrucel(); // llamar al carrucel si esta en principal
             // Formulario de quejas y sugerencias

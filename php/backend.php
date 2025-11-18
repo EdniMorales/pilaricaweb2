@@ -217,21 +217,30 @@ function lanzarPaginaDeError(){
 }
 
 function traerImagenFront($path) {
+    ini_set('memory_limit', '512M');
+
     // =========================
     //  CORS PARA IMÁGENES
     // =========================
+    $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+    //$host = $_SERVER['HTTP_HOST'] ?? '';
+
+    $aplicarWatermark = true;
+
+    // Si ORIGIN es tu dominio o si la petición viene desde tu servidor (img directo)
+    if ($origin === "https://pilarica.mx") { // ($origin === "https://pilarica.mx" || $host === "pilarica.mx")
+        $aplicarWatermark = false;
+    }
+
+    // Header CORS
     $allowed = [
         "http://localhost",
         "http://127.0.0.1",
         "https://pilarica.mx",
     ];
-
-    $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
-
     if (in_array($origin, $allowed)) {
         header("Access-Control-Allow-Origin: $origin");
     }
-
     header("Vary: Origin");
     // =========================
 
@@ -257,30 +266,31 @@ function traerImagenFront($path) {
     $mime = mime_content_type($rutaCompleta) ?: 'application/octet-stream';
     $imagen = basename($rutaCompleta);
 
-    // Enviar headers básicos
+    // Enviar headers
     header('Content-Type: ' . $mime);
     header('Content-Disposition: inline; filename="' . $imagen . '"');
     header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
     header('Pragma: no-cache');
 
-    // Detectar si se debe aplicar watermark
+    // Detectar si se debe aplicar watermark (NO reiniciar $aplicarWatermark)
     $referer = $_SERVER['HTTP_REFERER'] ?? '';
-    $aplicarWatermark = true;
 
     if (!empty($referer)) {
-        $host = parse_url($referer, PHP_URL_HOST);
-        if ($host === "pilarica.mx") {
+        $refHost = parse_url($referer, PHP_URL_HOST);
+        if ($refHost === "pilarica.mx") {
             $aplicarWatermark = false;
         }
     }
 
     // Aplicar watermark solo si aplica
     if ($aplicarWatermark && strpos($mime, 'image/') === 0) {
+
         $imgResource = false;
 
         switch ($mime) {
             case 'image/png':  $imgResource = @imagecreatefrompng($rutaCompleta); break;
-            case 'image/jpeg': case 'image/jpg': $imgResource = @imagecreatefromjpeg($rutaCompleta); break;
+            case 'image/jpeg':
+            case 'image/jpg': $imgResource = @imagecreatefromjpeg($rutaCompleta); break;
             case 'image/gif':  $imgResource = @imagecreatefromgif($rutaCompleta); break;
         }
 
@@ -292,9 +302,9 @@ function traerImagenFront($path) {
 
         $width = imagesx($imgResource);
         $height = imagesy($imgResource);
-        $color = imagecolorallocatealpha($imgResource, 255, 0, 0, 80); // semitransparente
+        $color = imagecolorallocatealpha($imgResource, 255, 0, 0, 80);
         $texto = "LACTEOS LA PILARICA";
-        $font = 5;
+        $font = 10;
 
         $textWidth = imagefontwidth($font) * strlen($texto);
         $textHeight = imagefontheight($font);
@@ -302,14 +312,14 @@ function traerImagenFront($path) {
         $spacingX = $textWidth + 50;
         $spacingY = $textHeight + 50;
 
-        // Dibujar watermark diagonal repetido
+        // Dibujar watermark diagonal
         for ($y = -$height; $y < $height * 2; $y += $spacingY) {
             for ($x = -$width; $x < $width * 2; $x += $spacingX) {
                 imagestring($imgResource, $font, $x, $y, $texto, $color);
             }
         }
 
-        // Captura el binario y envía correctamente
+        // Captura y envío
         ob_start();
         switch ($mime) {
             case 'image/png':  imagepng($imgResource); break;
@@ -326,7 +336,11 @@ function traerImagenFront($path) {
         exit;
     }
 
-    // Si no aplica watermark, enviar original
+    // =========================
+    // SIN WATERMARK — enviar imagen original
+    // =========================
+    $size = filesize($rutaCompleta);
+    header("Content-Length: $size");
     readfile($rutaCompleta);
     exit;
 }
