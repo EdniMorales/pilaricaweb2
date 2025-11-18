@@ -223,14 +223,7 @@ function traerImagenFront($path) {
     //  CORS PARA IMÁGENES
     // =========================
     $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
-    //$host = $_SERVER['HTTP_HOST'] ?? '';
-
     $aplicarWatermark = true;
-
-    // Si ORIGIN es tu dominio o si la petición viene desde tu servidor (img directo)
-    if ($origin === "https://pilarica.mx") { // ($origin === "https://pilarica.mx" || $host === "pilarica.mx")
-        $aplicarWatermark = false;
-    }
 
     // Header CORS
     $allowed = [
@@ -242,9 +235,12 @@ function traerImagenFront($path) {
         header("Access-Control-Allow-Origin: $origin");
     }
     header("Vary: Origin");
-    // =========================
 
+    // =========================
+    // CONFIGURACIÓN DE RUTA
+    // =========================
     $rutaBase = "/home/fvyvvdbc/resourse/";
+    $path = $_GET['img'] ?? '';
 
     if (empty($path)) {
         header("HTTP/1.1 400 Bad Request");
@@ -266,27 +262,28 @@ function traerImagenFront($path) {
     $mime = mime_content_type($rutaCompleta) ?: 'application/octet-stream';
     $imagen = basename($rutaCompleta);
 
-    // Enviar headers
-    header('Content-Type: ' . $mime);
-    header('Content-Disposition: inline; filename="' . $imagen . '"');
-    header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
-    header('Pragma: no-cache');
-
-    // Detectar si se debe aplicar watermark (NO reiniciar $aplicarWatermark)
+    // =========================
+    // DETECTAR SI SE DEBE APLICAR WATERMARK
+    // =========================
     $referer = $_SERVER['HTTP_REFERER'] ?? '';
+    $hostReferer = parse_url($referer, PHP_URL_HOST) ?? '';
 
-    if (!empty($referer)) {
-        $refHost = parse_url($referer, PHP_URL_HOST);
-        if ($refHost === "pilarica.mx") {
-            $aplicarWatermark = false;
-        }
+    // Si viene desde tu dominio, no aplicar watermark
+    if ($hostReferer === "pilarica.mx") {
+        $aplicarWatermark = false;
+    } else {
+        // Descarga directa o desde otro dominio → aplicar watermark
+        $aplicarWatermark = true;
+        // Forzar descarga
+        header('Content-Disposition: attachment; filename="' . $imagen . '"');
     }
 
-    // Aplicar watermark solo si aplica
+    // =========================
+    // ENVIAR IMAGEN CON WATERMARK
+    // =========================
     if ($aplicarWatermark && strpos($mime, 'image/') === 0) {
 
         $imgResource = false;
-
         switch ($mime) {
             case 'image/png':  $imgResource = @imagecreatefrompng($rutaCompleta); break;
             case 'image/jpeg':
@@ -329,6 +326,7 @@ function traerImagenFront($path) {
         $binaryData = ob_get_clean();
         imagedestroy($imgResource);
 
+        header('Content-Type: ' . $mime);
         header_remove('Transfer-Encoding');
         header('Content-Length: ' . strlen($binaryData));
 
@@ -337,8 +335,13 @@ function traerImagenFront($path) {
     }
 
     // =========================
-    // SIN WATERMARK — enviar imagen original
+    // ENVIAR IMAGEN ORIGINAL (SIN WATERMARK)
     // =========================
+    header('Content-Type: ' . $mime);
+    header('Content-Disposition: inline; filename="' . $imagen . '"');
+    header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+    header('Pragma: no-cache');
+
     $size = filesize($rutaCompleta);
     header("Content-Length: $size");
     readfile($rutaCompleta);
