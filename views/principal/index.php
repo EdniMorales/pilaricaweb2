@@ -48,24 +48,21 @@
             </div>
             <div class="col-lg-4">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3"
-                        src="<?= base_url ?>assets/new-cheese/panela/Panela-1k-favoritos.png" alt="queso-oaxaca-1kg" />
+                    <canvas id="PrincipalQuesoPanelaKg" class="img-fluid rounded-circle mb-3"></canvas>
                     <p class="subtit-prod-fav">Queso Panela</p>
                     <P class="subtit-prod-fav-1">Encuéntralo en presentaciones .300gr, 1 Kg y 2.7 Kg.</P>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3"
-                        src="<?= base_url ?>assets/new-cheese/oaxaca/Oaxaca-1kg-favoritos.png" alt="..." />
+                    <canvas id="PrincipalQuesoOaxacaKg" class="img-fluid rounded-circle mb-3"></canvas>
                     <p class="subtit-prod-fav">Queso Oaxaca</p>
                     <p class="subtit-prod-fav-1">Encuéntralo en presentaciones .500gr, 1 Kg y Granel 3.3 Kg.</p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3"
-                        src="<?= base_url ?>assets/new-cheese/crema/Crema-favoritos.png" alt="..." />
+                    <canvas id="PrincipalCremaLt" class="img-fluid rounded-circle mb-3"></canvas>
                     <p class="subtit-prod-fav">Crema</p>
                     <p class="subtit-prod-fav-1">Encuéntrala en presentaciones .200gr, .500gr, 1 Kg y 4.5 Kg.</p>
                 </div>
@@ -117,8 +114,7 @@
             </div>
             <div class="col-lg-6 tab-1-image">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/yogurt/baner-yogurt-fresa_Mesa de trabajo 1.png"
-                        alt="..." />
+                    <canvas class="mb-3 edit-img-yog" data-src="https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Pagina/productos/baner-yogurt-fresa_Mesa de trabajo 1.png"></canvas>
                 </div>
             </div>
         </div>
