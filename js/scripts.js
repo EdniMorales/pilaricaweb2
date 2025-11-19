@@ -315,7 +315,7 @@ function TaerDatosDependiendoLaRutaDelDOM(){
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case 'Principal':
-            CarrgarImagenes();
+            //CarrgarImagenes();
             //random.ColocarContenidoRandom();
             TraerContenidoCarrucel(); // llamar al carrucel si esta en principal
             // Formulario de quejas y sugerencias

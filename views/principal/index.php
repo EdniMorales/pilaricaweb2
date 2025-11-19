@@ -25,8 +25,8 @@
                             mesa un producto lleno de historia, pasión y confianza."
                         </div>
                         <div class="d-flex align-items-center justify-content-center">
-                            <canvas id="logoPilaricaAniversario" class="img-logo-tiempo"></canvas>
-                            <div class="overlay"></div>
+                            <img class=" img-logo-tiempo"
+                            src="<?= base_url ?>assets/new-cheese/logos/Logo-aniversario.png" alt="..." />
                             <div class="fw-bold texto-fidel">
                                 Sr. Fidel Alfaro
                                 <span class="fw-bold text-primary mx-1">/</span>
@@ -48,21 +48,24 @@
             </div>
             <div class="col-lg-4">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <canvas id="PrincipalQuesoPanelaKg" class="img-fluid rounded-circle mb-3"></canvas>
+                    <img class="img-fluid rounded-circle mb-3"
+                        src="<?= base_url ?>assets/new-cheese/panela/Panela-1k-favoritos.png" alt="queso-oaxaca-1kg" />
                     <p class="subtit-prod-fav">Queso Panela</p>
                     <P class="subtit-prod-fav-1">Encuéntralo en presentaciones .300gr, 1 Kg y 2.7 Kg.</P>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <canvas id="PrincipalQuesoOaxacaKg" class="img-fluid rounded-circle mb-3"></canvas>
+                    <img class="img-fluid rounded-circle mb-3"
+                        src="<?= base_url ?>assets/new-cheese/oaxaca/Oaxaca-1kg-favoritos.png" alt="..." />
                     <p class="subtit-prod-fav">Queso Oaxaca</p>
                     <p class="subtit-prod-fav-1">Encuéntralo en presentaciones .500gr, 1 Kg y Granel 3.3 Kg.</p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <canvas id="PrincipalCremaLt" class="img-fluid rounded-circle mb-3"></canvas>
+                    <img class="img-fluid rounded-circle mb-3"
+                        src="<?= base_url ?>assets/new-cheese/crema/Crema-favoritos.png" alt="..." />
                     <p class="subtit-prod-fav">Crema</p>
                     <p class="subtit-prod-fav-1">Encuéntrala en presentaciones .200gr, .500gr, 1 Kg y 4.5 Kg.</p>
                 </div>
@@ -114,7 +117,8 @@
             </div>
             <div class="col-lg-6 tab-1-image">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <canvas class="mb-3 edit-img-yog" data-src="https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Pagina/productos/baner-yogurt-fresa_Mesa de trabajo 1.png"></canvas>
+                    <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/yogurt/baner-yogurt-fresa_Mesa de trabajo 1.png"
+                        alt="..." />
                 </div>
             </div>
         </div>
