@@ -1,6 +1,6 @@
 
  <!-- Header-->
-<header class="masthead3 py-5 fondo" id="banner-producto">
+        <header class="masthead3 py-5 fondo" id="banner-producto">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder title-art">¡Solo el Amor Supera las bondades de la leche!</h1>
@@ -8,8 +8,6 @@
                 </div>
             </div>
         </header> 
-        <!-- Section-->
- <!-- Page Content-->
         <section class="py-5 fondo">
         <div class="container px-4 px-lg-5 fondo">
             <!-- Heading Row-->
