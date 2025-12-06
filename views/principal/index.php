@@ -1,13 +1,12 @@
 <section class="fondo">
 <header class="masthead fondo wow animated bounceInLeft" data-wow-delay="1s">
-    <div class="container h-100 tab-1-image">
+ <!--    <div class="container h-100 tab-1-image">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
                 <p class="title-1 wow animated slideInDown" data-wow-delay="1s">" Solo el amor supera las bondades de la leche "</p>
-                <p class=""></p>
             </div>
         </div>
-    </div>
+    </div> -->
 </header>
 </section>
 <!-- Historia Don Fidel-->
