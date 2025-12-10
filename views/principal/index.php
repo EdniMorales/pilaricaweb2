@@ -1,14 +1,91 @@
-<section class="fondo">
+<!-- <section class="fondo">
 <header class="masthead fondo wow animated bounceInLeft" data-wow-delay="1s">
- <!--    <div class="container h-100 tab-1-image">
+    <div class="container h-100 tab-1-image">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
                 <p class="title-1 wow animated slideInDown" data-wow-delay="1s">" Solo el amor supera las bondades de la leche "</p>
             </div>
         </div>
-    </div> -->
+    </div>
 </header>
 </section>
+ -->
+<!-- Modal -->
+    <div id="welcomeModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+            <!--     <h2>🎉 ¡Bienvenido!</h2> -->
+            </div>
+            <div class="modal-body">
+             <!--    <p>¡Gracias por visitar nuestro sitio web! Estamos contentos de tenerte aquí.</p>
+                <p>¿Te gustaría suscribirte a nuestro boletín para recibir actualizaciones y ofertas exclusivas?</p> -->
+
+                <img src="<?= base_url ?>assets/temporadas/canastas-2.png" class="img-promo" alt="...">
+
+
+            </div>
+            <div class="modal-footer">
+               <!--  <button class="btn-newsletter" onclick="subscribeNewsletter()">¡Sí, Suscribirme!</button> -->
+               <!--  <button class="btn-close" onclick="closeModal()">Cerrar</button> -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+<section class="fondo-navidad">
+
+<div id="carouselExampleIndicators" class="carousel slide fondo-navidad-1" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="<?= base_url ?>assets/temporadas/NAVIDAD-1.png" class="fondo-navidad-1" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="<?= base_url ?>assets/temporadas/NAVIDAD-3.jpg" class="fondo-navidad-1" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="<?= base_url ?>assets/temporadas/NAVIDAD-5.png" class="fondo-navidad-1" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Historia Don Fidel-->
 <section class="fondo tab-2 py-5">
     <div class="py-3">

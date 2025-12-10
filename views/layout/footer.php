@@ -130,6 +130,52 @@ document.getElementById("BotonFooterSuscribirse").addEventListener("click", func
 //  const widgetString = "Categorias";// El dropdown con las categorias
 //  trriggers.CategoriasSearch(pageString, widgetString)
 //});// Boton de las categorias
+</script>
+
+      <script>
+        // Mostrar modal cuando la página carga completamente
+        document.addEventListener('DOMContentLoaded', function() {
+            // Esperar 1 segundo antes de mostrar el modal
+            setTimeout(function() {
+                openModal();
+            }, 1000);
+        });
+
+        // Abrir modal
+        function openModal() {
+            const modal = document.getElementById('welcomeModal');
+            modal.style.display = 'flex';
+            
+            // Guardar en localStorage para no mostrar muy seguido
+            localStorage.setItem('modalShown', 'true');
+        }
+
+        // Cerrar modal
+        function closeModal() {
+            const modal = document.getElementById('welcomeModal');
+            modal.style.display = 'none';
+        }
+
+        // Suscribirse al newsletter
+        function subscribeNewsletter() {
+            alert('¡Gracias por suscribirte! Pronto recibirás nuestras novedades.');
+            closeModal();
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        document.getElementById('welcomeModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Cerrar con tecla ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
 
 </body>
 
