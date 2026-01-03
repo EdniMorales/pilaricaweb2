@@ -333,6 +333,7 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
     array.forEach(product => { // la funcion para colocar los datos de la consulta
         let nombreLimpio = product.CATEGORIA.replace(/\s+/g, '').toLowerCase();
         let nombreCapitalizado = product.CATEGORIA.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
+        let ingredientesLista;
         
         //Encabezado
         nombreProducto.innerText = product.PRODUCTO;
@@ -351,7 +352,12 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
         azucaresTotales.innerText = `${product.AZUCARES_TOTALES} ${product.AZUCARES_TOTALES_UNIDAD}`;
         fibraDietetica.innerText = `${product.FIBRA_DIETETICA} ${product.FIBRA_DIETETICA_UNIDAD}`;
         sodio.innerText = `${product.SODIO} ${product.SODIO_UNIDAD}`;
-        ingredientes.innerText = `${product.INGREDIENTES}`;
+
+        // Desglosar el array con la lista de ingredientes
+        ingredientesLista = colocarIngredientesProducto(product.INGREDIENTES);
+        console.log(ingredientesLista);
+        ingredientes.innerHTML = "";
+        ingredientes.innerHTML = ingredientesLista.length ? ingredientesLista.join("") : "";
 
         //Progres bars
         humedad.innerHTML = `<strong>Humedad: ${product.HUMEDAD} ${product.HUMEDAD_UNIDAD}</strong>`;
@@ -417,4 +423,24 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
         imagenBanner.src = imagenGrupoDB;
         bannerProducto.style.backgroundImage = `url("${imagenBannerDB}")`;
 });
+}
+
+function colocarIngredientesProducto(array){
+    let lista;
+    let listView = [];
+
+    if (typeof array === "string") {
+        lista = JSON.parse(array);
+    } else if (Array.isArray(array)) {
+        lista = array;
+    } else {
+        console.error("Formato no válido:", array);
+        return;
+    }
+
+    lista.forEach((ingrediente)=>{
+        const texto = `<p>${ingrediente}</p>`;
+        listView.push(texto);
+    });
+    return listView;
 }
