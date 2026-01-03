@@ -14,12 +14,12 @@
         <div class="container px-4 px-lg-5 fondo">
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7 text-center"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." id="ImagenProducto_Producto" oncontextmenu="return false;" draggable="false"/></div>
+                <div class="col-lg-7 text-center"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." style="width:50%" id="ImagenProducto_Producto" oncontextmenu="return false;" draggable="false"/></div>
                 <div class="col-lg-5">
-                    <div class="col-lg-7 text-center" style="margin: auto;"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." id="ImagenEtiqueta_Producto" oncontextmenu="return false;" draggable="false"/></div>
+                    <div class="col-lg-7 text-center" style="margin: auto;"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." style="width:90%" id="ImagenEtiqueta_Producto" oncontextmenu="return false;" draggable="false"/></div>
                     <h1 class="font-weight-light" id="NombreDeProducto_Producto"></h1>
                     <p id="Descripcion_Producto"></p>
-                    <div class="col-lg-10 text-center" style="margin: auto;"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." id="ImagenBanner_Producto" oncontextmenu="return false;" draggable="false"/></div>
+                    <div class="col-lg-10 text-center" style="margin: auto;"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." style="width:80%" id="ImagenBanner_Producto" oncontextmenu="return false;" draggable="false"/></div>
                     <a id="BotonConoceMas_Producto" style="margin-top: 10%;" class="btn btn-primary mb-4 mb-lg-0" href="#!">Conoce mas!</a>
                 </div>
             </div>
