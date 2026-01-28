@@ -75,28 +75,6 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Historia Don Fidel-->
 <section class="fondo tab-2 py-5">
     <div class="py-3">

@@ -1,34 +1,41 @@
             <header class="masthead1 py-5">
                 <div class="container px-5">
                     <div class="row justify-content-center">
-                        <div class="col-lg-12 col-xxl-6">
+                 <!--        <div class="col-lg-12 col-xxl-6">
                             <div class="text-center my-5">
                                 <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
                                 <p class="fw-bolder mb-3 title-love-2">somos?</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </header>
-             <section class="fondo py-5 px-5">
-                <div class="px-5 py-5">
-                    <p class="info-somos lead fw-normal container ">Lácteos La Pilarica S.A de C.V es una empresa con 30 años de experencia en la elaboración de productos lácteos de forma artesanal, buscando siempre la forma de satisfacer al cliente con una excelente calidad. </p>
+             <section class="fondo-desc-1 py-5 px-5">
+                <div class="px-5 py-5"><!-- lead fw-normal container -->
+                    <p class="info-somos">En Lácteos La Pilarica, elaboramos quesos artesanales desde 1980, manteniendo vivo un compromiso genuino con la calidad y el sabor auténtico.</p>
                 </div>
              </section>
-            <section class="fondo py-5" id="scroll-target">
+
+            <section class="fondo-desc-historia-1 py-5" id="scroll-target">
+                
                 <div class="container px-5 my-5">
+                    <h1 class="text-center">Nuestra Historia</h1>
                     <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6">
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="<?= base_url ?>assets/new-cheese/historias/Foto-historia-1.jpg" alt="..." /></div>
+                       
                         <div class="col-lg-6">
                             <h2 class="fw-bolder text-black">El comienzo de nuestro sueño</h2>
                             <p class="lead fw-normal mb-0 text-justify text-black">La Pilarica nació en 1980, gracias al esfuerzo y la pasión del señor Fidel Humberto Alfaro Sotres. Con mucho cariño, comenzó a elaborar queso en pequeños recipientes, experimentando hasta encontrar la fórmula perfecta. Así fue como, paso a paso, dio vida al sabor auténtico que hoy nos representa.
                             </p>
                         </div>
+                    
+                    
+                    <div class="col-lg-6">
+                            <img class="img-fluid rounded mb-5 mb-lg-0" src="<?= base_url ?>assets/new-cheese/historias/Foto-historia-1.jpg" alt="..." /></div>
+                    
                     </div>
                 </div>
             </section>
-            <section class="fondo py-5">
+            <section class="fondo-desc-historia-2  py-5">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="<?= base_url ?>assets/new-cheese/historias/foto-historia-2.jpg" alt="..." /></div>
