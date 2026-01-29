@@ -30,7 +30,7 @@
                     
                     
                     <div class="col-lg-6">
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="<?= base_url ?>assets/new-cheese/historias/Foto-historia-1.jpg" alt="..." /></div>
+                            <img class="img-fluid rounded mb-5 mb-lg-0 text-center" src="<?= base_url ?>assets/nosotros/fotocollage.png" alt="..." /></div>
                     
                     </div>
                 </div>
