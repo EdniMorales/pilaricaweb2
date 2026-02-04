@@ -15,40 +15,49 @@
                     <p class="info-somos">En Lácteos La Pilarica, elaboramos quesos artesanales desde 1980, manteniendo vivo un compromiso genuino con la calidad y el sabor auténtico.</p>
                 </div>
              </section>
-
             <section class="fondo-desc-historia-1 py-5" id="scroll-target">
-                
                 <div class="container px-5 my-5">
-                    <h1 class="text-center">Nuestra Historia</h1>
+                    <h1 class="text-center mb-5">Nuestra Historia</h1>
                     <div class="row gx-5 align-items-center">
-                       
                         <div class="col-lg-6">
                             <h2 class="fw-bolder text-black">El comienzo de nuestro sueño</h2>
-                            <p class="lead fw-normal mb-0 text-justify text-black">La Pilarica nació en 1980, gracias al esfuerzo y la pasión del señor Fidel Humberto Alfaro Sotres. Con mucho cariño, comenzó a elaborar queso en pequeños recipientes, experimentando hasta encontrar la fórmula perfecta. Así fue como, paso a paso, dio vida al sabor auténtico que hoy nos representa.
+                            <p class="lead fw-normal text-justify text-black">La Pilarica nació en 1980, gracias al esfuerzo y la pasión del señor Fidel Humberto Alfaro Sotres. Con mucho cariño, comenzó a elaborar queso en pequeños recipientes, experimentando hasta encontrar la fórmula perfecta. Así fue como, paso a paso, dio vida al sabor auténtico que hoy nos representa.
                             </p>
-                        </div>
-                    
-                    
-                    <div class="col-lg-6">
-                            <img class="img-fluid rounded mb-5 mb-lg-0 text-center" src="<?= base_url ?>assets/nosotros/fotocollage.png" alt="..." /></div>
-                    
-                    </div>
-                </div>
-            </section>
-            <section class="fondo-desc-historia-2  py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="<?= base_url ?>assets/new-cheese/historias/foto-historia-2.jpg" alt="..." /></div>
-                        <div class="col-lg-6">
+
                             <h2 class="fw-bolder text-black">Nada supera la tradición de hacer buen queso</h2>
-                            <p class="lead fw-normal text-justify text-black">Con el aumento de la demanda, crecieron también nuestras instalaciones y el equipo de trabajo. Poco a poco, ampliamos nuestra variedad de productos: de elaborar solo queso Oaxaca y Panela, pasamos a crear también
-                            Manchego, Ranchero, Cotija, Enchilado y más.
+                            <p class="lead fw-normal text-justify text-black">Con el aumento de la demanda, crecieron también nuestras instalaciones y el equipo de trabajo. Poco a poco, ampliamos nuestra variedad de productos: de elaborar solo queso Oaxaca y Panela, pasamos a crear también Manchego, Ranchero, Cotija, Enchilado y más.
                             </p>
-                            <p class="lead fw-normal text-justify">Actulamente también se producen postres y yogurt, productos que han dado a la empresa un mejor lugar en el mercado.</p>
-                        </div>
+                            <h2 class="fw-bolder text-black">Actualidad</h2>
+                            <p class="lead fw-normal text-justify">Actulamente también se producen postres y yogurt, productos que han dado a la empresa un mejor lugar en el mercado. </p>
+                        </div>                 
+                    <div class="col-lg-6 text-center">
+                            <img class="img-fluid rounded mb-5 mb-lg-0 text-center" src="<?= base_url ?>assets/nosotros/fotocollage.png" alt="..." /></div>     
                     </div>
                 </div>
             </section>
+
+                         <section class="fondo-desc-historia-1 py-5" id="scroll-target">
+                <div class="container px-5 my-5">
+                    <h1 class="text-center mb-5">Nuestra Historia</h1>
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 text-center">
+                            <img class="img-fluid rounded mb-5 mb-lg-0 text-center" src="<?= base_url ?>assets/nosotros/fotocollage.png" alt="..." /></div>     
+                   
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder text-black">El comienzo de nuestro sueño</h2>
+                            <p class="lead fw-normal text-justify text-black">La Pilarica nació en 1980, gracias al esfuerzo y la pasión del señor Fidel Humberto Alfaro Sotres. Con mucho cariño, comenzó a elaborar queso en pequeños recipientes, experimentando hasta encontrar la fórmula perfecta. Así fue como, paso a paso, dio vida al sabor auténtico que hoy nos representa.
+                            </p>
+
+                            <h2 class="fw-bolder text-black">Nada supera la tradición de hacer buen queso</h2>
+                            <p class="lead fw-normal text-justify text-black">Con el aumento de la demanda, crecieron también nuestras instalaciones y el equipo de trabajo. Poco a poco, ampliamos nuestra variedad de productos: de elaborar solo queso Oaxaca y Panela, pasamos a crear también Manchego, Ranchero, Cotija, Enchilado y más.
+                            </p>
+                            <h2 class="fw-bolder text-black">Actualidad</h2>
+                            <p class="lead fw-normal text-justify">Actulamente también se producen postres y yogurt, productos que han dado a la empresa un mejor lugar en el mercado. </p>
+                        </div>                 
+                     </div>
+                </div>
+            </section>
+
             <section class="fondo py-5">
                 <div class="px-5 py-5">
                   <h2 class="info-tit fw-bolder dancing-script-bold">Nuestra Misión</h2>
