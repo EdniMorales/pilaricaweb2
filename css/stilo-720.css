@@ -20,5 +20,16 @@
   } */
 
 }
+@media screen and (max-width: 768px) {
+  .title-2 {
+    display: none;
+  }
+ 
+ /*  .edit-img-yoga {
+   display: none;
+  } */
+
+}
+
 
 
