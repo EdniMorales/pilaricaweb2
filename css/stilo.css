@@ -1066,7 +1066,7 @@ box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
   text-align: center;
   font-size: 50px;
   color: #103C7B;
-    margin-bottom: 5%;
+  margin-bottom: 5%;
   /* border-radius: .2em; */
  /*  display: inline-block; */
   transform: translateX(calc((100vw - 100%) / 2));
@@ -1079,7 +1079,7 @@ box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
 
 .containerNewCarousel {
   overflow: hidden;
-  padding: 60px 20px;
+ /*  padding: 60px 20px; */
   background-color: #FFF9F4;
   margin-top: 0%;
 /*   background: rgba(0,0,0,.1) */

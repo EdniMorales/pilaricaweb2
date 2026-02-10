@@ -27,7 +27,67 @@
     .title-2 {
     font-size: 50px;
     background-color: #FFFFFF;
-    margin-top: -20%;
+    margin-top: -15%;
+    line-height: 1;
+  }
+  .title-info{
+    font-size: 20px;
+    background-color: #FFFFFF;
+    margin-top: 5%;
+    line-height: 1;
+    text-align: center;
+  }
+  .title-info-2{
+    font-size: 20px;
+    background-color: #FFFFFF;
+    margin-top: 5%;
+    line-height: 1.2;
+    text-align: justify;
+  }
+  .texto-fidel{
+    font-size: 10px;
+    background-color: #FFFFFF;
+    margin-top: 5%;
+    line-height: 1;
+    text-align: justify;
+  }
+  .tit-prod-fav{
+      font-size: 35px;
+      line-height: 1;
+  }
+  .tit-prod-fav-1{
+      font-size: 35px;
+      line-height: 1;
+      text-align: center;
+  }
+
+
+
+  .titleNewCarousel{
+      font-size: 35px;
+      line-height: 1;
+      text-align: center;
+  }
+  .subTitleNewCarousel{
+      margin-top: 5%;
+      font-size: 35px;
+      line-height: 1;
+      text-align: center;
+      padding-right: 10%;
+      padding-left: 10%;
+  }
+ 
+  .subtit-prod-fav-3{
+      font-size: 35px;
+      line-height: 1;
+      text-align: center;
+      padding: 2px -15px 15px -15px;
+  }
+  .subtit-prod-fav-4{
+    font-size: 25px;
+      line-height: 1.2;
+      text-align: justify;
+      /* padding: 2px -15px 15px -15px; */
   }
  /*  .edit-img-yoga {
    display: none;

@@ -140,9 +140,11 @@
 </section>
 <section class="stilo-section-prod-fav-1">
 <div class="containerNewCarousel">
+    <div>
     <p class="titleNewCarousel">Nuestros productos</p>
-<p class="subTitleNewCarousel">Conoce la variedad de productos que tenemos para ti</p>
-    <div class="card-carousel" id="contenedorCarrucelProductos">
+    <p class="subTitleNewCarousel">Conoce la variedad de productos que tenemos para ti</p>
+    </div>
+<!--     <div class="card-carousel" id="contenedorCarrucelProductos">
         <div class="card">
             <div class="image-container" onclick="window.location.href='../Principal/index'">
             <img src="../assets/new-cheese/default.png" alt="Error categoria">
@@ -161,7 +163,7 @@
             </div>
             <p class="text_card_description">No se encontraron productos.</p>
         </div>
-  </div>
+  </div> -->
   <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
 </div>
 </section>
@@ -171,10 +173,11 @@
 <section class="stilo-section-prod-fav-3 fondo text-center">
     <div class="px-5 my-5 stilo-prod-fav-3">
         <div class="row">
-            <div class="col-lg-6 px-5 my-5">
-                <div class="mx-auto mb-5 mb-lg-0">
+            <div class="col-lg-6"><!--  px-5 my-5 -->
+                <div class="mx-auto "><!-- mb-5 mb-lg-0 -->
                     <p class="subtit-prod-fav-3">Utilizamos leche 100% de vaca en nuestros productos</p>
-                    <p class="subtit-prod-fav-4 px-5 my-5">Nuestros productos están elaborados con
+                    <p class="subtit-prod-fav-4 "> <!-- px-5 my-5 -->
+                        Nuestros productos están elaborados con
                         leche 100% de vaca, cuidadosamente seleccionada. Mantenemos procesos
                         artesanales en cada etapa de la producción, respetando las tradiciones que garantizan el sabor auténtico, frescura y calidad.
                     </p>
