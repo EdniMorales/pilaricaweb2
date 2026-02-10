@@ -68,7 +68,7 @@ right: 1px;
 }
 .masthead {
 max-width: 100%;
-  width: 100%;
+width: 100%;
 height: 100vh; 
 /* max-height: 450px; */
 /*   height: 650px; */
@@ -91,6 +91,8 @@ background-color: #FFF9F4;
 
 
 }
+
+
 .img-promo{
 width:450px;
 height: 950px;
@@ -170,7 +172,7 @@ font-weight: 600;
 color: #103C7B;
 text-align: center;
 margin-top: -1%;
-background-color:#FFF9F4 ;
+background-color: #FFFFFF ;
 }
 .title-sucursales {
 font-family: "Dancing Script", bold;

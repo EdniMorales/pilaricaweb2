@@ -28,6 +28,7 @@
     <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <link href="<?= base_url ?>css/styles.css" rel="stylesheet" />
     <link href="<?= base_url ?>css/stilo.css" rel="stylesheet" />
+    <link href="<?= base_url ?>css/stilo-720.css" rel="stylesheet" />
 <!--  <link href="css/hover-zoom.css" rel="stylesheet" /> -->
  <link rel="stylesheet" href="<?= base_url ?>css/animate.css">
 <script src="<?= base_url ?>js/wow.min.js"></script>

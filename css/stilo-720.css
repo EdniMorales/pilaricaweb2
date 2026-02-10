@@ -14,22 +14,37 @@
   .tab-1-image {
     display: none;
   }
- 
  /*  .edit-img-yoga {
    display: none;
   } */
-
 }
+
 @media screen and (max-width: 768px) {
-  .title-2 {
-    display: none;
+
+  .masthead {
+    border-radius: 0;
   }
+    .title-2 {
+    font-size: 50px;
+    background-color: #FFFFFF;
+    margin-top: -20%;
+  }
+ /*  .edit-img-yoga {
+   display: none;
+  } */
+}
+
+@media screen and (max-width: 480px) {
  
+  .masthead {
+    border-radius: 0;
+  }
+   .title-2 {
+  font-size: 50px;
+  }
+
  /*  .edit-img-yoga {
    display: none;
   } */
 
 }
-
-
-
