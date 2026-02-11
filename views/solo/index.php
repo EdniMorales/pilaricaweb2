@@ -11,7 +11,7 @@
                 </div>
             </header>
              <section class="fondo-desc-1 py-5 px-5">
-                <div class="px-5 py-5"><!-- lead fw-normal container -->
+                <div class=""><!-- px-5 py-5 lead fw-normal container -->
                     <p class="info-somos">En Lácteos La Pilarica, elaboramos quesos artesanales desde 1980, manteniendo vivo un compromiso genuino con la calidad y el sabor auténtico.</p>
                 </div>
              </section>

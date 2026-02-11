@@ -20,7 +20,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .masthead {
     border-radius: 0;
   }
@@ -60,9 +59,6 @@
       line-height: 1;
       text-align: center;
   }
-
-
-
   .titleNewCarousel{
       font-size: 35px;
       line-height: 1;
@@ -76,7 +72,6 @@
       padding-right: 10%;
       padding-left: 10%;
   }
- 
   .subtit-prod-fav-3{
       font-size: 35px;
       line-height: 1;
@@ -107,4 +102,21 @@
    display: none;
   } */
 
+}
+
+/* Estructura responsiva nosotros */
+@media screen and (max-width: 768px) {
+ .masthead1 {
+    border-radius: 0;
+  }
+ .info-somos{
+    font-size: 20px;
+
+    margin-top: 5%;
+    line-height: 1.5;
+    text-align: center;
+  }
+ /*  .edit-img-yoga {
+   display: none;
+  } */
 }
