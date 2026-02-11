@@ -1,8 +1,8 @@
 </main>
 <footer class="text-center">
-      <div>
+  <!--     <div>
         <img src="<?= base_url ?>assets/new-cheese/onda.png" class="banner-onda fondo" alt="">
-    </div>
+    </div> -->
     <section class="cont-color2">
         <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
