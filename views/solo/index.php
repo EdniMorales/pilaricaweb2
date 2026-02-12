@@ -57,7 +57,7 @@
                     </p>
                 </div>
             </section>
-            <section class="fondo py-5 text-center sect-1">
+       <!--      <section class="fondo py-5 text-center sect-1">
                 <div class="fondo px-5 my-5">
                     <div class="row">
                         <div class="col mb-4 mb-5 mb-xl-0">
@@ -92,14 +92,14 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="masthead5 fondo  text-center">
-                <img src="<?= base_url ?>assets/new-cheese/historias/Foto-historia-3.jpg" class="fondo" alt="">
+            </section> -->
+            <section class="masthead6 fondo">
+              <!--   <img src="<?= base_url ?>assets/new-cheese/historias/Foto-historia-3.jpg" class="fondo" alt=""> -->
             </section>
             <section class="fondo  text-center">
                 <div class="fondo px-5 py-5">
                   <p class="info-tit-ce fw-bolder dancing-script-bold">Estamos celebrando 45 años</p>
-                    <p class="info-somos-2 lead fw-normal container">   De sabor y calidad
+                    <p class="info-tit-ce lead fw-normal container dancing-script-bold">   De sabor y calidad
                     </p>
                 </div>
             </section>

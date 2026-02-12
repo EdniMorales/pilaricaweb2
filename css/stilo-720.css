@@ -1,4 +1,5 @@
 
+
 /* For devices with a minimum width of 768px (Medium) */
 @media screen and (max-width: 768px) {
   .tab-1-image {
@@ -20,32 +21,30 @@
 }
 
 @media screen and (max-width: 768px) {
-  .masthead {
-    border-radius: 0;
-  }
+
     .title-2 {
     font-size: 50px;
-    background-color: #FFFFFF;
+    background-color: #FFF9F4;
     margin-top: -15%;
     line-height: 1;
   }
   .title-info{
     font-size: 20px;
-    background-color: #FFFFFF;
+    background-color: #FFF9F4;
     margin-top: 5%;
     line-height: 1;
     text-align: center;
   }
   .title-info-2{
     font-size: 20px;
-    background-color: #FFFFFF;
+    background-color: #FFF9F4;
     margin-top: 5%;
     line-height: 1.2;
     text-align: justify;
   }
   .texto-fidel{
     font-size: 10px;
-    background-color: #FFFFFF;
+    background-color: #FFF9F4;
     margin-top: 5%;
     line-height: 1;
     text-align: justify;
@@ -90,25 +89,42 @@
 }
 
 @media screen and (max-width: 480px) {
- 
-  .masthead {
-    border-radius: 0;
-  }
-   .title-2 {
+  
+
+  .title-2 {
   font-size: 50px;
   }
+ /*  .edit-img-yoga {
+   display: none;
+  } */
+}
 
+
+
+/* Estructura responsiva nosotros */
+@media screen and (max-width: 768px) {
+  .masthead {
+    margin-top: 20%;
+    width: 100%;
+    height: 350px;
+    /* max-height: 450px; */
+    /*   height: 650px; */
+         background-image: url("../assets/new-cheese/banners/foto-principal.png"); 
+    /* background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; */
+  }
+ .title-1{
+  display: none;
+ }
+   .title-2 {
+  font-size: 50px;
+  background: none;
+  }
  /*  .edit-img-yoga {
    display: none;
   } */
 
-}
-
-/* Estructura responsiva nosotros */
-@media screen and (max-width: 768px) {
- .masthead1 {
-    border-radius: 0;
-  }
  .info-somos{
     font-size: 20px;
     margin-top: 5%;
@@ -162,7 +178,7 @@
   }
   .info-tit{
       font-size: 35px;
-      margin-top: -50%;
+      margin-top: -25%;
   }
 
     .fondo{
@@ -193,30 +209,85 @@
     background: #FFF9F4;
     color: #0F1E53;
   }
-  .masthead1 {
+ .masthead1 {
+    width: 100%;
+    height: 350px;
+    min-height: 150px;
+    background-image: url("../assets/nosotros/foto-principal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 15%;
+    /* transition:
+    transform 2s,
+    filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(50%); */
+    /* border-radius: 0px 0px 350px 0px; four values */
+}
+  .masthead6 {
       width: 100%;
-      height: 100vh;
-      min-height: 500px;
-      background-image: url("../assets/nosotros/foto-principal.jpg");
+      height: 350px;
+      background-image: url("../assets/new-cheese/historias/Foto-historia-3.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      /* transition:
-      transform 2s,
-      filter 1.5s ease-in-out;
-      transform-origin: center center;
-      filter: brightness(50%); */
-      -webkit-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
-      box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
       margin-bottom: 0%;
-      /* border-radius: 0px 0px 350px 0px; four values */
-}
-
-
-
-
+      }
+    .txt-links{
+        font-family: "Lexend", bold;
+        font-size: 15px;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: justify;
+      }
+      .txt-links-dir{
+        font-family: "Lexend", bold;
+        font-size: 15px;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+      }
+      .txt-catego-foot {
+        font-family: "Dancing Script", bold;
+        font-size: 21px;
+        font-weight: 200;
+        color: #ffffff;
+        text-align: center;
+        margin-top: -5%;
+        /* text-shadow:
+        -5px -5px 0 #FFF9F4,
+        3px -3px 0 #FFF9F4,
+        -5px 5px 0 #FFF9F4,
+        3px 3px 0 #FFF9F4;
+        line-height: 0.8; /* Reduce espacio entre líneas */ 
+      }
+      .txt-catego-foot-1{
+        font-family: "Dancing Script", bold;
+        font-size: 45px;
+      }
  /*  .edit-img-yoga {
    display: none;
   } */
 }
+
+/* Múltiples condiciones */
+@media screen and (max-width: 1024px) {
+  /* Tablets - entre 768px y 1024px */
+  .title-1 {
+    display: none;
+  }
+/*   .masthead1{
+    width: 100%;
+    height: 550px;
+    min-height: 150px;
+    background-image: url("../assets/nosotros/foto-principal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -25%;
+  } */
+}
+
+
+

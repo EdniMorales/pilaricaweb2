@@ -5,10 +5,9 @@
     </div> -->
     <section class="cont-color2">
         <div class="container text-center text-md-start mt-5">
-            <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <p class="text-uppercase fw-bold mb-4 txt-catego-foot">
-                        <!-- <i class="fas fa-gem me-3"></i> -->Lacteos La Pilarica</p>
+            <div class="row ">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 container">
+                    <p class="fw-bold mb-4 txt-catego-foot">- Solo el amor supera las bondades de la leche -</p>
                     <p class="text-left txt-links">
                         En Lácteos la Pilarica sabemos que todos tenemos preferencias
                         diferentes, por eso contamos con una extensa gama de productos,
@@ -31,7 +30,7 @@
                     </div>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <p class="text-uppercase fw-bold mb-4 txt-catego-foot">Productos</p>
+                    <p class="fw-bold mb-4 txt-catego-foot-1">Productos</p>
                     <p><a href="../quesosblancos/index" class="text-reset txt-links">Quesos Blancos</a></p>
                     <p><a href="../quesosamarillos/index" class="text-reset txt-links">Quesos Amarillos</a></p>
                     <p><a href="../quesoslineagourmet/index" class="text-reset txt-links">Quesos Linea Gourmet</a></p>
@@ -39,7 +38,7 @@
                     <p><a href="../canastas/index" class="text-reset txt-links">Regala una canasta</a></p>
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <p class="text-uppercase fw-bold mb-4 txt-catego-foot">Disfruta con</p>
+                    <p class=" fw-bold mb-4 txt-catego-foot-1">Disfruta con</p>
                     <p><a href="../postres/index" class="text-reset txt-links">Postres</a></p>
                     <p><a href="../ricottines/index" class="text-reset txt-links">Ricottines</a></p>
                     <p><a href="../yogurth/index" class="text-reset txt-links">Yogures</a></p>
@@ -47,9 +46,9 @@
                     <p><a href="../complementos/index" class="text-reset txt-links">Complementos</a></p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <p class="text-uppercase fw-bold mb-4 txt-catego-foot">Ubicanos</p>
-                    <p class="txt-links"><i class="fas fa-home me-3"></i>Benito Juárez Sur N 46, Centro, 56530 Ixtapaluca, Méx.</p>
-                    <p class="txt-links"><i class="fas fa-envelope me-3"></i>soporte@pilarica.mx</p>
+                    <p class="fw-bold mb-4 txt-catego-foot-1">Ubicanos</p>
+                    <p class="txt-links-dir"><i class="fas fa-home me-3"></i>Benito Juárez Sur N 46, Centro, 56530 Ixtapaluca, Méx.</p>
+                    <p class="txt-links-dir"><i class="fas fa-envelope me-3"></i>soporte@pilarica.mx</p>
                     <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720102" class="txt-links">(55) 5972 0102</a></p>
                     <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720522" class="txt-links">(55) 5972 0522</a></p>
                     <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720026" class="txt-links">(55) 5972 0026</a></p>
@@ -59,7 +58,7 @@
         </div>
     </section>
     <div class="text-center text-white p-4" style="background-color: #113D7C">
-        © 2025 Copyright:<p>Lacteos La Pilarica</p>
+        © 2026 Copyright:<p>Lacteos La Pilarica</p>
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #3b5998;" href="https://www.facebook.com/lacteospilaricamx" target="_blank"
             role="button"><i class="fab fa-facebook-f"></i></a>
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ac2bac;" href="https://www.instagram.com/lacteoslapilariaca/" target="_blank"

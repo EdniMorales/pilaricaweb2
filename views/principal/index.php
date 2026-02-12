@@ -36,7 +36,7 @@
  -->
 
 
-    <header class="masthead fondo wow animated bounceInLeft" data-wow-delay="1s">
+    <header class="masthead wow animated bounceInLeft" data-wow-delay="1s">
     <div class="container h-100 tab-1-image">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
