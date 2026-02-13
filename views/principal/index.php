@@ -31,23 +31,17 @@
             </div>
         </div>
     </div>
-
-
  -->
-
-
     <header class="masthead wow animated bounceInLeft" data-wow-delay="1s">
     <div class="container h-100 tab-1-image">
-        <div class="row h-100 align-items-center">
+      <!--   <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
                 <p class="title-1 wow animated slideInDown" data-wow-delay="1s">" Solo el amor supera las bondades de la leche "
                 </p>
             </div>
-        </div>
+        </div> -->
     </div>
 </header>
-
-
 <!-- 
 <div id="carouselExampleIndicators" class="carousel slide fondo-navidad-1" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -82,7 +76,7 @@
             <div class="row gx-5 text-justify">
                 <div class="col-lg-12 col-xl-12">
                     <div class="text-center">
-                    <p class="title-2 dancing-script-bold wow animated bounceInLeft " data-wow-delay="2s"> Somos una empresa mexicana </p>
+                    <p class="title-2 dancing-script-bold wow animated bounceInLeft " data-wow-delay="2s"> Somos una empres                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     a mexicana </p>
                         <p class="title-info">Ubicada en Ixtapaluca, Estado de México</p>
                         <div class="title-info-2 mb-4 wow animated zoomIn" data-wow-delay="0.5s">
                             "En La Pilarica elaboramos quesos artesanales desde 1980, nuestro compromiso con la calidad y el sabor auténtico nos

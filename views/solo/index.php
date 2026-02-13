@@ -15,12 +15,13 @@
                     <p class="info-somos">En Lácteos La Pilarica, elaboramos quesos artesanales desde 1980, manteniendo vivo un compromiso genuino con la calidad y el sabor auténtico.</p>
                 </div>
              </section>
-            <section class="fondo-desc-historia-1 py-5" id="scroll-target">
-                <div class="container px-5 my-5">
+            <section class="fondo-desc-historia-1 py-5 " id="scroll-target">
+                <div class=" container fondo-desc-historia-2 px-5 py-5">
+                <div class=" px-5 my-5 title-n-history">
                     <h1 class="title-n-history text-center mb-5">Nuestra Historia</h1>
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6 text-center">
-                            <img class="img-fluid rounded mb-5 mb-lg-0 text-center" src="<?= base_url ?>assets/nosotros/fotocollage.png" alt="..." /></div>     
+                    <div class="row gx-5 align-items-center">              
+                    <div class="col-lg-6 text-center">
+                        <img class="img-fluid rounded mb-5 mb-lg-0 text-center" src="<?= base_url ?>assets/nosotros/fotocollage.png" alt="..." /></div>     
                         <div class="col-lg-6">
                             <p class="fw-bolder title2-n-history ">El comienzo de nuestro sueño</p>
                             <p class="lead fw-normal descrip-n-history">La Pilarica nació en 1980, gracias al esfuerzo y la pasión del señor Fidel Humberto Alfaro Sotres. Con mucho cariño, comenzó a elaborar queso en pequeños recipientes, experimentando hasta encontrar la fórmula perfecta. Así fue como, paso a paso, dio vida al sabor auténtico que hoy nos representa.
@@ -33,13 +34,19 @@
                         </div>                 
                      </div>
                 </div>
+        </div>
             </section>
-            <section class="fondo py-5">
-                <div class="px-5 py-5">
-                  <p class="info-tit fw-bolder dancing-script-bold">Nuestra Misión</p>
+            <section class="fondo-mision py-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                    <p class="info-tit fw-bolder ">Nuestra Misión</p>
                     <p class="info-somos-1 lead fw-normal container">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles
                     e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
                     </p>
+                </div>
+                     <div class="col-lg-6 ">
+                        <img src="<?= base_url ?>assets/nosotros/foto-mision.jpg" alt="" class="info-somos-2">
+                    </div>
                 </div>
             </section>
             <section class="fondo py-5">
@@ -93,9 +100,8 @@
                     </div>
                 </div>
             </section> -->
-            <section class="masthead6 fondo">
-              <!--   <img src="<?= base_url ?>assets/new-cheese/historias/Foto-historia-3.jpg" class="fondo" alt=""> -->
-            </section>
+         <!--    <section class="masthead6 fondo">
+            </section> -->
             <section class="fondo  text-center">
                 <div class="fondo px-5 py-5">
                   <p class="info-tit-ce fw-bolder dancing-script-bold">Estamos celebrando 45 años</p>
