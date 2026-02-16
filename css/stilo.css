@@ -673,17 +673,25 @@ margin-bottom: -5%;
     margin-top: 5%;
     background: #F5B94B ;
   }
+
+
+
+
 .info-somos-2{
+    min-width: 100%;
     width: 100%;
+    max-width: 100%;
     height: 500px;
+    position: relative;
+
           
-    background-size: cover;
+   background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 }
 
 .info-tit {
-font-size: 50px;
+font-size: 40px;
 font-weight: 600;
 color: #103C7B;
 text-align: center;
@@ -700,29 +708,28 @@ margin-top: -1%;
 }
 .fondo-mision{
   background: #FFF9F4;
-  margin-top: 5%;
+  margin-top: 20%;
+  width: 100%;
+} 
+.sec{
+  width: 100%;
 }
 .sect-1{
   margin-top: -5%;
 }
 .info-somos-1{
-/*  font-family: "Lexend", sans-serif;
- text-align: center;
- margin-bottom: 5%;
- margin-top: 5%;
- font-size: 25px; */
-
+    /*  font-family: "Lexend", sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 25px; */
     font-size: 16px;
     margin-top: 5%;
     line-height: 1.5;
-    text-align: justify;
-    font-weight: 800;
-     background: #FFF9F4;
-     color: #0F1E53;
-
-
-
-
+    text-align: center;
+    font-weight: 500;
+    background: #FFF9F4;
+    color: #0F1E53;
 }
 .info-tit-ce{
 font-size: 100px;
@@ -730,7 +737,7 @@ font-weight: 600;
 color: #103C7B;
 text-align: center;
 margin-top: -1%;
-margin-bottom: -5%;
+margin-bottom: 5%;
 }
 .masthead2 {
 width: 100%;
