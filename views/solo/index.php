@@ -16,10 +16,7 @@
                 <div class=""><!-- px-5 py-5 lead fw-normal container -->
                     <p class="info-somos">En Lácteos La Pilarica, elaboramos quesos artesanales desde 1980, manteniendo vivo un compromiso genuino con la calidad y el sabor auténtico.</p>
                 </div>
-        </section>
-
-
-             
+        </section> 
             <section class="fondo-desc-historia-1 py-5" id="scroll-target">
                         <div class="container fondo-desc-historia-2 px-5 py-5">
                             <div class=" px-5 my-5 title-n-history">
@@ -41,14 +38,6 @@
                             </div>
                         </div>
             </section>
-
-
-
-
-
-
-
-   
             <section class="fondo py-5">
                 <div class="px-5 py-5">
                   <p class="info-tit fw-bolder dancing-script-bold">Nuestra Visión</p>
@@ -65,9 +54,32 @@
                     </p>
                 </div>
             </section>
-
-
-       <!--      <section class="fondo py-5 text-center sect-1">
+<section>
+                                        <div class=" px-5">
+                                <div class="row justify-content-center">
+                                <div class="col-lg-12 col-xxl-6">
+                                        <div class="text-center my-5">
+                                                <p class="info-tit">Nuestra Misión</p>
+                        <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
+                        </p>
+                                        <!--   <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
+                                            <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
+                                        </div>
+                                    </div>
+                    <div class="col-lg-12 col-xxl-6">
+                                        <div class="text-center my-5">
+                                            <img src="<?= base_url ?>assets/nosotros/foto-mision.jpg" alt="" width="100" height="700" class="info-somos-2">
+                                                <!-- <p class="info-tit">Nuestra Misión</p>
+                        <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
+                        </p> -->
+                                        <!--   <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
+                                            <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+</section>     
+            <section class="fondo py-5 text-center sect-1">
                 <div class="fondo px-5 my-5">
                     <div class="row">
                         <div class="col mb-4 mb-5 mb-xl-0">
@@ -102,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
          <!--    <section class="masthead6 fondo">
             </section> -->
             <section class="fondo text-center">
@@ -114,7 +126,7 @@
             </section>
 
 
-    <section class="fondo-mision py-5">              
+<!--     <section class="fondo-mision py-5">              
         <div class="row col-lg">
         <p class="info-tit">Nuestra Misión</p>
             <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
@@ -124,42 +136,6 @@
             <img src="<?= base_url ?>assets/nosotros/quesos-maduros.jpg" alt="" class="info-somos-2">
         </div>
         
-    </section>
+    </section> -->
 
-    <section>
-                             <div class=" px-5">
-                    <div class="row justify-content-center">
-                       <div class="col-lg-12 col-xxl-6">
-                            <div class="text-center my-5">
-                                     <p class="info-tit">Nuestra Misión</p>
-            <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
-            </p>
-                              <!--   <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
-                                <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
-                            </div>
-                        </div>
-
-
-
-          <div class="col-lg-12 col-xxl-6">
-                            <div class="text-center my-5">
-                                     <p class="info-tit">Nuestra Misión</p>
-            <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
-            </p>
-                              <!--   <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
-                                <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
-                            </div>
-                        </div>
-
-
-
-
-
-
-                    </div> 
-                </div>
-
-
-
-
-    </section>
+   
