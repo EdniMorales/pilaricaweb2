@@ -183,6 +183,82 @@ function searchOnlyProductos($conn, $search_term) {
     return $data;
 }
 
+// Función para obtener un producto específico por ID
+function searchIdAllGroup($conn, $id_grupo) {
+    $sql = <<<EOD
+        SELECT
+            PROD_GROUP.NOMBRE AS PRODUCTO,
+            PROD_GROUP.PRESENTACION,
+            PROD_GROUP.MARCA,
+            PROD_GROUP.HISTORIA,
+            GRUPOS.IMAGEN_ETIQUETA AS IMG_ETIQUETA,
+            GRUPOS.IMAGEN_BANER AS IMG_BANNER,
+            PROD_GROUP.IMAGEN_PRODUCTO,
+            CATEGORIAS.IMAGEN_ETIQUETA,
+            TABLA_ALIMENTICIA_GROUP.PORCION,
+            TABLA_ALIMENTICIA_GROUP.PORCION_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.CONTENIDO_ENERGETICO,
+            TABLA_ALIMENTICIA_GROUP.CONTENIDO_ENERGETICO_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.PROTEINA,
+            TABLA_ALIMENTICIA_GROUP.PROTEINA_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.GRASAS_TOTALES,
+            TABLA_ALIMENTICIA_GROUP.GRASAS_TOTALES_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.GRASAS_SATURADAS,
+            TABLA_ALIMENTICIA_GROUP.GRASAS_SATURADAS_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.GRASAS_TRANS,
+            TABLA_ALIMENTICIA_GROUP.GRASAS_TRANS_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.CARBOHIDRATOS,
+            TABLA_ALIMENTICIA_GROUP.CARBOHIDRATOS_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.AZUCARES_TOTALES,
+            TABLA_ALIMENTICIA_GROUP.AZUCARES_TOTALES_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.AZUCARES_AÑADIDOS,
+            TABLA_ALIMENTICIA_GROUP.AZUCARES_AÑADIDOS_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.FIBRA_DIETETICA,
+            TABLA_ALIMENTICIA_GROUP.FIBRA_DIETETICA_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.SODIO,
+            TABLA_ALIMENTICIA_GROUP.SODIO_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.HUMEDAD,
+            TABLA_ALIMENTICIA_GROUP.HUMEDAD_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.GRASA_BUTIRICA_MIN,
+            TABLA_ALIMENTICIA_GROUP.GRASA_BUTIRICA_MIN_UNIDAD,
+            TABLA_ALIMENTICIA_GROUP.PROTEINA_MIN,
+            TABLA_ALIMENTICIA_GROUP.PROTEINA_MIN_UNIDAD,
+            PROD_GROUP.INGREDIENTES,
+            PROD_GROUP.DESCRIPCION,
+            CATEGORIAS.NOMBRE AS CATEGORIA,
+            CATEGORIAS.DESCRIPCION AS DESCRIPCION_CATEGORIA
+        FROM
+            PROD_GROUP
+        INNER JOIN
+            TABLA_ALIMENTICIA
+        ON PROD_GROUP.ID_PRODUCTO = TABLA_ALIMENTICIA.ID_PRODUCTO
+
+        INNER JOIN
+            CATEGORIAS
+        ON PROD_GROUP.ID_CATEGORIA = CATEGORIAS.ID_CATEGORIA
+
+        INNER JOIN
+            GRUPOS
+        ON PROD_GROUP.ID_GRUPO = GRUPOS.ID_GRUPO
+
+        WHERE PROD_GROUP.ID_PRODUCTO = ?
+
+        ORDER BY PROD_GROUP.NOMBRE;
+    EOD;
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $id_producto);  // "i" significa un parámetro entero
+    $stmt->execute();
+    $result = $stmt->get_result();
+    
+    $data = array();
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $data[] = $row;
+        }
+    }
+    
+    return $data;
+}
 // Función para obtener una categoria específica por ID
 function searchIdCategories($conn, $id_categorie) {
     $sql = <<<EOD
@@ -368,6 +444,8 @@ if (isset($_GET['action'])) {
         $data = searchOnlyProductos($conn, $search_term);
     } elseif ($action == 'searchIdCategories' && isset($_GET['search_categories'])){
         $data = searchIdCategories($conn, $_GET['search_categories']);
+    } elseif ($action == 'searchIdAllGroup' && isset($_GET['search_group'])){
+        $data = searchIdAllGroup($conn, $_GET['search_group']);
     } else if ($action == 'pageError'){
         $data = lanzarPaginaDeError();
     } else if ($action == 'traerImagen' && isset($_GET['img'])) {
