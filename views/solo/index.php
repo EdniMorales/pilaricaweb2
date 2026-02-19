@@ -46,13 +46,13 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div class="sect-mision px-5">
+
+                <div class="sect-mision px-5 f-1">
                     <div class="row justify-content-center">
                         <div class="col-lg-12 col-xxl-6">
                             <div class="text-center my-5">
-                                <p class="info-tit">Nuestra Misión</p>
-                                <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales,
+                                <p class="info-tit-1">Nuestra Misión</p>
+                                <p class="info-somos-3">Alimentar a la sociedad con productos auténticos, naturales,
                                     funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que
                                     hacemos, con un firme compromiso en satisfacer y superar las expectativas de
                                     nuestros clientes y consumidores.
@@ -64,7 +64,7 @@
                         <div class="col-lg-12 col-xxl-6">
                             <div class="text-center my-5">
                                 <img src="<?= base_url ?>assets/nosotros/foto-mision.jpg" alt="" width="100"
-                                    height="700" class="info-somos-2">
+                                    height="450" class="info-somos-2">
                                 <!-- <p class="info-tit">Nuestra Misión</p>
                         <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
                         </p> -->
@@ -74,10 +74,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
+    
+
             <section class="fondo py-5">
                 <div class="px-5 py-5">
-                    <p class="info-tit fw-bolder dancing-script-bold">Nuestros Valores</p>
+                    <p class="info-tit">Nuestros Valores</p>
                     <p class="info-somos-1 lead fw-normal container">Cada producto es una muestra de nuestro compromiso con la calidad y del cariño que sentimos por quienes nos eligen día a día.
                     </p>
                 </div>
@@ -123,33 +124,32 @@
                     </div>
                 </div>
             </section>
-            <div class=" px-5">
+            <section>
+
+
+
+            <div class="sect-mision px-5 f-1">
                 <div class="row justify-content-center">
                     <div class="col-lg-12 col-xxl-6">
                         <div class="text-center my-5">
-                            <img src="<?= base_url ?>assets/nosotros/foto-vision.jpg" alt="" width="100" height="700"
-                                class="info-somos-2">
-                            <!-- <p class="info-tit">Nuestra Misión</p>
-                        <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
-                        </p> -->
-                            <!--   <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
-                                            <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
+                            <img src="<?= base_url ?>assets/nosotros/foto-vision.jpg" alt="" width="100" height="500" class="info-somos-2">
                         </div>
                     </div>
                     <div class="col-lg-12 col-xxl-6">
                         <div class="text-center my-5">
-                            <p class="info-tit">Nuestra Visión</p>
-                            <p class="info-somos-1">Aprovechar todos los recursos energéticos y tecnológicos para
+                            <p class="info-tit-1">Nuestra Visión</p>
+                            <p class="info-somos-4">Aprovechar todos los recursos energéticos y tecnológicos para
                                 nuestros procesos para nuestros procesos y lograr el máximo ahorro posible en la
                                 elaboración de nuestros productos, ser más competitivos en el mercado y ser una empresa
                                 sólida, que proporcione bienestar a sus empleados, clientes y proveedores.
                             </p>
-                            <!--   <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
-                                            <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            
             </section>
             <!--    <section class="masthead6 fondo">
             </section> -->
@@ -170,3 +170,5 @@
             <img src="<?= base_url ?>assets/nosotros/quesos-maduros.jpg" alt="" class="info-somos-2">
         </div>
     </section> -->
+
+ 
