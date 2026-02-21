@@ -98,6 +98,145 @@
         </div>
     </div>
 </section>
+
+  <div class="container">
+        <h1>🛍️ Productos Destacados</h1>
+        
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="moveSlide(-1)">❮</button>
+            <button class="carousel-button next" onclick="moveSlide(1)">❯</button>
+            
+            <div class="carousel-track" id="carouselTrack">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=250&fit=crop" alt="Auriculares">
+                        <span class="product-badge">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Electrónica</div>
+                        <div class="product-title">Auriculares Inalámbricos Premium</div>
+                        <div class="product-rating">
+                            ★★★★★ <span>(124)</span>
+                        </div>
+                        <div class="product-price">
+                            $89.99 <small>$129.99</small>
+                        </div>
+                        <button class="btn-add" onclick="addToCart('Auriculares Inalámbricos', 89.99)">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=250&fit=crop" alt="Zapatillas">
+                        <span class="product-badge">-30%</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Moda</div>
+                        <div class="product-title">Zapatillas Deportivas Ultra Boost</div>
+                        <div class="product-rating">
+                            ★★★★☆ <span>(89)</span>
+                        </div>
+                        <div class="product-price">
+                            $79.99 <small>$114.99</small>
+                        </div>
+                        <button class="btn-add" onclick="addToCart('Zapatillas Deportivas', 79.99)">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=250&fit=crop" alt="Reloj">
+                        <span class="product-badge">Oferta</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Accesorios</div>
+                        <div class="product-title">Reloj Inteligente Series 5</div>
+                        <div class="product-rating">
+                            ★★★★★ <span>(256)</span>
+                        </div>
+                        <div class="product-price">
+                            $199.99 <small>$249.99</small>
+                        </div>
+                        <button class="btn-add" onclick="addToCart('Reloj Inteligente', 199.99)">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300&h=250&fit=crop" alt="Smartwatch">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Tecnología</div>
+                        <div class="product-title">Smartwatch Deportivo Pro</div>
+                        <div class="product-rating">
+                            ★★★★☆ <span>(67)</span>
+                        </div>
+                        <div class="product-price">
+                            $149.99 <small>$179.99</small>
+                        </div>
+                        <button class="btn-add" onclick="addToCart('Smartwatch Deportivo', 149.99)">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=300&h=250&fit=crop" alt="Perfume">
+                        <span class="product-badge">Premium</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Belleza</div>
+                        <div class="product-title">Perfume Elegance Collection</div>
+                        <div class="product-rating">
+                            ★★★★★ <span>(43)</span>
+                        </div>
+                        <div class="product-price">
+                            $59.99 <small>$89.99</small>
+                        </div>
+                        <button class="btn-add" onclick="addToCart('Perfume Elegance', 59.99)">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?w=300&h=250&fit=crop" alt="Mochila">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Viajes</div>
+                        <div class="product-title">Mochila Antirrobo con USB</div>
+                        <div class="product-rating">
+                            ★★★★☆ <span>(112)</span>
+                        </div>
+                        <div class="product-price">
+                            $45.99 <small>$69.99</small>
+                        </div>
+                        <button class="btn-add" onclick="addToCart('Mochila Antirrobo', 45.99)">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="stilo-section-prod-fav text-center">
     <div class="px-5 my-5 stilo-prod-fav">
         <div class="row">
