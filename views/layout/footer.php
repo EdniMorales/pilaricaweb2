@@ -176,6 +176,127 @@ document.getElementById("BotonFooterSuscribirse").addEventListener("click", func
         });
     </script>
 
+
+
+    <script>
+        const track = document.getElementById('carouselTrack');
+        const dotsContainer = document.getElementById('carouselDots');
+        const cards = document.querySelectorAll('.product-card');
+        let currentIndex = 0;
+        let cardsPerView = getCardsPerView();
+
+        // Configurar dots
+        function setupDots() {
+            const totalDots = Math.ceil(cards.length / cardsPerView);
+            dotsContainer.innerHTML = '';
+            
+            for (let i = 0; i < totalDots; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                dot.onclick = () => goToSlide(i);
+                dotsContainer.appendChild(dot);
+            }
+            
+            updateDots();
+        }
+
+        // Actualizar dots activos
+        function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            const activeDotIndex = Math.floor(currentIndex / cardsPerView);
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeDotIndex);
+            });
+        }
+
+        // Obtener número de tarjetas por vista según el ancho
+        function getCardsPerView() {
+            if (window.innerWidth <= 768) {
+                return 1;
+            } else if (window.innerWidth <= 1024) {
+                return 2;
+            }
+            return 3;
+        }
+
+        // Mover slide
+        function moveSlide(direction) {
+            const maxIndex = cards.length - cardsPerView;
+            currentIndex += direction;
+            
+            if (currentIndex < 0) {
+                currentIndex = 0;
+            } else if (currentIndex > maxIndex) {
+                currentIndex = maxIndex;
+            }
+            
+            updateCarousel();
+        }
+
+        // Ir a slide específico
+        function goToSlide(index) {
+            const maxIndex = cards.length - cardsPerView;
+            currentIndex = Math.min(index * cardsPerView, maxIndex);
+            updateCarousel();
+        }
+
+        // Actualizar carrusel
+        function updateCarousel() {
+            const cardWidth = cards[0].offsetWidth + 25; // 25px es el gap
+            const offset = currentIndex * cardWidth;
+            track.style.transform = `translateX(-${offset}px)`;
+            updateDots();
+        }
+
+        // Función para añadir al carrito
+        function addToCart(productName, price) {
+            alert(`✅ ${productName} añadido al carrito\n💰 Precio: $${price}\n🛒 Gracias por tu compra!`);
+        }
+
+        // Actualizar cardsPerView en resize
+        window.addEventListener('resize', () => {
+            cardsPerView = getCardsPerView();
+            currentIndex = Math.min(currentIndex, cards.length - cardsPerView);
+            setupDots();
+            updateCarousel();
+        });
+
+        // Inicializar
+        setupDots();
+
+        // Navegación con teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                moveSlide(-1);
+            } else if (e.key === 'ArrowRight') {
+                moveSlide(1);
+            }
+        });
+
+        // Animación de entrada
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.animation = `fadeInUp 0.5s ease forwards ${index * 0.1}s`;
+        });
+
+        // Añadir estilo de animación
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+
 </body>
 
 </html>
