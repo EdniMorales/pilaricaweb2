@@ -19,10 +19,7 @@
             <div class="modal-body">
                <p>¡Gracias por visitar nuestro sitio web! Estamos contentos de tenerte aquí.</p>
                 <p>¿Te gustaría suscribirte a nuestro boletín para recibir actualizaciones y ofertas exclusivas?</p> 
-
                 <img src="<?= base_url ?>assets/temporadas/canastas-2. png" class="img-promo" alt="...">
-
-
             </div>
             <div class="modal-footer">
                <button class="btn-newsletter" onclick="subscribeNewsletter()">¡Sí, Suscribirme!</button> 
@@ -40,8 +37,7 @@
                 </p>
             </div>
         </div> -->
-    </div>
-</header>
+    </div></header>
 <!-- 
 <div id="carouselExampleIndicators" class="carousel slide fondo-navidad-1" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -236,7 +232,7 @@
 
 
 
-
+<!-- 
 <section class="stilo-section-prod-fav text-center">
     <div class="px-5 my-5 stilo-prod-fav">
         <div class="row">
@@ -270,7 +266,14 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+
+
+
+
+
+
+
 <section class="stilo-section-prod-fav-1">
 <div class="containerNewCarousel">
     <div>
