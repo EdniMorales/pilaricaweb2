@@ -29,59 +29,60 @@
         </div>
     </div>
  -->
-    <header class="masthead wow animated bounceInLeft" data-wow-delay="1s">
+<header class="masthead wow animated zoomInDown" data-wow-delay="1s">
     <div class="container h-100 tab-1-image">
-      <!--   <div class="row h-100 align-items-center">
+        <!--   <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
                 <p class="title-1 wow animated slideInDown" data-wow-delay="1s">" Solo el amor supera las bondades de la leche "
                 </p>
             </div>
         </div> -->
-    </div></header>
-<!-- 
-<div id="carouselExampleIndicators" class="carousel slide fondo-navidad-1" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="<?= base_url ?>assets/temporadas/NAVIDAD-1.png" class="fondo-navidad-1" alt="...">
     </div>
-    <div class="carousel-item">
-      <img src="<?= base_url ?>assets/temporadas/NAVIDAD-3.jpg" class="fondo-navidad-1" alt="...">
+</header>
+
+<div class="sect-mision-prin px-5 f-1">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 col-xxl-8">
+            <div class="text-center my-5">
+                <p class="info-tit-1">Más de 40 años</p>
+                <p class="info-tit-1">de sabor y tradición</p>
+                <p class="info-somos-3">Somos una empresa mexicana que nace del amor por el queso artesanal.  Desde Ixtapaluca, Estado de México, llevamos más de cuatro décadas transformando tradición y experiencia en productos que llegan a la mesa de muchas familias.
+                </p>
+                <!-- <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
+                            <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
+            </div>
+        </div>
+        <div class="col-lg-12 col-xxl-4">
+            <div class="text-center my-5">
+                <img src="<?= base_url ?>assets/new-cheese/banners/cuatro-anos-de-02.png" alt="" width="100"
+                    height="450" class="info-somos-2">
+                <!-- <p class="info-tit">Nuestra Misión</p>
+                        <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
+                        </p> -->
+                <!--   <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
+                                            <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="<?= base_url ?>assets/temporadas/NAVIDAD-5.png" class="fondo-navidad-1" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> -->
-<!-- Historia Don Fidel-->
+</div>
 <section class="fondo tab-2 py-5">
     <div class="py-3">
         <div class="fondo container px-5 my-5">
             <div class="row gx-5 text-justify">
                 <div class="col-lg-12 col-xl-12">
                     <div class="text-center">
-                    <p class="title-2 dancing-script-bold wow animated bounceInLeft " data-wow-delay="2s"> Somos una empresa mexicana </p>
+                        <p class="title-2 dancing-script-bold wow animated bounceInLeft " data-wow-delay="2s"> Somos una
+                            empresa mexicana </p>
                         <p class="title-info">Ubicada en Ixtapaluca, Estado de México</p>
                         <div class="title-info-2 mb-4 wow animated zoomIn" data-wow-delay="0.5s">
-                            "En La Pilarica elaboramos quesos artesanales desde 1980, nuestro compromiso con la calidad y el sabor auténtico nos
+                            "En La Pilarica elaboramos quesos artesanales desde 1980, nuestro compromiso con la calidad
+                            y el sabor auténtico nos
                             ha convertido en una tradición que se comparte de generación en generación, llevando a cada
                             mesa un producto lleno de historia, pasión y confianza."
                         </div>
                         <div class="d-flex align-items-center justify-content-center">
                             <img class=" img-logo-tiempo"
-                            src="<?= base_url ?>assets/new-cheese/logos/Logo-aniversario.png" alt="..." />
+                                src="<?= base_url ?>assets/new-cheese/logos/Logo-aniversario.png" alt="..." />
                             <div class="fw-bold texto-fidel">
                                 Sr. Fidel Alfaro
                                 <span class="fw-bold text-primary mx-1">/</span>
@@ -95,142 +96,139 @@
     </div>
 </section>
 
-  <div class="container">
-        <h1>🛍️ Productos Destacados</h1>
-        
-        <div class="carousel-container">
-            <button class="carousel-button prev" onclick="moveSlide(-1)">❮</button>
-            <button class="carousel-button next" onclick="moveSlide(1)">❯</button>
-            
-            <div class="carousel-track" id="carouselTrack">
-                <!-- Producto 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=250&fit=crop" alt="Auriculares">
-                        <span class="product-badge">Nuevo</span>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-category">Electrónica</div>
-                        <div class="product-title">Auriculares Inalámbricos Premium</div>
-                        <div class="product-rating">
-                            ★★★★★ <span>(124)</span>
-                        </div>
-                        <div class="product-price">
-                            $89.99 <small>$129.99</small>
-                        </div>
-                        <button class="btn-add" onclick="addToCart('Auriculares Inalámbricos', 89.99)">Añadir al Carrito</button>
-                    </div>
-                </div>
 
-                <!-- Producto 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=250&fit=crop" alt="Zapatillas">
-                        <span class="product-badge">-30%</span>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-category">Moda</div>
-                        <div class="product-title">Zapatillas Deportivas Ultra Boost</div>
-                        <div class="product-rating">
-                            ★★★★☆ <span>(89)</span>
-                        </div>
-                        <div class="product-price">
-                            $79.99 <small>$114.99</small>
-                        </div>
-                        <button class="btn-add" onclick="addToCart('Zapatillas Deportivas', 79.99)">Añadir al Carrito</button>
-                    </div>
-                </div>
 
-                <!-- Producto 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=250&fit=crop" alt="Reloj">
-                        <span class="product-badge">Oferta</span>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-category">Accesorios</div>
-                        <div class="product-title">Reloj Inteligente Series 5</div>
-                        <div class="product-rating">
-                            ★★★★★ <span>(256)</span>
-                        </div>
-                        <div class="product-price">
-                            $199.99 <small>$249.99</small>
-                        </div>
-                        <button class="btn-add" onclick="addToCart('Reloj Inteligente', 199.99)">Añadir al Carrito</button>
-                    </div>
+<div class="car-prod container">
+    <h1>🛍️ Productos Destacados</h1>
+    <div class="carousel-container">
+        <button class="carousel-button prev" onclick="moveSlide(-1)">❮</button>
+        <button class="carousel-button next" onclick="moveSlide(1)">❯</button>
+        <div class="carousel-track" id="carouselTrack">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-natural-250.png"
+                        alt="Yogurt-Natural">
+                   <!--  <span class="product-badge">Nuevo</span> -->
                 </div>
+            <!--     <div class="product-info">
+                    <div class="product-category">Electrónica</div>
+                    <div class="product-title">Auriculares Inalámbricos Premium</div>
+                    <div class="product-rating">
+                        ★★★★★ <span>(124)</span>
+                    </div>
+                    <div class="product-price">
+                        $89.99 <small>$129.99</small>
+                    </div>
+                    <button class="btn-add" onclick="addToCart('Auriculares Inalámbricos', 89.99)">Añadir al
+                        Carrito</button>
+                </div> -->
+            </div>
 
-                <!-- Producto 4 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300&h=250&fit=crop" alt="Smartwatch">
-                    </div>
-                    <div class="product-info">
-                        <div class="product-category">Tecnología</div>
-                        <div class="product-title">Smartwatch Deportivo Pro</div>
-                        <div class="product-rating">
-                            ★★★★☆ <span>(67)</span>
-                        </div>
-                        <div class="product-price">
-                            $149.99 <small>$179.99</small>
-                        </div>
-                        <button class="btn-add" onclick="addToCart('Smartwatch Deportivo', 149.99)">Añadir al Carrito</button>
-                    </div>
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-fresa-250.png"
+                        alt="Zapatillas">
+                    <!-- <span class="product-badge">-30%</span> -->
                 </div>
-
-                <!-- Producto 5 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=300&h=250&fit=crop" alt="Perfume">
-                        <span class="product-badge">Premium</span>
+                <div class="product-info">
+                    <div class="product-category">Moda</div>
+                    <div class="product-title">Zapatillas Deportivas Ultra Boost</div>
+                    <div class="product-rating">
+                        ★★★★☆ <span>(89)</span>
                     </div>
-                    <div class="product-info">
-                        <div class="product-category">Belleza</div>
-                        <div class="product-title">Perfume Elegance Collection</div>
-                        <div class="product-rating">
-                            ★★★★★ <span>(43)</span>
-                        </div>
-                        <div class="product-price">
-                            $59.99 <small>$89.99</small>
-                        </div>
-                        <button class="btn-add" onclick="addToCart('Perfume Elegance', 59.99)">Añadir al Carrito</button>
+                    <div class="product-price">
+                        $79.99 <small>$114.99</small>
                     </div>
-                </div>
-
-                <!-- Producto 6 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?w=300&h=250&fit=crop" alt="Mochila">
-                    </div>
-                    <div class="product-info">
-                        <div class="product-category">Viajes</div>
-                        <div class="product-title">Mochila Antirrobo con USB</div>
-                        <div class="product-rating">
-                            ★★★★☆ <span>(112)</span>
-                        </div>
-                        <div class="product-price">
-                            $45.99 <small>$69.99</small>
-                        </div>
-                        <button class="btn-add" onclick="addToCart('Mochila Antirrobo', 45.99)">Añadir al Carrito</button>
-                    </div>
+                    <button class="btn-add" onclick="addToCart('Zapatillas Deportivas', 79.99)">Añadir al
+                        Carrito</button>
                 </div>
             </div>
-        </div>
 
-        <div class="carousel-dots" id="carouselDots"></div>
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-mango-250.png"
+                        alt="Reloj">
+                    <span class="product-badge">Oferta</span>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Accesorios</div>
+                    <div class="product-title">Reloj Inteligente Series 5</div>
+                    <div class="product-rating">
+                        ★★★★★ <span>(256)</span>
+                    </div>
+                    <div class="product-price">
+                        $199.99 <small>$249.99</small>
+                    </div>
+                    <button class="btn-add" onclick="addToCart('Reloj Inteligente', 199.99)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-cereal-250.png"
+                        alt="Smartwatch">
+                </div>
+               <!--  <div class="product-info">
+                    <div class="product-category">Tecnología</div>
+                    <div class="product-title">Smartwatch Deportivo Pro</div>
+                    <div class="product-rating">
+                        ★★★★☆ <span>(67)</span>
+                    </div>
+                    <div class="product-price">
+                        $149.99 <small>$179.99</small>
+                    </div>
+                    <button class="btn-add" onclick="addToCart('Smartwatch Deportivo', 149.99)">Añadir al
+                        Carrito</button>
+                </div> -->
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-nuez-250.png"
+                        alt="Perfume">
+                    <span class="product-badge">Premium</span>
+                </div>
+      <!--           <div class="product-info">
+                    <div class="product-category">Belleza</div>
+                    <div class="product-title">Perfume Elegance Collection</div>
+                    <div class="product-rating">
+                        ★★★★★ <span>(43)</span>
+                    </div>
+                    <div class="product-price">
+                        $59.99 <small>$89.99</small>
+                    </div>
+                    <button class="btn-add" onclick="addToCart('Perfume Elegance', 59.99)">Añadir al Carrito</button>
+                </div> -->
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-zarza-250.png"
+                        alt="Mochila">
+                </div>
+        <!--         <div class="product-info">
+                    <div class="product-category">Viajes</div>
+                    <div class="product-title">Mochila Antirrobo con USB</div>
+                    <div class="product-rating">
+                        ★★★★☆ <span>(112)</span>
+                    </div>
+                    <div class="product-price">
+                        $45.99 <small>$69.99</small>
+                    </div>
+                    <button class="btn-add" onclick="addToCart('Mochila Antirrobo', 45.99)">Añadir al Carrito</button>
+                </div> -->
+            </div>
+        </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
+    <div class="carousel-dots" id="carouselDots"></div>
+</div>
 
 <!-- 
 <section class="stilo-section-prod-fav text-center">
@@ -268,60 +266,30 @@
     </div>
 </section> -->
 
-
-
-
-
-
-
-<section class="stilo-section-prod-fav-1">
-<div class="containerNewCarousel">
-    <div>
-    <p class="titleNewCarousel">Nuestros productos</p>
-    <p class="subTitleNewCarousel">Conoce la variedad de productos que tenemos para ti</p>
-    </div>
-<!--     <div class="card-carousel" id="contenedorCarrucelProductos">
-        <div class="card">
-            <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
-            </div>
-            <p class="text_card_description">No se encontraron productos.</p>
-        </div>
-        <div class="card">
-            <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
-            </div>
-            <p class="text_card_description">${array.error}</p>
-        </div>
-        <div class="card">
-            <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
-            </div>
-            <p class="text_card_description">No se encontraron productos.</p>
-        </div>
-  </div> -->
-  <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
-</div>
-</section>
 <script type="module">
     import * as random from '<?= base_url ?>js/random.js';
 </script>
 <section class="stilo-section-prod-fav-3 fondo text-center">
     <div class="px-5 my-5 stilo-prod-fav-3">
         <div class="row">
-            <div class="col-lg-6"><!--  px-5 my-5 -->
-                <div class="mx-auto "><!-- mb-5 mb-lg-0 -->
+            <div class="col-lg-6">
+                <!--  px-5 my-5 -->
+                <div class="mx-auto ">
+                    <!-- mb-5 mb-lg-0 -->
                     <p class="subtit-prod-fav-3">Utilizamos leche 100% de vaca en nuestros productos</p>
-                    <p class="subtit-prod-fav-4 "> <!-- px-5 my-5 -->
+                    <p class="subtit-prod-fav-4 ">
+                        <!-- px-5 my-5 -->
                         Nuestros productos están elaborados con
                         leche 100% de vaca, cuidadosamente seleccionada. Mantenemos procesos
-                        artesanales en cada etapa de la producción, respetando las tradiciones que garantizan el sabor auténtico, frescura y calidad.
+                        artesanales en cada etapa de la producción, respetando las tradiciones que garantizan el sabor
+                        auténtico, frescura y calidad.
                     </p>
                 </div>
             </div>
             <div class="col-lg-6 tab-1-image">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/yogurt/baner-yogurt-fresa_Mesa de trabajo 1.png"
+                    <img class="mb-3 edit-img-yog"
+                        src="<?= base_url ?>assets/new-cheese/yogurt/baner-yogurt-fresa_Mesa de trabajo 1.png"
                         alt="..." />
                 </div>
             </div>
@@ -345,7 +313,8 @@
                                             placeholder="Coloca tu nombre" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="ApellidoFormQS" class="form-label tiitle-description">Apellido</label>
+                                        <label for="ApellidoFormQS"
+                                            class="form-label tiitle-description">Apellido</label>
                                         <input type="text" class="form-control" name="ApellidoFormQS"
                                             id="ApellidoFormQS" placeholder="Coloca tu apellido" required>
                                     </div>
@@ -355,7 +324,8 @@
                                             placeholder="Coloca tu correo" required>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="DireccionFormQS" class="form-label tiitle-description">Direccion</label>
+                                        <label for="DireccionFormQS"
+                                            class="form-label tiitle-description">Direccion</label>
                                         <input type="text" class="form-control" name="DireccionFormQS"
                                             id="DireccionFormQS" placeholder="Opcional">
                                     </div>
@@ -370,7 +340,8 @@
                                             placeholder="Opcional">
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="TipoFormQS" class="form-label tiitle-description">Tipo de mensaje</label>
+                                        <label for="TipoFormQS" class="form-label tiitle-description">Tipo de
+                                            mensaje</label>
                                         <select class="form-select" name="TipoFormQS" id="TipoFormQS" required>
                                             <option value="" selected disabled>Selecciona el tipo de mensaje</option>
                                             <option value="Queja" class="text-black">Queja</option>
@@ -379,7 +350,8 @@
                                         </select>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="MensajeFormQS" class="form-label tiitle-description">Coloca tu mensaje aqui</label>
+                                        <label for="MensajeFormQS" class="form-label tiitle-description">Coloca tu
+                                            mensaje aqui</label>
                                         <textarea type="text" class="form-control" name="MensajeFormQS"
                                             id="MensajeFormQS" rows="4" required></textarea>
                                     </div>
@@ -393,14 +365,16 @@
                                             <input class="form-check-input" type="checkbox" name="gridCheck"
                                                 id="gridCheck">
                                             <label class="form-check-label text-black" for="gridCheck">
-                                                ¿Te gustaría suscribirte gratis para recibir ofertas, noticias, promociones, recetas y mucho más?
+                                                ¿Te gustaría suscribirte gratis para recibir ofertas, noticias,
+                                                promociones, recetas y mucho más?
                                             </label>
                                         </div>
                                     </div>
                                 </form>
                                 <div class="row g-3">
                                     <div class="col-md-12" style="margin-top: 40px;">
-                                        <button class="btn btn-warning" name="BotonEnviarQS"                                          id="BotonEnviarQS">Enviar</button>
+                                        <button class="btn btn-warning" name="BotonEnviarQS"
+                                            id="BotonEnviarQS">Enviar</button>
                                     </div>
                                 </div>
                             </div>
@@ -410,7 +384,7 @@
             </div>
         </div>
     </div>
-</section> 
+</section>
 <section class="fondo py-5 tab-1 tab-1-image">
     <div class="container px-5 my-5 tab-1">
         <div class="text-center">
