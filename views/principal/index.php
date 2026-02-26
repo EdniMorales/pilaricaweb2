@@ -151,7 +151,7 @@
                 <div class="product-image">
                     <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-mango-250.png"
                         alt="Reloj">
-                    <span class="product-badge">Oferta</span>
+            <!--         <span class="product-badge">Oferta</span> -->
                 </div>
                 <div class="product-info">
                     <div class="product-category">Accesorios</div>
