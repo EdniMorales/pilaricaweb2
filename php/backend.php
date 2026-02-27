@@ -183,6 +183,50 @@ function searchOnlyProductos($conn, $search_term) {
     return $data;
 }
 
+//! ======== NEW =========
+
+// Función para obtener un producto específico por ID
+function searchIdAllGroupByCategories($conn, $id_categorie) {
+    $sql = <<<EOD
+        SELECT
+            PROD_GROUP.ID_PRODUCTO,
+            PROD_GROUP.NOMBRE AS PRODUCTO,
+            PROD_GROUP.PRESENTACION,
+            PROD_GROUP.PRESENTACION_UNIDAD,
+            PROD_GROUP.MARCA,
+            GRUPOS.IMAGEN_ETIQUETA,
+            PROD_GROUP.IMAGEN_PRODUCTO,
+            CATEGORIAS.NOMBRE AS CATEGORIA,
+            CATEGORIAS.DESCRIPCION AS DESCRIPCION_CATEGORIA
+        FROM
+            PROD_GROUP
+        INNER JOIN
+            CATEGORIAS
+        ON PROD_GROUP.ID_CATEGORIA = CATEGORIAS.ID_CATEGORIA
+
+        INNER JOIN
+            GRUPOS
+        ON PROD_GROUP.ID_GRUPO = GRUPOS.ID_GRUPO
+
+        WHERE CATEGORIAS.ID_CATEGORIA = ? AND PROD_GROUP.ESTADO = 'ACTIVO'
+
+        ORDER BY PROD_GROUP.NOMBRE;
+    EOD;
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $id_categorie);  // "i" significa un parámetro entero
+    $stmt->execute();
+    $result = $stmt->get_result();
+    
+    $data = array();
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $data[] = $row;
+        }
+    }
+    
+    return $data;
+}
+
 // Función para obtener un producto específico por ID
 function searchIdAllGroup($conn, $id_grupo) {
     $sql = <<<EOD
@@ -259,6 +303,39 @@ function searchIdAllGroup($conn, $id_grupo) {
     
     return $data;
 }
+
+// Función para obtener solo el nombre productos con búsqueda aproximada
+function searchOnlyGroup($conn, $search_term) {
+    $sql = <<<EOD
+        SELECT
+            ID_PRODUCTO,
+            NOMBRE
+        FROM
+            PROD_GROUP
+
+        WHERE NOMBRE LIKE ? AND ESTADO = 'ACTIVO'
+
+        ORDER BY NOMBRE
+        
+        LIMIT 4;
+    EOD;
+
+    $stmt = $conn->prepare($sql);
+    $search_term = "%" . $search_term . "%";  // Se utiliza el % para hacer una búsqueda con LIKE
+    $stmt->bind_param("s", $search_term);  // "s" significa un parámetro de tipo string
+    $stmt->execute();
+    $result = $stmt->get_result();
+    
+    $data = array();
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $data[] = $row;
+        }
+    }
+    
+    return $data;
+}
+
 // Función para obtener una categoria específica por ID
 function searchIdCategories($conn, $id_categorie) {
     $sql = <<<EOD
@@ -444,8 +521,13 @@ if (isset($_GET['action'])) {
         $data = searchOnlyProductos($conn, $search_term);
     } elseif ($action == 'searchIdCategories' && isset($_GET['search_categories'])){
         $data = searchIdCategories($conn, $_GET['search_categories']);
-    } elseif ($action == 'searchIdAllGroup' && isset($_GET['search_group'])){
-        $data = searchIdAllGroup($conn, $_GET['search_group']);
+    } elseif ($action == 'searchIdAllGroupByCategories' && isset($_GET['search_categories'])){
+        $data = searchIdAllGroupByCategories($conn, $_GET['search_categories']);
+    } elseif ($action == 'searchIdAllGroup' && isset($_GET['search_prod'])){
+        $data = searchIdAllGroup($conn, $_GET['search_prod']);
+    } elseif ($action == 'searchOnlyGroup' && isset($_GET['search_prod'])) {
+        $search_term = mysqli_real_escape_string($conn, $_GET['search_prod']);
+        $data = searchOnlyGroup($conn, $search_term);
     } else if ($action == 'pageError'){
         $data = lanzarPaginaDeError();
     } else if ($action == 'traerImagen' && isset($_GET['img'])) {
