@@ -10,7 +10,7 @@ export function ProductSearch(Id_Producto, page, dropdown){
     // Validar que no este vacio
     if (Search_Text.length > 0){
         // Ajax asi es servidor
-        fetch(`../php/backend.php?action=searchOnlyProductos&search_prod=${encodeURIComponent(Search_Text)}`) //<= Se coloca ../ para produccion
+        fetch(`../php/backend.php?action=searchOnlyGroup&search_prod=${encodeURIComponent(Search_Text)}`) //<= Se coloca ../ para produccion
             .then(response => response.json()) // Espera la respuesta como JSON
             .then(data => {
             //    console.log("Datos obtenidos: ", data);
@@ -64,7 +64,7 @@ export function ProductosPorCategoriaSearch(parametros){
     // Validar que no este vacio
     if (Carpeta.length > 0){
         //Ajax hacia el servidor
-        fetch(`../php/backend.php?action=searchIdAllProductosByCategories&search_categories=${encodeURIComponent(IdCategoria)}`)
+        fetch(`../php/backend.php?action=searchIdAllGroupByCategories&search_categories=${encodeURIComponent(IdCategoria)}`)
             .then(response => response.json()) // Espera la respuesta como JSON
             .then(data => {
                 console.log("Datos obtenidos: ", data);
@@ -80,7 +80,7 @@ export function ProductosPorCategoriaSearch(parametros){
 
 export function MostrarDatosPorProductoIndividual(Id_Producto){
     if (Id_Producto && Id_Producto>0){
-        fetch(`../php/backend.php?action=searchIdAllProductos&search_prod=${Id_Producto}`)
+        fetch(`../php/backend.php?action=searchIdAllGroup&search_prod=${Id_Producto}`)
             .then(response => response.json()) // Espera la respuesta como JSON
             .then(data => {
                 console.log("Datos obtenidos: ", data);
