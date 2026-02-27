@@ -291,6 +291,7 @@ box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
   margin-bottom: -15%;
   padding-bottom: 5%;
   width: 100%;
+
 }
 .tab-1{
   margin-top: 5%;
@@ -726,6 +727,11 @@ margin-bottom: -5%;
 .f-1{
       background-color: #0F1E53;
 }
+.f-1-prin{
+    
+        background-color: #FCF7F7;
+      margin-top: 0%;
+}
 .info-tit {
     color: #0F1E53;
     font-size: 50px;
@@ -743,6 +749,19 @@ color: #FFFFFF;
 text-align: center;
 margin-top: -1%;
 }
+.info-tit-1-prin{
+  font-size: 50px;
+font-weight: 600;
+color: #0F1E53;
+text-align: center;
+margin-top: -1%;
+}
+
+
+
+
+
+
 .fondo-mision{
   background: #FFF9F4;
   margin-top: 20%;

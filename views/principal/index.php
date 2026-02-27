@@ -40,13 +40,13 @@
     </div>
 </header>
 
-<div class="sect-mision-prin px-5 f-1">
+<div class="sect-mision-prin px-5 f-1-prin">
     <div class="row justify-content-center">
         <div class="col-lg-12 col-xxl-8">
             <div class="text-center my-5">
-                <p class="info-tit-1">Más de 40 años</p>
-                <p class="info-tit-1">de sabor y tradición</p>
-                <p class="info-somos-3">Somos una empresa mexicana que nace del amor por el queso artesanal.  Desde Ixtapaluca, Estado de México, llevamos más de cuatro décadas transformando tradición y experiencia en productos que llegan a la mesa de muchas familias.
+                <p class="info-tit-1-prin">Más de 40 años</p>
+                <p class="info-tit-1-prin">de sabor y tradición</p>
+                <p class="info-somos-3-prin">Somos una empresa mexicana que nace del amor por el queso artesanal.  Desde Ixtapaluca, Estado de México, llevamos más de cuatro décadas transformando tradición y experiencia en productos que llegan a la mesa de muchas familias.
                 </p>
                 <!-- <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
                             <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
@@ -109,7 +109,7 @@
                 <div class="product-image">
                     <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-natural-250.png"
                         alt="Yogurt-Natural">
-                   <!--  <span class="product-badge">Nuevo</span> -->
+                    <span class="product-badge">NATURAL</span>
                 </div>
             <!--     <div class="product-info">
                     <div class="product-category">Electrónica</div>
@@ -129,10 +129,10 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-fresa-250.png"
-                        alt="Zapatillas">
-                    <!-- <span class="product-badge">-30%</span> -->
+                        alt="Yogurt-Fresa">
+                    <span class="product-badge">FRESA</span>
                 </div>
-                <div class="product-info">
+              <!--   <div class="product-info">
                     <div class="product-category">Moda</div>
                     <div class="product-title">Zapatillas Deportivas Ultra Boost</div>
                     <div class="product-rating">
@@ -143,17 +143,17 @@
                     </div>
                     <button class="btn-add" onclick="addToCart('Zapatillas Deportivas', 79.99)">Añadir al
                         Carrito</button>
-                </div>
+                </div> -->
             </div>
 
             <!-- Producto 3 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-mango-250.png"
-                        alt="Reloj">
-            <!--         <span class="product-badge">Oferta</span> -->
+                        alt="Yogurt-Mango">
+                    <span class="product-badge">MANGO</span>
                 </div>
-                <div class="product-info">
+             <!--    <div class="product-info">
                     <div class="product-category">Accesorios</div>
                     <div class="product-title">Reloj Inteligente Series 5</div>
                     <div class="product-rating">
@@ -163,14 +163,15 @@
                         $199.99 <small>$249.99</small>
                     </div>
                     <button class="btn-add" onclick="addToCart('Reloj Inteligente', 199.99)">Añadir al Carrito</button>
-                </div>
+                </div> -->
             </div>
 
             <!-- Producto 4 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-cereal-250.png"
-                        alt="Smartwatch">
+                        alt="Yogurt-Cereal">
+                    <span class="product-badge">CEREAL</span>
                 </div>
                <!--  <div class="product-info">
                     <div class="product-category">Tecnología</div>
@@ -190,8 +191,8 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-nuez-250.png"
-                        alt="Perfume">
-                    <span class="product-badge">Premium</span>
+                        alt="Yogurt-Nuez">
+                    <span class="product-badge">NUEZ</span>
                 </div>
       <!--           <div class="product-info">
                     <div class="product-category">Belleza</div>
@@ -210,7 +211,8 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-zarza-250.png"
-                        alt="Mochila">
+                        alt="Yogurt-Zarzamora">
+                    <span class="product-badge">ZARZAMORA</span>
                 </div>
         <!--         <div class="product-info">
                     <div class="product-category">Viajes</div>

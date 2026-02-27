@@ -16,6 +16,7 @@
                     <p class="info-somos">En Lácteos La Pilarica, elaboramos quesos artesanales desde 1980, manteniendo vivo un compromiso genuino con la calidad y el sabor auténtico.</p>
                 </div>
             </section>
+            
             <section class="fondo-desc-historia-1 py-5" id="scroll-target">
                 <div class="container fondo-desc-historia-2 px-5 py-5">
                     <div class=" px-5 my-5 title-n-history">
