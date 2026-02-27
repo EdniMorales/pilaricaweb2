@@ -274,8 +274,8 @@ function searchIdAllGroup($conn, $id_grupo) {
         FROM
             PROD_GROUP
         INNER JOIN
-            TABLA_ALIMENTICIA
-        ON PROD_GROUP.ID_PRODUCTO = TABLA_ALIMENTICIA.ID_PRODUCTO
+            TABLA_ALIMENTICIA_GROUP
+        ON PROD_GROUP.ID_PRODUCTO = TABLA_ALIMENTICIA_GROUP.ID_PRODUCTO
 
         INNER JOIN
             CATEGORIAS
@@ -290,7 +290,7 @@ function searchIdAllGroup($conn, $id_grupo) {
         ORDER BY PROD_GROUP.NOMBRE;
     EOD;
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("i", $id_producto);  // "i" significa un parámetro entero
+    $stmt->bind_param("i", $id_grupo);  // "i" significa un parámetro entero
     $stmt->execute();
     $result = $stmt->get_result();
     

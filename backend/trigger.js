@@ -79,6 +79,7 @@ export function ProductosPorCategoriaSearch(parametros){
 }
 
 export function MostrarDatosPorProductoIndividual(Id_Producto){
+    console.log(Id_Producto)
     if (Id_Producto && Id_Producto>0){
         fetch(`../php/backend.php?action=searchIdAllGroup&search_prod=${Id_Producto}`)
             .then(response => response.json()) // Espera la respuesta como JSON
