@@ -46,7 +46,7 @@
             <div class="text-center my-5">
                 <p class="info-tit-1-prin">Más de cuatro </p>
                 <p class="info-tit-2-prin"><span class="txt-dec">décadas</span></p>
-                <p class="info-tit-1-prin">de sabor y tradición</p>
+                <p class="info-tit-3-prin">de sabor y tradición</p>
                 <p class="info-somos-3-prin">Somos una empresa mexicana que nace del amor por el queso artesanal.  Desde Ixtapaluca, Estado de México, llevamos más de cuatro décadas transformando tradición y experiencia en productos que llegan a la mesa de muchas familias.
                 </p>
                 <!-- <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
@@ -298,6 +298,34 @@
             </div>
         </div>
     </div>
+</section>
+
+
+<section>
+
+    <div class="card-carousel" id="contenedorCarrucelProductos">
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">No se encontraron productos.</p>
+        </div>
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">${array.error}</p>
+        </div>
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">No se encontraron productos.</p>
+        </div>
+  </div>
+
+
+
 </section>
 <section class="cont-color">
     <div class="container-fluid ps-md-0">

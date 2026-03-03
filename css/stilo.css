@@ -747,7 +747,7 @@ font-size: 40px;
 font-weight: 600;
 color: #0F1E53;
 text-align: center;
-margin-top: 10%;
+margin-top: 8%;
 }
 .info-tit-2-prin{
 font-family: "Lato", sans-serif;
@@ -757,6 +757,14 @@ color: #0F1E53;
 text-align: center;
 margin-top: -3%;
 }
+.info-tit-3-prin{ 
+font-size: 50px;
+font-weight: 600;
+color: #0F1E53;
+text-align: center;
+margin-top: -1%;
+}
+
 .txt-dec{
 font-family: "Lato", sans-serif;
 font-weight: 700;
