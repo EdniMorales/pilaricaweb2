@@ -44,7 +44,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-12 col-xxl-8">
             <div class="text-center my-5">
-                <p class="info-tit-1-prin">Más de cuatro </p>
+                <p class="info-tit-1-prin">Más de cuatro</p>
                 <p class="info-tit-2-prin"><span class="txt-dec">décadas</span></p>
                 <p class="info-tit-3-prin">de sabor y tradición</p>
                 <p class="info-somos-3-prin">Somos una empresa mexicana que nace del amor por el queso artesanal.  Desde Ixtapaluca, Estado de México, llevamos más de cuatro décadas transformando tradición y experiencia en productos que llegan a la mesa de muchas familias.
@@ -272,6 +272,7 @@
 <script type="module">
     import * as random from '<?= base_url ?>js/random.js';
 </script>
+
 <section class="stilo-section-prod-fav-3 fondo text-center">
     <div class="px-5 my-5 stilo-prod-fav-3">
         <div class="row">
