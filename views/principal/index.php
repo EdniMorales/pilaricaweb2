@@ -49,6 +49,7 @@
                 <p class="info-tit-3-prin">de sabor y tradición</p>
                 <p class="info-somos-3-prin">Somos una empresa mexicana que nace del amor por el queso artesanal.  Desde Ixtapaluca, Estado de México, llevamos más de cuatro décadas transformando tradición y experiencia en productos que llegan a la mesa de muchas familias.
                 </p>
+                <button type="button" class="btn btn-secondary">Secondary</button>
                 <!-- <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
                             <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
             </div>
@@ -56,7 +57,7 @@
         <div class="col-lg-12 col-xxl-4">
             <div class="text-center my-5">
                 <img src="<?= base_url ?>assets/new-cheese/banners/cuatro-anos-de-02.png" alt="" width="100"
-                    height="450" class="info-somos-2">
+                    height="650" class="info-somos-2">
                 <!-- <p class="info-tit">Nuestra Misión</p>
                         <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
                         </p> -->
