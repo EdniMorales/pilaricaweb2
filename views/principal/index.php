@@ -42,19 +42,19 @@
 
 <div class="sect-mision-prin px-5 f-1-prin">
     <div class="row justify-content-center">
-        <div class="col-lg-12 col-xxl-8">
+        <div class="col-lg-12 col-xxl-6">
             <div class="text-center my-5">
                 <p class="info-tit-1-prin">Más de cuatro</p>
                 <p class="info-tit-2-prin"><span class="txt-dec">décadas</span></p>
                 <p class="info-tit-3-prin">de sabor y tradición</p>
                 <p class="info-somos-3-prin">Somos una empresa mexicana que nace del amor por el queso artesanal.  Desde Ixtapaluca, Estado de México, llevamos más de cuatro décadas transformando tradición y experiencia en productos que llegan a la mesa de muchas familias.
                 </p>
-                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-warning">Conoce más</button>
                 <!-- <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
                             <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
             </div>
         </div>
-        <div class="col-lg-12 col-xxl-4">
+        <div class="col-lg-12 col-xxl-6">
             <div class="text-center my-5">
                 <img src="<?= base_url ?>assets/new-cheese/banners/cuatro-anos-de-02.png" alt="" width="100"
                     height="650" class="info-somos-2">
@@ -67,7 +67,7 @@
         </div>
     </div>
 </div>
-<section class="fondo tab-2 py-5">
+<!-- <section class="fondo tab-2 py-5">
     <div class="py-3">
         <div class="fondo container px-5 my-5">
             <div class="row gx-5 text-justify">
@@ -96,143 +96,9 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
-
-<div class="car-prod container">
-    <h1>🛍️ Productos Destacados</h1>
-    <div class="carousel-container">
-        <button class="carousel-button prev" onclick="moveSlide(-1)">❮</button>
-        <button class="carousel-button next" onclick="moveSlide(1)">❯</button>
-        <div class="carousel-track" id="carouselTrack">
-            <!-- Producto 1 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-natural-250.png"
-                        alt="Yogurt-Natural">
-                    <span class="product-badge">NATURAL</span>
-                </div>
-            <!--     <div class="product-info">
-                    <div class="product-category">Electrónica</div>
-                    <div class="product-title">Auriculares Inalámbricos Premium</div>
-                    <div class="product-rating">
-                        ★★★★★ <span>(124)</span>
-                    </div>
-                    <div class="product-price">
-                        $89.99 <small>$129.99</small>
-                    </div>
-                    <button class="btn-add" onclick="addToCart('Auriculares Inalámbricos', 89.99)">Añadir al
-                        Carrito</button>
-                </div> -->
-            </div>
-
-            <!-- Producto 2 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-fresa-250.png"
-                        alt="Yogurt-Fresa">
-                    <span class="product-badge">FRESA</span>
-                </div>
-              <!--   <div class="product-info">
-                    <div class="product-category">Moda</div>
-                    <div class="product-title">Zapatillas Deportivas Ultra Boost</div>
-                    <div class="product-rating">
-                        ★★★★☆ <span>(89)</span>
-                    </div>
-                    <div class="product-price">
-                        $79.99 <small>$114.99</small>
-                    </div>
-                    <button class="btn-add" onclick="addToCart('Zapatillas Deportivas', 79.99)">Añadir al
-                        Carrito</button>
-                </div> -->
-            </div>
-
-            <!-- Producto 3 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-mango-250.png"
-                        alt="Yogurt-Mango">
-                    <span class="product-badge">MANGO</span>
-                </div>
-             <!--    <div class="product-info">
-                    <div class="product-category">Accesorios</div>
-                    <div class="product-title">Reloj Inteligente Series 5</div>
-                    <div class="product-rating">
-                        ★★★★★ <span>(256)</span>
-                    </div>
-                    <div class="product-price">
-                        $199.99 <small>$249.99</small>
-                    </div>
-                    <button class="btn-add" onclick="addToCart('Reloj Inteligente', 199.99)">Añadir al Carrito</button>
-                </div> -->
-            </div>
-
-            <!-- Producto 4 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-cereal-250.png"
-                        alt="Yogurt-Cereal">
-                    <span class="product-badge">CEREAL</span>
-                </div>
-               <!--  <div class="product-info">
-                    <div class="product-category">Tecnología</div>
-                    <div class="product-title">Smartwatch Deportivo Pro</div>
-                    <div class="product-rating">
-                        ★★★★☆ <span>(67)</span>
-                    </div>
-                    <div class="product-price">
-                        $149.99 <small>$179.99</small>
-                    </div>
-                    <button class="btn-add" onclick="addToCart('Smartwatch Deportivo', 149.99)">Añadir al
-                        Carrito</button>
-                </div> -->
-            </div>
-
-            <!-- Producto 5 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-nuez-250.png"
-                        alt="Yogurt-Nuez">
-                    <span class="product-badge">NUEZ</span>
-                </div>
-      <!--           <div class="product-info">
-                    <div class="product-category">Belleza</div>
-                    <div class="product-title">Perfume Elegance Collection</div>
-                    <div class="product-rating">
-                        ★★★★★ <span>(43)</span>
-                    </div>
-                    <div class="product-price">
-                        $59.99 <small>$89.99</small>
-                    </div>
-                    <button class="btn-add" onclick="addToCart('Perfume Elegance', 59.99)">Añadir al Carrito</button>
-                </div> -->
-            </div>
-
-            <!-- Producto 6 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-zarza-250.png"
-                        alt="Yogurt-Zarzamora">
-                    <span class="product-badge">ZARZAMORA</span>
-                </div>
-        <!--         <div class="product-info">
-                    <div class="product-category">Viajes</div>
-                    <div class="product-title">Mochila Antirrobo con USB</div>
-                    <div class="product-rating">
-                        ★★★★☆ <span>(112)</span>
-                    </div>
-                    <div class="product-price">
-                        $45.99 <small>$69.99</small>
-                    </div>
-                    <button class="btn-add" onclick="addToCart('Mochila Antirrobo', 45.99)">Añadir al Carrito</button>
-                </div> -->
-            </div>
-        </div>
-    </div>
-
-    <div class="carousel-dots" id="carouselDots"></div>
-</div>
 
 <!-- 
 <section class="stilo-section-prod-fav text-center">
@@ -274,6 +140,35 @@
     import * as random from '<?= base_url ?>js/random.js';
 </script>
 
+
+
+<section class="fondo-carrucel-prod">
+
+    <div class="card-carousel" id="contenedorCarrucelProductos">
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">No se encontraron productos.</p>
+        </div>
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">${array.error}</p>
+        </div>
+        <div class="card">
+            <div class="image-container" onclick="window.location.href='../Principal/index'">
+            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+            </div>
+            <p class="text_card_description">No se encontraron productos.</p>
+        </div>
+  </div>
+
+
+
+</section>
+
 <section class="stilo-section-prod-fav-3 fondo text-center">
     <div class="px-5 my-5 stilo-prod-fav-3">
         <div class="row">
@@ -303,32 +198,6 @@
 </section>
 
 
-<section>
-
-    <div class="card-carousel" id="contenedorCarrucelProductos">
-        <div class="card">
-            <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
-            </div>
-            <p class="text_card_description">No se encontraron productos.</p>
-        </div>
-        <div class="card">
-            <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
-            </div>
-            <p class="text_card_description">${array.error}</p>
-        </div>
-        <div class="card">
-            <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
-            </div>
-            <p class="text_card_description">No se encontraron productos.</p>
-        </div>
-  </div>
-
-
-
-</section>
 <section class="cont-color">
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
