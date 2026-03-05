@@ -133,6 +133,7 @@ function searchIdAllProductos($conn, $id_producto) {
         ON PRODUCTOS.ID_GRUPO = GRUPOS.ID_GRUPO
 
         WHERE PRODUCTOS.ID_PRODUCTO = ?
+        AND PRODUCTOS.ESTADO = 'ACTIVO'
 
         ORDER BY PRODUCTOS.NOMBRE;
     EOD;
@@ -286,6 +287,7 @@ function searchIdAllGroup($conn, $id_grupo) {
         ON PROD_GROUP.ID_GRUPO = GRUPOS.ID_GRUPO
 
         WHERE PROD_GROUP.ID_PRODUCTO = ?
+        AND PROD_GROUP.ESTADO = 'ACTIVO'
 
         ORDER BY PROD_GROUP.NOMBRE;
     EOD;
@@ -345,7 +347,8 @@ function searchIdCategories($conn, $id_categorie) {
         FROM
             CATEGORIAS
 
-        WHERE CATEGORIAS.ID_CATEGORIA = ?;
+        WHERE CATEGORIAS.ID_CATEGORIA = ?
+        AND CATEGORIAS.ESTADO = 'ACTIVO';
     EOD;
 
     $stmt = $conn->prepare($sql);
