@@ -118,10 +118,10 @@ export function CarrucelCategorias(widget, array){
         let nombreCapitalizado = product.NOMBRE.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
         let imagen;
 
-        if(!product.IMAGEN_ETIQUETA){
+        if(!product.IMAGEN_PRINCIPAL){
             imagen  = `https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/lossless.png`;
         } else {
-            imagen  = `https://pilarica.mx/php/backend.php?action=traerImagen&img=${product.IMAGEN_ETIQUETA}`;
+            imagen  = `https://pilarica.mx/php/backend.php?action=traerImagen&img=${product.IMAGEN_PRINCIPAL}`;
         }
 
         if (array.length === 1){
