@@ -368,6 +368,44 @@ function searchIdCategories($conn, $id_categorie) {
     return $data;
 }
 
+# Funcion para traer todas las presentaciones de los grupos
+function searchPresentationByGroup ($conn, $id_grupo){
+    $sql = <<<EOD
+        SELECT
+            ID_PRODUCTO,
+            NOMBRE,
+            PRESENTACION,
+            PRESENTACION_UNIDAD
+            IMAGEN_PRODUCTO
+        FROM
+            PRODUCTOS
+        WHERE
+            ID_PRODUCTO IN (
+                SELECT
+                    ID_PRODUCTO
+                FROM
+                    PRODGROUP_PRODUCTO
+                WHERE
+                    ID_PRODGROUP = ?
+        );
+
+    EOD;
+
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $id_grupo); // "i" Significa un parametro entero
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    $data = array();
+    if ($result->num_rows > 0){
+        while ($row = $result->fetch_assoc()){
+            $data[] = $row;
+        }
+    }
+
+    return $data;
+}
+
 function lanzarPaginaDeError(){
     require_once "../index.php";
     show_error_p();
@@ -533,9 +571,11 @@ if (isset($_GET['action'])) {
     } elseif ($action == 'searchOnlyGroup' && isset($_GET['search_prod'])) {
         $search_term = mysqli_real_escape_string($conn, $_GET['search_prod']);
         $data = searchOnlyGroup($conn, $search_term);
-    } else if ($action == 'pageError'){
+    } elseif ($action == 'searchPresentationByGroup' && isset($_GET['search_group'])){
+        $data = searchPresentationByGroup($conn, $_GET['search_group']);
+    } elseif ($action == 'pageError'){
         $data = lanzarPaginaDeError();
-    } else if ($action == 'traerImagen' && isset($_GET['img'])) {
+    } elseif ($action == 'traerImagen' && isset($_GET['img'])) {
         // Usar la imagen proporcionada o la predeterminada
         $imagen = !empty($_GET['img']) ? $_GET['img'] : null;
         // Llamar a la función para enviar la imagen
