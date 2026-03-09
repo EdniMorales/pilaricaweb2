@@ -31,15 +31,8 @@
  -->
 <header class="masthead wow animated zoomInDown" data-wow-delay="1s">
     <div class="container h-100 tab-1-image">
-        <!--   <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
-                <p class="title-1 wow animated slideInDown" data-wow-delay="1s">" Solo el amor supera las bondades de la leche "
-                </p>
-            </div>
-        </div> -->
     </div>
 </header>
-
 <div class="sect-mision-prin px-5 f-1-prin">
     <div class="row justify-content-center">
         <div class="col-lg-12 col-xxl-6">
@@ -47,22 +40,17 @@
                 <p class="info-tit-1-prin">Más de cuatro</p>
                 <p class="info-tit-2-prin"><span class="txt-dec">décadas</span></p>
                 <p class="info-tit-3-prin">de sabor y tradición</p>
-                <p class="info-somos-3-prin">Somos una empresa mexicana que nace del amor por el queso artesanal.  Desde Ixtapaluca, Estado de México, llevamos más de cuatro décadas transformando tradición y experiencia en productos que llegan a la mesa de muchas familias.
+                <p class="info-somos-3-prin">Somos una empresa  mexicana que nace del amor por el queso artesanal. Desde
+                    Ixtapaluca, Estado de México, llevamos más de cuatro décadas transformando tradición y experiencia
+                    en productos que llegan a la mesa de muchas familias.
                 </p>
                 <button type="button" class="btn btn-warning">Conoce más</button>
-                <!-- <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
-                            <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
             </div>
         </div>
         <div class="col-lg-12 col-xxl-6">
             <div class="text-center my-5">
                 <img src="<?= base_url ?>assets/new-cheese/banners/cuatro-anos-de-02.png" alt="" width="100"
                     height="650" class="info-somos-2">
-                <!-- <p class="info-tit">Nuestra Misión</p>
-                        <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
-                        </p> -->
-                <!--   <p class="fw-bolder mb-3 title-love-1">Quienes</p>    
-                                            <p class="fw-bolder mb-3 title-love-2">somos?</p> -->
             </div>
         </div>
     </div>
@@ -97,9 +85,6 @@
         </div>
     </div>
 </section> -->
-
-
-
 <!-- 
 <section class="stilo-section-prod-fav text-center">
     <div class="px-5 my-5 stilo-prod-fav">
@@ -135,69 +120,57 @@
         </div>
     </div>
 </section> -->
-
 <script type="module">
     import * as random from '<?= base_url ?>js/random.js';
 </script>
-
-
-
 <section class="fondo-carrucel-prod">
-
+  <div>  <h1 class="subtit-prod-fav-3">Sabor con historia</h1></div>
     <div class="card-carousel" id="contenedorCarrucelProductos">
+         
         <div class="card">
             <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+                <img src="../assets/new-cheese/default.png" alt="Error categoria">
             </div>
             <p class="text_card_description">No se encontraron productos.</p>
         </div>
         <div class="card">
             <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+                <img src="../assets/new-cheese/default.png" alt="Error categoria">
             </div>
             <p class="text_card_description">${array.error}</p>
         </div>
         <div class="card">
             <div class="image-container" onclick="window.location.href='../Principal/index'">
-            <img src="../assets/new-cheese/default.png" alt="Error categoria">
+                <img src="../assets/new-cheese/default.png" alt="Error categoria">
             </div>
             <p class="text_card_description">No se encontraron productos.</p>
         </div>
-  </div>
-
-
-
+    </div>
 </section>
-
-<section class="stilo-section-prod-fav-3 fondo text-center">
+<section class="fondo stilo-section-prod-fav-3  text-center">
     <div class="px-5 my-5 stilo-prod-fav-3">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <!--  px-5 my-5 -->
-                <div class="mx-auto ">
+                <div class="mx-auto">
                     <!-- mb-5 mb-lg-0 -->
-                    <p class="subtit-prod-fav-3">Utilizamos leche 100% de vaca en nuestros productos</p>
+                    <p class="subtit-prod-fav-3">Sabor con historia</p>
                     <p class="subtit-prod-fav-4 ">
                         <!-- px-5 my-5 -->
-                        Nuestros productos están elaborados con
-                        leche 100% de vaca, cuidadosamente seleccionada. Mantenemos procesos
-                        artesanales en cada etapa de la producción, respetando las tradiciones que garantizan el sabor
-                        auténtico, frescura y calidad.
+                        En La Pilarica cuidamos cada etapa del proceso para ofrecer productos
+                        consistentes, honestos y de gran sabor
                     </p>
                 </div>
             </div>
-            <div class="col-lg-6 tab-1-image">
+            <div class="col-lg-12 tab-1-image">
                 <div class="mx-auto mb-5 mb-lg-0">
-                    <img class="mb-3 edit-img-yog"
-                        src="<?= base_url ?>assets/new-cheese/yogurt/baner-yogurt-fresa_Mesa de trabajo 1.png"
+                    <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/banners/inicio.png"
                         alt="..." />
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
 <section class="cont-color">
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
@@ -287,7 +260,7 @@
         </div>
     </div>
 </section>
-<section class="fondo py-5 tab-1 tab-1-image">
+<!-- <section class="fondo py-5 tab-1 tab-1-image">
     <div class="container px-5 my-5 tab-1">
         <div class="text-center">
             <p class="title-8 dancing-script-bold">Todas nuestras especialidades</p>
@@ -469,7 +442,7 @@
 
         </div>
     </div>
-</section>
+</section> -->
 
 <script type="module">
     import * as random from '../js/random.js';
