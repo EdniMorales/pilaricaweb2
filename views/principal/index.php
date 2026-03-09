@@ -155,17 +155,52 @@
                 <div class="mx-auto">
                     <!-- mb-5 mb-lg-0 -->
                     <p class="subtit-prod-fav-3">Sabor con historia</p>
-                    <p class="subtit-prod-fav-4 ">
+                    <p class="subtit-prod-fav-4">
                         <!-- px-5 my-5 -->
                         En La Pilarica cuidamos cada etapa del proceso para ofrecer productos
                         consistentes, honestos y de gran sabor
                     </p>
                 </div>
             </div>
+
             <div class="col-lg-12 tab-1-image">
                 <div class="mx-auto mb-5 mb-lg-0">
                     <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/banners/inicio.png"
                         alt="..." />
+                </div>
+            </div>
+            <div class="col-lg-4">
+                    <!--  px-5 my-5 -->
+                    <div class="mx-auto">
+                        <!-- mb-5 mb-lg-0 -->
+                        <p class="subtit-prod-fav-3">Calidad y origen</p>
+                        <p class="subtit-prod-fav-3">en la materia prima</p>
+                        <p class="subtit-prod-fav-4">
+                            <!-- px-5 my-5 -->
+                           Utilizamos leche fresca 100% de vaca en nuestros productos lo que nos permite garantizar un sabor auténtico, mejor textura y una calidad constante en cada queso.
+                        </p>
+                    </div>
+                </div>             
+            <div class="col-lg-4">
+                <!--  px-5 my-5 -->
+                <div class="mx-auto">
+                    <!-- mb-5 mb-lg-0 -->
+                    <p class="subtit-prod-fav-3">Sabor auténtico</p>
+                    <p class="subtit-prod-fav-4 ">
+                        <!-- px-5 my-5 -->
+                      Un sabor que se logra al cuidar el origen, respetar los procesos y mantener viva la tradición.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <!--  px-5 my-5 -->
+                <div class="mx-auto">
+                    <!-- mb-5 mb-lg-0 -->
+                    <p class="subtit-prod-fav-3">Hecho en México</p>
+                    <p class="subtit-prod-fav-4 ">
+                        <!-- px-5 my-5 -->
+                       Somos una empresa orgullosamente Mexicana, ubicada en Ixtapaluca, Estado de México con 4 sucursales dentro de la zona.
+                    </p>
                 </div>
             </div>
         </div>
