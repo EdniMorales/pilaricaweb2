@@ -327,6 +327,7 @@ function TaerDatosDependiendoLaRutaDelDOM(){
         default:
             const params = new URLSearchParams(window.location.search);
             trriggers.MostrarDatosPorProductoIndividual(params.get('Id'))
+            trriggers.MostrarPresentacionesPorProductoIndividual(params.get('Id'))
             break
     }
 }

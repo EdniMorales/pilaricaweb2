@@ -79,7 +79,7 @@ export function ProductosPorCategoriaSearch(parametros){
 }
 
 export function MostrarDatosPorProductoIndividual(Id_Producto){
-    console.log(Id_Producto)
+    // console.log(Id_Producto)
     if (Id_Producto && Id_Producto>0){
         fetch(`../php/backend.php?action=searchIdAllGroup&search_prod=${Id_Producto}`)
             .then(response => response.json()) // Espera la respuesta como JSON
@@ -94,6 +94,21 @@ export function MostrarDatosPorProductoIndividual(Id_Producto){
         alert("No pudimos encontrar el producto que estas buscando");
         window.location.href = `../principal/index`;
     }*/
+}
+
+export function MostrarPresentacionesPorProductoIndividual(Id_Producto){
+    console.log(Id_Producto, "busqueda por presentaciones")
+    if (Id_Producto && Id_Producto>0){
+        fetch(`../php/backend.php?action=searchPresentationByGroup&search_group=${Id_Producto}`)
+        .then(response => response.json()) // Esperar la respuesta como JSON
+        .then(data => {
+            console.log("Datos obtenidos: ", data);
+            widgets.ColocarLasPresentacionesDelProducto(data);
+        })
+        .catch(error => {
+            console.error("Error al buscar presentaciones: ", error);
+        });
+    }
 }
 
 export function SuscribirCorreoPilaricaNews(widget, user, lastname){

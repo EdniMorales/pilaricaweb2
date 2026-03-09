@@ -422,7 +422,7 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
         imagenEtiqueta.src = imagenCategoriaDB;
         imagenBanner.src = imagenGrupoDB;
         bannerProducto.style.backgroundImage = `url("${imagenBannerDB}")`;
-});
+    });
 }
 
 function colocarIngredientesProducto(array){
@@ -443,4 +443,35 @@ function colocarIngredientesProducto(array){
         listView.push(texto);
     });
     return listView;
+}
+
+export function ColocarLasPresentacionesDelProducto(array){
+    // Declarar los elementos del DOM para modificarlos
+    const trackPresentaciones = document.getElementById("carouselTrack");
+
+    // validacion contenido
+     if(array.error){ // Por si falla la consulta
+        console.log(array.error)
+        return
+    }
+    if(array.length === 0){ // si la consulta esta vacia
+        return
+    }
+
+    array.forEach(product => { // la funcion para colocar los datos de la consulta
+        console.log(product.ID_PRODUCTO);
+
+        // Verificar si IMAGEN_PRODUCTO tiene un valor Base64 o es null
+        let imagenProductoDB = product.IMAGEN_PRODUCTO;
+        if (!imagenProductoDB) {  // imagenProductoDB != 'Pilarica'
+            // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
+            imagenProductoDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/default.png`;
+        } else {
+            // Asegurarse de que la imagen esté en formato Base64 adecuado
+            imagenProductoDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=${imagenProductoDB}`; // 'data:image/png;base64,' + 
+        }
+        console.log(imagenProductoDB);
+
+        //! PENDIENTE LA IMPLEMENTACION EN EL DOM
+    });
 }

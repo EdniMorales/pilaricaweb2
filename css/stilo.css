@@ -1242,6 +1242,9 @@ margin-top: 0%;
 /* background: rgba(0,0,0,.1) */
 }
 
+
+/* ========= ESTILO TARJETAS PRODUCTOS ==========*/
+
 .card-carousel {
 --card-width: 90%;
 --card-max-width: 1000px;
@@ -1450,7 +1453,9 @@ text-decoration: none;
 color: #FFFFFF;
 text-decoration: none;
 }
-/* Vista de articulos individuales */
+
+/* ========= ESTILO CARRUCEL PRESENTACIONES ==========*/
+
 .car-prod{
 margin-top: 5%;
 margin-bottom: 15%;
@@ -1560,6 +1565,8 @@ text-decoration: line-through;
 margin-left: 10px;
 font-weight: normal;
 }
+
+/* ========= ESTILO CARRUCEL CATEGORIAS ==========*/
 
 .btn-add {
 width: 100%;
