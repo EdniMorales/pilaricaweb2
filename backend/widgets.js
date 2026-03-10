@@ -1,5 +1,16 @@
 import { CarrucerCreacion } from "../js/random.js";
 
+// ========= VARIABLES Y ELEMENTOS ==========
+
+let currentIndex = 0;
+let cardsPerView = 3; // cantidad de productos visibles
+
+// BOTONES
+document.getElementById("beforeTrack").addEventListener("click", () => moveSlideTrack(-1));
+document.getElementById("afterTrack").addEventListener("click", () => moveSlideTrack(1));
+
+// ========= FUNCIONES ==========
+
 export function dropdownprod (widget,array) {
     const ddrop = document.getElementById(widget);
     ddrop.innerHTML = '';
@@ -448,6 +459,7 @@ function colocarIngredientesProducto(array){
 export function ColocarLasPresentacionesDelProducto(array){
     // Declarar los elementos del DOM para modificarlos
     const trackPresentaciones = document.getElementById("carouselTrack");
+    trackPresentaciones.innerHTML = '';
 
     // validacion contenido
      if(array.error){ // Por si falla la consulta
@@ -459,7 +471,7 @@ export function ColocarLasPresentacionesDelProducto(array){
     }
 
     array.forEach(product => { // la funcion para colocar los datos de la consulta
-        console.log(product.ID_PRODUCTO);
+        //console.log(product.ID_PRODUCTO);
 
         // Verificar si IMAGEN_PRODUCTO tiene un valor Base64 o es null
         let imagenProductoDB = product.IMAGEN_PRODUCTO;
@@ -468,10 +480,60 @@ export function ColocarLasPresentacionesDelProducto(array){
             imagenProductoDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=Img_Defaults/default.png`;
         } else {
             // Asegurarse de que la imagen esté en formato Base64 adecuado
-            imagenProductoDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=${imagenProductoDB}`; // 'data:image/png;base64,' + 
+            imagenProductoDB = `https://pilarica.mx/php/backend.php?action=traerImagen&img=${imagenProductoDB}`; // 'data:image/png;base64,' +
         }
-        console.log(imagenProductoDB);
+        //console.log(imagenProductoDB);
 
-        //! PENDIENTE LA IMPLEMENTACION EN EL DOM
+        trackPresentaciones.insertAdjacentHTML('beforeend',`
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="${imagenProductoDB}"
+                        alt="${product.NOMBRE}">
+                    <span class="product-badge">${product.PRESENTACION} ${product.PRESENTACION_UNIDAD}</span>
+                </div>
+            </div>
+        `);
     });
+
+    // Reasignar eventos
+    currentIndex = 0;
+    updateCarousel();
+}
+
+// ========== FUNCIONES PARA EL CARRUSEL ===========
+
+function moveSlideTrack(direction) {
+
+    const track = document.getElementById("carouselTrack");
+    const cards = track.querySelectorAll(".product-card");
+
+    if(cards.length === 0) return;
+
+    const maxIndex = cards.length - cardsPerView;
+
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = 0;
+    } 
+    else if (currentIndex > maxIndex) {
+        currentIndex = maxIndex;
+    }
+
+    updateCarouselTrack();
+}
+
+function updateCarouselTrack(){
+
+    const track = document.getElementById("carouselTrack");
+    const card = track.querySelector(".product-card");
+
+    if(!card) return;
+
+    const cardWidth = card.offsetWidth;
+
+    const moveX = currentIndex * cardWidth;
+
+    track.style.transform = `translateX(-${moveX}px)`;
+
 }

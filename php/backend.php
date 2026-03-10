@@ -375,7 +375,7 @@ function searchPresentationByGroup ($conn, $id_grupo){
             ID_PRODUCTO,
             NOMBRE,
             PRESENTACION,
-            PRESENTACION_UNIDAD
+            PRESENTACION_UNIDAD,
             IMAGEN_PRODUCTO
         FROM
             PRODUCTOS
