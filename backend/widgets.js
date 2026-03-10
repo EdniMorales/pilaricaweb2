@@ -1,14 +1,5 @@
 import { CarrucerCreacion } from "../js/random.js";
 
-// ========= VARIABLES Y ELEMENTOS ==========
-
-let currentIndex = 0;
-let cardsPerView = 3; // cantidad de productos visibles
-
-// BOTONES
-document.getElementById("beforeTrack").addEventListener("click", () => moveSlideTrack(-1));
-document.getElementById("afterTrack").addEventListener("click", () => moveSlideTrack(1));
-
 // ========= FUNCIONES ==========
 
 export function dropdownprod (widget,array) {
@@ -456,6 +447,7 @@ function colocarIngredientesProducto(array){
     return listView;
 }
 
+
 export function ColocarLasPresentacionesDelProducto(array){
     // Declarar los elementos del DOM para modificarlos
     const trackPresentaciones = document.getElementById("carouselTrack");
@@ -494,6 +486,15 @@ export function ColocarLasPresentacionesDelProducto(array){
             </div>
         `);
     });
+
+    // ========= VARIABLES Y ELEMENTOS ==========
+
+let currentIndex = 0;
+let cardsPerView = 3; // cantidad de productos visibles
+
+// BOTONES
+document.getElementById("beforeTrack").addEventListener("click", () => moveSlideTrack(-1));
+document.getElementById("afterTrack").addEventListener("click", () => moveSlideTrack(1));
 
     // Reasignar eventos
     currentIndex = 0;
