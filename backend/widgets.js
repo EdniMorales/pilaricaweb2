@@ -451,7 +451,6 @@ function colocarIngredientesProducto(array){
 export function ColocarLasPresentacionesDelProducto(array){
     // Declarar los elementos del DOM para modificarlos
     const trackPresentaciones = document.getElementById("carouselTrack");
-    trackPresentaciones.innerHTML = '';
 
     // validacion contenido
      if(array.error){ // Por si falla la consulta
@@ -461,6 +460,9 @@ export function ColocarLasPresentacionesDelProducto(array){
     if(array.length === 0){ // si la consulta esta vacia
         return
     }
+    
+    // Limpiar el DOM
+    trackPresentaciones.innerHTML = '';
 
     array.forEach(product => { // la funcion para colocar los datos de la consulta
         //console.log(product.ID_PRODUCTO);

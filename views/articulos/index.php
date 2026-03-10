@@ -148,7 +148,7 @@
             <!-- Producto 1 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-natural-250.png"
+                    <img src="<?= base_url ?>assets/carreras-uni.jpg"
                         alt="Productos Pilarica">
                     <span class="product-badge">Original</span>
                 </div>
