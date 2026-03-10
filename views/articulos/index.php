@@ -141,16 +141,16 @@
 <div class="car-prod container">
     <h1>Conoce Nuestras Presentaciones 🛍️</h1>
     <div class="carousel-container">
-        <button class="carousel-button prev" onclick="moveSlide(-1)">❮</button>
-        <button class="carousel-button next" onclick="moveSlide(1)">❯</button>
+        <button class="carousel-button prev" id="beforeTrack" >❮</button>
+        <button class="carousel-button next" id="afterTrack" >❯</button>
         <div class="carousel-track" id="carouselTrack">
 
             <!-- Producto 1 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="<?= base_url ?>assets/new-cheese/yogurt/250/Yogurt-natural-250.png"
-                        alt="Yogurt-Natural">
-                    <span class="product-badge">NATURAL</span>
+                        alt="Productos Pilarica">
+                    <span class="product-badge">Original</span>
                 </div>
             </div>
 
