@@ -1102,7 +1102,7 @@ box-shadow: -1px 3px 51px -12px rgba(0, 0, 0, 0.75);
 min-height: 100vh;
 }
 .bg-image {
-background-image: url("../assets/new-cheese/chapata/chapata-SF.png");
+background-image: url("../assets/new-cheese/banners/productos-banner-final.png");
 background-size: cover;
 background-position: center;
 background-size: 100% 100%;
@@ -1165,11 +1165,12 @@ margin-top: 0%;
 width: 100%;
 background-color: #FFFFFF;
 color: #103C7B;
-padding: 10px;
+padding-left: 15%;
+padding-right: 15%;
 /* box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
 -webkit-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
 -moz-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51); */
-margin-bottom: -5%;
+margin-bottom: 5%;
 }
 
 .cont-color2 {

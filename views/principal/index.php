@@ -209,8 +209,8 @@
 <section class="cont-color">
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
-            <div class=" col-md-4 col-lg-8 bg-image"></div>
-            <div class="col-md-8 col-lg-4">
+            <div class=" col-md-4 col-lg-6 bg-image"></div>
+            <div class="col-md-8 col-lg-6">
                 <div class="login d-flex align-items-center py-5">
                     <div class="container">
                         <div class="row">
