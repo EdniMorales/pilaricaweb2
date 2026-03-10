@@ -869,11 +869,14 @@ margin-top: -5%;
 line-height: 0.8; /* Reduce espacio entre líneas */
 }
 .txt-tittle-sect{
-font-family: "Lexend", bold;
-color: black;
-font-size: 300%;
-text-align: center;
-margin-top: 550px;
+
+    font-family: Lexend, bold;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10%;
+    font-size: 123px;
+
 }
 .masthead3 {
 width: 100%;
