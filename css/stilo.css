@@ -203,7 +203,6 @@ margin-top: 5%;
 }
 }
 
-
 @media screen and (max-width: 940px) {
 .tab-1-image {
 display: none;
@@ -248,9 +247,6 @@ box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 
 margin-top: 0%;
 background-color: #FFF9F4;
-
-
-
 
 }
 
@@ -771,7 +767,7 @@ color: #0F1E53;
 text-align: center;
 margin-top: -2%;
 }
-.info-tit-3-prin{ 
+.info-tit-3-prin{
 font-size: 50px;
 font-weight: 700;
 color: #0F1E53;
@@ -869,12 +865,12 @@ margin-top: -5%;
 line-height: 0.8; /* Reduce espacio entre líneas */
 }
 .txt-tittle-sect{
-    font-family: Lexend, bold;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    margin-top: 10%;
-    font-size: 123px;
+font-family: Lexend, bold;
+font-weight: 600;
+color: rgb(255, 255, 255);
+text-align: center;
+margin-top: 10%;
+font-size: 123px;
 
 }
 .masthead3 {
@@ -1105,9 +1101,12 @@ min-height: 100vh;
 }
 .bg-image {
 background-image: url("../assets/new-cheese/banners/productos-banner-final.png");
-background-size: cover;
-background-position: center;
-background-size: 100% 100%;
+/* background-size: cover; */
+/* background-position: center; */
+/* background-size: 100% 100%; */
+/* width: 100%; */
+height: 650px;
+margin-top: 20%;
 /* position: fixed;
 z-index: -1; */
 /* box-shadow: 0px 9px 31px -1px rgba(0,0,0,0.6);
@@ -1167,14 +1166,42 @@ margin-top: 0%;
 width: 100%;
 background-color: #FFFFFF;
 color: #103C7B;
-padding-left: 15%;
-padding-right: 15%;
+padding-left: 10%;
+padding-right: 10%;
 /* box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
 -webkit-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
 -moz-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51); */
 margin-bottom: 5%;
 }
+.title-mens{
+margin-top: 5%;
+font-family: "Lexend", bold;
+font-size: 50px;
+color: #103C7B;
+text-align: center;
+}
+.title-mens-1{
+margin-top: -20%;
+font-family: "Lexend", bold;
+font-size: 50px;
+color: #103C7B;
+text-align: center;
+}
+.title-mens-2{
+margin-top: 2%;
+font-family: "Lexend", bold;    
+font-size: 25px;
+color: #103C7B;
+text-align: center;
+}
+.title-mens-3{
+margin-top: 5%;
+font-family: "Lexend", bold;
+font-size: 25px;
+color: #103C7B;
+text-align: center;
 
+}
 .cont-color2 {
 width: 100%;
 background-color: #103C7B;
@@ -1244,7 +1271,6 @@ background-color: #FFF9F4;
 margin-top: 0%;
 /* background: rgba(0,0,0,.1) */
 }
-
 
 /* ========= ESTILO TARJETAS PRODUCTOS ==========*/
 
