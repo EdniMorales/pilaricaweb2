@@ -226,7 +226,7 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <div class="login d-flex align-items-center py-5">
+                 <div class="login d-flex align-items-center py-5">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
