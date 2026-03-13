@@ -482,7 +482,9 @@ export function ColocarLasPresentacionesDelProducto(array){
             <div class="product-card">
                 <div class="product-image">
                     <img src="${imagenProductoDB}"
-                        alt="${product.NOMBRE}">
+                        alt="${product.NOMBRE}"
+                        oncontextmenu="return false;"
+                        draggable="false">
                     <span class="product-badge">${product.PRESENTACION} ${product.PRESENTACION_UNIDAD}</span>
                 </div>
             </div>

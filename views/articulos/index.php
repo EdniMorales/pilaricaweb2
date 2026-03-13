@@ -145,7 +145,9 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="<?= base_url ?>assets/carreras-uni.jpg"
-                        alt="Productos Pilarica">
+                        alt="Productos Pilarica"
+                        oncontextmenu="return false;"
+                        draggable="false">
                     <span class="product-badge">Original</span>
                 </div>
             </div>
