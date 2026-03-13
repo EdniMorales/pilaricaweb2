@@ -245,11 +245,29 @@ box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 }
 .fondo{
 
-margin-top: 0%;
+margin-top: -10%;
 background-color: #FFF9F4;
 
 }
-
+.fondo-articulo{
+    margin-top: -2%;
+    background-color: #FFF9F4;
+}
+.fondo-art-individual{
+    margin-top: 0%;
+    background-color: #FFF9F4;
+}
+.fondo-art-individual-1{
+    margin-top: 8%;
+    background-color: #FFF9F4;
+}
+.cont-prod-individual {
+    margin-top: 8%;
+    background-color: #FFF9F4;
+}
+.banner-title{
+    background-color: #F5B94B;
+}
 .fondo-celeb{
 margin-top: 10%;
 color: #000000;
@@ -830,8 +848,8 @@ width: 100%;
 height: 50vh;
 min-width: 100%;
 min-height: 150px;
-background-color: #5f0f11;
-background-image: url('../assets/new-cheese/pruebas-banners/header-vacas.jpg');
+ background-color: #FFF9F4; 
+/* background-image: url('../assets/new-cheese/pruebas-banners/header-vacas.jpg'); */
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -840,9 +858,9 @@ background-repeat: no-repeat;
 font-family: "Dancing Script", bold;
 font-size: 150px;
 font-weight: 800;
-color: #FFFFFF;
+color: #103C7B;
 text-align: center;
-margin-top: 18%;
+margin-top: 15%;
 /* text-shadow:
 -5px -5px 0 #FFF9F4,
 3px -3px 0 #FFF9F4,
@@ -875,9 +893,10 @@ font-size: 123px;
 }
 .masthead3 {
 width: 100%;
-height: 50vh;
+height: 25vh;
 min-width: 100%;
-min-height: 250px;
+min-height: 200px;
+margin-top: 5.5%;
 background-image: url("../assets/new-cheese/pruebas-banners/banner-oaxaca-prueba-1.jpg");
 background-size: cover;
 background-position: center;

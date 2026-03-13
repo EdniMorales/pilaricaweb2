@@ -2,30 +2,31 @@
  <!-- Header-->
         <header class="masthead3 py-5 fondo" id="banner-producto">
             <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder title-art">¡Solo el Amor Supera las bondades de la leche!</h1>
-                  <!--   <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p> -->
-                </div>
             </div>
         </header> 
-        <section class="py-5 fondo">
-        <div class="container px-4 px-lg-5 fondo">
-            <!-- Heading Row-->
-            <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7 text-center"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." style="width:50%" id="ImagenProducto_Producto" oncontextmenu="return false;" draggable="false"/></div>
-                <div class="col-lg-5">
+        <section class="fondo-articulo">
+        <div class="container px-4 px-lg-5 fondo-art-individual">
+            <div class="row gx-4 gx-lg-5 align-items-center my-5 fondo-art-individual-1">
+                <div class="col-lg-7 text-center fondo-art-individual-1">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." style="width:100%" id="ImagenProducto_Producto" oncontextmenu="return false;" draggable="false"/>
+                </div>
+                <div class="cont-prod-individual  col-lg-5">
                     <div class="col-lg-7 text-center" style="margin: auto;"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." style="width:90%" id="ImagenEtiqueta_Producto" oncontextmenu="return false;" draggable="false"/></div>
                     <h1 class="font-weight-light" id="NombreDeProducto_Producto"></h1>
                     <p id="Descripcion_Producto"></p>
-                    <div class="col-lg-10 text-center" style="margin: auto;"><img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." style="width:80%" id="ImagenBanner_Producto" oncontextmenu="return false;" draggable="false"/></div>
-                    <a id="BotonConoceMas_Producto" style="margin-top: 10%;" class="btn btn-primary mb-4 mb-lg-0" href="#!">Conoce mas!</a>
+
+                    
+                    <div class="col-lg-10 text-center " style="margin: auto;">
+                        
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." style="width:80%" id="ImagenBanner_Producto" oncontextmenu="return false;" draggable="false"/>
+                
+                    </div>
+                    <a id="BotonConoceMas_Producto" style="margin-top: 10%; background-color: #103C7B; border-color: #F5B94B;" class="btn btn-primary mb-4 mb-lg-0" href="#!">Conoce mas!</a>
                 </div>
             </div>
-            <!-- Call to Action-->
-            <div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card text-white my-5 py-4 text-center banner-title">
                 <div class="card-body"><p class="text-white m-0 title-art">Disfruta del autentico sabor</p></div>
             </div>
-            <!-- Content Row-->
             <div class="row gx-4 gx-lg-5">
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
@@ -134,18 +135,13 @@
                 </div>
             </div>
         </div>
-        </section>
-
-
-        
+        </section>    
 <div class="car-prod container">
     <h1>Conoce Nuestras Presentaciones 🛍️</h1>
     <div class="carousel-container">
         <button class="carousel-button prev" id="beforeTrack" >❮</button>
         <button class="carousel-button next" id="afterTrack" >❯</button>
         <div class="carousel-track" id="carouselTrack">
-
-            <!-- Producto 1 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="<?= base_url ?>assets/carreras-uni.jpg"
@@ -156,8 +152,6 @@
 
         </div>
     </div>
-
-    <!-- <div class="carousel-dots" id="carouselDots"></div> -->
 </div>
 
 
