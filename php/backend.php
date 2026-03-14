@@ -387,7 +387,10 @@ function searchPresentationByGroup ($conn, $id_grupo){
                     PRODGROUP_PRODUCTO
                 WHERE
                     ID_PRODGROUP = ?
-        );
+                    AND ESTADO = 'ACTIVO'
+        )
+        ORDER BY
+            NOMBRE;
 
     EOD;
 

@@ -302,7 +302,7 @@
                                 <div class="row g-3">
                                     <div class="col-md-12" style="margin-top: 40px;">
                                         <button class="btn btn-warning" name="BotonEnviarQS"
-                                            id="BotonEnviarQS">Enviar</button>
+                                            id="BotonEnviarQS">Enviar prueba</button>
                                     </div>
                                 </div>
                             </div>
