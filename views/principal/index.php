@@ -172,10 +172,11 @@
             </div>
             <div class="col-lg-4">
                 <!--  px-5 my-5 -->
-                <div class="mx-auto">
+                <div class="cuadro-1 ">
                     <!-- mb-5 mb-lg-0 -->
-                    <p class="subtit-prod-fav-3">Calidad y origen</p>
-                    <p class="subtit-prod-fav-3">en la materia prima</p>
+                    <p class="subtit-prod-fav-3">
+                        <span class="txt-dec-1">Calidad y origen</span></p>
+                    <p class="subtit-prod-fav-5">en la materia prima</p>
                     <p class="subtit-prod-fav-4">
                         <!-- px-5 my-5 -->
                         Utilizamos leche fresca 100% de vaca en nuestros productos lo que nos permite garantizar un
@@ -185,9 +186,9 @@
             </div>
             <div class="col-lg-4">
                 <!--  px-5 my-5 -->
-                <div class="mx-auto">
+                <div class="">
                     <!-- mb-5 mb-lg-0 -->
-                    <p class="subtit-prod-fav-3">Sabor auténtico</p>
+                    <p class="subtit-prod-fav-3"> <span class="txt-dec-1">Sabor auténtico</span></p>
                     <p class="subtit-prod-fav-4 ">
                         <!-- px-5 my-5 -->
                         Un sabor que se logra al cuidar el origen, respetar los procesos y mantener viva la tradición.
@@ -198,7 +199,7 @@
                 <!--  px-5 my-5 -->
                 <div class="mx-auto">
                     <!-- mb-5 mb-lg-0 -->
-                    <p class="subtit-prod-fav-3">Hecho en México</p>
+                    <p class="subtit-prod-fav-3"> <span class="txt-dec-1">Hecho en México</span></p>
                     <p class="subtit-prod-fav-4 ">
                         <!-- px-5 my-5 -->
                         Somos una empresa orgullosamente Mexicana, ubicada en Ixtapaluca, Estado de México con 4
@@ -210,10 +211,12 @@
     </div>
 </section>
 <section class="cont-color">
-    <div class="ps-md-0 "><!-- ps-md-0 -->
+    <div class="ps-md-0 cont-1-2"><!-- ps-md-0 -->
         <div class="row"><!-- g-0 -->
             <h3 class="title-mens text-center">
-                ¿Te interesa formar parte de la red de distribución Pilarica?</h3>
+                ¿Te interesa formar parte de la red de  <span class="txt-dec-1"> distribución</span> Pilarica?
+            </h3>
+
             <div class="col-lg-6 bg-image">
                 <p class="title-mens-1">
                     Comunícate con nosotros
@@ -225,7 +228,7 @@
                     Si estás interesado en distribuir nuestros productos o deseas compartirnos una opinión o sugerencia, este espacio es para ti.
                 </p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 cont-1-3">
                  <div class="login d-flex align-items-center py-5">
                     <div class="container">
                         <div class="row">
