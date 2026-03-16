@@ -291,7 +291,7 @@ function searchIdAllGroup($conn, $id_grupo) {
         WHERE PROD_GROUP.ID_PRODUCTO = ?
         AND PROD_GROUP.ESTADO = 'ACTIVO'
 
-        ORDER BY PROD_GROUP.NOMBRE;
+        ORDER BY PROD_GROUP.NOMBRE
     EOD;
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id_grupo);  // "i" significa un parámetro entero
@@ -570,7 +570,8 @@ if (isset($_GET['action'])) {
     } elseif ($action == 'searchIdAllGroupByCategories' && isset($_GET['search_categories'])){
         $data = searchIdAllGroupByCategories($conn, $_GET['search_categories']);
     } elseif ($action == 'searchIdAllGroup' && isset($_GET['search_prod'])){
-        $data = searchIdAllGroup($conn, $_GET['search_prod']);
+        $search_group = mysqli_real_escape_string($conn, $_GET['search_prod']);
+        $data = searchIdAllGroup($conn, $search_group);
     } elseif ($action == 'searchOnlyGroup' && isset($_GET['search_prod'])) {
         $search_term = mysqli_real_escape_string($conn, $_GET['search_prod']);
         $data = searchOnlyGroup($conn, $search_term);
