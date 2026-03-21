@@ -40,7 +40,7 @@
                 <p class="info-tit-1-prin">Más de cuatro</p>
                 <p class="info-tit-2-prin"><span class="txt-dec">décadas</span></p>
                 <p class="info-tit-3-prin">de sabor y tradición</p>
-                <p class="info-somos-3-prin">Somos una empresa  mexicana que nace del amor por el queso artesanal. Desde
+                <p class="info-somos-3-prin">Somos una empresa mexicana que nace del amor por el queso artesanal. Desde
                     Ixtapaluca, Estado de México, llevamos más de cuatro décadas transformando tradición y experiencia
                     en productos que llegan a la mesa de muchas familias.
                 </p>
@@ -124,9 +124,11 @@
     import * as random from '<?= base_url ?>js/random.js';
 </script>
 <section class="fondo-carrucel-prod">
-  <div>  <h1 class="subtit-prod-fav-3">Sabor con historia</h1></div>
+    <div>
+        <h1 class="subtit-prod-fav-3">Sabor con historia</h1>
+    </div>
     <div class="card-carousel" id="contenedorCarrucelProductos">
-         
+
         <div class="card">
             <div class="image-container" onclick="window.location.href='../Principal/index'">
                 <img src="../assets/new-cheese/default.png" alt="Error categoria">
@@ -162,7 +164,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="col-lg-12 tab-1-image">
                 <div class="mx-auto mb-5 mb-lg-0">
                     <img class="mb-3 edit-img-yog" src="<?= base_url ?>assets/new-cheese/banners/inicio.png"
@@ -170,17 +171,18 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                    <!--  px-5 my-5 -->
-                    <div class="mx-auto">
-                        <!-- mb-5 mb-lg-0 -->
-                        <p class="subtit-prod-fav-3">Calidad y origen</p>
-                        <p class="subtit-prod-fav-3">en la materia prima</p>
-                        <p class="subtit-prod-fav-4">
-                            <!-- px-5 my-5 -->
-                           Utilizamos leche fresca 100% de vaca en nuestros productos lo que nos permite garantizar un sabor auténtico, mejor textura y una calidad constante en cada queso.
-                        </p>
-                    </div>
-                </div>             
+                <!--  px-5 my-5 -->
+                <div class="mx-auto">
+                    <!-- mb-5 mb-lg-0 -->
+                    <p class="subtit-prod-fav-3">Calidad y origen</p>
+                    <p class="subtit-prod-fav-3">en la materia prima</p>
+                    <p class="subtit-prod-fav-4">
+                        <!-- px-5 my-5 -->
+                        Utilizamos leche fresca 100% de vaca en nuestros productos lo que nos permite garantizar un
+                        sabor auténtico, mejor textura y una calidad constante en cada queso.
+                    </p>
+                </div>
+            </div>
             <div class="col-lg-4">
                 <!--  px-5 my-5 -->
                 <div class="mx-auto">
@@ -188,7 +190,7 @@
                     <p class="subtit-prod-fav-3">Sabor auténtico</p>
                     <p class="subtit-prod-fav-4 ">
                         <!-- px-5 my-5 -->
-                      Un sabor que se logra al cuidar el origen, respetar los procesos y mantener viva la tradición.
+                        Un sabor que se logra al cuidar el origen, respetar los procesos y mantener viva la tradición.
                     </p>
                 </div>
             </div>
@@ -199,7 +201,8 @@
                     <p class="subtit-prod-fav-3">Hecho en México</p>
                     <p class="subtit-prod-fav-4 ">
                         <!-- px-5 my-5 -->
-                       Somos una empresa orgullosamente Mexicana, ubicada en Ixtapaluca, Estado de México con 4 sucursales dentro de la zona.
+                        Somos una empresa orgullosamente Mexicana, ubicada en Ixtapaluca, Estado de México con 4
+                        sucursales dentro de la zona.
                     </p>
                 </div>
             </div>
@@ -207,11 +210,23 @@
     </div>
 </section>
 <section class="cont-color">
-    <div class="container-fluid ps-md-0">
-        <div class="row g-0">
-            <div class=" col-md-4 col-lg-6 bg-image"></div>
-            <div class="col-md-8 col-lg-6">
-                <div class="login d-flex align-items-center py-5">
+    <div class="ps-md-0 "><!-- ps-md-0 -->
+        <div class="row"><!-- g-0 -->
+            <h3 class="title-mens text-center">
+                ¿Te interesa formar parte de la red de distribución Pilarica?</h3>
+            <div class="col-lg-6 bg-image">
+                <p class="title-mens-1">
+                    Comunícate con nosotros
+                </p>
+                <p class="title-mens-2">
+                ¿Te interesa formar parte de la red de distribución de La Pilarica?
+                </p>
+                <p class="title-mens-3">
+                    Si estás interesado en distribuir nuestros productos o deseas compartirnos una opinión o sugerencia, este espacio es para ti.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                 <div class="login d-flex align-items-center py-5">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">

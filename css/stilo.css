@@ -203,7 +203,6 @@ margin-top: 5%;
 }
 }
 
-
 @media screen and (max-width: 940px) {
 .tab-1-image {
 display: none;
@@ -246,14 +245,29 @@ box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 }
 .fondo{
 
-margin-top: 0%;
+margin-top: -10%;
 background-color: #FFF9F4;
 
-
-
-
 }
-
+.fondo-articulo{
+    margin-top: -2%;
+    background-color: #FFF9F4;
+}
+.fondo-art-individual{
+    margin-top: 0%;
+    background-color: #FFF9F4;
+}
+.fondo-art-individual-1{
+    margin-top: 8%;
+    background-color: #FFF9F4;
+}
+.cont-prod-individual {
+    margin-top: 8%;
+    background-color: #FFF9F4;
+}
+.banner-title{
+    background-color: #F5B94B;
+}
 .fondo-celeb{
 margin-top: 10%;
 color: #000000;
@@ -771,7 +785,7 @@ color: #0F1E53;
 text-align: center;
 margin-top: -2%;
 }
-.info-tit-3-prin{ 
+.info-tit-3-prin{
 font-size: 50px;
 font-weight: 700;
 color: #0F1E53;
@@ -850,9 +864,9 @@ margin-bottom: 5%;
 font-family: "Dancing Script", bold;
 font-size: 150px;
 font-weight: 800;
-color: #FFFFFF;
+color: #103C7B;
 text-align: center;
-margin-top: 18%;
+margin-top: 15%;
 /* text-shadow:
 -5px -5px 0 #FFF9F4,
 3px -3px 0 #FFF9F4,
@@ -890,9 +904,10 @@ line-height: 0.8; /* Reduce espacio entre líneas */
 
 .masthead3 {
 width: 100%;
-height: 50vh;
+height: 25vh;
 min-width: 100%;
-min-height: 250px;
+min-height: 200px;
+margin-top: 5.5%;
 background-image: url("../assets/new-cheese/pruebas-banners/banner-oaxaca-prueba-1.jpg");
 background-size: cover;
 background-position: center;
@@ -1116,9 +1131,12 @@ min-height: 100vh;
 }
 .bg-image {
 background-image: url("../assets/new-cheese/banners/productos-banner-final.png");
-background-size: cover;
-background-position: center;
-background-size: 100% 100%;
+/* background-size: cover; */
+/* background-position: center; */
+/* background-size: 100% 100%; */
+/* width: 100%; */
+height: 650px;
+margin-top: 20%;
 /* position: fixed;
 z-index: -1; */
 /* box-shadow: 0px 9px 31px -1px rgba(0,0,0,0.6);
@@ -1178,14 +1196,42 @@ margin-top: 0%;
 width: 100%;
 background-color: #FFFFFF;
 color: #103C7B;
-padding-left: 15%;
-padding-right: 15%;
+padding-left: 10%;
+padding-right: 10%;
 /* box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
 -webkit-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51);
 -moz-box-shadow: -5px 4px 50px -7px rgba(0, 0, 0, 0.51); */
 margin-bottom: 5%;
 }
+.title-mens{
+margin-top: 5%;
+font-family: "Lexend", bold;
+font-size: 50px;
+color: #103C7B;
+text-align: center;
+}
+.title-mens-1{
+margin-top: -20%;
+font-family: "Lexend", bold;
+font-size: 50px;
+color: #103C7B;
+text-align: center;
+}
+.title-mens-2{
+margin-top: 2%;
+font-family: "Lexend", bold;    
+font-size: 25px;
+color: #103C7B;
+text-align: center;
+}
+.title-mens-3{
+margin-top: 5%;
+font-family: "Lexend", bold;
+font-size: 25px;
+color: #103C7B;
+text-align: center;
 
+}
 .cont-color2 {
 width: 100%;
 background-color: #103C7B;
@@ -1255,7 +1301,6 @@ background-color: #FFF9F4;
 margin-top: 0%;
 /* background: rgba(0,0,0,.1) */
 }
-
 
 /* ========= ESTILO TARJETAS PRODUCTOS ==========*/
 
