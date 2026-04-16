@@ -13,7 +13,7 @@
                 <!-- <div class="col-lg-7 text-center" style="margin: auto;"><img class="img-fluid rounded mb-4 mb-lg-0"
                         src="" alt="..." style="width:90%" id="ImagenEtiqueta_Producto" oncontextmenu="return false;"
                         draggable="false" /></div> -->
-                <h1 class="font-weight-light" id="NombreDeProducto_Producto"></h1>
+                <p class="title-art-1" id="NombreDeProducto_Producto"></p>
                 <p id="Descripcion_Producto"></p>
                 <div class="col-lg-10 text-center " style="margin: auto;">
                 <img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." style="width:80%"
@@ -21,7 +21,7 @@
                 </div>
                 <a id="BotonConoceMas_Producto"
                     style="margin-top: 10%; background-color: #103C7B; border-color: #000000; text-align: center; color: #ffffff; font-weight: bold;"
-                    class="btn btn-primary mb-4 mb-lg-0" href="#!">Conoce mas!</a>
+                    class="btn btn-primary mb-4 mb-lg-0 text-center" href="#!">Conoce más</a>
             </div>
         </div>
         <div class="card text-white my-5 py-4 text-center banner-title">
