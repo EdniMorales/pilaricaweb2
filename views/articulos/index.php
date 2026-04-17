@@ -1,7 +1,7 @@
-<header class="masthead3 py-5 fondo" id="banner-producto">
+<!-- <header class="masthead3 py-5 fondo" id="banner-producto">
     <div class="container px-4 px-lg-5 my-5">
     </div>
-</header>
+</header> -->
 <section class="fondo-articulo">
     <div class="container px-4 px-lg-5 fondo-art-individual">
         <div class="row gx-4 gx-lg-5 align-items-center my-5 fondo-art-individual-1">
@@ -14,7 +14,7 @@
                         src="" alt="..." style="width:90%" id="ImagenEtiqueta_Producto" oncontextmenu="return false;"
                         draggable="false" /></div> -->
                 <p class="title-art-1" id="NombreDeProducto_Producto"></p>
-                <p id="Descripcion_Producto"></p>
+                <p class="title-art-2" id="Descripcion_Producto"></p>
                 <div class="col-lg-10 text-center " style="margin: auto;">
                 <img class="img-fluid rounded mb-4 mb-lg-0" src="" alt="..." style="width:80%"
                     id="ImagenBanner_Producto" oncontextmenu="return false;" draggable="false" />

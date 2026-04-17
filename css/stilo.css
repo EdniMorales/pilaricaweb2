@@ -247,24 +247,26 @@ box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 -moz-box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.65);
 }
 .fondo{
-margin-top: -10%;
-background-color: #ffffff;
-}
-.fondo-articulo{
 margin-top: 0%;
 background-color: #FFF9F4;
 }
+.fondo-articulo{
+margin-top: 5%;
+background-color: #FFF9F4;
+}
+
+
 .fondo-art-individual{
 margin-top: 0%;
-background-color: #ffffff;
+background-color: #FFF9F4;
 }
 .fondo-art-individual-1{
 margin-top: 8%;
-background-color: #ffffff;
+background-color: #FFF9F4;
 }
 .cont-prod-individual {
 margin-top: 5%;
-background-color: #ffffff;
+background-color: #FFF9F4;
 }
 .banner-title{
 background-color: #F5B94B;
@@ -412,7 +414,6 @@ margin-top: 5%;
 font-weight: 800;
 
 }
-
 
 .subtit-prod-fav-5{
 font-family: "Lexend", sans-serif;
@@ -853,21 +854,21 @@ margin-top: -8%;
 margin-bottom: 5%;
 }
 .masthead2 {
-    width: 100%;
-    min-height: 150px;
-    height: clamp(200px, 40vh, 500px);
+width: 100%;
+min-height: 150px;
+height: clamp(200px, 40vh, 500px);
 
-    padding: clamp(40px, 8vw, 120px) 0;
+padding: clamp(40px, 8vw, 120px) 0;
 
-    background-color: #5f0f11;
-    background-image: url('../assets/new-cheese/pruebas-banners/header-vacas.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+background-color: #5f0f11;
+background-image: url('../assets/new-cheese/pruebas-banners/header-vacas.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .txt-catego {
 font-family: "Dancing Script", bold;
@@ -886,13 +887,13 @@ text-align: left;
 margin-top: -5%;
 }
 .txt-tittle-sect{
-    font-family: Lexend, bold;
-    font-weight: 800;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    letter-spacing: 3px;
-    text-shadow: 0 5px 25px;
-    font-size: clamp(4rem, 10vw, 8rem);
+font-family: Lexend, bold;
+font-weight: 800;
+color: rgb(255, 255, 255);
+text-align: center;
+letter-spacing: 3px;
+text-shadow: 0 5px 25px;
+font-size: clamp(4rem, 10vw, 8rem);
 }
 .masthead3 {
 width: 100%;
@@ -933,6 +934,16 @@ font-family: "Lexend", bold;
 font-size: 50px;
 color: #103C7B;
 text-align: center;
+
+}
+.title-art-2{
+
+margin-top: 5%;
+font-family: "Lexend", bold;
+font-size: 20px;
+color: #103C7B;
+text-align: justify;
+margin-bottom: 5%;
 
 }
 #background-video {
@@ -1142,7 +1153,7 @@ background-repeat: no-repeat;
 @media screen and (max-width: 768px) {
 .bg-image {
 display: none;
-    }
+}
 }
 .login-heading {
 color: #103C7B;
@@ -1242,7 +1253,6 @@ border:none;
 padding: 20px;
 
 }
-
 
 /* Desde aqui empieza el nuevo */
 .visuallyhidden {
