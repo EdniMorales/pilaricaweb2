@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FMZ0D8WEE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FMZ0D8WEE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-5FMZ0D8WEE');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-5FMZ0D8WEE');
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,18 +30,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <link href="<?= base_url ?>css/styles.css" rel="stylesheet" />
-   
+
     <link href="<?= base_url ?>css/stilo.css" rel="stylesheet" />
 
-      <link href="<?= base_url ?>css/stilo-720.css" rel="stylesheet" />
-   
-<!--  <link href="css/hover-zoom.css" rel="stylesheet" /> -->
- <link rel="stylesheet" href="<?= base_url ?>css/animate.css">
-<script src="<?= base_url ?>js/wow.min.js"></script>
-  <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <link href="<?= base_url ?>css/stilo-720.css" rel="stylesheet" />
+
+    <!--  <link href="css/hover-zoom.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="<?= base_url ?>css/animate.css">
+    <script src="<?= base_url ?>js/wow.min.js"></script>
+    <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <!--  <link href="css/base.css" rel="stylesheet" /> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
- <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script type="module" src='<?= base_url ?>js/scripts.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -47,10 +50,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-<script>
-new WOW().init();
-</script>
- <style>
+    <script>
+        new WOW().init();
+    </script>
+    <style>
         /* Estilos del Modal */
         .modal-overlay {
             display: none;
@@ -81,6 +84,7 @@ new WOW().init();
                 opacity: 0;
                 transform: translateY(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -137,14 +141,14 @@ new WOW().init();
             background-color: #ee5a52;
         }
     </style>
-</head> 
+</head>
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
         <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
             <div class="container px-5">
                 <a class="navbar-brand" href="<?= base_url ?>Principal/index">
-                    <img src="<?= base_url ?>assets/new-cheese/logos/Logo-pilarica.png" alt="Logo" width="150" height="100"
-                        class="d-inline-block align-text-top" />
+                    <img src="<?= base_url ?>assets/new-cheese/logos/Logo-pilarica.png" alt="Logo" width="150"
+                        height="100" class="d-inline-block align-text-top" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -153,7 +157,7 @@ new WOW().init();
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                             <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Principal/index">Inicio</a>
                         </li>
                         <li class="nav-item dropdown" id="dmenu">
@@ -165,25 +169,18 @@ new WOW().init();
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Sucursales/index">Sucursales</a>
                         </li>
-                          <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Solo/index">Nosotros</a>
                         </li>
-                              <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Contacto/index">Contacto</a>
                         </li>
-                     <!--    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                <li><a class="dropdown-item" href="../">Bolsa de trabajo</a></li>
-                                <li><a class="dropdown-item" href="../">Quiero ser cliente</a></li>
-                            </ul>
-                        </li> -->
                     </ul>
                     <div class="searchbar">
                         <input class="search_input" id="buscador-prod-index" type="text" name="" placeholder="Buscar" />
                         <a href="#" class="search_icon" id="button-buscador-prod-index" style="display: flex;">
-                            <i class="fa fa-search fa-1x text-left" style="font-size: 18px; position: fixed;" aria-hidden="true"></i>
+                            <i class="fa fa-search fa-1x text-left" style="font-size: 18px; position: fixed;"
+                                aria-hidden="true"></i>
                         </a>
                         <div id="dropdown-index"></div>
                     </div>

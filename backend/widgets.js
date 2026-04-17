@@ -275,7 +275,7 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
                     <div class="text-center">
 
 
-                        <!-- Product name-->
+                        <!-- Product name ednimora-->
 
                         <p class="fw-bolder" style="font-size: 25px; color: #0F1E53; text-transform: uppercase;">${product.PRODUCTO}</p>
 

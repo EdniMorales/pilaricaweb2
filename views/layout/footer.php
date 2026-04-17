@@ -1,8 +1,8 @@
 </main>
 <footer class="text-center">
-  <!--     <div>
+    <div>
         <img src="<?= base_url ?>assets/new-cheese/onda.png" class="banner-onda fondo" alt="">
-    </div> -->
+    </div>
     <section class="cont-color2">
         <div class="container text-center text-md-start mt-5">
             <div class="row ">
@@ -47,27 +47,36 @@
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <p class="fw-bold mb-4 txt-catego-foot-1">Ubicanos</p>
-                    <p class="txt-links-dir"><i class="fas fa-home me-3"></i>Benito Juárez Sur N 46, Centro, 56530 Ixtapaluca, Méx.</p>
+                    <p class="txt-links-dir"><i class="fas fa-home me-3"></i>Benito Juárez Sur N 46, Centro, 56530
+                        Ixtapaluca, Méx.</p>
                     <p class="txt-links-dir"><i class="fas fa-envelope me-3"></i>soporte@pilarica.mx</p>
-                    <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720102" class="txt-links">(55) 5972 0102</a></p>
-                    <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720522" class="txt-links">(55) 5972 0522</a></p>
-                    <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720026" class="txt-links">(55) 5972 0026</a></p>
-                    <p><i class="fab fa-whatsapp me-3"></i><a href="tel:+5559720102" class="txt-links">(56) 4543 8166</a></p>
+                    <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720102" class="txt-links">(55) 5972 0102</a>
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720522" class="txt-links">(55) 5972 0522</a>
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720026" class="txt-links">(55) 5972 0026</a>
+                    </p>
+                    <p><i class="fab fa-whatsapp me-3"></i><a href="tel:+5559720102" class="txt-links">(56) 4543
+                            8166</a></p>
                 </div>
             </div>
         </div>
     </section>
     <div class="text-center text-white p-4" style="background-color: #113D7C">
         © 2026 Copyright:<p>Lacteos La Pilarica</p>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #3b5998;" href="https://www.facebook.com/lacteospilaricamx" target="_blank"
-            role="button"><i class="fab fa-facebook-f"></i></a>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ac2bac;" href="https://www.instagram.com/lacteoslapilariaca/" target="_blank"
-        role="button"><i class="fab fa-instagram"></i></a>
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #3b5998;"
+            href="https://www.facebook.com/lacteospilaricamx" target="_blank" role="button"><i
+                class="fab fa-facebook-f"></i></a>
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ac2bac;"
+            href="https://www.instagram.com/lacteoslapilariaca/" target="_blank" role="button"><i
+                class="fab fa-instagram"></i></a>
         <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #0082ca;" href="#!"
             role="button"><i class="fab fa-linkedin-in"></i></a>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ed302f;" href="https://youtube.com/@lacteoslapilarica2504?si=jQUMkOhq6aqVxQDT" target="_blank"
-            role="button"><i class="fab fa-youtube"></i></a>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #25d366;" href="#!" role="button"><i class="fab fa-whatsapp"></i></a>
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ed302f;"
+            href="https://youtube.com/@lacteoslapilarica2504?si=jQUMkOhq6aqVxQDT" target="_blank" role="button"><i
+                class="fab fa-youtube"></i></a>
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #25d366;" href="#!"
+            role="button"><i class="fab fa-whatsapp"></i></a>
     </div>
 </footer>
 <script>
@@ -131,158 +140,133 @@ document.getElementById("BotonFooterSuscribirse").addEventListener("click", func
 //});// Boton de las categorias
 </script>
 
-      <script>
-        // Mostrar modal cuando la página carga completamente
-        document.addEventListener('DOMContentLoaded', function() {
-            // Esperar 1 segundo antes de mostrar el modal
-            setTimeout(function() {
-                openModal();
-            }, 1000);
-        });
-
-        // Abrir modal
-        function openModal() {
-            const modal = document.getElementById('welcomeModal');
-            modal.style.display = 'flex';
-            
-            // Guardar en localStorage para no mostrar muy seguido
-            localStorage.setItem('modalShown', 'true');
-        }
-
-        // Cerrar modal
-        function closeModal() {
-            const modal = document.getElementById('welcomeModal');
-            modal.style.display = 'none';
-        }
-
-        // Suscribirse al newsletter
-        function subscribeNewsletter() {
-            alert('¡Gracias por suscribirte! Pronto recibirás nuestras novedades.');
+<script>
+    // Mostrar modal cuando la página carga completamente
+    document.addEventListener('DOMContentLoaded', function() {
+        // Esperar 1 segundo antes de mostrar el modal
+        setTimeout(function() {
+            openModal();
+        }, 1000);
+    });
+    // Abrir modal
+    function openModal() {
+        const modal = document.getElementById('welcomeModal');
+        modal.style.display = 'flex';
+        // Guardar en localStorage para no mostrar muy seguido
+        localStorage.setItem('modalShown', 'true');
+    }
+    // Cerrar modal
+    function closeModal() {
+        const modal = document.getElementById('welcomeModal');
+        modal.style.display = 'none';
+    }
+    // Suscribirse al newsletter
+    function subscribeNewsletter() {
+        alert('¡Gracias por suscribirte! Pronto recibirás nuestras novedades.');
+        closeModal();
+    }
+    // Cerrar modal al hacer clic fuera del contenido
+    document.getElementById('welcomeModal').addEventListener('click', function(e) {
+        if (e.target === this) {
             closeModal();
         }
+    });
+    // Cerrar con tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeModal();
+        }
+    });
+</script>
 
-        // Cerrar modal al hacer clic fuera del contenido
-        document.getElementById('welcomeModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeModal();
-            }
+<script>
+    const track = document.getElementById('carouselTrack');
+    const dotsContainer = document.getElementById('carouselDots');
+    const cards = document.querySelectorAll('.product-card');
+    let currentIndex = 0;
+    let cardsPerView = getCardsPerView();
+    // Configurar dots
+    function setupDots() {
+        const totalDots = Math.ceil(cards.length / cardsPerView);
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalDots; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            dot.onclick = () => goToSlide(i);
+            dotsContainer.appendChild(dot);
+        }
+        updateDots();
+    }
+    // Actualizar dots activos
+    function updateDots() {
+        const dots = document.querySelectorAll('.dot');
+        const activeDotIndex = Math.floor(currentIndex / cardsPerView);
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === activeDotIndex);
         });
-
-        // Cerrar con tecla ESC
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeModal();
-            }
-        });
-    </script>
-
-
-
-    <script>
-        const track = document.getElementById('carouselTrack');
-        const dotsContainer = document.getElementById('carouselDots');
-        const cards = document.querySelectorAll('.product-card');
-        let currentIndex = 0;
-        let cardsPerView = getCardsPerView();
-
-        // Configurar dots
-        function setupDots() {
-            const totalDots = Math.ceil(cards.length / cardsPerView);
-            dotsContainer.innerHTML = '';
-            
-            for (let i = 0; i < totalDots; i++) {
-                const dot = document.createElement('div');
-                dot.classList.add('dot');
-                dot.onclick = () => goToSlide(i);
-                dotsContainer.appendChild(dot);
-            }
-            
-            updateDots();
+    }
+    // Obtener número de tarjetas por vista según el ancho
+    function getCardsPerView() {
+        if (window.innerWidth <= 768) {
+            return 1;
+        } else if (window.innerWidth <= 1024) {
+            return 2;
         }
-
-        // Actualizar dots activos
-        function updateDots() {
-            const dots = document.querySelectorAll('.dot');
-            const activeDotIndex = Math.floor(currentIndex / cardsPerView);
-            
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === activeDotIndex);
-            });
+        return 3;
+    }
+    // Mover slide
+    function moveSlide(direction) {
+        const maxIndex = cards.length - cardsPerView;
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = 0;
+        } else if (currentIndex > maxIndex) {
+            currentIndex = maxIndex;
         }
-
-        // Obtener número de tarjetas por vista según el ancho
-        function getCardsPerView() {
-            if (window.innerWidth <= 768) {
-                return 1;
-            } else if (window.innerWidth <= 1024) {
-                return 2;
-            }
-            return 3;
-        }
-
-        // Mover slide
-        function moveSlide(direction) {
-            const maxIndex = cards.length - cardsPerView;
-            currentIndex += direction;
-            
-            if (currentIndex < 0) {
-                currentIndex = 0;
-            } else if (currentIndex > maxIndex) {
-                currentIndex = maxIndex;
-            }
-            
-            updateCarousel();
-        }
-
-        // Ir a slide específico
-        function goToSlide(index) {
-            const maxIndex = cards.length - cardsPerView;
-            currentIndex = Math.min(index * cardsPerView, maxIndex);
-            updateCarousel();
-        }
-
-        // Actualizar carrusel
-        function updateCarousel() {
-            const cardWidth = cards[0].offsetWidth + 25; // 25px es el gap
-            const offset = currentIndex * cardWidth;
-            track.style.transform = `translateX(-${offset}px)`;
-            updateDots();
-        }
-
-        // Función para añadir al carrito
-        function addToCart(productName, price) {
-            alert(`✅ ${productName} añadido al carrito\n💰 Precio: $${price}\n🛒 Gracias por tu compra!`);
-        }
-
-        // Actualizar cardsPerView en resize
-        window.addEventListener('resize', () => {
-            cardsPerView = getCardsPerView();
-            currentIndex = Math.min(currentIndex, cards.length - cardsPerView);
-            setupDots();
-            updateCarousel();
-        });
-
-        // Inicializar
+        updateCarousel();
+    }
+    // Ir a slide específico
+    function goToSlide(index) {
+        const maxIndex = cards.length - cardsPerView;
+        currentIndex = Math.min(index * cardsPerView, maxIndex);
+        updateCarousel();
+    }
+    // Actualizar carrusel
+    function updateCarousel() {
+        const cardWidth = cards[0].offsetWidth + 25; // 25px es el gap
+        const offset = currentIndex * cardWidth;
+        track.style.transform = `translateX(-${offset}px)`;
+        updateDots();
+    }
+    // Función para añadir al carrito
+    function addToCart(productName, price) {
+        alert(`✅ ${productName} añadido al carrito\n💰 Precio: $${price}\n🛒 Gracias por tu compra!`);
+    }
+    // Actualizar cardsPerView en resize
+    window.addEventListener('resize', () => {
+        cardsPerView = getCardsPerView();
+        currentIndex = Math.min(currentIndex, cards.length - cardsPerView);
         setupDots();
-
-        // Navegación con teclado
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') {
-                moveSlide(-1);
-            } else if (e.key === 'ArrowRight') {
-                moveSlide(1);
-            }
-        });
-
-        // Animación de entrada
-        cards.forEach((card, index) => {
-            card.style.opacity = '0';
-            card.style.animation = `fadeInUp 0.5s ease forwards ${index * 0.1}s`;
-        });
-
-        // Añadir estilo de animación
-        const style = document.createElement('style');
-        style.textContent = `
+        updateCarousel();
+    });
+    // Inicializar
+    setupDots();
+    // Navegación con teclado
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            moveSlide(-1);
+        } else if (e.key === 'ArrowRight') {
+            moveSlide(1);
+        }
+    });
+    // Animación de entrada
+    cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.animation = `fadeInUp 0.5s ease forwards ${index * 0.1}s`;
+    });
+    // Añadir estilo de animación
+    const style = document.createElement('style');
+    style.textContent = `
             @keyframes fadeInUp {
                 from {
                     opacity: 0;
@@ -294,8 +278,8 @@ document.getElementById("BotonFooterSuscribirse").addEventListener("click", func
                 }
             }
         `;
-        document.head.appendChild(style);
-    </script>
+    document.head.appendChild(style);
+</script>
 
 </body>
 
