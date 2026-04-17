@@ -1322,7 +1322,12 @@ align-items: center;
 justify-content: center;
 }
 .text_card_description{
-font-size: 2em;
+font-size: 33px;/* 2em */
+margin-top: 5%;
+text-align: justify;
+font-weight: 500;
+color: #FFFFFF;
+background-color: #0F1E53;
 }
 .card.highlight {
 filter: brightness(1);

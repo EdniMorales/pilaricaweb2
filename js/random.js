@@ -73,7 +73,7 @@ export async function ColocarContenidoRandom(){
     // Colocar lo del principio
     contenedor.insertAdjacentHTML('beforeend',`
         <div class="col-lg-12">
-            <h2 class="tit-prod-fav-2">Nuestros productos</h2>
+            <h2 class="tit-prod-fav-2">Nuestros productos 2</h2>
             <p class="tit-prod-fav-2-1">Conoce la variedad de productos que tenemos para ti</p>
         </div>
     `);
