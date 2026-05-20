@@ -16,7 +16,7 @@
                     <p class="txt-links">
                         ¡Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más!</p>
                     <div class="container text-left">
-                        <div class="input-group">
+                        <div class="input-group">                                                                                                                                                                                                                                                       
                             <input class="form-control" id="CasillaFooterSuscripcionCorreo" type="text"
                                 placeholder="¡Ingresa tu correo!" aria-label="Correo Electronico..."
                                 aria-describedby="button-newsletter" />
