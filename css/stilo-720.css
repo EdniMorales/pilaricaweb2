@@ -408,4 +408,17 @@ margin-top: -25%;
 } */
 }
 
+
+
+ .masthead1{
+width: 100%;
+height: 550px;
+min-height: 150px;
+background-image: url("../assets/nosotros/foto-principal.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin-top: -25%;
+} 
+
 /* Estilo de vista producto individual */
