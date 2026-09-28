@@ -225,11 +225,23 @@ width: 100%;
 height: 150px;
 /* max-height: 450px; */
 /* height: 650px; */
-background-image: url("../assets/new-cheese/banners/banner-mudial-mexico-2026.jpg");
+background-image: url("../assets/new-cheese/banners/portada-de-pagina-web-sep.jpg");
 /* background-size: cover;
 background-position: center;
 background-repeat: no-repeat; */
 }
+
+ .masthead1{
+width: 100%;
+height: 550px;
+min-height: 150px;
+background-image: url("../assets/nosotros/quienes-somos-nueva.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin-top: 25%;
+} 
+
 .title-1{
 display: none;
 }
@@ -390,6 +402,20 @@ display: none;
 } */
 }
 
+ .masthead1{
+width: 100%;
+height: 550px;
+min-height: 150px;
+background-image: url("../assets/nosotros/quienes-somos-nueva.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin-top: 40%;
+} 
+
+
+
+
 /* Múltiples condiciones */
 @media screen and (max-width: 1024px) {
 /* Tablets - entre 768px y 1024px */
@@ -410,15 +436,5 @@ margin-top: -25%;
 
 
 
- .masthead1{
-width: 100%;
-height: 550px;
-min-height: 150px;
-background-image: url("../assets/nosotros/foto-principal.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-margin-top: -25%;
-} 
 
 /* Estilo de vista producto individual */
