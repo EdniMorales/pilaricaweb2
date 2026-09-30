@@ -1,13 +1,21 @@
 /* For devices with a minimum width of 768px (Medium) */
 @media screen and (max-width: 768px) {
-.tab-1-image {
-display: none;
+    .tab-1-image {
+    display: none;
+    }
 }
-}
+
+
+
+
 @media screen and (max-width: 768px) {
-.tab-1-image {
-display: none;
-}
+    .tab-1-image {
+    display: none;
+    }
+
+
+
+
 }
 
 
@@ -223,12 +231,12 @@ display: none;
 /* Estructura responsiva nosotros */
 @media screen and (max-width: 768px) {
 .masthead {
-margin-top: 50%;
+margin-top: 45%;
 width: 100%;
-height: 150px;
+height: 430px;
 /* max-height: 450px; */
 /* height: 650px; */
-background-image: url("../assets/new-cheese/banners/portada-de-pagina-web-sep.jpg");
+background-image: url("../assets/new-cheese/banners/PORTADA-390X430.jpg");
 /* background-size: cover;
 background-position: center;
 background-repeat: no-repeat; */

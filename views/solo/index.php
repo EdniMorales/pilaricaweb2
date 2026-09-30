@@ -124,9 +124,6 @@
                 </div>
             </section>
             <section>
-
-
-
             <div class="sect-mision px-5 f-1">
                 <div class="row justify-content-center">
                     <div class="col-lg-12 col-xxl-6">
@@ -146,9 +143,6 @@
                     </div>
                 </div>
             </div>
-
-
-            
             </section>
             <!--    <section class="masthead6 fondo">
             </section> -->
@@ -159,15 +153,5 @@
                     </p>
                 </div>
             </section>
-            <!--     <section class="fondo-mision py-5">              
-        <div class="row col-lg">
-        <p class="info-tit">Nuestra Misión</p>
-            <p class="info-somos-1">Alimentar a la sociedad con productos auténticos, naturales, funcionales, accesibles e innovadores, guiados por la pasión y el amor por lo que hacemos, con un firme compromiso en satisfacer y superar las expectativas de nuestros clientes y consumidores.
-            </p>
-        </div>
-        <div class="col-lg">
-            <img src="<?= base_url ?>assets/nosotros/quesos-maduros.jpg" alt="" class="info-somos-2">
-        </div>
-    </section> -->
 
  
