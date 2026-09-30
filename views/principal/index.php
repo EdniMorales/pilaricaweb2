@@ -1,34 +1,4 @@
-<!-- <section class="fondo">
-<header class="masthead fondo wow animated bounceInLeft" data-wow-delay="1s">
-    <div class="container h-100 tab-1-image">
-        <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
-                <p class="title-1 wow animated slideInDown" data-wow-delay="1s">" Solo el amor supera las bondades de la leche "</p>
-            </div>
-        </div>
-    </div>
-</header>
-</section>
- -->
-<!-- Modal -->
-<!--     <div id="welcomeModal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-              <h2>🎉 ¡Bienvenido!</h2> 
-            </div>
-            <div class="modal-body">
-               <p>¡Gracias por visitar nuestro sitio web! Estamos contentos de tenerte aquí.</p>
-                <p>¿Te gustaría suscribirte a nuestro boletín para recibir actualizaciones y ofertas exclusivas?</p> 
-                <img src="<?= base_url ?>assets/temporadas/canastas-2. png" class="img-promo" alt="...">
-            </div>
-            <div class="modal-footer">
-               <button class="btn-newsletter" onclick="subscribeNewsletter()">¡Sí, Suscribirme!</button> 
-               <button class="btn-close" onclick="closeModal()">Cerrar</button> 
 
-            </div>
-        </div>
-    </div>
- -->
 <header class="masthead wow animated zoomInDown" data-wow-delay="1s">
     <div class="container h-100 tab-1-image">
     </div>
