@@ -71,8 +71,8 @@ right: 1px;
 
 .masthead {
 /* max-width: 100%; */
-/* min-width: 100%; */
-width: 100%;
+min-width: 100%;
+/* width: 100%; */
 height: 670px;
 background-image: url("../assets/new-cheese/banners/portada-octubre-productos-pilarica.jpg");
 /* background-size: cover; */
