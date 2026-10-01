@@ -7,20 +7,6 @@
 
 
 
-
-@media screen and (max-width: 768px) {
-    .tab-1-image {
-    display: none;
-    }
-
-
-
-
-}
-
-
-
-
 @media screen and (max-width: 768px) {
 
 .title-2 {
@@ -228,6 +214,7 @@ display: none;
 } */
 }
 
+
 /* Estructura responsiva nosotros */
 @media screen and (max-width: 768px) {
 .masthead {
@@ -260,9 +247,7 @@ display: none;
 font-size: 50px;
 background: none;
 }
-/* .edit-img-yoga {
-display: none;
-} */
+
 
 .info-somos{
 font-size: 20px;
@@ -423,8 +408,6 @@ background-position: center;
 background-repeat: no-repeat;
 margin-top: 40%;
 } 
-
-
 
 
 /* Múltiples condiciones */
