@@ -209,11 +209,8 @@ margin-top: 8%;
 .title-2 {
 font-size: 50px;
 }
-/* .edit-img-yoga {
-display: none;
-} */
-}
 
+}
 
 /* Estructura responsiva nosotros */
 @media screen and (max-width: 768px) {
@@ -247,7 +244,6 @@ display: none;
 font-size: 50px;
 background: none;
 }
-
 
 .info-somos{
 font-size: 20px;
