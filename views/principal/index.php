@@ -27,8 +27,6 @@
     </div>
 </div>
 
-
-
 <script type="module">
     import * as random from '<?= base_url ?>js/random.js';
 </script>
@@ -57,8 +55,6 @@
         </div>
     </div>
 </section>
-
-
 
 <section class="fondo stilo-section-prod-fav-3 text-center">
     <div class="px-5 my-5 stilo-prod-fav-3">
