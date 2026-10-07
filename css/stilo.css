@@ -79,8 +79,6 @@ background-image: url("../assets/new-cheese/banners/portada-octubre-productos-pi
 background-size: cover;
 margin-top: 7%;
 margin-bottom: 0%;
-/* border-radius: 0px 0px 350px 0px;four values */
-/* background-repeat: no-repeat; */
 }
 .img-promo{
 width:450px;
@@ -190,11 +188,6 @@ color: #FFF9F4;
 margin-top: 5%;
 }
 
-
-
-
-
-
 @media screen and (max-width: 914px) {
 .tit-prod-fav{
 font-family: "Lexend", bold;
@@ -205,34 +198,10 @@ margin-top: 5%;
 }
 
 @media screen and (max-width: 940px) {
-.tab-1-image {
+/* .tab-1-image {
 display: none;
+    } */
 }
-/* .edit-img-yoga {
-display: none;
-} */
-}
-
-
-
-@media screen and (max-width: 768px) {
-    .tab-1-image {
-    display: none;
-    }
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
 .tit-prod-fav-1{
 font-family: "Lexend", bold;
 font-size: 50px;
@@ -251,13 +220,6 @@ font-size: 50px;
 color: #103C7B;
 margin-top: 1%;
 }
-/* .sub-tit-prod-fav{
-font-family: "faustina",serif ;
-font-size: 35px;
-color: #FFF9F4;
-margin-top: 2%;
-padding-top: 2%;
-} */
 .foot-fig{
 --border-radius-top: 30% 70% 70% 30% / 30% 30% 70% 70%;
 background: linear-gradient(45deg, #4ecdc4, #44a08d);
@@ -273,8 +235,6 @@ background-color: #FFF9F4;
 margin-top: 5%;
 background-color: #FFF9F4;
 }
-
-
 .fondo-art-individual{
 margin-top: 0%;
 background-color: #FFF9F4;
@@ -295,7 +255,6 @@ margin-top: 10%;
 color: #000000;
 background-color: #FFFFFF;
 }
-
 .fondo-celeb-1{
 margin-top: -5%;
 color: #000000;
@@ -306,17 +265,13 @@ margin-top: 2%;
 color: #000000;
 background-color: #F5B94B;
 }
-
 .fondo-desc-historia-1{
 margin-top: 5%;
 background-color: #FFF9F4;
 margin-bottom: -5%;
-
 }
 .fondo-desc-historia-2{
-
 background-color: #FFF9F4;
-
 }
 .sect-mision{
 margin-top: 10%;
@@ -470,6 +425,15 @@ margin-bottom: 5%;
 padding-left: 35%;
 padding-right: -25%;
 }
+
+
+/* .tab-1-image {
+margin-top: -15%;
+width: 100%;
+height: 430px;
+} */
+
+
 .edit-img-yog{
 width: 100%;
 height: 180%;
@@ -479,9 +443,10 @@ object-fit: cover;
 z-index: 3;
 margin-top: 2%; ;
 }
-@media screen and (max-width: 2336px) {
-.edit-img-yog{
+
+/* .edit-img-yog{
 position: absolute;
+margin-top: -20%;
 top: -10%;
 left: 50%;
 transform: translateX(-50%);
@@ -489,35 +454,11 @@ width: 80%;
 height: 120%;
 object-fit: cover;
 z-index: 3;
-margin-top: 15%;
 }
-}
-@media screen and (max-width: 1604px) {
-.edit-img-yog{
-position: absolute;
-top: -10%;
-left: 50%;
-transform: translateX(-50%);
-width: 80%;
-height: 85%;
-object-fit: cover;
-z-index: 3;
-margin-top: 25%;
-}
-}
-@media screen and (max-width: 1396px) {
-.edit-img-yog{
-position: absolute;
-top: -10%;
-left: 40%;
-transform: translateX(-50%);
-width: 90%;
-height: 85%;
-object-fit: cover;
-z-index: 3;
-margin-top: 35%;
-}
-}
+
+ */
+
+
 
 .banner-onda{
 width: 100%;
@@ -675,8 +616,6 @@ height: 750px;
 margin-top: 8%;
 background-image: url("../assets/nosotros/quienes-somos-nueva.jpg");
 background-size: cover;
-/* background-position: center;
-background-repeat: no-repeat; */
 }
 .categ{
 margin-bottom: -5%;
@@ -876,15 +815,12 @@ margin-bottom: 5%;
 width: 100%;
 min-height: 150px;
 height: clamp(200px, 40vh, 500px);
-
 padding: clamp(40px, 8vw, 120px) 0;
-
 background-color: #5f0f11;
 background-image: url('../assets/new-cheese/pruebas-banners/header-vacas.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-
 display: flex;
 align-items: center;
 justify-content: center;
@@ -924,19 +860,7 @@ background-image: url("../assets/new-cheese/pruebas-banners/banner-oaxaca-prueba
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-/* transition:
-transform 2s,
-filter 1.5s ease-in-out;
-transform-origin: center center;
-filter: brightness(40%);
--webkit-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
--moz-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75);
-box-shadow: -4px 27px 53px -15px rgba(0, 0, 0, 0.75); */
 }
-/* .masthead3:hover {
-filter: brightness(80%);
-transform: scale(1);
-} */
 .title-art {
 font-family: "Lexend", bold;
 margin-top: 28%;
@@ -946,24 +870,20 @@ color: white;
 text-align: center;
 text-shadow: 1px 1px #000000;
 }
-
 .title-art-1{
 margin-top: 5%;
 font-family: "Lexend", bold;
 font-size: 50px;
 color: #103C7B;
 text-align: center;
-
 }
 .title-art-2{
-
 margin-top: 5%;
 font-family: "Lexend", bold;
 font-size: 20px;
 color: #103C7B;
 text-align: justify;
 margin-bottom: 5%;
-
 }
 #background-video {
 width: 850px;
@@ -1393,8 +1313,6 @@ left: calc(0%); /* calc(-10% - 3px); */
 background-color: #92d3ff9a;
 z-index: -1;
 }
-
-
 
 @media screen and (max-width: 1040px) {
 .image-container {
