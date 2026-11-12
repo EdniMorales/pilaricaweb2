@@ -126,6 +126,9 @@
                 ¿Te interesa formar parte de la red de <span class="txt-dec-1"> distribución</span> Pilarica?
             </h3>
             <div class="col-lg-6 bg-image">
+
+ 
+
                 <p class="title-mens-1">
                     Comunícate con nosotros
                 </p>
@@ -136,7 +139,8 @@
                     Si estás interesado en distribuir nuestros productos o deseas compartirnos una opinión o sugerencia,
                     este espacio es para ti.
                 </p>
-            </div>
+       
+    </div>
             <div class="col-lg-6 cont-1-3">
                 <div class="login d-flex align-items-center py-5">
                     <div class="container">

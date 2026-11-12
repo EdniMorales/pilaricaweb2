@@ -7,8 +7,9 @@
         <div class="container text-center text-md-start mt-5">
             <div class="row ">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 container">
-                    <p class="fw-bold mb-4 txt-catego-foot">- Solo el amor supera las bondades de la leche -</p>
-                    <p class="text-left txt-links">
+                    <p class="fw-bold mb-4 txt-catego-foot">
+                        - Solo el amor supera las bondades de la leche -</p>
+                    <p class="txt-links">
                         En Lácteos la Pilarica sabemos que todos tenemos preferencias
                         diferentes, por eso contamos con una extensa gama de productos,
                         elaborados con el mismo amor de siempre.
@@ -16,7 +17,7 @@
                     <p class="txt-links">
                         ¡Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más!</p>
                     <div class="container text-left">
-                        <div class="input-group">                                                                                                                                                                                                                                                       
+                        <div class="input-group">                                 
                             <input class="form-control" id="CasillaFooterSuscripcionCorreo" type="text"
                                 placeholder="¡Ingresa tu correo!" aria-label="Correo Electronico..."
                                 aria-describedby="button-newsletter" />
@@ -24,7 +25,7 @@
                                 Registrarse
                             </button>
                         </div>
-                        <div class="frase-priv text-white-50">
+                        <div class="">
                             Nos preocupamos por la privacidad y nunca compartiremos sus datos.
                         </div>
                     </div>
@@ -47,6 +48,7 @@
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <p class="fw-bold mb-4 txt-catego-foot-1">Ubicanos</p>
+                   <a href="https://maps.app.goo.gl/buSBgFPD87h7U2eo6" target="_blank" class="txt-links-dir"><i class="fas fa-map-marker-alt me-3"></i>Ver en Google Maps</a>
                     <p class="txt-links-dir"><i class="fas fa-home me-3"></i>Benito Juárez Sur N 46, Centro, 56530
                         Ixtapaluca, Méx.</p>
                     <p class="txt-links-dir"><i class="fas fa-envelope me-3"></i>soporte@pilarica.mx</p>
@@ -56,26 +58,25 @@
                     </p>
                     <p><i class="fas fa-phone me-3"></i><a href="tel:+5559720026" class="txt-links">(55) 5972 0026</a>
                     </p>
-                    <p><i class="fab fa-whatsapp me-3"></i><a href="tel:+5559720102" class="txt-links">(56) 4543
-                            8166</a></p>
+                    <p><i class="fab fa-whatsapp me-3"></i><a href="https://wa.me/525645438166" target="_blank" rel="noopener noreferrer" class="txt-links">(56) 4543 8166</a></p>
                 </div>
             </div>
         </div>
     </section>
     <div class="text-center text-white p-4" style="background-color: #113D7C">
-        © 2026 Copyright:<p>Lacteos La Pilarica</p>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #3b5998;"
+        © 2026 Copyright |<p>Lacteos La Pilarica</p>
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #3b5998;color: #ffffff;"
             href="https://www.facebook.com/lacteospilaricamx" target="_blank" role="button"><i
                 class="fab fa-facebook-f"></i></a>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ac2bac;"
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ac2bac;color: #ffffff;"
             href="https://www.instagram.com/lacteoslapilariaca/" target="_blank" role="button"><i
                 class="fab fa-instagram"></i></a>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #0082ca;" href="#!"
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #0082ca;color: #ffffff;" href="#!"
             role="button"><i class="fab fa-linkedin-in"></i></a>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ed302f;"
-            href="https://youtube.com/@lacteoslapilarica2504?si=jQUMkOhq6aqVxQDT" target="_blank" role="button"><i
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #ed302f;color: #ffffff;"
+            href="https://youtube.com/@lacteoslapilarica2504?si=jQUMkOhq6aqVxQDT" target="_blank" role="button" ><i
                 class="fab fa-youtube"></i></a>
-        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #25d366;" href="#!"
+        <a data-mdb-ripple-init class="btn btn-primary texto-normal" style="background-color: #25d366;color: #ffffff;" href="https://wa.me/525645438166" target="_blank" rel="noopener noreferrer"
             role="button"><i class="fab fa-whatsapp"></i></a>
     </div>
 </footer>
