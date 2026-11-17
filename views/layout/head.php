@@ -162,6 +162,20 @@
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog"
                                 id="Categorias"></ul>
                         </li>
+                         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quiero ser
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Cliente</a></li>
+               <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Distribuidor</a></li>
+               <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Vendedor</a></li>
+            <li><hr class="dropdown-divider"></li>
+          
+          </ul>
+        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Sucursales/index">Sucursales</a>
                         </li>
@@ -171,6 +185,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Contacto/index">Contacto</a>
                         </li>
+
                     </ul>
                     <div class="searchbar">
                         <input class="search_input" id="buscador-prod-index" type="text" name="" placeholder="Buscar" />
