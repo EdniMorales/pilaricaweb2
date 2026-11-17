@@ -1090,3 +1090,45 @@ height: 650px;
 margin-top: 20%;
 background-repeat: no-repeat;
 }
+
+
+/*Estilos de Seccion Contacto*/
+/* Full Display */
+.contacto-1 {
+  width: 100%;  
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: #FFF9F4;    
+
+}
+
+    .formulario-proveedor {
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+
+    .card {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-header {
+      background-color: #212529;
+      color: white;
+      border-radius: 16px 16px 0 0 !important;
+      padding: 20px;
+    }
+
+    .seccion-titulo {
+      font-size: 18px;
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    .form-label {
+      font-weight: 500;
+    }
