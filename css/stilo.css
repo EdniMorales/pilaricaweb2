@@ -1174,3 +1174,72 @@ background-repeat: no-repeat;
     .form-label {
       font-weight: 500;
     }
+
+
+    /* Estilos de Seccion Formulario Quejas y Sugerencias */
+        .seccion-contacto {
+      padding: 60px 0;
+    }
+
+    .contact-card {
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .contact-info {
+      background-color: #212529;
+      color: white;
+      height: 100%;
+      padding: 40px;
+    }
+
+    .contact-info h2 {
+      font-weight: 700;
+    }
+
+    .contact-info p {
+      color: #ced4da;
+    }
+
+    .dato-contacto {
+      margin-bottom: 20px;
+    }
+
+    .dato-contacto strong {
+      display: block;
+      color: white;
+      margin-bottom: 4px;
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 10px;
+      min-height: 48px;
+    }
+
+    textarea.form-control {
+      min-height: 130px;
+    }
+
+    .btn-contacto {
+      border-radius: 30px;
+      padding: 10px 28px;
+    }
+
+    #map {
+      width: 100%;
+      height: 420px;
+      border-radius: 16px;
+    }
+
+    @media (max-width: 767.98px) {
+      .contact-info {
+        padding: 30px;
+      }
+
+      #map {
+        height: 320px;
+      }
+    }

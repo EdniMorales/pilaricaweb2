@@ -1,505 +1,275 @@
 
-<section class="contacto-1 ">
+<section class="seccion-contacto">
+  <div class="container">
 
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">Contáctanos</h1>
 
-
-
-<div class="container formulario-proveedor">
-
-  <div class="card">
-
-    <div class="card-header">
-      <h3 class="mb-1">Registro de Proveedores</h3>
-      <p class="mb-0">
-        Capture la información general, comercial y de contacto del proveedor.
+      <p class="text-muted">
+        Estamos disponibles para atender tus dudas, solicitudes o cotizaciones.
       </p>
     </div>
 
-    <div class="card-body p-4">
+    <div class="card contact-card">
+      <div class="row g-0">
 
-      <form id="formProveedor">
+        <!-- INFORMACIÓN -->
 
-        <!-- DATOS GENERALES -->
+        <div class="col-lg-4">
+          <div class="contact-info">
 
-        <div class="seccion-titulo">
-          Datos generales
+            <h2 class="mb-3">Información de contacto</h2>
+
+            <p class="mb-4">
+              Escríbenos o visítanos. Con gusto atenderemos tu solicitud.
+            </p>
+
+            <div class="dato-contacto">
+              <strong>Teléfono</strong>
+              <span>55 1234 5678</span>
+            </div>
+
+            <div class="dato-contacto">
+              <strong>Correo electrónico</strong>
+              <span>contacto@miempresa.com</span>
+            </div>
+
+            <div class="dato-contacto">
+              <strong>Dirección</strong>
+              <span>
+                Av. Principal #123<br>
+                Estado de México, México
+              </span>
+            </div>
+
+            <div class="dato-contacto">
+              <strong>Horario</strong>
+              <span>
+                Lunes a viernes<br>
+                9:00 AM - 6:00 PM
+              </span>
+            </div>
+
+          </div>
         </div>
 
-        <div class="row g-3">
+        <!-- FORMULARIO -->
 
-          <div class="col-md-6">
-            <label for="razonSocial" class="form-label">
-              Razón social *
-            </label>
+        <div class="col-lg-8">
+          <div class="p-4 p-md-5">
 
-            <input
-              type="text"
-              class="form-control"
-              id="razonSocial"
-              name="razonSocial"
-              required
-            >
+            <h3 class="fw-bold mb-4">
+              Envíanos un mensaje
+            </h3>
+
+            <form id="formContacto">
+
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">
+                    Nombre *
+                  </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    required
+                  >
+                </div>
+
+                <div class="col-md-6">
+                  <label for="empresa" class="form-label">
+                    Empresa
+                  </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="empresa"
+                    name="empresa"
+                  >
+                </div>
+
+                <div class="col-md-6">
+                  <label for="correo" class="form-label">
+                    Correo electrónico *
+                  </label>
+
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="correo"
+                    name="correo"
+                    required
+                  >
+                </div>
+
+                <div class="col-md-6">
+                  <label for="telefono" class="form-label">
+                    Teléfono
+                  </label>
+
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefono"
+                    name="telefono"
+                  >
+                </div>
+
+                <div class="col-md-12">
+                  <label for="asunto" class="form-label">
+                    Asunto
+                  </label>
+
+                  <select
+                    class="form-select"
+                    id="asunto"
+                    name="asunto"
+                  >
+                    <option value="">Seleccione...</option>
+                    <option value="cotizacion">Solicitar cotización</option>
+                    <option value="informacion">Solicitar información</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="mensaje" class="form-label">
+                    Mensaje *
+                  </label>
+
+                  <textarea
+                    class="form-control"
+                    id="mensaje"
+                    name="mensaje"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-contacto"
+                  >
+                    Enviar mensaje
+                  </button>
+                </div>
+
+              </div>
+
+            </form>
+
           </div>
-
-          <div class="col-md-6">
-            <label for="nombreComercial" class="form-label">
-              Nombre comercial
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="nombreComercial"
-              name="nombreComercial"
-            >
-          </div>
-
-          <div class="col-md-4">
-            <label for="rfc" class="form-label">
-              RFC *
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="rfc"
-              name="rfc"
-              maxlength="13"
-              required
-            >
-          </div>
-
-          <div class="col-md-4">
-            <label for="tipoProveedor" class="form-label">
-              Tipo de proveedor
-            </label>
-
-            <select
-              class="form-select"
-              id="tipoProveedor"
-              name="tipoProveedor"
-            >
-              <option value="">Seleccione...</option>
-              <option>Materia prima</option>
-              <option>Producto terminado</option>
-              <option>Servicios</option>
-              <option>Transporte</option>
-              <option>Mantenimiento</option>
-              <option>Tecnología</option>
-              <option>Otro</option>
-            </select>
-          </div>
-
-          <div class="col-md-4">
-            <label for="estatus" class="form-label">
-              Estatus
-            </label>
-
-            <select
-              class="form-select"
-              id="estatus"
-              name="estatus"
-            >
-              <option value="activo">Activo</option>
-              <option value="inactivo">Inactivo</option>
-              <option value="evaluacion">En evaluación</option>
-            </select>
-          </div>
-
         </div>
 
-        <!-- CONTACTO -->
+      </div>
+    </div>
 
-        <div class="seccion-titulo mt-4">
-          Información de contacto
-        </div>
+    <!-- MAPA -->
 
-        <div class="row g-3">
+    <div class="mt-5">
 
-          <div class="col-md-6">
-            <label for="contacto" class="form-label">
-              Nombre del contacto *
-            </label>
+      <div class="mb-3">
+        <h3 class="fw-bold">
+          Nuestra ubicación
+        </h3>
 
-            <input
-              type="text"
-              class="form-control"
-              id="contacto"
-              name="contacto"
-              required
-            >
-          </div>
+        <p class="text-muted">
+          Encuéntranos fácilmente en Google Maps.
+        </p>
+      </div>
 
-          <div class="col-md-6">
-            <label for="puesto" class="form-label">
-              Puesto
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="puesto"
-              name="puesto"
-            >
-          </div>
-
-          <div class="col-md-4">
-            <label for="telefono" class="form-label">
-              Teléfono *
-            </label>
-
-            <input
-              type="tel"
-              class="form-control"
-              id="telefono"
-              name="telefono"
-              required
-            >
-          </div>
-
-          <div class="col-md-4">
-            <label for="whatsapp" class="form-label">
-              WhatsApp
-            </label>
-
-            <input
-              type="tel"
-              class="form-control"
-              id="whatsapp"
-              name="whatsapp"
-            >
-          </div>
-
-          <div class="col-md-4">
-            <label for="correo" class="form-label">
-              Correo electrónico *
-            </label>
-
-            <input
-              type="email"
-              class="form-control"
-              id="correo"
-              name="correo"
-              required
-            >
-          </div>
-
-          <div class="col-md-6">
-            <label for="sitioWeb" class="form-label">
-              Página web
-            </label>
-
-            <input
-              type="url"
-              class="form-control"
-              id="sitioWeb"
-              name="sitioWeb"
-              placeholder="https://"
-            >
-          </div>
-
-        </div>
-
-        <!-- DIRECCIÓN -->
-
-        <div class="seccion-titulo mt-4">
-          Dirección
-        </div>
-
-        <div class="row g-3">
-
-          <div class="col-md-8">
-            <label for="calle" class="form-label">
-              Calle
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="calle"
-              name="calle"
-            >
-          </div>
-
-          <div class="col-md-2">
-            <label for="numeroExterior" class="form-label">
-              No. exterior
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="numeroExterior"
-              name="numeroExterior"
-            >
-          </div>
-
-          <div class="col-md-2">
-            <label for="numeroInterior" class="form-label">
-              No. interior
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="numeroInterior"
-              name="numeroInterior"
-            >
-          </div>
-
-          <div class="col-md-4">
-            <label for="colonia" class="form-label">
-              Colonia
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="colonia"
-              name="colonia"
-            >
-          </div>
-
-          <div class="col-md-3">
-            <label for="municipio" class="form-label">
-              Municipio / Alcaldía
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="municipio"
-              name="municipio"
-            >
-          </div>
-
-          <div class="col-md-3">
-            <label for="estado" class="form-label">
-              Estado
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="estado"
-              name="estado"
-            >
-          </div>
-
-          <div class="col-md-2">
-            <label for="codigoPostal" class="form-label">
-              C.P.
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="codigoPostal"
-              name="codigoPostal"
-              maxlength="5"
-            >
-          </div>
-
-        </div>
-
-        <!-- INFORMACIÓN COMERCIAL -->
-
-        <div class="seccion-titulo mt-4">
-          Información comercial
-        </div>
-
-        <div class="row g-3">
-
-          <div class="col-md-6">
-            <label for="productos" class="form-label">
-              Productos o servicios que ofrece
-            </label>
-
-            <textarea
-              class="form-control"
-              id="productos"
-              name="productos"
-              rows="3"
-            ></textarea>
-          </div>
-
-          <div class="col-md-3">
-            <label for="credito" class="form-label">
-              Días de crédito
-            </label>
-
-            <input
-              type="number"
-              class="form-control"
-              id="credito"
-              name="credito"
-              min="0"
-            >
-          </div>
-
-          <div class="col-md-3">
-            <label for="moneda" class="form-label">
-              Moneda
-            </label>
-
-            <select
-              class="form-select"
-              id="moneda"
-              name="moneda"
-            >
-              <option value="MXN">MXN - Peso mexicano</option>
-              <option value="USD">USD - Dólar</option>
-              <option value="EUR">EUR - Euro</option>
-            </select>
-          </div>
-
-          <div class="col-md-4">
-            <label for="formaPago" class="form-label">
-              Forma de pago
-            </label>
-
-            <select
-              class="form-select"
-              id="formaPago"
-              name="formaPago"
-            >
-              <option value="">Seleccione...</option>
-              <option>Transferencia</option>
-              <option>Efectivo</option>
-              <option>Cheque</option>
-              <option>Tarjeta</option>
-              <option>Crédito</option>
-            </select>
-          </div>
-
-          <div class="col-md-4">
-            <label for="tiempoEntrega" class="form-label">
-              Tiempo de entrega
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="tiempoEntrega"
-              name="tiempoEntrega"
-              placeholder="Ej. 2 a 3 días"
-            >
-          </div>
-
-          <div class="col-md-4">
-            <label for="pedidoMinimo" class="form-label">
-              Pedido mínimo
-            </label>
-
-            <input
-              type="number"
-              class="form-control"
-              id="pedidoMinimo"
-              name="pedidoMinimo"
-              min="0"
-              step="0.01"
-            >
-          </div>
-
-        </div>
-
-        <!-- DATOS BANCARIOS -->
-
-        <div class="seccion-titulo mt-4">
-          Datos bancarios
-        </div>
-
-        <div class="row g-3">
-
-          <div class="col-md-4">
-            <label for="banco" class="form-label">
-              Banco
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="banco"
-              name="banco"
-            >
-          </div>
-
-          <div class="col-md-4">
-            <label for="cuenta" class="form-label">
-              Número de cuenta
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="cuenta"
-              name="cuenta"
-            >
-          </div>
-
-          <div class="col-md-4">
-            <label for="clabe" class="form-label">
-              CLABE
-            </label>
-
-            <input
-              type="text"
-              class="form-control"
-              id="clabe"
-              name="clabe"
-              maxlength="18"
-            >
-          </div>
-
-        </div>
-
-        <!-- OBSERVACIONES -->
-
-        <div class="seccion-titulo mt-4">
-          Información adicional
-        </div>
-
-        <div class="row g-3">
-
-          <div class="col-md-12">
-            <label for="observaciones" class="form-label">
-              Observaciones
-            </label>
-
-            <textarea
-              class="form-control"
-              id="observaciones"
-              name="observaciones"
-              rows="4"
-            ></textarea>
-          </div>
-
-        </div>
-
-        <!-- BOTONES -->
-
-        <div class="d-flex justify-content-end gap-2 mt-4">
-
-          <button
-            type="reset"
-            class="btn btn-outline-secondary"
-          >
-            Limpiar
-          </button>
-
-          <button
-            type="submit"
-            class="btn btn-primary"
-          >
-            Guardar proveedor
-          </button>
-
-        </div>
-
-      </form>
+      <div id="map"></div>
 
     </div>
+
   </div>
-
-
 </section>
+
+
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script>
+
+  async function initMap() {
+
+    // Cambia estas coordenadas por las de tu negocio
+    const ubicacion = {
+      lat: 19.432608,
+      lng: -99.133209
+    };
+
+    // Cargar las librerías de Google Maps
+    const { Map } =
+      await google.maps.importLibrary("maps");
+
+    const { AdvancedMarkerElement } =
+      await google.maps.importLibrary("marker");
+
+
+    // Crear mapa
+    const mapa = new Map(
+      document.getElementById("map"),
+      {
+        center: ubicacion,
+        zoom: 16,
+
+        // Para pruebas
+        mapId: "DEMO_MAP_ID",
+
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: true
+      }
+    );
+
+
+    // Crear marcador
+    const marcador = new AdvancedMarkerElement({
+      map: mapa,
+      position: ubicacion,
+      title: "Mi Empresa"
+    });
+
+  }
+
+
+  // FORMULARIO
+
+  document
+    .getElementById("formContacto")
+    .addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+      const nombre =
+        document.getElementById("nombre").value;
+
+      alert(
+        "Gracias " +
+        nombre +
+        ", hemos recibido tu mensaje."
+      );
+
+      this.reset();
+
+    });
+
+</script>
+
+
+<!-- GOOGLE MAPS API -->
+
+<script
+  async
+  src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&loading=async&callback=initMap">
+</script>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     </script>
     <!-- Google tag (gtag.js) -->
@@ -138,6 +139,7 @@
         }
     </style>
 </head>
+
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
         <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
@@ -162,20 +164,27 @@
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog"
                                 id="Categorias"></ul>
                         </li>
-                         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Quiero ser
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="<?= base_url ?>Formularioclientes/index">Cliente</a></li>
-               <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Distribuidor</a></li>
-               <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Vendedor</a></li>
-            <li><hr class="dropdown-divider"></li>
-          
-          </ul>
-        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Quiero ser
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="<?= base_url ?>Formularioclientes/index">Cliente</a></li>
+                                <li><a class="dropdown-item" href="<?= base_url ?>Formularioproveedores/index">Provedor</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Distribuidor</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Vendedor</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url ?>Sucursales/index">Sucursales</a>
                         </li>
