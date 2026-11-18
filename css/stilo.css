@@ -1092,13 +1092,13 @@ background-repeat: no-repeat;
 }
 
 
-/*Estilos de Seccion Contacto*/
+/*Estilos de Seccion Formulario Proveedores*/
 /* Full Display */
 .contacto-1 {
   width: 100%;  
   margin-top: 10%;
   margin-bottom: 5%;
-  background-color: #FFF9F4;    
+  background-color: #ffffff;    
 
 }
 
@@ -1127,6 +1127,48 @@ background-repeat: no-repeat;
       padding-bottom: 8px;
       margin-bottom: 20px;
       margin-top: 10px;
+    }
+
+    .form-label {
+      font-weight: 500;
+    }
+
+    /*Estilos de Seccion Formulario Clientes*/
+/* Full Display */
+.contacto-2 {
+  width: 100%;  
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: #ffffff;    
+
+}
+
+
+   .formulario-cliente {
+      max-width: 1050px;
+      margin: 40px auto;
+    }
+
+    .card {
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-header {
+      background-color: #212529;
+      color: white;
+      border-radius: 18px 18px 0 0 !important;
+      padding: 22px;
+    }
+
+    .titulo-seccion {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ddd;
     }
 
     .form-label {

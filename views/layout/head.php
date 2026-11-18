@@ -167,7 +167,7 @@
             Quiero ser
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="#">Cliente</a></li>
+            <li><a class="dropdown-item" href="<?= base_url ?>Formularioclientes/index">Cliente</a></li>
                <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Distribuidor</a></li>
                <li><hr class="dropdown-divider"></li>
